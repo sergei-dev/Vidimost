@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 13px 12px;
+
+  color: $white;
+  font-size: $basic-size;
+  font-family: $pt-sans;
+  font-weight: 700;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  
+  background-color: $brand-color;
+
+  transition: color, background-color .3s;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  &__icon {
+    width: 15px;
+    height: 17px;
+    margin-left: 33px;
+
+    fill: $white;
+  }
+
+  &:hover {
+    background-color: lighten($brand-color, 15%);
+  }
+
+  &:active, &:focus {
+    background-color: darken($brand-color, 15%);
+    outline: none;
+  }
+}

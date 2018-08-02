@@ -1,0 +1,43 @@
+.bottom-btn {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&::before, &::after {
+		content: '';
+
+		display: block;
+		width: 397px;
+		height: 1px;
+
+		background-color: #e2e5e7;
+	}
+
+	&::before {
+		margin-right: 25px;
+	}
+
+
+	&::after {
+		margin-left: 25px;
+	}
+
+	&__btn {
+		position: relative;
+
+		display: block;
+		width: 100%;
+		max-width: 344px;
+	}
+
+	&__icon {
+		position: absolute;
+		right: 27px;
+		top: 21px;
+
+		margin: 0;
+
+		transform: translateY(-50%);
+	}
+}

@@ -1,0 +1,367 @@
+####### Source ########
+# https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+#######################
+
+# Визначає формат файлів для перевірки
+files:
+  include: '**/*.scss'
+# Взято при експорті з https://sasstools.github.io/make-sass-lint-config/
+# Ймовірно працює як ресет для правил лінтера
+options:
+  formatter: stylish
+  merge-default-rules: false
+rules:
+# Кількість елементів в блоці по бему
+# Добре
+# .block__element
+# Погано
+# .block__element__subelement
+  bem-depth:
+    - 1
+    - max-depth: 1
+
+# Перевага надається "border: none" над "border: 0"
+  border-zero:
+    - 1
+    - convention: none
+
+# Забороняє використовувати кольори по їх назвах
+# Наприклад
+# color: green;
+  no-color-keywords: 1
+
+# Забороняє css коментарі типу /* */
+  no-css-comments: 1
+
+# Забороняє використання директив @debug
+  no-debug: 1
+
+# @extend та @include мають оголошуватись перед властивостями елементу
+  extends-before-declarations: 1
+  extends-before-mixins: 1
+
+# Забороняє дублювання властивості
+  no-duplicate-properties: 1
+
+# Обовязкова пуста строка між елементами
+  empty-line-between-blocks:
+    - 1
+# Ігнорується для однострочних стилів
+# Наприклад
+# .icon-chevron-up    { &:before { content: "\e030"; } }
+# .icon-chevron-down  { &:before { content: "\e031"; } }
+  #  - ignore-single-line-rulesets: true
+
+# Забороняє пусті елементи
+  no-empty-rulesets: 1
+
+# Файли мають закінчуватися пустою строкою
+  final-newline:
+    - 1
+    - include: true
+
+# Перевага надається скороченим HEX кольорам
+  hex-length:
+    - 1
+    - style: short
+
+# HEX кольори записуються маленькими буквами
+  hex-notation:
+    - 1
+    - style: lowercase
+
+# Валідація HEX кольорів
+  no-invalid-hex: 1
+
+# Забороняє використовувати id селектор
+# Наприклад
+# #submit-button {...}
+  no-ids: 1
+
+# Забороняє "!important"
+  no-important: 1
+
+# "Чисті" імпорти
+# Добре
+# @import "foo/bar";
+# @import "bar";
+# Погано
+# @import "foo/_bar.scss";
+# @import "_bar.scss";
+# @import "_bar";
+# @import "bar.scss";
+  clean-import-paths:
+  - 1
+  - filename-extension: false
+    leading-underscore: false
+
+# Відступи по 2 пробіла
+  indentation:
+    - 1
+    - size: 2
+
+# Заборона нуля перед дробовими значеннями
+  leading-zero:
+    - 1
+    - include: false
+
+# Формат назв для функцій
+# @function my-calculation-function() {...}
+  function-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+# Формат назв для міксінів
+  mixin-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+# Формат назв для плейхолдерів
+# %my-placeholder
+  placeholder-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+# Формат назв для змінних
+# $my-var
+  variable-name-format:
+    - 1
+    - allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+# Глибина вложеності (максимально у max-depth), "max-depth: 2" = 3 селектори
+  nesting-depth:
+    - 1
+    - max-depth: 2
+
+# Використання плейсхолдерів з @extend
+# Добре
+# .fatal {
+#   @extend %error;
+# }
+# Погано
+# .fatal {
+#   @extend .error;
+# }
+  placeholder-in-extend: 1
+
+# Синтаксична перевірка на незаборонені властивості
+  no-misspelled-properties:
+    - 1
+    - extra-properties: []
+
+# Формат назви класів
+# hyphenated_lowercase or 'strict_BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
+  class-name-format:
+    - 1
+    - convention: hyphenatedbem
+  # id-name-format:
+  #   - 1
+  #   - convention: hyphenatedbem
+  # placeholder-name-format:
+  #   - 1
+  #   - convention: hyphenatedbem
+
+# Властивостей на одну строку
+  brace-style:
+    - 1
+# Дозволити однострочні стилі
+# Наприклад
+# .icon-chevron-up    { &:before { content: "\e030"; } }
+# .icon-chevron-down  { &:before { content: "\e031"; } }
+  # - allow-single-line: true
+
+# Дозволяє тільки 1 селектор на строку
+# Наприклад
+# .error p,
+# p.explanation {
+#   ...
+# }
+  single-line-per-selector: 1
+
+# Обовязковий пробіл після коми
+  space-after-comma:
+    - 1
+    - include: true
+
+# Обовязковий пробіл після двокрапки властивості
+  space-after-colon:
+    - 1
+    - include: true
+
+# Заборонений пробіл після назви властивості (перед двокрапкою)
+  space-before-colon: 1
+
+# Обовязковий пробіл перед кривою дужкою
+  space-before-brace:
+    - 1
+    - include: true
+
+# Забороняє зайві пробіли в дужках
+# Добре
+# color: rgba(0, 0, 0, .1);
+# Погано
+# color: rgba( 0, 0, 0, .1 );
+  space-between-parens:
+    - 1
+    - include: false
+
+# Дозволяє тільки одинарні лапки
+  quotes:
+    - 1
+    - style: single
+
+# Обовязкова крапка з комою в останній властивості селектора
+  trailing-semicolon: 1
+
+# Виявляє зайві нулі в кінці дробових значень
+  no-trailing-zero: 1
+
+# Забороняє "transition: all"
+  no-transition-all: 1
+
+# Формат url-лів
+# Добре
+# background: url('assets/image.png');
+# Погано
+# background: url('https://example.com/assets/image.png');
+  no-url-protocols: 1
+
+# Обовязкові лапки в url-лах
+  url-quotes: 1
+
+# Обовязково використовувати нуль без одиниць виміру
+  zero-unit: 1
+
+# Сортування властивостей
+#  property-sort-order:
+#    - 1
+#    - order:
+#        - content
+#        - position
+#        - display
+#        - color
+#        - transform
+#        - transition
+
+
+# Пробіл перед "!important"
+  # space-after-bang:
+  #   - 1
+  #   - include: false
+  # space-before-bang:
+  #   - 1
+  #   - include: true
+
+  # Всі кольори мають бути винесені у змінні
+  # no-color-literals: 1
+
+  # Забороняє директиви @extend
+  # no-extends: 0
+
+
+
+# Визначає допустимі одиниці вимірювання
+  # property-units:
+  #   - 1
+  #   - global:
+  #       - ch
+  #       - em
+  #       - ex
+  #       - rem
+  #       - cm
+  #       - in
+  #       - mm
+  #       - pc
+  #       - pt
+  #       - px
+  #       - q
+  #       - vh
+  #       - vw
+  #       - vmin
+  #       - vmax
+  #       - deg
+  #       - grad
+  #       - rad
+  #       - turn
+  #       - ms
+  #       - s
+  #       - Hz
+  #       - kHz
+  #       - dpi
+  #       - dpcm
+  #       - dppx
+  #       - '%'
+  #     per-property: {}
+
+# Допустимі скорочення
+# Наприклад
+# margin: 1px;
+  # shorthand-values:
+  #   - 1
+  #   - allowed-shorthands:
+  #       - 1
+  #       - 2
+  #       - 3
+
+# Обовязково використовувати змінні для перелічених властивостей
+# variable-for-property:
+#   - 0
+#   - properties:
+#       - color
+#       - font
+
+# Повідомляє про дублювання того ж елементу в стилях
+# https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md#mergeableselector
+# Добре
+# h1 {
+#   color: #fff;
+#
+#   &.new {
+#     color: #000;
+#   }
+# }
+# Погано
+# h1 {
+#   color: #fff;
+# }
+#
+# h1.new {
+#   color: #000;
+# }
+# force-attribute-nesting: 1
+# force-element-nesting: 1
+# force-pseudo-nesting: 1
+# no-mergeable-selectors: 1
+
+# Забороняє кваліфікаційні елементи в селекторах
+# Добре
+# .list {
+#   ...
+# }
+#
+# ul .item {
+#   ...
+# }
+# Погано
+# ul.list {
+#   ...
+# }
+#
+# ul li.item {
+#   ...
+# }
+#  no-qualifying-elements:
+#    - 1
+#    - allow-element-with-attribute: false
+#      allow-element-with-class: false
+#      allow-element-with-id: false
+
+# Забороняє префікси вендорів
+#  no-vendor-prefixes:
+#    - 1
+#    - additional-identifiers: []
+#      excluded-identifiers: []

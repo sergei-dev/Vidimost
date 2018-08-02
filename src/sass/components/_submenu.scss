@@ -1,0 +1,39 @@
+.submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 5;
+
+	display: none;
+	width: 200px;
+	padding: 0px 10px;
+
+	font-family: $open-sans;
+	font-weight: 400;
+
+	background-color: $white;
+	border-radius: 4px;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.37);
+
+	&__item {
+		&:not(:last-child) {
+			border-bottom: 1px solid #f7f7f7;
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 12px 0px;
+
+		font-size: $basic-size;
+		text-align: left;
+		color: $black-text;
+
+		&:hover, &:active, &:focus {
+			color: $brand-color;
+
+			outline: none;
+		}
+	}
+
+}

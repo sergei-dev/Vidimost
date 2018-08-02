@@ -1,0 +1,40 @@
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $pt-sans;
+  color: $black-text;
+  font-weight: 400;
+  line-height: $basic-size;
+
+  background-color: $white;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container-new {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1200px;
+}
+
+
+@supports(max-width: env(safe-area-inset-left)) {
+  .container-new {
+    max-width: calc(100% - env(safe-area-inset-left)*2);
+  }
+}

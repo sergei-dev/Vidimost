@@ -1,0 +1,22 @@
+.last-reviews {
+	&__content {
+		min-height: 0;
+	}
+
+	&__thumb  {
+		min-height: 0;
+	}
+
+	&__title {
+		color: $white;
+		margin: 0;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&__img {
+		height: auto;
+	}
+}

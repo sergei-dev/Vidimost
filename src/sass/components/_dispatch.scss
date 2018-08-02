@@ -1,0 +1,81 @@
+.dispatch {
+	padding: 7px 0px;
+
+	font-family: $pt-sans;
+
+	background-color: $brand-color;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__wrap {
+		flex-basis: 820px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		margin-right: 24px;
+
+		font-weight: 700;
+		color: $white;
+		font-size: 20px;
+	}
+
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 410px;
+		margin-right: 35px;
+
+		background-color: $white;
+	}
+
+	&__group {
+		flex-basis: 307px;
+	}
+
+	&__group, &__group-btn {
+		display: flex;
+		align-items: center;
+	}
+
+	&__inp {
+		padding: 11px 26px;
+		width: 100%;
+
+		font-size: 14px;
+
+		@include placeholder {
+			font-weight: 400;
+			font-size: 14px;
+			color: #919496;
+		}
+	}
+
+	&__group-btn {
+		padding: 1px;
+	}
+
+	&__btn {
+		padding: 11px 14px;
+
+		background-color: $red;
+
+		&:hover {
+			background-color: lighten($red, 20%);
+		}
+
+		&:active, &:focus {
+			background-color: darken($red, 15%);
+		}
+	}
+
+	&__icon {
+		width: 66px;
+		height: 32px;
+	}
+}

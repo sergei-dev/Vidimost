@@ -1,0 +1,110 @@
+.header-page {
+  font-family: $pt-sans;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__lang-list {
+    margin-right: 48px;
+  }
+
+  &__sign-in {
+    display: flex;
+    align-items: center;
+
+    color: $white;
+  }
+
+  &__sign-link {
+    display: flex;
+    align-items: center;
+
+    color: $white;
+    font-size: 15px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__sign-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+
+    fill: $brand-color;
+  }
+
+  &__middle {
+    padding: 14px 0px;
+
+    background-color: $white;
+  }
+
+  &__logo {
+    margin-right: 70px;
+  }
+
+  &__common {
+    flex-basis: 476px;
+    margin-right: 45px;
+  }
+
+  &__top-common {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__tel-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 305px;
+    margin-top: -7px;
+    margin-bottom: -7px;
+    margin-right: 14px;
+  }
+
+  &__tel-item {
+    flex-basis: 50%;
+    padding: 7px 0;
+  }
+
+  &__tel {
+    font-size: $basic-size;
+    color: $black-text;
+
+    &:hover, &:active, &:focus {
+      color: $brand-color;
+    }
+  }
+
+  &__pers-area-info {
+    flex-basis: 214px;
+    margin-right: 47px;
+  }
+
+  &__area-text {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: $black-text;
+    line-height: 20px;
+  }
+
+  &__link-area {
+    color: $brand-color;
+    text-decoration: underline;
+  }
+
+}

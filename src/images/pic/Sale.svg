@@ -1,0 +1,27 @@
+<svg id="Sale" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="63" viewBox="0 0 63 63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f80000;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 18px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Arial;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-family: OpenSans;
+        font-size: 16px;
+      }
+    </style>
+    <path id="text-path"/>
+  </defs>
+  <circle class="cls-1" cx="31.5" cy="31.5" r="31.5"/>
+  <text class="cls-2"><textPath xlink:href="#text-path"><tspan class="cls-3">-15<tspan class="cls-4">%</tspan></tspan></textPath></text>
+</svg>

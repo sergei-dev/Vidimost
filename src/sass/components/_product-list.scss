@@ -1,0 +1,190 @@
+.product-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+
+	&__item {
+		display: flex;
+		flex-basis: 290px;
+		padding: 0px 10px;
+
+		font-family: $pt-sans;
+	}
+
+	&__content {
+		width: 100%;
+		height: 471px;
+
+		background-color: $white;
+		border-radius: 4px;
+	}
+
+	&__link {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	&__thumb {
+		position: relative;
+
+		padding-top: 25px;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		margin: auto;
+	}
+
+	.corner_1 {
+		position: absolute;
+		right: 6px;
+		top: 6px;
+	}
+
+	&__title-wrap {
+		height: 33px;
+		overflow: hidden;
+		padding: 0 14px;
+	}
+
+	&__title {
+		width: 100%;
+		max-width: 177px;
+
+		font-weight: 700;
+		line-height: 18px;
+		font-size: 15px;
+		color: $black-text;
+	}
+
+	&__info {
+		border-bottom: 1px solid #ededed;
+	}
+
+	&__text-info {
+		padding: 0 14px;
+		padding-bottom: 10px;
+	}
+
+	&__text {
+		height: 40px;
+		overflow: hidden;
+		margin-bottom: 12px;
+	}
+
+	&__descr {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 14px;
+		color: $gray;
+	}
+
+	&__list-vailability {
+		margin: -3px 0px;
+	}
+
+	&__item-vailability {
+		position: relative;
+		
+		padding: 3px 0px;
+		padding-left: 29px;
+
+		color: $gray;
+		font-size: 13px;
+		line-height: 16px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 10px;
+			top: 50%;
+
+			width: 9px;
+			height: 9px;
+
+			background-color: $gray;
+			border-radius: 50%;
+
+			transform: translateY(-50%);
+		}
+
+		&--empty {
+			&::before {
+				background-color: #61ab00;
+			}
+		}
+
+		&--empty {
+			&::before {
+				background-color: #fe2b06;	
+			}
+		}
+	}
+
+	&__bottom {
+		padding: 13px;
+	}
+
+	&__prices-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 16px;
+	}
+
+	&__price {
+		font-size: 18px;
+		font-weight: 700;
+		color: $black-text;
+		line-height: 16px;
+
+		&--old {
+			text-decoration: line-through;
+		}
+
+		&--new {
+			color: $red;
+		}
+	}
+
+	&__buy-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__btn {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	&__icon {
+		width: 28px;
+		height: 31px;
+
+		fill: #bfbfbf;
+
+		transition: fill $anim;
+	}
+
+	&__buy-buttons {
+		display: flex;
+		align-items: center;
+		margin-right: 30px;
+	}
+
+	&__action-btn {
+		&:first-child {
+			margin-right: 36px;
+		}
+
+		&:hover {
+			.product-list__icon {
+				fill: $brand-color;
+			}
+		}
+	}
+
+}

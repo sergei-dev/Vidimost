@@ -1,0 +1,33 @@
+.callback {
+	font-family: $pt-sans;
+
+	&__icon {
+		margin-right: 8px;
+		width: 21px;
+		height: 21px;
+
+		fill: $brand-color;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		font-size: 16px;
+		font-weight: 700;
+		color: $black-text;
+
+		&:hover {
+			color: $brand-color;
+
+			.callback__border {
+				border-bottom-color: transparent;
+			}
+		}
+	}
+
+	&__border {
+		border-bottom: 1px dotted $black;
+		line-height: 23px;
+	}
+}

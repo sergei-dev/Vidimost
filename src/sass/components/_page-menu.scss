@@ -1,0 +1,55 @@
+.page-menu {
+	display: flex;
+	align-items: center;
+	flex-basis: 560px;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	font-family: $pt-sans;
+
+	&__item {
+		position: relative;
+
+		&--active > a {
+			color: $brand-color;
+		}
+
+		&:hover {
+			> .submenu {
+				display: block;
+			}
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		display: block;
+		padding: 14px 15px;
+
+		font-size: 15px;
+		color: $white;
+		font-weight: 400;
+
+		transition: color $anim;
+
+		&:hover, &:focus, &:active {
+			color: $brand-color;
+
+			outline: none;
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		top: 32%;
+		right: 0;
+
+		display: block;
+		width: 15px;
+		height: 19px;
+
+		fill: $brand-color;
+	}
+
+}

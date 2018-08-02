@@ -1,0 +1,62 @@
+.search-form {
+	width: 100%;
+	display: flex;
+
+	&__btn-product {
+		position: relative;
+
+		padding-top: 9px;
+		padding-bottom: 9px;
+
+		font-family: $open-sans;
+		font-weight: 400;
+		text-transform: initial;
+
+		&:hover {
+			background-color: $brand-color;
+
+			> .submenu {
+				display: block;
+			}
+		}
+	}
+
+	&__btn-product-icon {
+		margin-left: 3px;
+		margin-top: 2px;
+		width: 15px;
+		height: 19px;
+	}
+
+	&__group {
+		display: flex;
+		flex-basis: 330px;
+	}
+
+	&__inp {
+		padding: 8px 34px;
+		flex-basis: 100%;
+
+		border: 2px solid $brand-color;
+		border-right: none;
+		border-left: none;
+		
+		@include placeholder {
+			font-family: $pt-sans;
+			font-size: $basic-size;
+			color: #919496;
+		}
+	}
+
+	&__btn-search {
+		padding: 8px 16.5px;
+	}
+
+	&__icon-search {
+		width: 22px;
+		height: 22px;
+		margin: 0;
+
+		fill: $white;
+	}
+}
