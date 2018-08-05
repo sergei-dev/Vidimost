@@ -8,10 +8,24 @@
 
 	font-family: $pt-sans;
 
+		@include media($screen-sm) {
+			flex-direction: column;
+			align-items: center;
+		}
+
 	&__item {
 		flex-basis: 33.3%;
 		display: flex;
 		padding: 0 10px;
+
+		@include media($screen-md) {
+			flex-basis: 50%;
+			padding: 10px;
+		}
+
+		@include media($screen-sm) {
+			flex-basis: 100%;
+		}
 	}
 
 	&__thumb {
@@ -22,6 +36,10 @@
 	&__img {
 		width: 100%;
 		height: 205px;
+
+		@include media($screen-sm) {
+			height: auto;
+		}
 	}
 
 	&__content {

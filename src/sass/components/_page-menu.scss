@@ -7,6 +7,10 @@
 
 	font-family: $pt-sans;
 
+	@include media($screen-md) {
+		display: none;
+	}
+
 	&__item {
 		position: relative;
 

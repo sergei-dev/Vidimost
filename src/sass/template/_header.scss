@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media($screen-md) {
+      padding: 10px;
+    }
   }
 
   &__user {

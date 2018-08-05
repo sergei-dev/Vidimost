@@ -1,0 +1,51 @@
+.open-menu {
+	display: block;
+	width: 40px;
+	min-height: 21px;
+	margin-bottom: -7px;
+
+	cursor: pointer;
+
+	&--active {
+		.open-menu__one {
+			background-color: lighten($brand-color, 15%);
+
+			transform: rotate(45deg) translate(8px);
+		}
+
+		.open-menu__two {
+			background-color: lighten($brand-color, 15%);
+
+			transform: rotate(495deg) translate(4px);
+		}
+
+		.open-menu__three {
+			background-color: lighten($brand-color, 15%);
+
+			transform: rotate(45deg);
+			opacity: 0;
+
+		}
+	}
+
+	&__line {
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin-bottom: 7px;
+
+		background-color: $brand-color;
+		border-radius: 4px;
+
+		transition: transform .5s cubic-bezier(.08,.81,.87,.71);
+	}
+
+	&__one {
+		transform-origin: 4px 0;
+	}
+
+	&__three {
+		transform-origin: bottom right;
+	}
+
+}

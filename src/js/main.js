@@ -10,6 +10,10 @@ $(document).ready(function() {
 		arrows: true
 	});
 
+	$('.open-menu').on('click', function() {
+		$(this).toggleClass('open-menu--active');
+	})
+
 
 	
 });
