@@ -12,6 +12,19 @@ $(document).ready(function() {
 
 	$('.open-menu').on('click', function() {
 		$(this).toggleClass('open-menu--active');
+	});
+
+	$('.about-sect__more').on('click', function(event) {
+		event.preventDefault();
+		$('.about-sect__text').toggleClass('about-sect__text--clip');
+
+		if( $('.about-sect__text').hasClass('about-sect__text--clip') ) {
+			$(this).html('Читать дальше');
+		}
+
+		else {
+			$(this).html('Свернуть');
+		}
 	})
 
 
