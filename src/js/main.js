@@ -12,6 +12,7 @@ $(document).ready(function() {
 
 	$('.open-menu').on('click', function() {
 		$(this).toggleClass('open-menu--active');
+		$('.page-menu').toggleClass('page-menu--open');
 	});
 
 	$('.about-sect__more').on('click', function(event) {

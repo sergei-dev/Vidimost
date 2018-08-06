@@ -8,7 +8,19 @@
 	font-family: $pt-sans;
 
 	@include media($screen-md) {
-		display: none;
+		position: absolute;
+		top: 100%;
+		z-index: 10;
+		
+		width: 100%;
+		display: block;
+
+		background-color: rgba(0, 0, 0, 0.6);
+
+		transform: translateX(-1000px);
+		
+		transition: transform .5s linear;
+		will-change: transform;
 	}
 
 	&__item {
@@ -42,6 +54,14 @@
 
 			outline: none;
 		}
+
+		@include media($screen-md) {
+			width: 100%;
+			display: flex;
+			align-items: center;
+
+			color: $white;
+		}	
 	}
 
 	&__icon {
@@ -54,6 +74,23 @@
 		height: 19px;
 
 		fill: $brand-color;
+
+		@include media($screen-md) {
+			position: static;
+			margin-left: 5px;
+		}
 	}
+
+	&--open {
+		transform: translateX(0);
+	}
+
+	&__submenu {
+		@include media($screen-md) {
+			left: 15px;
+		}
+	}
+
+
 
 }

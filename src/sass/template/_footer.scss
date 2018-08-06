@@ -11,11 +11,33 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 5px;
+
+		@include media($screen-md) {
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+		}
+
+		@include media($screen-sm) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__nav-list-wrap {
 		&:not(:last-child) {
-			margin-right: 125px;
+			margin-right: 20px;
+		}
+
+		@include media($screen-md) {
+			padding-bottom: 30px;
+		}
+
+		@include media($screen-sm) {
+			text-align: center;
+
+			&:not(:last-child) {
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -29,6 +51,11 @@
 		color: $brand-color;
 		font-weight: 700;
 		line-height: 24px;
+		
+		@include media($screen-sm) {
+			max-width: none;
+		}
+
 	}
 
 	&__nav-item {
@@ -37,7 +64,7 @@
 
 	&__nav-link {
 		display: block;
-		
+
 		font-size: 14px;
 		color: $black-text;
 		line-height: 25px;
@@ -49,20 +76,41 @@
 
 	&__contacts-wrap {
 		display: flex;
+
+		@include media($screen-xs) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__contacts-list {
-		margin-right: 126px;
+		margin-right: 110px;
+
+		@include media($screen-xs) {
+			margin-right: 0;
+		}
 	}
 
 	&__common {
 		display: flex;
+		flex-wrap: wrap;
+
+		@include media($screen-sm) {
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: -30px;
+		}
 	}
 
 	&__common-block {
 		margin-right: 94px;
 
 		color: $black-text;
+
+		@include media($screen-sm) {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__common-title {
@@ -70,6 +118,10 @@
 
 		font-size: 18px;
 		font-weight: 700;
+
+		@include media($screen-sm) {
+			text-align: center;
+		}
 	}
 
 	&__bottom {

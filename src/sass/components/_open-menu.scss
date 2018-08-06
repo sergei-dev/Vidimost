@@ -1,16 +1,20 @@
 .open-menu {
-	display: block;
+	display: none;
 	width: 40px;
 	min-height: 21px;
 	margin-bottom: -7px;
 
 	cursor: pointer;
 
+	@include media($screen-md) {
+		display: block;
+	}
+
 	&--active {
 		.open-menu__one {
 			background-color: lighten($brand-color, 15%);
 
-			transform: rotate(45deg) translate(8px);
+			transform: rotate(45deg) translate(4px);
 		}
 
 		.open-menu__two {
@@ -30,8 +34,8 @@
 
 	&__line {
 		display: block;
-		width: 40px;
-		height: 2px;
+		width: 38px;
+		height: 3px;
 		margin-bottom: 7px;
 
 		background-color: $brand-color;

@@ -22,4 +22,8 @@
 
 		background-color: $brand-color;
 	}
+
+	@include media($screen-sm) {
+		font-size: 25px;
+	}
 }

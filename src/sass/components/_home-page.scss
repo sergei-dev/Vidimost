@@ -7,7 +7,6 @@
 		position: relative;
 
 		width: 100%;
-		min-height: 470px;
 
 		background-color: #ededed;
 		border-radius: 3px;
@@ -15,8 +14,6 @@
 
 	&__slider-item {
 		position: relative;
-
-		height: 470px;
 	}
 
 	&__slider-btn {
@@ -32,6 +29,7 @@
 		&:hover {
 			background-color: lighten($black-text, 15%);
 		}
+		
 		&:active, &:focus {
 			background-color: darken($black-text, 15%);
 		}

@@ -5,30 +5,34 @@
 	margin-left: -10px;
 	margin-right: -10px;
 
-	@include media($screen-md) {
+	@include media(1145px) {
 		flex-wrap: wrap;
 		margin-bottom: -40px;
 	}
 
-	@include media($screen-sm) {
+	@include media(550px) {
 		flex-direction: column;
 		align-items: center;
 	}
 
 	&__item {
 		display: flex;
-		flex-basis: 25%;
+		width: 25%;
 		padding: 0px 10px;
 
 		font-family: $pt-sans;
 
-		@include media($screen-md) {
-			flex-basis: 50%;
+		@include media(1145px) {
+			width: 33.3%;
 			margin-bottom: 40px;
 		}
 
 		@include media($screen-sm) {
-			flex-basis: 100%;
+			width: 50%;
+		}
+
+		@include media(550px) {
+			width: 100%;
 		}
 	}
 
@@ -191,7 +195,6 @@
 	&__buy-buttons {
 		display: flex;
 		align-items: center;
-		margin-right: 30px;
 	}
 
 	&__action-btn {

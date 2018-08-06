@@ -52,11 +52,11 @@
 	&__text {
 		position: relative;
 
-		height: 270px;
+		max-height: 100%;
 		
 		overflow: hidden;
 
-		transition: height $anim;
+		transition: max-height $anim;
 
 		&--clip {
 			height: 140px;
