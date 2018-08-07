@@ -34,11 +34,14 @@
 		@include media(550px) {
 			width: 100%;
 		}
+
+		&--full {
+			width: 100%;
+		}
 	}
 
 	&__content {
 		width: 100%;
-		height: 471px;
 
 		background-color: $white;
 		border-radius: 4px;
@@ -209,4 +212,21 @@
 		}
 	}
 
+}
+
+.product-list__content--list {
+	display: flex;
+}
+
+.product-list__img-wrap,
+.product-list__left-wrap {
+	width: 30%;
+}
+.product-list__center-wrap {
+	width: 40%;
+}
+
+.product-list__btn-list {
+	display: block;
+	width: 100%;
 }
