@@ -5,6 +5,10 @@
 
 	background-color: $brand-color;
 
+	@include media($screen-sm) {
+			padding: 14px 0px;
+		}
+
 	&__container {
 		display: flex;
 		justify-content: center;
@@ -17,7 +21,8 @@
 		align-items: center;
 
 		@include media($screen-sm) {
-			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
 	}
 
@@ -29,8 +34,8 @@
 		font-size: 20px;
 
 		@include media($screen-sm) {
-			margin-bottom: 20px;
-			margin-right: 0;
+			margin-bottom: 15px;
+			order: -2;
 		}
 	}
 
@@ -44,7 +49,6 @@
 
 		@include media($screen-sm) {
 			margin-right: 0;
-			margin-bottom: 20px;
 			flex-basis: auto;
 			align-items: center;
 			width: 100%;
@@ -98,5 +102,13 @@
 	&__icon {
 		width: 66px;
 		height: 32px;
+	}
+
+	&__decor {
+
+		@include media($screen-sm) {
+			order: -1;
+			margin-bottom: 10px;
+		}
 	}
 }

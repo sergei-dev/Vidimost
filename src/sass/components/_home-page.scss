@@ -33,6 +33,11 @@
 		&:active, &:focus {
 			background-color: darken($black-text, 15%);
 		}
+ 
+		@include media($screen-md) {
+				display: none;
+			
+		}
 	}
 
 	.slick-dots li button::before {

@@ -9,6 +9,11 @@
 		border-radius: 10px;
 		background-color: $white;
 		box-shadow: 0px 1px 2.97px 0.03px rgba(0, 0, 0, 0.12);
+
+		@include media($screen-xs) {
+			padding-left: 17px;
+			padding-right: 17px;
+		}
 	}
 
 	&__text-wrap {
@@ -23,6 +28,10 @@
 			font-weight: 400;
 			color: $gray;
 			line-height: 20px;
+
+			@include media($screen-xs) {
+				font-size: $basic-size;
+			}
 		}
 	}
 	
@@ -51,16 +60,10 @@
 
 	&__text {
 		position: relative;
-
-		max-height: 100%;
 		
 		overflow: hidden;
 
-		transition: max-height $anim;
-
 		&--clip {
-			height: 140px;
-
 			&::after {
 				content: '';
 				position: absolute;

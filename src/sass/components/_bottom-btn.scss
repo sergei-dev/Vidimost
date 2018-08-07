@@ -12,6 +12,10 @@
 		height: 1px;
 
 		background-color: #e2e5e7;
+
+		@include media($screen-sm) {
+			display: none;
+		}
 	}
 
 	&::before {
@@ -29,6 +33,10 @@
 		display: block;
 		width: 100%;
 		max-width: 344px;
+
+		@include media($screen-sm) {
+			max-width: none;
+		}
 	}
 
 	&__icon {

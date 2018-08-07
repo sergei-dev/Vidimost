@@ -75,6 +75,12 @@
 		&:hover {
 			text-decoration: underline;
 		}
+
+		@include media($screen-xs) {
+			max-width: none;
+			font-size: 15px;
+			line-height: 15px;
+		}
 	}
 
 	&__descr {
@@ -82,6 +88,10 @@
 		font-weight: 400;
 		color: $gray;
 		line-height: 18px;
+
+		@include media($screen-xs) {
+			font-size: $basic-size;
+		}
 	}
 
 	&__bottom {
@@ -94,5 +104,10 @@
 		padding: 24px 64px;
 
 		background-color: rgba(0, 0, 0, 0.6);
+
+		@include media($screen-xs) {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
 	}
 }

@@ -36,4 +36,24 @@
     background-color: darken($brand-color, 15%);
     outline: none;
   }
+
+  &--arrow {
+    
+    &::after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      top: 20px;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: transparent;
+      border: 2px solid;
+      border-top: 0;
+      border-left: 0;
+
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
 }
