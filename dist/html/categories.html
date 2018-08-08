@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>VIDIMOST</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.min.css">
 	<meta name="theme-color" content="#112852">
 	<meta name="msapplication-navbutton-color" content="#112852">
@@ -223,24 +224,104 @@
 <!-- /.header-page__middle -->
 </header>
 
-<main class="main-content home-page">
-	<section class="page-section">
-		<div class="container-new">
-			<h2 class="head-title">Рекомендованные товары</h2>
-			<!-- /.head-title -->
-			<ul class="product-list">
-				<li class="product-list__item product-list__item--full">
-					<div class="product-list__content  product-list__content--list">
-				
-								<a href="#" class="product-list__img-wrap">
-									<div class="corner_1">
-										<img src="../images/pic/Sale.png" alt="скидка">
-									</div>
-									<!-- /.corner_1 -->
-									<img class="product-list__img" src="../images/pic/product.png" alt="product">
-								</a>
+<main class="main-content categories-page">
 
-								<div class="product-list__center-wrap">
+	<div class="container-new">
+		<div class="breadcrumb">
+			<ul class="breadcrumb__list">
+				<li class="breadcrumb__item breadcrumb__item--first">
+					<a class="breadcrumb__link" href="#">Главная</a>
+				</li>
+				<!-- /.breadcrumb__item -->
+				<li class="breadcrumb__item">
+					>> Видеонаблюдение
+				</li>
+				<!-- /.breadcrumb__item -->
+			</ul>
+			<!-- /.breadcrumb__list -->
+		</div>
+		<!-- /.breadcrumb -->
+	
+	<div class="page-wrap">
+		<div class="page-wrap__left">
+			<div class="product-filter">
+				<h3 class="page-heading">Фильтр товаров</h3>
+				<!-- /.product-filter__heading -->
+				<div class="product-filter__price">
+					<h4 class="product-filter__title">
+						Цена:
+						<span id="slider-snap-value-lower" class="product-filter__title-text">
+							582 -
+						</span>
+						<span id="slider-snap-value-upper" class="product-filter__title-text">
+							36400грн.
+						</span>
+					</h4>
+					<!-- /.product-filter__title -->
+					<div id="filter-range" class="product-filter__range"></div>
+					<!-- /.product-filter__range -->
+				</div>
+				<!-- /.product-filter__price -->
+				<div class="product-filter__manufacturer">
+					<h4 class="product-filter__title">
+						Производитель:
+					</h4>
+					<!-- /.product-filter__title -->
+					<div class="product-filter__manufacturer-wrap">
+						<p class="page-check">
+							<input class="page-check__checkbox" type="checkbox" id="check1" hidden checked>
+							<label for="check1" class="page-check__text">
+								Avigard
+							</label>
+						</p>
+						<!-- /.page-check -->
+						<p class="page-check">
+							<input class="page-check__checkbox" type="checkbox" id="check2" hidden>
+							<label for="check2" class="page-check__text">
+								Avigard
+							</label>
+						</p>
+						<!-- /.page-check -->
+						<p class="page-check">
+							<input class="page-check__checkbox" type="checkbox" id="check3" hidden>
+							<label for="check3" class="page-check__text">
+								Avigard
+							</label>
+						</p>
+						<!-- /.page-check -->
+						<p class="page-check">
+							<input class="page-check__checkbox" type="checkbox" id="check4" hidden>
+							<label for="check4" class="page-check__text">
+								Avigard
+							</label>
+						</p>
+						<!-- /.page-check -->
+					</div>
+					<!-- /.product-filter__manufacturer-wrap -->
+				</div>
+				<!-- /.product-filter__manufacturer -->
+			</div>
+			<!-- /.product-filter -->
+		</div>
+		<!-- /.page-wrap__left -->
+
+		<div class="page-wrap__right">
+			<section class="page-section page-section--right-content">
+				<h2 class="head-title">Видеонаблюдение</h2>
+				<!-- /.head-title -->
+				<ul class="product-list">
+					<li class="product-list__item product-list__item--full">
+						<div class="product-list__content  product-list__content--list">
+
+							<a href="#" class="product-list__img-wrap">
+								<div class="corner_1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner_1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</a>
+
+							<div class="product-list__center-wrap">
 
 								<!-- /.product-list__thumb -->
 								<div class="product-list__title-wrap">
@@ -248,15 +329,15 @@
 									<!-- /.product-list__title -->
 								</div>
 								<!-- /.product-list__title-wrap -->
-		
-						
+
+
 								<div class="product-list__text">
 									<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
 									<!-- /.product-list__descr -->
 								</div>
 
-								</div>
-									
+							</div>
+
 							<div class="product-list__left-wrap">
 
 								<!-- /.product-list__text -->
@@ -271,49 +352,53 @@
 									<!-- /.product-list__vailability -->
 								</ul>
 								<!-- /.product-list__info-vailability -->
-						
 
-						
-						<div class="product-list__bottom">
-							<div class="product-list__prices-wrap">
-								<span class="product-list__price product-list__price--old">2380.00 $</span>
-								<span class="product-list__price product-list__price--new">2380.00 $</span>
-							</div>
-							<!-- /.product-list__prices-wrap -->
 
-								<div class="product-list__buy-buttons">
-									<button class="product-list__action-btn">
-										<span class="visually-hidden">Нравится</span>
-										<svg class="product-list__icon">
-											<use href="#git-compare"></use>
-										</svg>
-										<!-- /.product-list__icon -->
-									</button>
-									<button class="product-list__action-btn">
-										<span class="visually-hidden">Нравится</span>
-										<svg class="product-list__icon">
-											<use href="#favorite"></use>
-										</svg>
-										<!-- /.product-list__icon -->
-									</button>
+
+								<div class="product-list__bottom">
+									<div class="product-list__prices-wrap">
+										<span class="product-list__price product-list__price--old">2380.00 $</span>
+										<span class="product-list__price product-list__price--new">2380.00 $</span>
+									</div>
+									<!-- /.product-list__prices-wrap -->
+
+									<div class="product-list__buy-buttons">
+										<button class="product-list__action-btn">
+											<span class="visually-hidden">Нравится</span>
+											<svg class="product-list__icon">
+												<use href="#git-compare"></use>
+											</svg>
+											<!-- /.product-list__icon -->
+										</button>
+										<button class="product-list__action-btn">
+											<span class="visually-hidden">Нравится</span>
+											<svg class="product-list__icon">
+												<use href="#favorite"></use>
+											</svg>
+											<!-- /.product-list__icon -->
+										</button>
+									</div>
+									<!-- /.product-list__buy-buttons -->
+									<button class="button product-list__btn-list">Купить</button>
+
 								</div>
-								<!-- /.product-list__buy-buttons -->
-								<button class="button product-list__btn-list">Купить</button>
-			
+								<!-- /.product-list__bottom -->
+							</div>
 						</div>
-						<!-- /.product-list__bottom -->
-						</div>
-					</div>
-					<!-- /.product-list__content -->
-				</li>
-				<!-- /.product-list__item -->
+						<!-- /.product-list__content -->
+					</li>
+					<!-- /.product-list__item -->
 
-			</ul>
-			<!-- /.product-list -->
+				</ul>
+				<!-- /.product-list -->
+			</section>
 		</div>
 		<!-- /.container-new -->
-	</section>
-	<!-- /.page-section -->
+	</div>
+	<!-- /.page-wrap__right -->
+</div>
+<!-- /.page-wrap -->
+
 </main>
 <!-- /.main-content -->
 
@@ -636,6 +721,10 @@
 				<path d="M1 34c0 17.7 14.3 32 32 32s32-14.3 32-32S50.7 2 33 2 1 16.3 1 34z"></path><path d="M26 26v-2.8c.2-3.6 3.3-6.3 6.9-6.1 3.3.2 6 2.8 6.1 6.1V26"></path><path d="M39.2 51H25.9c-3.3.1-6.1-2.4-6.4-5.8l-1.4-18.8c0-.2.1-.4.3-.5h28.3c.2.1.3.3.3.5l-1.4 18.7c-.3 3.4-3.1 5.9-6.4 5.9z"></path>
 			</symbol>
 		
+			<symbol id="check" viewBox="0 0 19 14">
+				<image width="19" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAQAAABnEe8CAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAgQNAolRcqeAAAAs0lEQVQoz33RSwrCMBSF4WNbtbgCp8W1iY8irkXEVwfFBwVdiyNBd6P9HTSNqdXeTJLw5dyQCDUOjyUTFKipfC0UC3nNSVuK2v9HLTYGpYRChPRryGdt0IEOEgEJD6IKCmzSiS5CYgXAjYGTlBh0JCj2xJwcgLuBHjub1C6PCjHkZWCEbJJp92Ei5gnAlcyi0L1tOZkaWFTmJrlMjExrONP5fiB3MSYHLtV2dSZmpPR+/ckb1sQ9g8EoGw0AAAAASUVORK5CYII="></image>
+			</symbol>
+		
 			<symbol id="circle-arrow-left" viewBox="0 0 24 24">
 				<path d="M1 11.5C1 5.149 6.149 0 12.5 0S24 5.149 24 11.5 18.851 23 12.5 23 1 17.851 1 11.5zm12.657-5.657l1.414 1.414-4.243 4.243 4.243 4.243-1.414 1.414L8 11.5l5.657-5.657z" fill="none" fill-rule="evenodd"></path>
 			</symbol>
@@ -722,6 +811,8 @@
 		
 	</svg>
 </div>
+<script src="../libs/jQuery/jquery-3.3.1.min.js"></script>
+<script src="../libs/bootstrap/bootstrap.js"></script>
 <script src="../js/build.js"></script>
 </body>
 </html>

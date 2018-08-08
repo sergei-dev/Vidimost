@@ -59,6 +59,26 @@ $(document).ready(function() {
 		});
 	}
 
+	 var uiSlider = document.getElementById('filter-range');
+  var snapValues = [
+    document.getElementById('slider-snap-value-lower'),
+    document.getElementById('slider-snap-value-upper')
+  ];
+
+  noUiSlider.create(uiSlider, {
+    start: [582, 36400],
+    connect: true,
+    range: {
+      'min': [582],
+      'max': [36400]
+    }
+  });
+
+  uiSlider.noUiSlider.on('update', function(values, handle) {
+    snapValues[handle].innerHTML = values[handle];
+  });
+
+
 
 	
 });

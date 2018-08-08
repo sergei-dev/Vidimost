@@ -221,7 +221,17 @@
 .product-list__img-wrap,
 .product-list__left-wrap {
 	width: 30%;
+	padding: 30px 20px;
 }
+
+ .product-list__img-wrap {
+ 	position: relative;
+ }
+
+.product-list__left-wrap {
+	border-left: 1px solid #ededed;
+}
+
 .product-list__center-wrap {
 	width: 40%;
 }

@@ -1,0 +1,16 @@
+.page-wrap {
+	display: flex;
+	align-items: flex-start;
+	margin-left: -10px;
+	margin-right: -10px;
+
+	&__left {
+		width: 25%;
+		padding: 0px 10px;
+	}
+
+	&__right {
+		width: 75%;
+		padding: 0px 10px;
+	}
+}

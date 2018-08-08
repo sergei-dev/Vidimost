@@ -52,16 +52,9 @@ const pathes = {
 
 const config = {
   jsBuild: [
-    `${pathes.src.js}/libs/jQuery/jquery-3.3.1.min.js`,
-    `${pathes.src.js}/libs/bootstrap/bootstrap.js`,
-    `${pathes.src.js}/libs/jquery-ui/jquery-ui-1.10.3.custom.min.js`,
-    `${pathes.src.js}/libs/jquery-validate/jquery-validate.min.js`,
     `${pathes.src.js}/libs/masked-input/jquery.maskedinput.min.js`,
-    `${pathes.src.js}/libs/colorbox/jquery.colorbox-min.js`,
-    `${pathes.src.js}/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js`,
-    `${pathes.src.js}/libs/mCustomScrollbar/jquery.mCustomScrollbar.js`,
-    `${pathes.src.js}/libs/jquery-revolution/jquery.themepunch.revolution.min.js`,
     `${pathes.src.js}/libs/slick/slick.min.js`,
+    `${pathes.src.js}/libs/noUiSlider/nouislider.min.js`,
     `${pathes.src.js}/main.js`,
   ],
 };
