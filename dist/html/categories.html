@@ -276,11 +276,11 @@
 		<!-- /.breadcrumb -->
 	
 	<div class="page-wrap">
-		<div class="page-wrap__left">
-			<div class="product-filter">
+		<aside class="page-wrap__left">
+			<div class="left-sidebar product-filter">
 				<h3 class="page-heading">Фильтр товаров</h3>
 				<!-- /.product-filter__heading -->
-				<div class="product-filter__price">
+				<div class="left-sidebar__block product-filter__price">
 					<h4 class="product-filter__title">
 						Цена:
 						<span id="slider-snap-value-lower" class="product-filter__title-text">
@@ -295,7 +295,7 @@
 					<!-- /.product-filter__range -->
 				</div>
 				<!-- /.product-filter__price -->
-				<div class="product-filter__manufacturer">
+				<div class="left-sidebar__block product-filter__manufacturer">
 					<h4 class="product-filter__title">
 						Производитель:
 					</h4>
@@ -335,12 +335,12 @@
 				<!-- /.product-filter__manufacturer -->
 			</div>
 			<!-- /.product-filter -->
-		</div>
+		</aside>
 		<!-- /.page-wrap__left -->
 
 		<div class="page-wrap__right">
 			<section class="page-section page-section--right-content">
-				<h2 class="head-title">Видеонаблюдение</h2>
+				<h2 class="head-title head-title--inner-content">Видеонаблюдение</h2>
 				<!-- /.head-title -->
 				<div class="page-filter">
 					<div class="page-filter__buttons">
@@ -1110,6 +1110,35 @@
 </section>
 <!-- /.page-section -->
 
+<div class="dispatch">
+	<div class="container-new dispatch__container">
+		<div class="dispatch__wrap">
+			<h3 class="dispatch__title">Подписаться на рассылку:</h3>
+			<!-- /.dispatch__title -->
+			<form class="dispatch__form">
+				<p class="dispatch__group">
+					<label for="dispatch-email" class="visually-hidden">Ваш email</label>
+					<input type="email" id="dispatch-email" class="dispatch__inp" placeholder="Введите ваш e-mail">
+				</p>
+				<!-- /.dispatch__group -->
+				<p class="dispatch__group-btn">
+					<button class="button dispatch__btn">Отправить</button>
+				</p>
+				<!-- /.dispatch__group-btn -->
+			</form>
+			<!-- /.dispatch__form -->
+			<div class="dispatch__decor">
+				<svg class="dispatch__icon">
+					<use href="#dispatch"></use>
+				</svg>
+				<!-- /.dispatch__icon -->
+			</div>
+		</div>
+		<!-- /.dispatch__wrap -->
+	</div>
+	<!-- /.container-new -->
+</div>
+
 </main>
 <!-- /.main-content -->
 
@@ -1415,6 +1444,10 @@
 
 <div hidden>
 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+		
+			<symbol id="Eye" viewBox="0 0 27 15">
+				<image width="27" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAPCAQAAAC/mnxTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAkUNBqHRxVDAAAB1UlEQVQoz3XSXWjOcRjG8c8em1bPQmliPTHLMDlgXpK01C+1lZcMhaWVGiFHTGpotuVlOVlCImXWDmhz4F37FwdOTI2DNdsim5bSlgPUNJODPZuH7D65u/pdV92/q29am79mkRLr5MqWJcOI7wb1eeFR6Ey1paXENqi21mTTribcHxex5J6iyVNrNduiCwOuq3PNB7y3zXWr3ItaonhqbKYuZR5bqswWBS5IqHDSPgvUyrMzVFjkrlK9UWI8lqFDviNKdDpgr4sq0aAZo+GUOjuiE6EnlNpvjjfRtLG/PVfkkMvgm3SZ4t5KYKMHAdEXM6SHUaI9Gr0Oy2MqFbmSDOWKa8FZCXDDiWg1mlAA4ZbzlkV1MfU4mCxmFrqwZkLXasLb5BvCcb9UxdTgfNI2iAV4nVJ8J/IwNCajKjENaW28skK5RjDspywzvTMd/JAfPkafZZsaRoi2atUdFsew3pCbKkCVuDOGzHPVMzfMDx+jY7KdCyNEu7UaVjROSUK72W6r1O+O7aqdnjiyUr0noTjKcUa5r1aGnj9wZWm2CZfc12Chbg8NmK3YUn0OK3IUbXaFwX+ZLFVryaRM9qoOzf9DGQptVmiuHJnJSj7p1+FeeJlq+w2eJY5ZtC6zqAAAAABJRU5ErkJggg=="></image>
+			</symbol>
 		
 			<symbol id="Sale" viewBox="0 0 409.387 2075.112">
 				<circle cx="377.887" cy="2043.612" r="31.5"></circle><text><textPath xlink:href="#text-path"><tspan><tspan>%</tspan>-15</tspan></textPath></text>

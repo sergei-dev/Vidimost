@@ -21,11 +21,11 @@
 		<!-- /.breadcrumb -->
 	
 	<div class="page-wrap">
-		<div class="page-wrap__left">
-			<div class="product-filter">
+		<aside class="page-wrap__left">
+			<div class="left-sidebar product-filter">
 				<h3 class="page-heading">Фильтр товаров</h3>
 				<!-- /.product-filter__heading -->
-				<div class="product-filter__price">
+				<div class="left-sidebar__block product-filter__price">
 					<h4 class="product-filter__title">
 						Цена:
 						<span id="slider-snap-value-lower" class="product-filter__title-text">
@@ -40,7 +40,7 @@
 					<!-- /.product-filter__range -->
 				</div>
 				<!-- /.product-filter__price -->
-				<div class="product-filter__manufacturer">
+				<div class="left-sidebar__block product-filter__manufacturer">
 					<h4 class="product-filter__title">
 						Производитель:
 					</h4>
@@ -80,12 +80,12 @@
 				<!-- /.product-filter__manufacturer -->
 			</div>
 			<!-- /.product-filter -->
-		</div>
+		</aside>
 		<!-- /.page-wrap__left -->
 
 		<div class="page-wrap__right">
 			<section class="page-section page-section--right-content">
-				<h2 class="head-title">Видеонаблюдение</h2>
+				<h2 class="head-title head-title--inner-content">Видеонаблюдение</h2>
 				<!-- /.head-title -->
 				<div class="page-filter">
 					<div class="page-filter__buttons">
@@ -854,6 +854,35 @@
 	<!-- /.container-new -->
 </section>
 <!-- /.page-section -->
+
+<div class="dispatch">
+	<div class="container-new dispatch__container">
+		<div class="dispatch__wrap">
+			<h3 class="dispatch__title">Подписаться на рассылку:</h3>
+			<!-- /.dispatch__title -->
+			<form class="dispatch__form">
+				<p class="dispatch__group">
+					<label for="dispatch-email" class="visually-hidden">Ваш email</label>
+					<input type="email" id="dispatch-email" class="dispatch__inp" placeholder="Введите ваш e-mail">
+				</p>
+				<!-- /.dispatch__group -->
+				<p class="dispatch__group-btn">
+					<button class="button dispatch__btn">Отправить</button>
+				</p>
+				<!-- /.dispatch__group-btn -->
+			</form>
+			<!-- /.dispatch__form -->
+			<div class="dispatch__decor">
+				<svg class="dispatch__icon">
+					<use href="#dispatch"></use>
+				</svg>
+				<!-- /.dispatch__icon -->
+			</div>
+		</div>
+		<!-- /.dispatch__wrap -->
+	</div>
+	<!-- /.container-new -->
+</div>
 
 </main>
 <!-- /.main-content -->

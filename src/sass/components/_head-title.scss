@@ -26,4 +26,8 @@
 	@include media($screen-sm) {
 		font-size: 25px;
 	}
+
+	&--inner-content {
+		margin-bottom: 22px;
+	}
 }
