@@ -1,0 +1,41 @@
+.page-check {
+	margin-bottom: 8px;
+
+	&__text {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+
+		font-size: 16px;
+		font-weight: 400;
+		color: $black-text;
+		line-height: 30px;
+		cursor: pointer;
+
+		user-select: none;
+
+		&::before {
+			content: '';
+
+			width: 22px;
+			height: 22px;
+			margin-right: 11px;
+
+			border: 1px solid #acacaf;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	&__checkbox {
+		&:checked {
+			+ .page-check__text::before {
+				background-color: $brand-color;
+				background-image: url('../images/pic/check.png');
+				border-color: $brand-color;
+			}
+		}
+	}
+}

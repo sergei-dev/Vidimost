@@ -56,4 +56,47 @@
       transform: translateY(-50%) rotate(-45deg);
     }
   }
+
+  &--gradi {
+    display: block;
+    padding: 7.5px 12px;
+
+    text-transform: none;
+    font-weight: 400;
+
+    border-radius: 4px;
+    background-color: transparent;
+    background-image: linear-gradient( 90deg, rgb(10,165,223) 0%, rgb(14,187,252) 100%);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
+
+    &:hover {
+      background-image: linear-gradient( rgb(14,187,252) 100%, rgb(10,165,223) 90%);
+    }
+  }
+
+  &--silver {
+    display: block;
+    padding: 7.5px 12px;
+
+    color: $black-text;
+    text-transform: none;
+    font-weight: 400;
+
+    border-radius: 4px;
+    background-image: linear-gradient( 90deg, rgb(229,228,228) 0%, rgb(247,247,247) 100%);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.28);
+
+    &:hover {
+      background-image: linear-gradient( rgb(247,247,247) 100%, rgb(229,228,228) 90%);
+    }
+
+  }
+
+  &__text {
+    font-size: $basic-size;
+    color: $black-text;
+    line-height: 22px;
+    
+    border-bottom: 1px dashed currentColor;
+  }
 }

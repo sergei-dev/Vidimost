@@ -1,0 +1,17 @@
+.categories-page {
+	&__btn-wrap {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 35px;
+	}
+
+	&__load-icon {
+		margin-left: 0;
+		margin-right: 13px;
+	}
+
+	&__load-btn {
+		width: 344px;
+		justify-content: center;
+	}
+}

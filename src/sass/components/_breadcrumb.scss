@@ -1,0 +1,36 @@
+.breadcrumb {
+	padding: 18px 0;
+	margin-bottom: 0;
+
+	font-family: $pt-sans;
+
+	background-color: transparent;
+	border-radius: 0;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		color: #929191;
+		font-weight: 400;
+		font-size: 14px;
+
+		&:not(:last-child) {
+			margin-right: 6px;
+		}
+
+		&--first {
+			.breadcrumb__text {
+				border-bottom: 1px solid currentColor;
+			}
+		}
+	}
+
+	&__text {
+		margin-right: 6px;
+	}
+
+}

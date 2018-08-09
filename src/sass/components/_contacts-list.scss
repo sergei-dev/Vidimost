@@ -2,6 +2,8 @@
 	font-family: $pt-sans;
 	
 	&__item {
+		color: $white;
+
 		&:not(:last-child) {
 			margin-bottom: 15px;
 		}
@@ -12,7 +14,7 @@
 
 		font-weight: 700;
 		font-size: 15px;
-		color: $black-text;
+		color: $white;
 		line-height: 24px;
 	}
 
@@ -20,8 +22,12 @@
 		display: block;
 		
 		font-size: $basic-size;
-		color: $black-text;
 		font-weight: 400;
 		line-height: 24px;
+
+		&:hover {
+			color: currentColor;
+			text-decoration: underline;
+		}
 	}
 }

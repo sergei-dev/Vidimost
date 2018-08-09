@@ -1,0 +1,127 @@
+.page-filter {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	border-radius: 5px;
+	background-color: $white;
+	box-shadow: 0px 1px 2.97px 0.03px rgba(0, 0, 0, 0.12);
+
+	@include media(1170px) {
+		flex-wrap: wrap;
+
+		@include media($screen-md) {
+			flex-direction: column;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		margin-right: 38px;
+
+		@include media($screen-md) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__btn {
+		width: 128px;
+
+		&:not(:last-child) {
+			margin-right: 7px;
+		}
+	}
+
+	&__wrap-selects {
+		display: flex;
+		align-items: center;
+
+		@include media($screen-sm) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__select-item {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		margin-right: 15px;
+
+		@include media($screen-md) {
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		@include media($screen-sm) {
+			
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		right: 9px;
+		top: 5px;
+
+		width: 15px;
+		height: 18px;
+
+		fill: $brand-color;
+	}
+
+	&__select {
+		height: 25px;
+		padding-left: 13px;
+		padding-right: 32px;
+
+		color: #919496;
+		font-size: $basic-size;
+
+		border: 1px solid #acacaf;
+		border-radius: 2px;
+
+	}
+
+	&__select-title {
+		margin-right: 7px;
+
+		color: $black-text;
+		font-size: $basic-size;
+	}
+
+	&__btn-compare {
+		display: flex;
+		align-items: center;
+		padding: 10px 0px;
+
+		&:hover {
+			.button__text {
+				border-bottom-color: transparent;
+			}
+
+			.page-filter__icon-compare {
+				fill: darken($brand-color, 20%);
+			}
+		}
+	}
+
+	&__icon-compare {
+		width: 31px;
+		height: 19px;
+
+		fill: $brand-color;
+
+		transition: fill $anim;
+	}
+
+}

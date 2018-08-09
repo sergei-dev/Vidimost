@@ -32,6 +32,10 @@ body {
   max-width: 1200px;
 }
 
+.main-content {
+  background-color: $main-color;
+}
+
 
 @supports(max-width: env(safe-area-inset-left)) {
   .container-new {

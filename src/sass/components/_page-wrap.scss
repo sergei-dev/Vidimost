@@ -1,0 +1,36 @@
+.page-wrap {
+	display: flex;
+	align-items: flex-start;
+	margin-left: -10px;
+	margin-right: -10px;
+
+	@include media($screen-md) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__left {
+		width: 25%;
+		padding: 0px 10px;
+
+		@include media($screen-md) {
+			width: 100%;
+			max-width: 450px;
+			margin-bottom: 20px;
+		}
+
+		@include media($screen-xs) {
+			max-width: none;
+		}
+	}
+
+	&__right {
+		width: 75%;
+		padding: 0px 10px;
+		padding-bottom: 70px;
+
+		@include media($screen-md) {
+			width: 100%;
+		}
+	}
+}

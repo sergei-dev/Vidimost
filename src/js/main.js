@@ -59,6 +59,52 @@ $(document).ready(function() {
 		});
 	}
 
+	 var uiSlider = document.getElementById('filter-range');
+  var snapValues = [
+    document.getElementById('slider-snap-value-lower'),
+    document.getElementById('slider-snap-value-upper')
+  ];
+
+  noUiSlider.create(uiSlider, {
+    start: [582, 36400],
+    connect: true,
+    range: {
+      'min': [582],
+      'max': [36400]
+    }
+  });
+
+  uiSlider.noUiSlider.on('update', function(values, handle) {
+    snapValues[handle].innerHTML = values[handle];
+  });
+
+  var quantity_val = $('#quantity').val();
+  var quantity_numb = parseInt(quantity_val);
+
+  $('#quantity-reduce').on('click', function() {
+  		quantity_numb--;
+  		
+  		if ( quantity_numb < 0) {
+  			$('#quantity').val(0);
+  		}
+
+  		else {
+  			$('#quantity').val(quantity_numb);
+  		}
+
+  	})
+
+  $('#quantity-add').on('click', function() {
+  		quantity_numb++;
+  		if ( quantity_numb > 0) {
+  			$('#quantity').val(quantity_numb);
+  		}
+
+
+  })
+
+
+
 
 	
 });
