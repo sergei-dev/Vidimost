@@ -8492,6 +8492,34 @@ body {
   .payment-list__item:not(:last-child) {
     margin-right: 18px; }
 
+.categories {
+  padding: 15px 0px;
+  background-color: #0aa5df;
+  font-family: "PT Sans", sans-serif; }
+  .categories__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px; }
+  .categories__link {
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700; }
+
 .header-page {
   font-family: "PT Sans", sans-serif; }
   .header-page__container {
