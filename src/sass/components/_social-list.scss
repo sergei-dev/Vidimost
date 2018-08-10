@@ -16,5 +16,16 @@
 	&__icon {
 		width: 30px;
 		height: 30px;
+
+		fill: red;
+
+		
+		&--google {
+			fill: #bc4031;
+		}
+
+		&--twitter {
+			fill: #55acee;
+		}
 	}
 }

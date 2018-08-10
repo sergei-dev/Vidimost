@@ -1,22 +1,33 @@
 .categories {
+	position: relative;
+
 	font-family: $pt-sans;
 
 	background-color: $brand-color;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
 
-	&__list {
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-		margin-left: -15px;
-		margin-right: -15px;
 
-		@include media($screen-md) {
-			flex-direction: column;
-			align-items: center;
-			margin-right: 0;
+  &__list {
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	padding-right: 15px;
+  	padding-left: 15px;
+
+  	@include media(1130px) {
+  		justify-content: flex-start;
+			flex-wrap: wrap;
+  	}
+
+  	@include media($screen-md) {
+  		width: 100%;
+  		display: none;
+  		padding: 0;
+			
+			background-color: $brand-color;
+  		box-shadow: inset 0 1px 0 rgba(255,255,255,.1)
 		}
+
 	}
 
 	&__item {
@@ -24,43 +35,52 @@
 
 		color: $white;
 
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: 5px;
-			left: 15px;
-			right: 15px;
-			
-			display: block;
-			height: 1px;
-
-			background-color: $white;
-
-			transform: scale(0);
-
-			transition: transform $anim ease-out;
-
-			will-change: transform;
-			
-		}
-
 		&:hover {
-			&::after {
-				transform: scale(1);
+			> .submenu {
+				display: block;
 			}
 		}
+
 	}
 
 	&__link {
 		display: block;
-		padding: 17.5px 15px;
+		padding: 17.5px 0;
 
 		font-size: 18px;
 		font-weight: 700;
-		text-align: center;
 
 		&:hover {
 			color: currentColor;
 		}
+
+		@include media(1130px) {
+			padding-right: 15px;
+		}
+
+		@include media($screen-md) {
+			font-weight: 400;
+		}
+	}
+
+	&__mob-nav {
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+		padding: 14px 0px;
+
+		background-color: $brand-color;
+
+		@include media($screen-md) {
+			display: flex;
+		}
+	}
+
+	&__title {
+		margin-right: 15px;
+
+		color: $white;
+		font-weight: 700;
+		font-size: 17px;
 	}
 }

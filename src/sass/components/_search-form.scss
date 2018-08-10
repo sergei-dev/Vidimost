@@ -70,9 +70,11 @@
 		fill: $white;
 	}
 
-	&__submenu-link {
+	&__submenu-text {
+		
 		@include media($screen-xs) {
-			padding: 8px 0px;
+			padding-top: 8px;
+			padding-bottom: 8px;
 		}
 	}
 }

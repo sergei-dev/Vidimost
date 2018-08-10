@@ -1,0 +1,18 @@
+.tel-icon {
+	width: 16px;
+	height: 16px;
+
+	fill: $brand-color;
+
+	&--margin {
+		margin-right: 6px;
+	}
+
+	&--foot {
+		position: absolute;
+		left: -20px;
+		top: 5px;
+
+		fill: $white;
+	}
+}

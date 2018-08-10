@@ -5,6 +5,7 @@
 
 	&__thumb  {
 		min-height: 0;
+		padding-bottom: 62%;
 	}
 
 	&__title {
@@ -16,7 +17,4 @@
 		}
 	}
 
-	&__img {
-		height: auto;
 	}
-}

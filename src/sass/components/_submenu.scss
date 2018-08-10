@@ -6,7 +6,6 @@
 
 	display: none;
 	width: 200px;
-	padding: 0px 10px;
 
 	font-family: $open-sans;
 	font-weight: 400;
@@ -16,26 +15,52 @@
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.37);
 
 	&__item {
-		@include media-min($screen-md) {
-			&:not(:last-child) {
-				border-bottom: 1px solid #f7f7f7;
+		&:last-child {
+			.submenu__text {
+				border-bottom: 0;
 			}
 		}
 	}
 
 	&__link {
 		display: block;
-		padding: 12px 0px;
 
 		font-size: $basic-size;
 		text-align: left;
 		color: $black-text;
+		background-color: transparent;
 
 		&:hover, &:active, &:focus {
 			color: $brand-color;
 
 			outline: none;
 		}
+
+		&--categories {
+			font-weight: 700;
+
+			&:hover, &:active, &:focus {
+				color: $white;
+
+				background-color: $brand-color;
+
+				> .submenu__text {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+
+
 	}
+
+	&__text {
+		display: block;
+		padding: 12px 10px;
+
+		border-bottom: 1px solid #f7f7f7;
+
+	}
+
+	
 
 }

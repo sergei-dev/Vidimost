@@ -15,7 +15,7 @@
 <header class="header-page">
   <nav class="nav">
     <div class="container-new header-page__container">
-      <button class="open-menu">
+      <button id="open-menu" class="open-menu">
         <span class="open-menu__line open-menu__one"></span>
         <span class="open-menu__line open-menu__two"></span>
         <span class="open-menu__line open-menu__three"></span>
@@ -35,23 +35,33 @@
 
         <ul class="submenu page-menu__submenu">
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Готовый комплект</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Готовый комплект</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Установка</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Установка</span>      
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Заказ сметы</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Заказ сметы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Настройка оборудования</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Настройка оборудования</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Обслуживания системы</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Обслуживания системы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
         </ul>
@@ -123,19 +133,35 @@
      <div class="header-page__top-common">
       <ul class="header-page__tel-list">
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)362-0331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#phone"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0443620331" class="header-page__tel">044-362-03-31</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)3620331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#ks"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0969990642" class="header-page__tel">096-999-06-42</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)3620331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#life"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0931540979" class="header-page__tel">093-154-09-79</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)3620331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#mts"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0508222722" class="header-page__tel">050-822-27-22</a>
         </li>
         <!-- /.header-page__tel-item -->
       </ul>
@@ -159,25 +185,35 @@
           <use href="#arrow-down"></use>
         </svg>
         <!-- /.button__icon -->
-         <ul class="submenu search-form__submenu">
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Готовый комплект</a>
+          <ul class="submenu search-form__submenu">
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Готовый комплект</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Установка</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Установка</span>      
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Заказ сметы</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Заказ сметы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Настройка оборудования</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Настройка оборудования</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Обслуживания системы</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text">Обслуживания системы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
         </ul>
@@ -191,7 +227,7 @@
       <button type="submit" class="button search-form__btn-search">
         <span class="visually-hidden">Найти</span>
         <svg class="search-form__icon-search">
-          <use href="#search"></use>
+          <use href="#search-ico"></use>
         </svg>
         <!-- /.search-form__icon-search -->
       </button>
@@ -224,13 +260,88 @@
 <!-- /.header-page__middle -->
 <div class="categories">
   <div class="container-new">
+    <div class="categories__mob-nav">
+      <h4 class="categories__title">Категории</h4>
+      <!-- /.categories__title -->
+      <button id="open-category" class="open-menu open-menu--categories">
+        <span class="open-menu__line open-menu__one"></span>
+        <span class="open-menu__line open-menu__two"></span>
+        <span class="open-menu__line open-menu__three"></span>
+      </button>
+    </div>
+    <!-- /.categories__mob-nav -->
     <ul class="categories__list">
-    <li class="categories__item">
-      <a href="#" class="categories__link">Видеонаблюдение</a>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">Охранная сигнализация</a>
+      <li class="categories__item">
+        <a href="#" class="categories__link">Видеонаблюдение</a>
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">Охранная сигнализация</a>
+    
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
     </li>
     <!-- /.categories__item -->
      <li class="categories__item">
@@ -267,848 +378,630 @@
 				</li>
 				<!-- /.breadcrumb__item -->
 				<li class="breadcrumb__item">
-			 Видеонаблюдение
+					Видеонаблюдение >>
+				</li>
+				<!-- /.breadcrumb__item -->
+				<li class="breadcrumb__item">
+					4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай
 				</li>
 				<!-- /.breadcrumb__item -->
 			</ul>
 			<!-- /.breadcrumb__list -->
 		</div>
 		<!-- /.breadcrumb -->
-	
-	<div class="page-wrap">
-		<div class="page-wrap__left">
-			<div class="product-filter">
-				<h3 class="page-heading">Фильтр товаров</h3>
-				<!-- /.product-filter__heading -->
-				<div class="product-filter__price">
-					<h4 class="product-filter__title">
-						Цена:
-						<span id="slider-snap-value-lower" class="product-filter__title-text">
-							582 -
-						</span>
-						<span id="slider-snap-value-upper" class="product-filter__title-text">
-							36400грн.
-						</span>
-					</h4>
-					<!-- /.product-filter__title -->
-					<div id="filter-range" class="product-filter__range"></div>
-					<!-- /.product-filter__range -->
-				</div>
-				<!-- /.product-filter__price -->
-				<div class="product-filter__manufacturer">
-					<h4 class="product-filter__title">
-						Производитель:
-					</h4>
-					<!-- /.product-filter__title -->
-					<div class="product-filter__manufacturer-wrap">
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check1" hidden checked>
-							<label for="check1" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check2" hidden>
-							<label for="check2" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check3" hidden>
-							<label for="check3" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check4" hidden>
-							<label for="check4" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
+		
+
+		<section class="page-section">
+		<div class="container-new">
+			<h2 class="head-title">Похожие товары</h2>
+			<!-- /.head-title -->
+			<ul class="product-list">
+				<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner-1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</div>
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
+							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
+						</div>
+						<!-- /.product-list__text-info -->
 					</div>
-					<!-- /.product-filter__manufacturer-wrap -->
-				</div>
-				<!-- /.product-filter__manufacturer -->
-			</div>
-			<!-- /.product-filter -->
-		</div>
-		<!-- /.page-wrap__left -->
-
-		<div class="page-wrap__right">
-			<section class="page-section page-section--right-content">
-				<h2 class="head-title">Видеонаблюдение</h2>
-				<!-- /.head-title -->
-				<div class="page-filter">
-					<div class="page-filter__buttons">
-						<button class="button page-filter__btn button--silver">Товары в наличии</button>
-						<button class="button page-filter__btn button--gradi">Все товары</button>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
+						</div>
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
+						</div>
+						<!-- /.product-list__buy-block -->
 					</div>
-					<!-- /.page-filter__buttons -->
-					<div class="page-filter__wrap-selects">
-						<div class="page-filter__select-item">
-							<p class="page-filter__select-title">Сортировка:</p>
-							<!-- /.page-filter__select-title -->
-							<select class="page-filter__select">
-								<option value="1">Цена (низкая > высокая)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select>
-							<span class="page-filter__icon-wrap">
-							<svg class="page-filter__icon">
-								<use href="#arrow-down"></use>
-							</svg>
-							<!-- /.page-filter__icon -->
-						</span>
+					<!-- /.product-list__bottom -->
+				</div>
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+			<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner-1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</div>
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
+							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
 						</div>
-						<!-- /.page-filter__select-item -->
-						<div class="page-filter__select-item">
-							<p class="page-filter__select-title">Показать:</p>
-							<!-- /.page-filter__select-title -->
-							<select class="page-filter__select">
-								<option value="1">12</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select>
-							<span class="page-filter__icon-wrap">
-							<svg class="page-filter__icon">
-								<use href="#arrow-down"></use>
-							</svg>
-							<!-- /.page-filter__icon -->
-						</span>
-						</div>
-						<!-- /.page-filter__select-item -->
+						<!-- /.product-list__text-info -->
 					</div>
-					<!-- /.page-filter__wrap-selects -->
-					<button class="page-filter__btn-compare">
-						<svg class="page-filter__icon-compare">
-							<use href="#git-compare"></use>
-						</svg>
-						<span class="button__text">Сравнить</span>
-					</button>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
+						</div>
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
+						</div>
+						<!-- /.product-list__buy-block -->
+					</div>
+					<!-- /.product-list__bottom -->
 				</div>
-				<!-- /.page-filter -->
-				<ul class="product-list product-list--column">
-					<li class="product-list__item product-list__item--full">
-						<div class="product-list__content  product-list__content--list">
-
-							<a href="#" class="product-list__img-wrap">
-								<div class="corner-1 corner-1--list">
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+			<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
 									<img src="../images/pic/Sale.png" alt="скидка">
 								</div>
-								<!-- /.corner_1 -->
+								<!-- /.corner-1 -->
 								<img class="product-list__img" src="../images/pic/product.png" alt="product">
-							</a>
-
-							<div class="product-list__center-wrap">
-
-								<!-- /.product-list__thumb -->
-								<div class="product-list__title-wrap product-list__title-wrap--list">
-									<a href="#" class="product-list__title product-list__title--list">4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай</a href="#">
-									<!-- /.product-list__title -->
-								</div>
-								<!-- /.product-list__title-wrap -->
-
-
-								<div class="product-list__text product-list__text--list">
-									<p class="product-list__descr">Тип: цветная наружная PTZ HDCVI-видеокамера</p> 
-										<p class="product-list__descr">Разрешение: 2592x1520 (4Мп)</p>
-										<p class="product-list__descr">Микрофон: нет</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-										<p class="product-list__descr">Объектив: трансфокаторный, 2,7мм - 11мм (4х зум)</p>
-										<p class="product-list__descr">Дополнительно: IP66, IK10</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-									<!-- /.product-list__descr -->
-								</div>
-
 							</div>
-
-							<div class="product-list__left-wrap">
-
-								<p class="product-list__info-code">
-									Код товара:  <span class="product-list__code-val">00002222</span>
-								</p>
-								<!-- /.product-list__info-code -->
-
-								<!-- /.product-list__text -->
-								<ul class="product-list__list-vailability product-list__list-vailability--new">
-									<li class="product-list__item-vailability product-list__item-vailability--office product-list__item-vailability--list">
-										Наличие в офисе
-									</li>
-									<!-- /.product-list__vailability -->
-									<li class="product-list__item-vailability product-list__item-vailability--empty product-list__item-vailability--list">
-										Наличие на складе
-									</li>
-									<!-- /.product-list__vailability -->
-								</ul>
-								<!-- /.product-list__info-vailability -->
-
-
-
-								<div class="product-list__bottom product-list__bottom--new">
-									<div class="product-list__prices-wrap">
-										<span class="product-list__price product-list__price--new">2380.00 $</span>
-										<span class="product-list__price product-list__price--old">2380.00 $</span>
-									</div>
-									<!-- /.product-list__prices-wrap -->
-
-									<div class="product-list__buy-buttons product-list__buy-buttons--new">
-										<button class="product-list__action-btn product-list__action-btn--new">
-											<span class="visually-hidden">Нравится</span>
-											<svg class="product-list__icon">
-												<use href="#git-compare"></use>
-											</svg>
-											<!-- /.product-list__icon -->
-										</button>
-
-										<div class="product-list__quantity">
-											<button id="quantity-reduce" class="button product-list__quantity-btn">-</button>
-											<label for="quantity" class="visually-hidden">Количество товаров</label>
-											<input id="quantity" class="product-list__quantity-inp" type="text" value="1">
-											<button id="quantity-add" class="button product-list__quantity-btn">+</button>
-										</div>
-										<!-- /.product-list__quantity -->
-									</div>
-									<!-- /.product-list__buy-buttons -->
-									<button class="button product-list__btn-list">Купить</button>
-
-								</div>
-								<!-- /.product-list__bottom -->
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
 							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
 						</div>
-						<!-- /.product-list__content -->
-					</li>
-					<!-- /.product-list__item -->
-					<li class="product-list__item product-list__item--full">
-						<div class="product-list__content  product-list__content--list">
-
-							<a href="#" class="product-list__img-wrap">
-								<div class="corner-1 corner-1--list">
-									<img src="../images/pic/Sale.png" alt="скидка">
-								</div>
-								<!-- /.corner_1 -->
-								<img class="product-list__img" src="../images/pic/product.png" alt="product">
-							</a>
-
-							<div class="product-list__center-wrap">
-
-								<!-- /.product-list__thumb -->
-								<div class="product-list__title-wrap product-list__title-wrap--list">
-									<a href="#" class="product-list__title product-list__title--list">4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай</a href="#">
-									<!-- /.product-list__title -->
-								</div>
-								<!-- /.product-list__title-wrap -->
-
-
-								<div class="product-list__text product-list__text--list">
-									<p class="product-list__descr">Тип: цветная наружная PTZ HDCVI-видеокамера</p> 
-										<p class="product-list__descr">Разрешение: 2592x1520 (4Мп)</p>
-										<p class="product-list__descr">Микрофон: нет</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-										<p class="product-list__descr">Объектив: трансфокаторный, 2,7мм - 11мм (4х зум)</p>
-										<p class="product-list__descr">Дополнительно: IP66, IK10</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-									<!-- /.product-list__descr -->
-								</div>
-
-							</div>
-
-							<div class="product-list__left-wrap">
-
-								<p class="product-list__info-code">
-									Код товара:  <span class="product-list__code-val">00002222</span>
-								</p>
-								<!-- /.product-list__info-code -->
-
-								<!-- /.product-list__text -->
-								<ul class="product-list__list-vailability product-list__list-vailability--new">
-									<li class="product-list__item-vailability product-list__item-vailability--office product-list__item-vailability--list">
-										Наличие в офисе
-									</li>
-									<!-- /.product-list__vailability -->
-									<li class="product-list__item-vailability product-list__item-vailability--empty product-list__item-vailability--list">
-										Наличие на складе
-									</li>
-									<!-- /.product-list__vailability -->
-								</ul>
-								<!-- /.product-list__info-vailability -->
-
-
-
-								<div class="product-list__bottom product-list__bottom--new">
-									<div class="product-list__prices-wrap">
-										<span class="product-list__price product-list__price--new">2380.00 $</span>
-										<span class="product-list__price product-list__price--old">2380.00 $</span>
-									</div>
-									<!-- /.product-list__prices-wrap -->
-
-									<div class="product-list__buy-buttons product-list__buy-buttons--new">
-										<button class="product-list__action-btn product-list__action-btn--new">
-											<span class="visually-hidden">Нравится</span>
-											<svg class="product-list__icon">
-												<use href="#git-compare"></use>
-											</svg>
-											<!-- /.product-list__icon -->
-										</button>
-
-										<div class="product-list__quantity">
-											<button id="quantity-reduce" class="button product-list__quantity-btn">-</button>
-											<label for="quantity" class="visually-hidden">Количество товаров</label>
-											<input id="quantity" class="product-list__quantity-inp" type="text" value="1">
-											<button id="quantity-add" class="button product-list__quantity-btn">+</button>
-										</div>
-										<!-- /.product-list__quantity -->
-									</div>
-									<!-- /.product-list__buy-buttons -->
-									<button class="button product-list__btn-list">Купить</button>
-
-								</div>
-								<!-- /.product-list__bottom -->
-							</div>
+						<!-- /.product-list__text-info -->
+					</div>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
 						</div>
-						<!-- /.product-list__content -->
-					</li>
-					<!-- /.product-list__item -->
-					<li class="product-list__item product-list__item--full">
-						<div class="product-list__content  product-list__content--list">
-
-							<a href="#" class="product-list__img-wrap">
-								<div class="corner-1 corner-1--list">
-									<img src="../images/pic/Sale.png" alt="скидка">
-								</div>
-								<!-- /.corner_1 -->
-								<img class="product-list__img" src="../images/pic/product.png" alt="product">
-							</a>
-
-							<div class="product-list__center-wrap">
-
-								<!-- /.product-list__thumb -->
-								<div class="product-list__title-wrap product-list__title-wrap--list">
-									<a href="#" class="product-list__title product-list__title--list">4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай</a href="#">
-									<!-- /.product-list__title -->
-								</div>
-								<!-- /.product-list__title-wrap -->
-
-
-								<div class="product-list__text product-list__text--list">
-									<p class="product-list__descr">Тип: цветная наружная PTZ HDCVI-видеокамера</p> 
-										<p class="product-list__descr">Разрешение: 2592x1520 (4Мп)</p>
-										<p class="product-list__descr">Микрофон: нет</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-										<p class="product-list__descr">Объектив: трансфокаторный, 2,7мм - 11мм (4х зум)</p>
-										<p class="product-list__descr">Дополнительно: IP66, IK10</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-									<!-- /.product-list__descr -->
-								</div>
-
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
 							</div>
-
-							<div class="product-list__left-wrap">
-
-								<p class="product-list__info-code">
-									Код товара:  <span class="product-list__code-val">00002222</span>
-								</p>
-								<!-- /.product-list__info-code -->
-
-								<!-- /.product-list__text -->
-								<ul class="product-list__list-vailability product-list__list-vailability--new">
-									<li class="product-list__item-vailability product-list__item-vailability--office product-list__item-vailability--list">
-										Наличие в офисе
-									</li>
-									<!-- /.product-list__vailability -->
-									<li class="product-list__item-vailability product-list__item-vailability--empty product-list__item-vailability--list">
-										Наличие на складе
-									</li>
-									<!-- /.product-list__vailability -->
-								</ul>
-								<!-- /.product-list__info-vailability -->
-
-
-
-								<div class="product-list__bottom product-list__bottom--new">
-									<div class="product-list__prices-wrap">
-										<span class="product-list__price product-list__price--new">2380.00 $</span>
-										<span class="product-list__price product-list__price--old">2380.00 $</span>
-									</div>
-									<!-- /.product-list__prices-wrap -->
-
-									<div class="product-list__buy-buttons product-list__buy-buttons--new">
-										<button class="product-list__action-btn product-list__action-btn--new">
-											<span class="visually-hidden">Нравится</span>
-											<svg class="product-list__icon">
-												<use href="#git-compare"></use>
-											</svg>
-											<!-- /.product-list__icon -->
-										</button>
-
-										<div class="product-list__quantity">
-											<button id="quantity-reduce" class="button product-list__quantity-btn">-</button>
-											<label for="quantity" class="visually-hidden">Количество товаров</label>
-											<input id="quantity" class="product-list__quantity-inp" type="text" value="1">
-											<button id="quantity-add" class="button product-list__quantity-btn">+</button>
-										</div>
-										<!-- /.product-list__quantity -->
-									</div>
-									<!-- /.product-list__buy-buttons -->
-									<button class="button product-list__btn-list">Купить</button>
-
-								</div>
-								<!-- /.product-list__bottom -->
-							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
 						</div>
-						<!-- /.product-list__content -->
-					</li>
-					<!-- /.product-list__item -->
-					<li class="product-list__item product-list__item--full">
-						<div class="product-list__content  product-list__content--list">
-
-							<a href="#" class="product-list__img-wrap">
-								<div class="corner-1 corner-1--list">
-									<img src="../images/pic/Sale.png" alt="скидка">
-								</div>
-								<!-- /.corner_1 -->
-								<img class="product-list__img" src="../images/pic/product.png" alt="product">
-							</a>
-
-							<div class="product-list__center-wrap">
-
-								<!-- /.product-list__thumb -->
-								<div class="product-list__title-wrap product-list__title-wrap--list">
-									<a href="#" class="product-list__title product-list__title--list">4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай</a href="#">
-									<!-- /.product-list__title -->
-								</div>
-								<!-- /.product-list__title-wrap -->
-
-
-								<div class="product-list__text product-list__text--list">
-									<p class="product-list__descr">Тип: цветная наружная PTZ HDCVI-видеокамера</p> 
-										<p class="product-list__descr">Разрешение: 2592x1520 (4Мп)</p>
-										<p class="product-list__descr">Микрофон: нет</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-										<p class="product-list__descr">Объектив: трансфокаторный, 2,7мм - 11мм (4х зум)</p>
-										<p class="product-list__descr">Дополнительно: IP66, IK10</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-									<!-- /.product-list__descr -->
-								</div>
-
-							</div>
-
-							<div class="product-list__left-wrap">
-
-								<p class="product-list__info-code">
-									Код товара:  <span class="product-list__code-val">00002222</span>
-								</p>
-								<!-- /.product-list__info-code -->
-
-								<!-- /.product-list__text -->
-								<ul class="product-list__list-vailability product-list__list-vailability--new">
-									<li class="product-list__item-vailability product-list__item-vailability--office product-list__item-vailability--list">
-										Наличие в офисе
-									</li>
-									<!-- /.product-list__vailability -->
-									<li class="product-list__item-vailability product-list__item-vailability--empty product-list__item-vailability--list">
-										Наличие на складе
-									</li>
-									<!-- /.product-list__vailability -->
-								</ul>
-								<!-- /.product-list__info-vailability -->
-
-
-
-								<div class="product-list__bottom product-list__bottom--new">
-									<div class="product-list__prices-wrap">
-										<span class="product-list__price product-list__price--new">2380.00 $</span>
-										<span class="product-list__price product-list__price--old">2380.00 $</span>
-									</div>
-									<!-- /.product-list__prices-wrap -->
-
-									<div class="product-list__buy-buttons product-list__buy-buttons--new">
-										<button class="product-list__action-btn product-list__action-btn--new">
-											<span class="visually-hidden">Нравится</span>
-											<svg class="product-list__icon">
-												<use href="#git-compare"></use>
-											</svg>
-											<!-- /.product-list__icon -->
-										</button>
-
-										<div class="product-list__quantity">
-											<button id="quantity-reduce" class="button product-list__quantity-btn">-</button>
-											<label for="quantity" class="visually-hidden">Количество товаров</label>
-											<input id="quantity" class="product-list__quantity-inp" type="text" value="1">
-											<button id="quantity-add" class="button product-list__quantity-btn">+</button>
-										</div>
-										<!-- /.product-list__quantity -->
-									</div>
-									<!-- /.product-list__buy-buttons -->
-									<button class="button product-list__btn-list">Купить</button>
-
-								</div>
-								<!-- /.product-list__bottom -->
-							</div>
-						</div>
-						<!-- /.product-list__content -->
-					</li>
-					<!-- /.product-list__item -->
-					<li class="product-list__item product-list__item--full">
-						<div class="product-list__content  product-list__content--list">
-
-							<a href="#" class="product-list__img-wrap">
-								<div class="corner-1 corner-1--list">
-									<img src="../images/pic/Sale.png" alt="скидка">
-								</div>
-								<!-- /.corner_1 -->
-								<img class="product-list__img" src="../images/pic/product.png" alt="product">
-							</a>
-
-							<div class="product-list__center-wrap">
-
-								<!-- /.product-list__thumb -->
-								<div class="product-list__title-wrap product-list__title-wrap--list">
-									<a href="#" class="product-list__title product-list__title--list">4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай</a href="#">
-									<!-- /.product-list__title -->
-								</div>
-								<!-- /.product-list__title-wrap -->
-
-
-								<div class="product-list__text product-list__text--list">
-									<p class="product-list__descr">Тип: цветная наружная PTZ HDCVI-видеокамера</p> 
-										<p class="product-list__descr">Разрешение: 2592x1520 (4Мп)</p>
-										<p class="product-list__descr">Микрофон: нет</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-										<p class="product-list__descr">Объектив: трансфокаторный, 2,7мм - 11мм (4х зум)</p>
-										<p class="product-list__descr">Дополнительно: IP66, IK10</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-									<!-- /.product-list__descr -->
-								</div>
-
-							</div>
-
-							<div class="product-list__left-wrap">
-
-								<p class="product-list__info-code">
-									Код товара:  <span class="product-list__code-val">00002222</span>
-								</p>
-								<!-- /.product-list__info-code -->
-
-								<!-- /.product-list__text -->
-								<ul class="product-list__list-vailability product-list__list-vailability--new">
-									<li class="product-list__item-vailability product-list__item-vailability--office product-list__item-vailability--list">
-										Наличие в офисе
-									</li>
-									<!-- /.product-list__vailability -->
-									<li class="product-list__item-vailability product-list__item-vailability--empty product-list__item-vailability--list">
-										Наличие на складе
-									</li>
-									<!-- /.product-list__vailability -->
-								</ul>
-								<!-- /.product-list__info-vailability -->
-
-
-
-								<div class="product-list__bottom product-list__bottom--new">
-									<div class="product-list__prices-wrap">
-										<span class="product-list__price product-list__price--new">2380.00 $</span>
-										<span class="product-list__price product-list__price--old">2380.00 $</span>
-									</div>
-									<!-- /.product-list__prices-wrap -->
-
-									<div class="product-list__buy-buttons product-list__buy-buttons--new">
-										<button class="product-list__action-btn product-list__action-btn--new">
-											<span class="visually-hidden">Нравится</span>
-											<svg class="product-list__icon">
-												<use href="#git-compare"></use>
-											</svg>
-											<!-- /.product-list__icon -->
-										</button>
-
-										<div class="product-list__quantity">
-											<button id="quantity-reduce" class="button product-list__quantity-btn">-</button>
-											<label for="quantity" class="visually-hidden">Количество товаров</label>
-											<input id="quantity" class="product-list__quantity-inp" type="text" value="1">
-											<button id="quantity-add" class="button product-list__quantity-btn">+</button>
-										</div>
-										<!-- /.product-list__quantity -->
-									</div>
-									<!-- /.product-list__buy-buttons -->
-									<button class="button product-list__btn-list">Купить</button>
-
-								</div>
-								<!-- /.product-list__bottom -->
-							</div>
-						</div>
-						<!-- /.product-list__content -->
-					</li>
-					<!-- /.product-list__item -->
-					<li class="product-list__item product-list__item--full">
-						<div class="product-list__content  product-list__content--list">
-
-							<a href="#" class="product-list__img-wrap">
-								<div class="corner-1 corner-1--list">
-									<img src="../images/pic/Sale.png" alt="скидка">
-								</div>
-								<!-- /.corner_1 -->
-								<img class="product-list__img" src="../images/pic/product.png" alt="product">
-							</a>
-
-							<div class="product-list__center-wrap">
-
-								<!-- /.product-list__thumb -->
-								<div class="product-list__title-wrap product-list__title-wrap--list">
-									<a href="#" class="product-list__title product-list__title--list">4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай</a href="#">
-									<!-- /.product-list__title -->
-								</div>
-								<!-- /.product-list__title-wrap -->
-
-
-								<div class="product-list__text product-list__text--list">
-									<p class="product-list__descr">Тип: цветная наружная PTZ HDCVI-видеокамера</p> 
-										<p class="product-list__descr">Разрешение: 2592x1520 (4Мп)</p>
-										<p class="product-list__descr">Микрофон: нет</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-										<p class="product-list__descr">Объектив: трансфокаторный, 2,7мм - 11мм (4х зум)</p>
-										<p class="product-list__descr">Дополнительно: IP66, IK10</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-									<!-- /.product-list__descr -->
-								</div>
-
-							</div>
-
-							<div class="product-list__left-wrap">
-
-								<p class="product-list__info-code">
-									Код товара:  <span class="product-list__code-val">00002222</span>
-								</p>
-								<!-- /.product-list__info-code -->
-
-								<!-- /.product-list__text -->
-								<ul class="product-list__list-vailability product-list__list-vailability--new">
-									<li class="product-list__item-vailability product-list__item-vailability--office product-list__item-vailability--list">
-										Наличие в офисе
-									</li>
-									<!-- /.product-list__vailability -->
-									<li class="product-list__item-vailability product-list__item-vailability--empty product-list__item-vailability--list">
-										Наличие на складе
-									</li>
-									<!-- /.product-list__vailability -->
-								</ul>
-								<!-- /.product-list__info-vailability -->
-
-
-
-								<div class="product-list__bottom product-list__bottom--new">
-									<div class="product-list__prices-wrap">
-										<span class="product-list__price product-list__price--new">2380.00 $</span>
-										<span class="product-list__price product-list__price--old">2380.00 $</span>
-									</div>
-									<!-- /.product-list__prices-wrap -->
-
-									<div class="product-list__buy-buttons product-list__buy-buttons--new">
-										<button class="product-list__action-btn product-list__action-btn--new">
-											<span class="visually-hidden">Нравится</span>
-											<svg class="product-list__icon">
-												<use href="#git-compare"></use>
-											</svg>
-											<!-- /.product-list__icon -->
-										</button>
-
-										<div class="product-list__quantity">
-											<button id="quantity-reduce" class="button product-list__quantity-btn">-</button>
-											<label for="quantity" class="visually-hidden">Количество товаров</label>
-											<input id="quantity" class="product-list__quantity-inp" type="text" value="1">
-											<button id="quantity-add" class="button product-list__quantity-btn">+</button>
-										</div>
-										<!-- /.product-list__quantity -->
-									</div>
-									<!-- /.product-list__buy-buttons -->
-									<button class="button product-list__btn-list">Купить</button>
-
-								</div>
-								<!-- /.product-list__bottom -->
-							</div>
-						</div>
-						<!-- /.product-list__content -->
-					</li>
-					<!-- /.product-list__item -->
-					<li class="product-list__item product-list__item--full">
-						<div class="product-list__content  product-list__content--list">
-
-							<a href="#" class="product-list__img-wrap">
-								<div class="corner-1 corner-1--list">
-									<img src="../images/pic/Sale.png" alt="скидка">
-								</div>
-								<!-- /.corner_1 -->
-								<img class="product-list__img" src="../images/pic/product.png" alt="product">
-							</a>
-
-							<div class="product-list__center-wrap">
-
-								<!-- /.product-list__thumb -->
-								<div class="product-list__title-wrap product-list__title-wrap--list">
-									<a href="#" class="product-list__title product-list__title--list">4Мп 4х PTZ IP видеокамера Dahua DH-SD22404T-GN Китай</a href="#">
-									<!-- /.product-list__title -->
-								</div>
-								<!-- /.product-list__title-wrap -->
-
-
-								<div class="product-list__text product-list__text--list">
-									<p class="product-list__descr">Тип: цветная наружная PTZ HDCVI-видеокамера</p> 
-										<p class="product-list__descr">Разрешение: 2592x1520 (4Мп)</p>
-										<p class="product-list__descr">Микрофон: нет</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-										<p class="product-list__descr">Объектив: трансфокаторный, 2,7мм - 11мм (4х зум)</p>
-										<p class="product-list__descr">Дополнительно: IP66, IK10</p>
-										<p class="product-list__descr">Светочувствительность: 0.05Lux</p>
-									<!-- /.product-list__descr -->
-								</div>
-
-							</div>
-
-							<div class="product-list__left-wrap">
-
-								<p class="product-list__info-code">
-									Код товара:  <span class="product-list__code-val">00002222</span>
-								</p>
-								<!-- /.product-list__info-code -->
-
-								<!-- /.product-list__text -->
-								<ul class="product-list__list-vailability product-list__list-vailability--new">
-									<li class="product-list__item-vailability product-list__item-vailability--office product-list__item-vailability--list">
-										Наличие в офисе
-									</li>
-									<!-- /.product-list__vailability -->
-									<li class="product-list__item-vailability product-list__item-vailability--empty product-list__item-vailability--list">
-										Наличие на складе
-									</li>
-									<!-- /.product-list__vailability -->
-								</ul>
-								<!-- /.product-list__info-vailability -->
-
-
-
-								<div class="product-list__bottom product-list__bottom--new">
-									<div class="product-list__prices-wrap">
-										<span class="product-list__price product-list__price--new">2380.00 $</span>
-										<span class="product-list__price product-list__price--old">2380.00 $</span>
-									</div>
-									<!-- /.product-list__prices-wrap -->
-
-									<div class="product-list__buy-buttons product-list__buy-buttons--new">
-										<button class="product-list__action-btn product-list__action-btn--new">
-											<span class="visually-hidden">Нравится</span>
-											<svg class="product-list__icon">
-												<use href="#git-compare"></use>
-											</svg>
-											<!-- /.product-list__icon -->
-										</button>
-
-										<div class="product-list__quantity">
-											<button id="quantity-reduce" class="button product-list__quantity-btn">-</button>
-											<label for="quantity" class="visually-hidden">Количество товаров</label>
-											<input id="quantity" class="product-list__quantity-inp" type="text" value="1">
-											<button id="quantity-add" class="button product-list__quantity-btn">+</button>
-										</div>
-										<!-- /.product-list__quantity -->
-									</div>
-									<!-- /.product-list__buy-buttons -->
-									<button class="button product-list__btn-list">Купить</button>
-
-								</div>
-								<!-- /.product-list__bottom -->
-							</div>
-						</div>
-						<!-- /.product-list__content -->
-					</li>
-					<!-- /.product-list__item -->
-				</ul>
-				<!-- /.product-list -->
-			</section>
-			<div class="categories-page__btn-wrap">
-				<button class="button categories-page__load-btn">
-					<svg class="button__icon categories-page__load-icon">
-						<use href="#load"></use>
-					</svg>
-					<!-- /.button__icon -->
-				Подгрузить ещё
-			</button>
-			</div>
-			<!-- /.categories-page__btn-wrap -->
-			<div class="pagination">
-				<ul class="pagination__list">
-					<li class="pagination__item pagination__item--active">
-						<span class="pagination__text">1</span>
-					</li>
-					<!-- /.pagination__item -->
-					<li class="pagination__item">
-						<a href="#" class="pagination__text">2</a>
-					</li>
-					<!-- /.pagination__item -->
-					<li class="pagination__item">
-						<a href="#" class="pagination__text">3</a>
-					</li>
-					<!-- /.pagination__item -->
-					<li class="pagination__item pagination__item--last">
-						<a href="#" class="pagination__text">Последняя</a>
-					</li>
-					<!-- /.pagination__item -->
-				</ul>
-				<!-- /.pagination__list -->
-			</div>
-			<!-- /.pagination -->
-		</div>
-		<!-- /.container-new -->
-	</div>
-	<!-- /.page-wrap__right -->
-</div>
-<!-- /.page-wrap -->
-<section class="page-section about-sect">
-	<div class="container-new">
-		<div class="about-sect__content">
-			<div class="about-sect__text-wrap">
-				<h2 class="head-title about-sect__title">О компании Vidimost</h2>
-				<!-- /.head-title about-sect__title -->
-				
-					<p>Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!</p>
-				<p>Мы сами завозим оборудование, для вас только официальная гарантия; мы ремонтируем и предлагаем только лучшее!
-				Мы не только продаем, но и помогаем: во всем нужен баланс!</p>
-				<p>
-				Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.</p>
-			
-			</div>
-			<!-- /.about-sect__text-wrap -->
-			<div class="about-sect__text-wrap">
-				<h3 class="about-sect__title about-sect__title-text">Сотрудничаем с лучшими мировыми брендами</h3>
-				<!-- /.head-title about-sect__title -->
-				<div class="about-sect__text about-sect__text--clip">
-					<p>
-						Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
-					</p>
-					<p>
-						Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
-					</p>
-					<p>
-						Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
-					</p>
-					<p>
-						Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
-					</p>
+						<!-- /.product-list__buy-block -->
+					</div>
+					<!-- /.product-list__bottom -->
 				</div>
-				<!-- /.about-sect__text -->
-				<a class="about-sect__more" href="#">Читать дальше</a>
-			</div>
-			<!-- /.about-sect__text-wrap -->
-		</div>
-		<!-- /.about-sect__content -->
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+			<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner-1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</div>
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
+							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
+						</div>
+						<!-- /.product-list__text-info -->
+					</div>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
+						</div>
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
+						</div>
+						<!-- /.product-list__buy-block -->
+					</div>
+					<!-- /.product-list__bottom -->
+				</div>
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+		</ul>
+		<!-- /.product-list -->
 	</div>
 	<!-- /.container-new -->
 </section>
 <!-- /.page-section -->
+
+<section class="page-section">
+		<div class="container-new">
+			<h2 class="head-title">Вы смотрели</h2>
+			<!-- /.head-title -->
+			<ul class="product-list">
+				<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner-1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</div>
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
+							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
+						</div>
+						<!-- /.product-list__text-info -->
+					</div>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
+						</div>
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
+						</div>
+						<!-- /.product-list__buy-block -->
+					</div>
+					<!-- /.product-list__bottom -->
+				</div>
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+			<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner-1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</div>
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
+							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
+						</div>
+						<!-- /.product-list__text-info -->
+					</div>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
+						</div>
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
+						</div>
+						<!-- /.product-list__buy-block -->
+					</div>
+					<!-- /.product-list__bottom -->
+				</div>
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+			<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner-1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</div>
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
+							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
+						</div>
+						<!-- /.product-list__text-info -->
+					</div>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
+						</div>
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
+						</div>
+						<!-- /.product-list__buy-block -->
+					</div>
+					<!-- /.product-list__bottom -->
+				</div>
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+			<li class="product-list__item">
+					<div class="product-list__content">
+						<div class="product-list__info">
+							<a href="#" class="product-list__link">
+							<div class="product-list__thumb">
+								<div class="corner-1">
+									<img src="../images/pic/Sale.png" alt="скидка">
+								</div>
+								<!-- /.corner-1 -->
+								<img class="product-list__img" src="../images/pic/product.png" alt="product">
+							</div>
+							<!-- /.product-list__thumb -->
+							<div class="product-list__title-wrap">
+								<h3 class="product-list__title">IP вызывная панель Dahua DH-VTO6100C</h3>
+								<!-- /.product-list__title -->
+							</div>
+							<!-- /.product-list__title-wrap -->
+						</a>
+						<!-- /.product-list__link -->
+						<div class="product-list__text-info">
+							<div class="product-list__text">
+								<p class="product-list__descr">Камера: 1.3 Мп CMOS HD Корпус: пластик Тип: накладная Дисплей: нет IC карты: есть Ночное видение: LED подсветка</p>
+								<!-- /.product-list__descr -->
+							</div>
+							<!-- /.product-list__text -->
+							<ul class="product-list__list-vailability">
+								<li class="product-list__item-vailability product-list__item-vailability--office">
+									Наличие в офисе
+								</li>
+								<!-- /.product-list__vailability -->
+								<li class="product-list__item-vailability product-list__item-vailability--empty">
+									Наличие на складе
+								</li>
+								<!-- /.product-list__vailability -->
+							</ul>
+							<!-- /.product-list__info-vailability -->
+						</div>
+						<!-- /.product-list__text-info -->
+					</div>
+					<!-- /.product-list__info -->
+					<div class="product-list__bottom">
+						<div class="product-list__prices-wrap">
+							<span class="product-list__price product-list__price--old">2380.00 $</span>
+							<span class="product-list__price product-list__price--new">2380.00 $</span>
+						</div>
+						<!-- /.product-list__prices-wrap -->
+						<div class="product-list__buy-block">
+							<div class="product-list__buy-buttons">
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#git-compare"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+								<button class="product-list__action-btn">
+									<span class="visually-hidden">Нравится</span>
+									<svg class="product-list__icon">
+										<use href="#favorite"></use>
+									</svg>
+									<!-- /.product-list__icon -->
+								</button>
+							</div>
+							<!-- /.product-list__buy-buttons -->
+							<button class="button product-list__btn">Купить</button>
+						</div>
+						<!-- /.product-list__buy-block -->
+					</div>
+					<!-- /.product-list__bottom -->
+				</div>
+				<!-- /.product-list__content -->
+			</li>
+			<!-- /.product-list__item -->
+		</ul>
+		<!-- /.product-list -->
+	</div>
+	<!-- /.container-new -->
+</section>
+<!-- /.page-section -->
+
+	
+
+
 
 </main>
 <!-- /.main-content -->
@@ -1226,8 +1119,12 @@
 					<li class="contacts-list__item">
 						<h4 class="contacts-list__title">Отдел продаж</h4>
 						<!-- /.contacts-list__title -->
-						<a href="tel:+38(044)3620331" class="contacts-list__info">
-							+38 (044) 362-03-31
+						<a href="tel:(044)3620331" class="contacts-list__info">
+							<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
+								<use href="#tel"></use>
+							</svg>
+							<!-- /.tel-icon -->
+							(044) 362-03-31
 						</a>
 						<!-- /.contacts-list__info -->
 						<a href="mailto:info@vidimost.com" class="contacts-list__info">
@@ -1242,8 +1139,12 @@
 							тех.поддержка:
 						</h4>
 						<!-- /.contacts-list__title -->
-						<a href="tel:+38(063)2362438" class="contacts-list__info">
-							+38 (063) 236-24-38
+						<a href="tel:(063)2362438" class="contacts-list__info">
+							<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
+								<use href="#life"></use>
+							</svg>
+							<!-- /.tel-icon tel-icon--foot -->
+							(063) 236-24-38
 						</a>
 						<!-- /.contacts-list__info -->
 						<a href="mailto:support@vidimost.com" class="contacts-list__info">
@@ -1279,8 +1180,12 @@
 							Бухгалтерия:
 						</h4>
 						<!-- /.contacts-list__title -->
-						<a href="tel:+38(044)3382501" class="contacts-list__info">
-							+38 (044) 338-25-01
+						<a href="tel:(044)3382501" class="contacts-list__info">
+								<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
+								<use href="#tel"></use>
+							</svg>
+							<!-- /.tel-icon -->
+							(044) 338-25-01
 						</a>
 						<!-- /.contacts-list__info -->
 							<a href="mailto:buh@vidimost.com" class="contacts-list__info">
@@ -1340,7 +1245,14 @@
 				<ul class="social-list">
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
-							<svg class="social-list__icon">
+
+<!-- <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g id="g5991">
+	<rect id="rect2987" style="fill:#3B5998;" width="512" height="512"/>
+	<path id="f_1_" style="fill:#FFFFFF;" d="M287,456V273.5h61.2l9.2-71.1H287V157c0-20.6,5.7-34.6,35.2-34.6l37.7,0V58.8   C353.3,57.9,331,56,305,56c-54.3,0-91.4,33.1-91.4,94v52.4h-61.4v71.1h61.4V456L287,456L287,456z"/>
+</g>
+</svg> -->
+							<svg class="social-list__icon social-list__icon--fb">
 								<use href="#fb"></use>
 							</svg>
 							<!-- /.social-list__icon -->
@@ -1349,7 +1261,7 @@
 					<!-- /.social-list__item -->
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
-							<svg class="social-list__icon">
+							<svg class="social-list__icon social-list__icon--google">
 								<use href="#google"></use>
 							</svg>
 							<!-- /.social-list__icon -->
@@ -1358,7 +1270,7 @@
 					<!-- /.social-list__item -->
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
-							<svg class="social-list__icon">
+							<svg class="social-list__icon social-list__icon--twitter">
 								<use href="#twitter"></use>
 							</svg>
 							<!-- /.social-list__icon -->
@@ -1367,7 +1279,7 @@
 					<!-- /.social-list__item -->
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
-							<svg class="social-list__icon">
+							<svg class="social-list__icon social-list__icon--yout">
 								<use href="#yotube"></use>
 							</svg>
 							<!-- /.social-list__icon -->
@@ -1376,16 +1288,17 @@
 					<!-- /.social-list__item -->
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
-							<svg class="social-list__icon">
+							<svg class="social-list__icon social-list__icon--vk">
 								<use href="#vk"></use>
 							</svg>
 							<!-- /.social-list__icon -->
 						</a>
 					</li>
+					
 					<!-- /.social-list__item -->
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
-							<svg class="social-list__icon">
+							<svg class="social-list__icon social-list__icon--insta">
 								<use href="#insta"></use>
 							</svg>
 							<!-- /.social-list__icon -->
@@ -1428,10 +1341,6 @@
 				<path d="M98.9 184.7l1.8 2.1 136 156.5c4.6 5.3 11.5 8.6 19.2 8.6 7.7 0 14.6-3.4 19.2-8.6L411 187.1l2.3-2.6c1.7-2.5 2.7-5.5 2.7-8.7 0-8.7-7.4-15.8-16.6-15.8H112.6c-9.2 0-16.6 7.1-16.6 15.8 0 3.3 1.1 6.4 2.9 8.9z"></path>
 			</symbol>
 		
-			<symbol id="btn-arrow" viewBox="0 0 14 21">
-				<image width="14" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAVCAMAAABBhy+7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABNVBMVEUKpd8Kpd8Lpd8Dot4Kpd8Kpd8Kpd8IpN8Jpd8Ipd8JpN8Lpd8Kpd8Cot4erOEgreIFo94hruK/6Pa/5/ccq+EAoN0Lpd8GpN6o3vP///+25fUXquAAod1Wweno9vy04/YYquEBod4Ipd8AntxPvujr+P2w4vURp+AAod4HpN8An91Wwunx+v2q4PQQp+ACod4JpN8AoN5cw+rw+v2k3fQOpd8Dot4IpN9jxert+Pye2/MPpuAGo94AndxoyOyW2fEEot4TqOCg3PP+///t+P1gxOsFpN4Bot4Npd+n3/Pw+f1bw+mh3PL2+/5ixeoHo98Mpd+b2vLz+/5lx+sIpN6U2PH3/P5tyeyW2PH5/f5uyewGo998z+79/v/6/f91ze0GpN97zu18zu4Fo98Do94Jpd8AAACpzSoZAAAADHRSTlPg8O7u7vLv7+/v7+8IxChaAAAAAWJLR0RmLNTZJQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIAQkRESksBOAAAADnSURBVBjTPdB5WwFRFAbwO5ZbOBMtc3mjRdpmWhQ1VNOqplQUKVqN5Pt/Bdwr73+/5znP2RjTfH6/LyCjMRYkfSqqk0qQ8dj0zOycISQ5m4gngPlkasTJ2MIisLScVuQrmdU1YH1jU5FMa2sb2NnNCkna28/lgYNDW0iKglU8Ao5PHEki8/QMwPlFSNG+vCrh+sYNy+LbuzJw/2AVhsVCp0egUrWeZGf7uQbUX1INOcihV+CtaZhiuEbIaQHvH8anWjLsfn3/tNMNoRjx9M5vtvt/ICfvz/VG5/PBN6jXo/E3mBYYR2N9+XIgyoSQYwwAAAAASUVORK5CYII="></image>
-			</symbol>
-		
 			<symbol id="cart" viewBox="0 0 66 66">
 				<path d="M1 34c0 17.7 14.3 32 32 32s32-14.3 32-32S50.7 2 33 2 1 16.3 1 34z"></path><path d="M26 26v-2.8c.2-3.6 3.3-6.3 6.9-6.1 3.3.2 6 2.8 6.1 6.1V26"></path><path d="M39.2 51H25.9c-3.3.1-6.1-2.4-6.4-5.8l-1.4-18.8c0-.2.1-.4.3-.5h28.3c.2.1.3.3.3.5l-1.4 18.7c-.3 3.4-3.1 5.9-6.4 5.9z"></path>
 			</symbol>
@@ -1460,8 +1369,8 @@
 				<path d="M0 0h48v48H0z" fill="none"></path><path d="M24 42.7l-2.9-2.63C10.8 30.72 4 24.55 4 17 4 10.83 8.83 6 15 6c3.48 0 6.82 1.62 9 4.17C26.18 7.62 29.52 6 33 6c6.17 0 11 4.83 11 11 0 7.55-6.8 13.72-17.1 23.07L24 42.7z"></path>
 			</symbol>
 		
-			<symbol id="fb" viewBox="0 0 4335 4335">
-				<path d="M3 4h4335v4335H3z"></path><path d="M2333 866c-88 0-173 11-272 49-201 81-303 272-303 567v287h-282v483h282v1397h575V2252h392l53-483h-444v-217c0-66 7-116 25-143 25-42 74-63 152-63h261V866h-437z"></path><path d="M2332 788c-88 0-173 11-272 49-201 81-303 272-303 567v287h-282v483h282v1397h575V2174h392l53-483h-445v-217c0-66 7-116 25-143 25-42 74-63 152-63h261V788h-437z"></path>
+			<symbol id="fb" viewBox="0 0 512 512">
+				<path d="M0 0h512v512H0z"></path><path d="M287 456V273.5h61.2l9.2-71.1H287V157c0-20.6 5.7-34.6 35.2-34.6h37.7V58.8C353.3 57.9 331 56 305 56c-54.3 0-91.4 33.1-91.4 94v52.4h-61.4v71.1h61.4V456H287z"></path>
 			</symbol>
 		
 			<symbol id="git-compare" viewBox="0 0 896 1024">
@@ -1508,12 +1417,12 @@
 				<path d="M266.533 114.519c-55.518 0-100.687 45.168-100.687 100.687 0 16.021 3.858 31.964 11.153 46.104 1.713 3.325 5.803 4.627 9.126 2.915a6.773 6.773 0 0 0 2.914-9.126c-6.399-12.404-9.645-25.826-9.645-39.893 0-48.049 39.089-87.138 87.138-87.138s87.139 39.089 87.139 87.138c0 28.891-14.283 55.85-38.211 72.115a6.776 6.776 0 0 0 3.814 12.377c1.313 0 2.637-.38 3.803-1.172 27.642-18.791 44.143-49.938 44.143-83.32.001-55.519-45.167-100.687-100.687-100.687z"></path><path d="M288.548 279.445c.806 0 1.625-.146 2.423-.452 26.231-10.056 43.854-35.689 43.854-63.788 0-37.657-30.635-68.292-68.292-68.292-37.656 0-68.294 30.635-68.294 68.292 0 17.505 6.616 34.151 18.63 46.875a6.77 6.77 0 0 0 9.575.276 6.77 6.77 0 0 0 .275-9.575c-9.628-10.201-14.932-23.546-14.932-37.576 0-30.185 24.559-54.743 54.745-54.743 30.186 0 54.744 24.558 54.744 54.743 0 22.527-14.129 43.076-35.156 51.138a6.777 6.777 0 0 0-3.901 8.751 6.78 6.78 0 0 0 6.329 4.351zm-149.394 11.959a6.775 6.775 0 0 0 0-13.548H120.2a6.774 6.774 0 0 0-6.773 6.773v94.236a6.775 6.775 0 0 0 6.773 6.774h166.812c16.077 0 31.971-5.372 44.752-15.127l41.123-31.384c11.452-8.738 13.832-25.293 5.306-36.902-8.536-11.625-25.058-14.301-36.831-5.965l-21.052 14.91a6.776 6.776 0 0 0-1.612 9.445 6.778 6.778 0 0 0 9.444 1.612l21.053-14.911c5.78-4.096 13.891-2.776 18.077 2.928 4.187 5.699 3.019 13.824-2.603 18.113l-41.124 31.383c-10.436 7.964-23.408 12.349-36.533 12.349H170.657v-80.687h45.86c7.957 0 15.471 3.062 21.159 8.624 8.239 8.048 19.117 12.48 30.632 12.48h13.123c6.145 0 11.142 4.997 11.142 11.14 0 8.19-6.662 14.854-14.853 14.854h-47.532a6.775 6.775 0 0 0 0 13.547h47.532c15.66 0 28.401-12.741 28.401-28.401 0-13.611-11.076-24.688-24.69-24.688h-13.123c-7.956 0-15.471-3.063-21.162-8.623-8.233-8.051-19.111-12.482-30.629-12.482h-52.635a6.775 6.775 0 0 0-6.774 6.773v87.462h-30.134v-80.687h12.18z"></path><path d="M266.533 264.991a6.775 6.775 0 0 0 6.774-6.774v-5.484c9.539-1.76 16.792-10.123 16.792-20.163 0-11.316-9.205-20.521-20.521-20.521h-6.074c-3.845 0-6.973-3.126-6.973-6.971s3.128-6.971 6.973-6.971h15.839a6.775 6.775 0 0 0 0-13.548h-6.035v-4.326a6.774 6.774 0 0 0-13.547 0v4.685c-9.532 1.767-16.777 10.127-16.777 20.161 0 11.314 9.205 20.519 20.521 20.519h6.074c3.845 0 6.973 3.128 6.973 6.973s-3.128 6.971-6.973 6.971H253.74a6.775 6.775 0 0 0 0 13.548h6.021v5.128a6.773 6.773 0 0 0 6.772 6.773zM438.971 425.09l-55.309-38.197a6.775 6.775 0 0 0-7.7 11.149l47.238 32.623-36.613 25.288V444.5a6.776 6.776 0 0 0-6.774-6.774H166.964v-14.123h212.849a6.775 6.775 0 0 0 0-13.547H160.189a6.774 6.774 0 0 0-6.773 6.773V444.5a6.774 6.774 0 0 0 6.773 6.773h212.849v17.59a6.775 6.775 0 0 0 10.624 5.574l55.309-38.199a6.775 6.775 0 0 0 0-11.148zm-307.325-15.035h-30.093a6.775 6.775 0 0 0-6.774 6.773V444.5a6.775 6.775 0 0 0 6.774 6.773h30.093a6.774 6.774 0 0 0 6.773-6.773v-27.672a6.774 6.774 0 0 0-6.773-6.773zm-6.775 27.671h-16.544v-14.123h16.544v14.123zm-51.863-27.671a6.775 6.775 0 0 0-6.774 6.773V444.5a6.775 6.775 0 0 0 13.548 0v-27.672a6.775 6.775 0 0 0-6.774-6.773zm.021-323.145l55.309 38.199a6.748 6.748 0 0 0 3.844 1.2 6.775 6.775 0 0 0 3.856-12.348L88.8 81.335l36.613-25.288V67.5a6.776 6.776 0 0 0 6.774 6.774h212.849v14.123H132.188a6.776 6.776 0 0 0-6.774 6.774 6.776 6.776 0 0 0 6.774 6.774h219.623a6.775 6.775 0 0 0 6.773-6.774V67.5a6.774 6.774 0 0 0-6.773-6.774H138.962v-17.59a6.778 6.778 0 0 0-3.627-6 6.779 6.779 0 0 0-6.997.426l-55.309 38.2a6.773 6.773 0 0 0 0 11.148zm307.326 15.035h30.092a6.776 6.776 0 0 0 6.774-6.774V67.5a6.775 6.775 0 0 0-6.774-6.774h-30.092a6.776 6.776 0 0 0-6.775 6.774v27.671a6.775 6.775 0 0 0 6.775 6.774zm6.774-27.671h16.544v14.123h-16.544V74.274zm51.863-13.548a6.776 6.776 0 0 0-6.774 6.774v27.671c0 3.74 3.034 6.774 6.774 6.774s6.774-3.034 6.774-6.774V67.5a6.774 6.774 0 0 0-6.774-6.774z"></path>
 			</symbol>
 		
-			<symbol id="search" viewBox="0 0 48 48">
+			<symbol id="search-ico" viewBox="0 0 48 48">
 				<path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0a9 9 0 1 1 .001-18.001A9 9 0 0 1 19 28z"></path><path d="M0 0h48v48H0z" fill="none"></path>
 			</symbol>
 		
-			<symbol id="simpline" viewBox="0 0 64 64">
-				<path d="M33.06 46.94a31.45 31.45 0 0 1-16.17-16.39l4.21-2.84a26.28 26.28 0 0 1-1.77-9.44H9.27a36.46 36.46 0 0 0 36.46 36.46V44.67A26.29 26.29 0 0 1 36 42.78zm-2.33-25.67a12 12 0 0 1 12 12m-12-18a18 18 0 0 1 18 18m-18-24a24 24 0 0 1 24 24"></path>
+			<symbol id="simpline" viewBox="0 0 21 21">
+				<image width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4ggKCTQn2WTGnwAABL9JREFUOMuFlVuMnVUVgL+19/7/c/4zZ85MB2ba0kKZlhYINIC3koCBFwUSS0QjNUEgoggJJPAAIeGBF29JAz70SYFIIkRADWgIKPVBYyBAsIEq01JoyzBtqc2xcztnzvnPvy/Lhxmu1riS/bSTb629sta3JXtwCoPyYchSIJwzQrxgDFIEBXOivDL7+7/v1UxOajPfy3D+W9rljOYWnCLeUa3buAxQcHwmtJVhj3fRN7uk+ZXr0dTW9W6PBlmD6rWyMLgB4psJd6cIvc8y/gtKBA0Jsykn7tgCRtF3O1M8M/2Arm2gmYHKDJvELhv8e2rkbsQ+SVqu8pSVLqeyiHrMyyfQdkKq6qsykv3IhIh2w3vqsp+kRv27pt/7ku30Xot1eyYtdmJWoILcDHIDaH2lqwnDw7IYf+1eaVNtPINkdLeSdmvFGmnYW0XD0zpI72iw1/rm6rqtlkpbzE3HsZHfICC1nVOvq5UKNT8jKBjdgZWN0k9fSGcXhOvWYg4tbXNPH/2WNvM/p7HiRVMGJPjn8HreQM/ZbOTo+Zlf3Beao2PEOCe1XW//Ti3TZPYeHShIuki8+QWufqkmCHMDjEufd414u0bOxdnVlP4mP56/ZtX9UeZS8ENme3Zy/pe24UZSYb/ptNLDYvVidSA1g3rZS4xVqg/OwqYZXEHqhD2a4q1qDOLDtw3xVe2WV6SicU3Nlgsxr21Lm0Zvk0V/KI3UJk0acX8Fs5rSEfsl2o2I1S/Tk+3ayTD9hDErc6xKbOZPhSK/Kh8fe1a2nkYcmB+6IDup1zyLYVrm/feN8fICQV1crM7XKq21kt6SQe/B2F7zq3h0knRsA9prgKlQp4gNMGR3ywdz++Ufs99IhXtIuoPT5UgPzd3rZilscTrvwepf7HB2t44P3ycnOheEVutCGe0hKYAAtQTTARMiOuIQSajYg7ZMtyQNz6CcbjUIhI5Yt1nyh6YgMio+zvitq1ruZPVoKmnFDfn1Uga0JtgPAtrI0VU12NdFk8NY/znpdpup3vybMf5rqYzP0yjOs75/ptgnZwCwC+HnOt9Z5bet21Hb19bQMlfH9UMv2gM93P4e/q4tpMmCbNcBYlWgojA/ixZjWJaIlUKrhSsXcDFWAKRCb8/b1cB0/GXV+g2b872H35VicKGUOqW5hSour4aBzHVJUWA0QxuOVBbQ7yDRg4ChPQ7tcXRuAm82Xp6/OvsSE/ZgGqp/JfvnwlvAds0tWkXoBSdL8RZVmRABcUBmSFsm4aKt6OgqNASEV1bGRQALpn3yO/mBmcfjUMvSjZuMxjfw8ocwkf9AysETbkkvUStHlgUSZ1Nt6PfxtInHMAZ8RBYXcFz6aZck33rC78nqWeVjKOTyOFQ0bT88nr/fOe6Hm4fKc0fPrr/zryFNcqVid9hB78f2/YOPAWAEdfkpLDXr0Ub2aMLtt4P+s5r4U3R6I007Ev34gj0cUctSUp4HZlTMZrL8E0JWzCnVlxSsvpxqdoKIN/24T23tPidHtrr+MdTVlt2JxJXG/R9Jf5Rx+Wjhvic91pHS/SaXR4jGiA/HEXMImEQ4QyR9iv2/oZ94DsoxdfYOLDU0fp2gXxTDWjH45M1P/aAO5uN/7j/jR3AQ928ZOwAAAABJRU5ErkJggg=="></image>
 			</symbol>
 		
 			<symbol id="tel" viewBox="0 0 139 139">

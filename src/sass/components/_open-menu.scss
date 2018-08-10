@@ -4,6 +4,8 @@
 	min-height: 21px;
 	margin-bottom: -7px;
 
+	color: $brand-color;
+
 	cursor: pointer;
 
 	@include media($screen-md) {
@@ -12,20 +14,14 @@
 
 	&--active {
 		.open-menu__one {
-			background-color: lighten($brand-color, 15%);
-
 			transform: rotate(45deg) translate(4px);
 		}
 
 		.open-menu__two {
-			background-color: lighten($brand-color, 15%);
-
 			transform: rotate(495deg) translate(4px);
 		}
 
 		.open-menu__three {
-			background-color: lighten($brand-color, 15%);
-
 			transform: rotate(45deg);
 			opacity: 0;
 
@@ -38,7 +34,7 @@
 		height: 3px;
 		margin-bottom: 7px;
 
-		background-color: $brand-color;
+		background-color: currentColor;
 		border-radius: 4px;
 
 		transition: transform .5s cubic-bezier(.08,.81,.87,.71);
@@ -50,6 +46,10 @@
 
 	&__three {
 		transform-origin: bottom right;
+	}
+
+	&--categories {
+		color: $white;
 	}
 
 }

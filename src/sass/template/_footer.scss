@@ -170,4 +170,17 @@
 		font-size: $basic-size;
 		color: $white;
 	}
+
+	&__tel-icon {
+
+		@include media($screen-md) {
+			left: 0;
+		}
+
+		@include media($screen-sm) {
+			position: static;
+
+			margin-right: 5px;
+		}
+	}
 }

@@ -18,9 +18,14 @@ $(document).ready(function() {
   ]
 	});
 
-	$('.open-menu').on('click', function() {
+	$('#open-menu').on('click', function() {
 		$(this).toggleClass('open-menu--active');
 		$('.page-menu').toggleClass('page-menu--open');
+	});
+
+	$('#open-category').on('click', function() {
+		$(this).toggleClass('open-menu--active');
+		$('.categories__list').slideToggle();
 	});
 
 	var halfText = $('.about-sect__text').innerHeight() / 2,

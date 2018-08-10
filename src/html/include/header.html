@@ -1,7 +1,7 @@
 <header class="header-page">
   <nav class="nav">
     <div class="container-new header-page__container">
-      <button class="open-menu">
+      <button id="open-menu" class="open-menu">
         <span class="open-menu__line open-menu__one"></span>
         <span class="open-menu__line open-menu__two"></span>
         <span class="open-menu__line open-menu__three"></span>
@@ -21,23 +21,33 @@
 
         <ul class="submenu page-menu__submenu">
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Готовый комплект</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Готовый комплект</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Установка</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Установка</span>      
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Заказ сметы</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Заказ сметы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Настройка оборудования</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Настройка оборудования</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
           <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link page-menu__submenu-link">Обслуживания системы</a>
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Обслуживания системы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
         </ul>
@@ -109,19 +119,35 @@
      <div class="header-page__top-common">
       <ul class="header-page__tel-list">
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)362-0331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#phone"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0443620331" class="header-page__tel">044-362-03-31</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)3620331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#ks"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0969990642" class="header-page__tel">096-999-06-42</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)3620331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#life"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0931540979" class="header-page__tel">093-154-09-79</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <a href="tel:+38(044)3620331" class="header-page__tel">+38(044)-362-03-31</a>
+          <svg class="tel-icon tel-icon--margin">
+            <use href="#mts"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          <a href="tel:0508222722" class="header-page__tel">050-822-27-22</a>
         </li>
         <!-- /.header-page__tel-item -->
       </ul>
@@ -145,25 +171,35 @@
           <use href="#arrow-down"></use>
         </svg>
         <!-- /.button__icon -->
-         <ul class="submenu search-form__submenu">
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Готовый комплект</a>
+          <ul class="submenu search-form__submenu">
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Готовый комплект</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Установка</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Установка</span>      
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Заказ сметы</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Заказ сметы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Настройка оборудования</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Настройка оборудования</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
-          <li class="submenu__item">
-            <a href="#" class="submenu__link search-form__submenu-link">Обслуживания системы</a>
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text">Обслуживания системы</span>
+          </a>
           </li>
           <!-- /.page-menu__sub-item -->
         </ul>
@@ -177,7 +213,7 @@
       <button type="submit" class="button search-form__btn-search">
         <span class="visually-hidden">Найти</span>
         <svg class="search-form__icon-search">
-          <use href="#search"></use>
+          <use href="#search-ico"></use>
         </svg>
         <!-- /.search-form__icon-search -->
       </button>
@@ -210,13 +246,88 @@
 <!-- /.header-page__middle -->
 <div class="categories">
   <div class="container-new">
+    <div class="categories__mob-nav">
+      <h4 class="categories__title">Категории</h4>
+      <!-- /.categories__title -->
+      <button id="open-category" class="open-menu open-menu--categories">
+        <span class="open-menu__line open-menu__one"></span>
+        <span class="open-menu__line open-menu__two"></span>
+        <span class="open-menu__line open-menu__three"></span>
+      </button>
+    </div>
+    <!-- /.categories__mob-nav -->
     <ul class="categories__list">
-    <li class="categories__item">
-      <a href="#" class="categories__link">Видеонаблюдение</a>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">Охранная сигнализация</a>
+      <li class="categories__item">
+        <a href="#" class="categories__link">Видеонаблюдение</a>
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">Охранная сигнализация</a>
+    
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
     </li>
     <!-- /.categories__item -->
      <li class="categories__item">

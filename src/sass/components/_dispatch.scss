@@ -100,13 +100,20 @@
 	}
 
 	&__icon {
-		width: 66px;
-		height: 32px;
+		position: absolute;
+		top: -16px;
+
+		width: 68px;
+		height: 68px;
 
 		fill: $white;
 	}
 
 	&__decor {
+		position: relative;
+
+		width: 66px;
+		height: 32px;
 
 		@include media($screen-sm) {
 			order: -1;

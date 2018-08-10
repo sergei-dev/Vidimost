@@ -19,7 +19,10 @@
 	}
 
 	&__info {
-		display: block;
+		position: relative;
+		
+		display: flex;
+		align-items: center;
 		
 		font-size: $basic-size;
 		font-weight: 400;
@@ -28,6 +31,15 @@
 		&:hover {
 			color: currentColor;
 			text-decoration: underline;
+		}
+
+		@include media($screen-md) {
+			padding-left: 22px;
+		}
+
+		@include media($screen-sm) {
+			justify-content: center;
+			padding-left: 0;
 		}
 	}
 }
