@@ -99,4 +99,14 @@
     
     border-bottom: 1px dashed currentColor;
   }
+
+  &--buy {
+    font-size: 18px;
+
+    background-color: $red;
+
+    &:hover {
+      background-color: darken($red, 15%);
+    }
+  }
 }

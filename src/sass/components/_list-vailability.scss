@@ -1,0 +1,54 @@
+.list-vailability {
+	margin: -3px 0;
+
+	&--marg {
+		margin-bottom: 16px;
+	}
+
+	&__item {
+		position: relative;
+		
+		padding: 3px 0px;
+		padding-left: 29px;
+
+		color: $gray;
+		font-size: 13px;
+		line-height: 16px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 10px;
+			top: 50%;
+
+			width: 9px;
+			height: 9px;
+
+			background-color: $gray;
+			border-radius: 50%;
+
+			transform: translateY(-50%);
+		}
+
+		&--list {
+			padding: 0;
+			padding-left: 18px;
+
+			&::before {
+				left: 0;
+			}
+		}
+
+		&--office {
+			&::before {
+				background-color: #61ab00;
+			}
+		}
+
+		&--empty {
+			&::before {
+				background-color: #fe2b06;	
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.product-card {
+	display: flex;
+
+	&__thumb, &__info {
+		width: 50%;
+		padding: 0 10px;
+
+		background-color: $white;
+	}
+
+	&__thumb {
+		padding-right: 29px;
+		padding-left: 24px;
+		display: flex;
+		align-items: center;
+
+		border-right: 1px solid #ededed;
+	}
+
+	&__info {
+		padding-top: 30px;
+		padding-bottom: 25px;
+		padding-left: 45px;
+		padding-right: 20px;
+	}
+}

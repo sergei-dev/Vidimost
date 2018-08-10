@@ -1,0 +1,35 @@
+.action-buttons {
+	display: flex;
+	align-items: center;
+
+	&--new {
+		justify-content: center;
+		margin-bottom: 9px;
+	}
+
+	&__btn {
+
+		&:first-child {
+			margin-right: 36px;
+		}
+
+		&--new {
+			&:first-child { 
+				margin-right: 15px;
+			}
+		}
+
+		&:hover {
+			.action-buttons__icon {
+				fill: $brand-color;
+			}
+		}
+	}
+
+	&__icon {
+		width: 28px;
+		height: 31px;
+		fill: #bfbfbf;
+		transition: fill .3s;
+	}
+}
