@@ -29,10 +29,12 @@
   }
 
   &:hover {
+    color: $white;
     background-color: lighten($brand-color, 15%);
   }
 
   &:active, &:focus {
+    color: $white;
     background-color: darken($brand-color, 15%);
     outline: none;
   }

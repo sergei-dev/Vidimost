@@ -18,6 +18,29 @@ $(document).ready(function() {
   ]
 	});
 
+	$("#gallery-slider").slick({
+		slidesToScroll: 1,
+		vertical: true,
+		slidesToShow: 4,
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				centerMode: false,
+				infinite: true
+			}
+		}]
+	});
+
+	$('.product-gallery__pic').attr('src', $('.product-gallery__link:first-child').attr('href') );
+
+	$('body').on('click', '.product-gallery__link', function(event) {
+		event.preventDefault();
+		var src = $(this).attr('href');
+		$('.product-gallery__pic').attr('src', src);
+	})
+
 	$('#open-menu').on('click', function() {
 		$(this).toggleClass('open-menu--active');
 		$('.page-menu').toggleClass('page-menu--open');

@@ -1,0 +1,10 @@
+.rating {
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&--card {
+		margin-right: 16px;
+	}
+}

@@ -9,14 +9,16 @@
 
 	&__btn {
 
-		&:first-child {
 			margin-right: 36px;
-		}
 
 		&--new {
 			&:first-child { 
 				margin-right: 15px;
 			}
+		}
+
+		&:last-child {
+			margin-right: 0;
 		}
 
 		&:hover {
@@ -31,5 +33,9 @@
 		height: 31px;
 		fill: #bfbfbf;
 		transition: fill .3s;
+	}
+
+	&--card {
+		margin-right: 10px;
 	}
 }

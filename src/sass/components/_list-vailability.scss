@@ -24,7 +24,7 @@
 			width: 9px;
 			height: 9px;
 
-			background-color: $gray;
+			background-color: #61ab00;
 			border-radius: 50%;
 
 			transform: translateY(-50%);
@@ -39,11 +39,6 @@
 			}
 		}
 
-		&--office {
-			&::before {
-				background-color: #61ab00;
-			}
-		}
 
 		&--empty {
 			&::before {

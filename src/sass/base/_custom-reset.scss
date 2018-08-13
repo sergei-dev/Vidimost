@@ -52,7 +52,6 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
-  margin: 0;
 }
 
 audio,
@@ -79,7 +78,6 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
-  color: inherit;
   &:hover, &:focus, &:active {
     color: inherit;
     text-decoration: none;

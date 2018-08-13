@@ -5,6 +5,8 @@
 	<title>VIDIMOST</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="../libs/slick/slick.css">
+	<link rel="stylesheet" href="../libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="../css/style.min.css">
 	<meta name="theme-color" content="#112852">
 	<meta name="msapplication-navbutton-color" content="#112852">
@@ -133,34 +135,42 @@
      <div class="header-page__top-common">
       <ul class="header-page__tel-list">
         <li class="header-page__tel-item">
-          <svg class="tel-icon tel-icon--margin">
+          <i class="header-page__tel-ico">
+            <svg class="tel-icon tel-icon--margin">
             <use href="#phone"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
+          </i>
           <a href="tel:0443620331" class="header-page__tel">044-362-03-31</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <svg class="tel-icon tel-icon--margin">
+          <i class="header-page__tel-ico">
+             <svg class="tel-icon tel-icon--margin">
             <use href="#ks"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
+          </i>
           <a href="tel:0969990642" class="header-page__tel">096-999-06-42</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <svg class="tel-icon tel-icon--margin">
+          <i class="header-page__tel-ico">
+             <svg class="tel-icon">
             <use href="#life"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
+          </i>
           <a href="tel:0931540979" class="header-page__tel">093-154-09-79</a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <svg class="tel-icon tel-icon--margin">
+          <i class="header-page__tel-ico">
+            <svg class="tel-icon tel-icon--margin">
             <use href="#mts"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
+          </i>
           <a href="tel:0508222722" class="header-page__tel">050-822-27-22</a>
         </li>
         <!-- /.header-page__tel-item -->
@@ -376,11 +386,11 @@
 				<li class="breadcrumb__item breadcrumb__item--first">
 					<a class="breadcrumb__link" href="#"><span class="breadcrumb__text">Главная</span> >></a>
 				</li>
-				<!-- /.breadcrumb__item -->
+
 				<li class="breadcrumb__item">
 					Блог
 				</li>
-				<!-- /.breadcrumb__item -->
+
 			</ul>
 			<!-- /.breadcrumb__list -->
 		</div>
@@ -417,37 +427,43 @@
 				
 				<ul class="article-list article-list--column">
 					<li class="article-list__item article-list__item--full left-sidebar__block">
-						<a href="#" class="article-list__content">
-							<div class="article-list__thumb article-list__thumb--in-sidebar">
-								<img class="article-list__img" src="../images/pic/_DSC0068.png" alt="news-thumb">
+						<article class="article">
+							<a href="#" class="article__content article__content--in-sidebar">
+							<div class="article__thumb article__thumb--in-sidebar">
+								<img class="article__img" src="../images/pic/_DSC0068.png" alt="news-thumb">
 							</div>
 							<!-- /.article-list__thumb -->
-							<div class="article-list__text-info article-list__text-info--in-sidebar">
-								<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+							<div class="article__text-info article__text-info--in-sidebar">
+								<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
 								<!-- /.article-list__title -->
-								<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+								<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
 								<!-- /.article-list__descr -->
 							</div>
 							<!-- /.article-list__text-info -->
 						</a>
 						<!-- /.article-list__content -->
+						</article>
+						<!-- /.article -->
 					</li>
 					<!-- /.article-list__item -->
 					<li class="article-list__item article-list__item--full left-sidebar__block">
-						<a href="#" class="article-list__content">
-							<div class="article-list__thumb article-list__thumb--in-sidebar">
-								<img class="article-list__img" src="../images/pic/Dahua-epoe.png" alt="news-thumb">
+						<article class="article">
+							<a href="#" class="article__content article__content--in-sidebar">
+							<div class="article__thumb article__thumb--in-sidebar">
+								<img class="article__img" src="../images/pic/Dahua-epoe.png" alt="news-thumb">
 							</div>
 							<!-- /.article-list__thumb -->
-							<div class="article-list__text-info article-list__text-info--in-sidebar">
-								<h3 class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+							<div class="article__text-info article__text-info--in-sidebar">
+								<h3 class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
 								<!-- /.article-list__title -->
-								<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+								<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
 								<!-- /.article-list__descr -->
 							</div>
 							<!-- /.article-list__text-info -->
 						</a>
 						<!-- /.article-list__content -->
+						</article>
+						<!-- /.article -->
 					</li>
 					<!-- /.article-list__item -->
 				</ul>
@@ -505,177 +521,196 @@
 					<!-- /.page-filter -->
 					<ul class="article-list article-list--blog">
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
+						</li>
+						<!-- /.article-list__item -->
+					
+					<li class="article-list__item article-list__item--blog-col">
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
-						</li>
-						<!-- /.article-list__item -->
-						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 					</ul>
@@ -707,177 +742,194 @@
 					<!-- /.head-title -->
 					<ul class="article-list">
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
+						</li>
+						<!-- /.article-list__item --><li class="article-list__item article-list__item--blog-col">
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
-						</li>
-						<!-- /.article-list__item -->
-						<li class="article-list__item article-list__item--blog-col">
-							<a href="#" class="article-list__content">
-								<div class="article-list__thumb article-list__thumb--right-col">
-									<img class="article-list__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
-								</div>
-								<!-- /.article-list__thumb -->
-								<div class="article-list__text-info article-list__text-info--blog">
-									<h3 href="#" class="article-list__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
-									<!-- /.article-list__title -->
-									<p class="article-list__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
-									<!-- /.article-list__descr -->
-								</div>
-								<!-- /.article-list__text-info -->
-								<div class="article-list__bottom-info">
-									<button class="button button--silver article-list__btn-more">Подробнее ></button>
-									<time class="article-list__date" datetime="2018">07.06.2018</time>
-									<button class="article-list__view">
-										<svg class="article-list__icon-view">
-											<use href="#Eye"></use>
-										</svg>
-										<!-- /.article-list__icon-view -->
-									</button>
-									<!-- /.article-list__date -->
-								</div>
-								<!-- /.article-list__bottom -->
-							</a>
-							<!-- /.article-list__content -->
+							<article class="article">
+								<a href="#" class="article__content">
+									<div class="article__thumb article__thumb--right-col">
+										<img class="article__img" src="../images/pic/ustroystva-dlya-umnogo-doma-snizhaut-uroven-stressa-27221234218423_small.jpg" alt="news-thumb">
+									</div>
+									<!-- /.article-list__thumb -->
+									<div class="article__text-info article__text-info--blog">
+										<h3 href="#" class="article__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
+										<!-- /.article-list__title -->
+										<p class="article__descr">Оснащенная тепловизором видеокамера предоставит пользователям расширенные возможности защиты периметра...</p>
+										<!-- /.article-list__descr -->
+									</div>
+									<!-- /.article-list__text-info -->
+									<div class="article__bottom-info">
+										<button class="button button--silver article__btn-more">Подробнее ></button>
+										<time class="article__date" datetime="2018">07.06.2018</time>
+										<button class="btn-view">
+											<svg class="btn-view__icon">
+												<use href="#Eye"></use>
+											</svg>
+											<!-- /.btn-view__icon -->
+										</button>
+										<!-- /.article-list__date -->
+									</div>
+									<!-- /.article-list__bottom -->
+								</a>
+								<!-- /.article-list__content -->
+							</article>
+							<!-- /.article -->
 						</li>
 						<!-- /.article-list__item -->
 					</ul>
@@ -930,8 +982,11 @@
 		<div class="container-new page-footer__container">
 			<div class="page-footer__nav-wrap">
 			<div class="page-footer__nav-list-wrap">
-				<h3 class="page-footer__nav-title">Информация</h3>
+				<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Информация</h3>
 				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
 				<ul class="page-footer__nav-list">
 					<li class="page-footer__nav-item">
 						<a href="#" class="page-footer__nav-link">О нас</a>
@@ -970,8 +1025,11 @@
 			</div>
 			<!-- /.page-footer__nav-list-wrap -->
 			<div class="page-footer__nav-list-wrap">
-				<h3 class="page-footer__nav-title">Каталог</h3>
+				<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Каталог</h3>
 				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
 				<ul class="page-footer__nav-list">
 					<li class="page-footer__nav-item">
 						<a href="#" class="page-footer__nav-link">Охранная сигнализация</a>
@@ -998,8 +1056,11 @@
 			</div>
 			<!-- /.page-footer__nav-list-wrap -->
 			<div class="page-footer__nav-list-wrap">
-				<h3 class="page-footer__nav-title">Кабинет пользователя</h3>
+				<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Кабинет пользователя</h3>
 				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
 				<ul class="page-footer__nav-list">
 					<li class="page-footer__nav-item">
 						<a href="#" class="page-footer__nav-link">Мой кабинет</a>
@@ -1030,8 +1091,11 @@
 			</div>
 			<!-- /.page-footer__nav-list-wrap -->
 			<div class="page-footer__nav-list-wrap">
-				<h3 class="page-footer__nav-title">Наши контакты</h3>
+				<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Наши контакты</h3>
 				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
 				<div class="page-footer__contacts-wrap">
 					<ul class="contacts-list page-footer__contacts-list">
 					<li class="contacts-list__item">
@@ -1171,7 +1235,7 @@
 </g>
 </svg> -->
 							<svg class="social-list__icon social-list__icon--fb">
-								<use href="#fb"></use>
+								<use href="#fcb"></use>
 							</svg>
 							<!-- /.social-list__icon -->
 						</a>
@@ -1180,7 +1244,7 @@
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
 							<svg class="social-list__icon social-list__icon--google">
-								<use href="#google"></use>
+								<use href="#goog"></use>
 							</svg>
 							<!-- /.social-list__icon -->
 						</a>
@@ -1189,7 +1253,7 @@
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
 							<svg class="social-list__icon social-list__icon--twitter">
-								<use href="#twitter"></use>
+								<use href="#twit"></use>
 							</svg>
 							<!-- /.social-list__icon -->
 						</a>
@@ -1198,7 +1262,7 @@
 					<li class="social-list__item">
 						<a href="#" target="_blank" class="social-list__link">	
 							<svg class="social-list__icon social-list__icon--yout">
-								<use href="#yotube"></use>
+								<use href="#yot"></use>
 							</svg>
 							<!-- /.social-list__icon -->
 						</a>
@@ -1291,16 +1355,24 @@
 				<path d="M0 0h512v512H0z"></path><path d="M287 456V273.5h61.2l9.2-71.1H287V157c0-20.6 5.7-34.6 35.2-34.6h37.7V58.8C353.3 57.9 331 56 305 56c-54.3 0-91.4 33.1-91.4 94v52.4h-61.4v71.1h61.4V456H287z"></path>
 			</symbol>
 		
+			<symbol id="fcb" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEVRaarAyeH///////+0v9r///////////////+ImsU6VZ9aca+Kmsacqs9HYKXAyeH///9rf7c/WqLY3eyUo8vb4O3v8ffEzOLByuFbcq/5+vzt8PZIYabDy+Jvg7l3ir3V2upDXaTm6vPz9fna3+3AyOB6jL6DlMPY3uxkerQAAADqnx7gAAAACnRSTlP++/7t0uDUuoyF/Sm3sQAAAAFiS0dEKlO+1J4AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCA0KLyUBzerJAAAAfUlEQVQoz2PgwgsY6C3NzcMLBAzYpfn4BcBAEKu0kLAAPmkRAbzSoiApMXEJCUms0lJAWWkZnC4HaZblwistQZa0nLy8PEhaAUjLK2JIKwkgARm80spceKVV8EurYkqrqaurg6Q0gLQmtf099KUZ8UkzMbPglmZlY+fghPMAGWkqCGQ9oE8AAAAASUVORK5CYII="></image>
+			</symbol>
+		
 			<symbol id="git-compare" viewBox="0 0 896 1024">
 				<path d="M832 721.75V320c0-192.5-192-192-192-192h-64V0L384 192l192 192V256h64c56.438 0 64 64 64 64v401.75c-38.125 22.188-64 62.875-64 110.25 0 70.625 57.375 128 128 128s128-57.375 128-128c0-47.25-25.875-88.062-64-110.25zM768 896c-35.312 0-64-28.625-64-64 0-35.312 28.688-64 64-64 35.375 0 64 28.688 64 64 0 35.375-28.625 64-64 64zM64 315.594v401.719c0 192.5 192 192 192 192h64v128l192-192-192-192v128h-64c-56.438 0-64-64-64-64V315.594c38.156-22.219 64-62.906 64-110.281 0-70.656-57.344-128-128-128s-128 57.344-128 128c0 47.281 25.844 88.062 64 110.281zM128 272c-35.312 0-64-28.594-64-64 0-35.312 28.688-64 64-64 35.406 0 64 28.688 64 64 0 35.406-28.594 64-64 64z"></path>
+			</symbol>
+		
+			<symbol id="goog" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA9lBMVEXVhn28QDHATT/ViH/irabks63dn5jKaF3alYz89fT////tzcnDU0bjsKr+/f389/b79PPKaFzUhHv57+7Ug3q+RDbGXE/nvLbNb2S+RTf25uT8+PfHX1LASz3IYlXirKXPdWrVh37HX1PGXFDIY1fksavMbWHSgHbSf3Xuz8vfo5zy29jRfXLTgXfeopvZk4vsycXcmpLGXVHlta/cm5PWiYDz3dv+/PzNcGW9QTPty8f+/v3EWEu/SDrPd2z//v79+fneoJjIYVXFWUzpwr3dnZX25OLCUUTTgHb36ejqw77CUkS9QzTOc2jbmJDWioHFW04AAADZKVEvAAAAAXRSTlP+GuMHfQAAAAFiS0dEUZRpfCoAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCA0KIh9yb002AAAAwElEQVQoz93RxQ7CQBQF0A5S4OJeoHhxd3d3/v9rmDZN04SWHQu4m7s4Gcl7DPkY5u/ZYDSZWYseW20QY3dospOSyw14vFrsA/yBIAmF5ds5NqLmKGK8+hCLuIoTQJJWKi0mQ7JCDnnBoHABKNIqSb8rk4rUjMJVoKZwnQQaTbQavMJtoENL4Lgu0Ht7m/QxGIo9GmMypZ0uzdQ8X2C5Wm9SY2CrNZYd5OwPmkM9nkRcnC86K7ne7uzj+aV9/xy/APCvFHNqTl4uAAAAAElFTkSuQmCC"></image>
 			</symbol>
 		
 			<symbol id="google" viewBox="0 0 4335 4335">
 				<path d="M-4 1h4335v4335H-4z"></path><path d="M3217 1704h290c0 97 1 195 2 292 97 1 195 1 292 2v291c-97 0-195 1-292 1-1 98-1 195-2 292h-291c-1-98-1-195-2-292-97-1-195-1-292-2v-291c97-1 194-1 292-2 1-97 1-195 2-292zM584 2143c-20-527 442-1014 969-1021 269-23 531 82 734 252-83 92-168 183-259 267-179-109-395-192-604-118-338 96-542 495-417 825 103 345 523 535 852 390 170-61 283-218 332-387-195-4-390-1-586-7 0-116-1-232 0-348 326 0 652-1 978 1 20 285-22 589-207 818-253 326-721 422-1102 294-404-133-698-540-689-966z"></path><path d="M3213 1651h290c0 97 1 195 2 292 97 1 195 1 292 2v291c-97 0-195 1-292 1-1 98-1 195-2 292h-291c-1-98-1-195-2-292-97-1-195-1-292-2v-291c97-1 194-1 292-2 1-97 1-195 2-292zM580 2090c-20-527 442-1014 969-1021 269-23 531 82 734 252-83 92-168 183-259 267-179-109-395-192-604-118-338 96-542 495-417 825 103 345 523 535 852 390 170-61 283-218 332-387-195-4-390-1-586-7 0-116-1-232 0-348 326 0 652-1 978 1 20 285-22 589-207 818-253 326-721 422-1102 294-404-133-698-540-689-966z"></path>
 			</symbol>
 		
-			<symbol id="insta" viewBox="0 0 4335 4335">
-				<path d="M-4 1h4335v4335H-4z"></path><path d="M2193 959c410 0 459 2 621 9 150 7 231 32 285 53 72 28 123 61 177 115s87 105 115 177c21 54 46 135 53 285 7 162 9 211 9 621s-2 459-9 621c-7 150-32 231-53 285-28 72-61 123-115 177s-105 87-177 115c-54 21-135 46-285 53-162 7-211 9-621 9s-459-2-621-9c-150-7-231-32-285-53-72-28-123-61-177-115s-87-105-115-177c-21-54-46-135-53-285-7-162-9-211-9-621s2-459 9-621c7-150 32-231 53-285 28-72 61-123 115-177s105-87 177-115c54-21 135-46 285-53 162-7 211-9 621-9zm1536 1297v-76c0-382-2-437-9-595-7-163-33-275-71-373-39-101-92-187-177-272s-171-138-272-177c-98-38-209-64-373-71-159-7-213-9-595-9h-76c-382 0-437 2-595 9-163 7-275 33-373 71-101 39-187 92-272 177s-138 171-177 272c-38 98-64 209-71 373s-9 216-9 633 2 469 9 633c7 163 33 275 71 373 39 101 92 187 177 272s171 138 272 177c98 38 209 64 373 71s216 9 633 9 469-2 633-9c163-7 275-33 373-71 101-39 187-92 272-177s138-171 177-272c38-98 64-209 71-373 7-159 9-213 9-595zm-1536-827c-436 0-789 353-789 789s353 789 789 789 789-353 789-789-353-789-789-789zm0 1301c-283 0-512-229-512-512s229-512 512-512 512 229 512 512-229 512-512 512zm1004-1332c0 102-83 184-184 184-102 0-184-83-184-184 0-102 83-184 184-184 102 0 184 83 184 184z"></path><path d="M2182 893c410 0 459 2 621 9 150 7 231 32 285 53 72 28 123 61 177 115s87 105 115 177c21 54 46 135 53 285 7 162 9 211 9 621s-2 459-9 621c-7 150-32 231-53 285-28 72-61 123-115 177s-105 87-177 115c-54 21-135 46-285 53-162 7-211 9-621 9s-459-2-621-9c-150-7-231-32-285-53-72-28-123-61-177-115s-87-105-115-177c-21-54-46-135-53-285-7-162-9-211-9-621s2-459 9-621c7-150 32-231 53-285 28-72 61-123 115-177s105-87 177-115c54-21 135-46 285-53 162-7 211-9 621-9zm1536 1297v-76c0-382-2-437-9-595-7-163-33-275-71-373-39-101-92-187-177-272s-171-138-272-177c-98-38-209-64-373-71-159-7-213-9-595-9h-76c-382 0-437 2-595 9-163 7-275 33-373 71-101 39-187 92-272 177s-138 171-177 272c-38 98-64 209-71 373s-9 216-9 633 2 469 9 633c7 163 33 275 71 373 39 101 92 187 177 272s171 138 272 177c98 38 209 64 373 71s216 9 633 9 469-2 633-9c163-7 275-33 373-71 101-39 187-92 272-177s138-171 177-272c38-98 64-209 71-373 7-159 9-213 9-595zm-1536-827c-436 0-789 353-789 789s353 789 789 789 789-353 789-789-353-789-789-789zm0 1301c-283 0-512-229-512-512s229-512 512-512 512 229 512 512-229 512-512 512zm1004-1332c0 102-83 184-184 184-102 0-184-83-184-184 0-102 83-184 184-184 102 0 184 83 184 184z"></path>
+			<symbol id="insta" viewBox="0 0 30 31">
+				<image width="30" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAMAAADHso01AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEX////////////////////////////////FNqTVbL3vyOb89Pr////hmdH//v/mqtjQXbXMTq/OVrPejszHPqjKR6vy1OvfkM3FOKX45/Tdisrz1uzPWbTsvuL99/vch8kAAAAFN9VJAAAACHRSTlMA/u/YAQQJDLrwtjEAAAABYktHRCCzaz2AAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4ggNCiMc8n0tzQAAALRJREFUKM/N0msLwiAUBuCtdnH6zku60mr5//9lymCoRBIR9H4Q4QEv55yGvE3zBzxRhj2MTjnPHFn4nPLEuZBqjxScTwlTiOTCkzYCNGEGucmyhOWMiwRLGFBhtdoBTtvr7a6Aku26PWu1hLxgjYc3xj+gI7clO/i493CRDwUvgIl7AyxEtcfPuHJ47WmVj+1lISXnRQ3Ji5q3JCRvSaWhlXGoDdOXk/ob3tL1wzgOfdcUeQKYoCRuoKgVswAAAABJRU5ErkJggg=="></image>
 			</symbol>
 		
 			<symbol id="ks" viewBox="0 0 612 792">
@@ -1351,6 +1423,10 @@
 				<path d="M446.73 268.439h-45.29a6.774 6.774 0 0 0 0 13.548h38.515v180.271h-31.74V305.661a6.774 6.774 0 0 0-13.548 0v163.372a6.773 6.773 0 0 0 6.774 6.773h45.29a6.773 6.773 0 0 0 6.773-6.773V275.214a6.775 6.775 0 0 0-6.774-6.775zm-85.089 84.262h-45.289a6.774 6.774 0 0 0-6.775 6.774v109.558a6.774 6.774 0 0 0 6.775 6.773h45.289a6.773 6.773 0 0 0 6.773-6.773V359.476a6.774 6.774 0 0 0-6.773-6.775zm-6.775 109.558h-31.741V366.25h31.741v96.009zm-78.315-71.689h-45.289a6.774 6.774 0 0 0-6.774 6.775v71.688a6.773 6.773 0 0 0 6.774 6.773h45.289a6.773 6.773 0 0 0 6.774-6.773v-71.688a6.774 6.774 0 0 0-6.774-6.775zm-6.775 71.689h-31.741v-58.14h31.741v58.14zm-78.315-39.715h-45.29a6.774 6.774 0 0 0-6.774 6.774v39.715a6.773 6.773 0 0 0 6.774 6.773h45.29a6.773 6.773 0 0 0 6.774-6.773v-39.715a6.773 6.773 0 0 0-6.774-6.774zm-6.774 39.715h-31.741v-26.166h31.741v26.166zm228.39-284.94a6.773 6.773 0 0 0-.685-7.113l-26.73-35.032a6.773 6.773 0 0 0-10.772 0l-26.729 35.032a6.775 6.775 0 0 0 10.771 8.219l21.344-27.974 13.039 17.09h-13.039a6.774 6.774 0 0 0-6.774 6.774c0 97.535-79.351 176.885-176.885 176.885a6.774 6.774 0 1 0 0 13.548c102.737 0 186.718-81.78 190.3-183.659h20.088a6.772 6.772 0 0 0 6.072-3.77z"></path><path d="M289.732 276.23a6.785 6.785 0 0 0 1.048-.999c27.02-25.228 43.958-61.123 43.958-100.917 0-76.16-61.961-138.121-138.121-138.121-3.452 0-6.862.17-10.251.42h-.024l-.016.003c-38.972 2.887-73.493 21.985-96.806 50.595a6.777 6.777 0 0 0-1.013 1.288c-18.762 23.587-30.013 53.403-30.013 85.814 0 36.062 13.906 68.926 36.62 93.55.29.378.619.72.981 1.029 25.207 26.774 60.933 43.542 100.521 43.542 35.847.002 68.541-13.731 93.116-36.204zm-98.592-1.705c-14.631-11.31-32.874-17.537-51.368-17.537h-36.23c-19.574-22.013-31.497-50.971-31.497-82.674 0-28.364 9.547-54.528 25.571-75.492h37.786c9.966 0 18.075 8.108 18.075 18.075 0 9.967-8.109 18.076-18.075 18.076h-18.369c-15.455 0-28.029 12.574-28.029 28.029 0 15.456 12.574 28.029 28.029 28.029h1.417c9.157 0 16.605 7.45 16.605 16.607s-7.449 16.606-16.605 16.606a6.774 6.774 0 0 0 0 13.548c16.627 0 30.154-13.528 30.154-30.155 0-16.628-13.527-30.155-30.154-30.155h-1.417c-7.985 0-14.48-6.496-14.48-14.481 0-7.985 6.496-14.48 14.48-14.48h18.369c17.437 0 31.624-14.186 31.624-31.625 0-17.438-14.187-31.624-31.624-31.624h-25.785c19.031-18.599 43.973-31.148 71.714-34.561 5.422 24.208 26.823 41.732 52.294 41.732h19.699c3.741 0 6.773-3.033 6.773-6.774s-3.032-6.774-6.773-6.774h-19.699c-18.304 0-33.787-12.107-38.555-29.116.518-.006 1.028-.039 1.547-.039 68.689 0 124.572 55.883 124.572 124.573 0 35.244-14.736 67.092-38.342 89.774h-22.665c-7.25 0-13.148-5.897-13.148-13.147s5.898-13.147 13.148-13.147h2.568c15.05 0 27.294-12.245 27.294-27.294s-12.244-27.293-27.294-27.293h-24.105c-11.336 0-20.558-9.223-20.558-20.559s9.222-20.558 20.558-20.558h49.802c3.741 0 6.773-3.032 6.773-6.774s-3.032-6.774-6.773-6.774h-49.802c-18.807 0-34.106 15.3-34.106 34.106s15.3 34.107 34.106 34.107h24.105c7.579 0 13.745 6.166 13.745 13.745s-6.166 13.745-13.745 13.745h-2.568c-14.721 0-26.696 11.976-26.696 26.696s11.976 26.695 26.696 26.695h5.951c-19.869 13.412-43.794 21.25-69.516 21.25-29.976 0-57.51-10.646-79.028-28.351h22.182c15.511 0 30.811 5.224 43.083 14.708a6.742 6.742 0 0 0 4.138 1.414c2.025 0 4.03-.904 5.364-2.632a6.768 6.768 0 0 0-1.216-9.499z"></path>
 			</symbol>
 		
+			<symbol id="twit" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABYlBMVEVVrO5WrO5Xre5Jpu06n+s5nutEpOxSqu5BouxPqe1Yre5Sq+42netar+6JxfOMx/RotfA9oOxUrO5br+9Tq+54vfFNqO1Lp+1Uq+6QyPTv9/3////9/v+n1PZZru+z2veWzPRcsO+83vgumepYru44nuuEw/Pu9/2PyPRZru5vufG93/hIpu1Wre5Qqe5FpOzl8/zt9v253fhMqO1dsO/+/v+PyfRRqu00nOsik+lOqO7R6Poxmuqdz/W33PiLxvOIxfP4/P98v/ItmOpesO+Fw/Pc7vuGxPM5n+tDo+xtuPBCouzD4vnl8vxHpe3F4vn8/f+w2fcym+s3netuufDS6fpks+88oOuKxvM7n+uf0PVGpOxGpexOqe0nlems1vf7/f/5/P7O5/ro9P1hsu81nOtKpu1xuvG83vmw2PdRqu5Qqu19v/Le7/z2+v71+v7U6vtyuvFCo+xAouw+oewAAADLPMirAAAAAWJLR0R1qGqY+wAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIDQoiL1S2fZoAAAE1SURBVCjPY2AYMoCRiZmFlY2BiYEdSYyBg5MLzGLi5uHl4xdgFWQVEkbIi4iKiTOBGBIsklLS0jKycvIKgkwwWWZFaSVlDhWgMapq0hCgrqEpBpPm0JKW1hZT1tHV0zeAShsaMRrDpHVMTKWlpczMLSytoLLS1sxscMOZbGzBOuzsHRyh0k7OmnCXibm4ukGFZaC0uwfC4Z5e0lLSqMDLGyEtxOODJuuro4eQ1vXj9A9AkQ4M0kUKSs3gkFAZZOkwDpSgDo9A0Wxkw4giLREZhSQrFR2jiyLLGBsnHp8AlU10YZVDiUVhPw5hpyRTiGxySqomsqxQWnqGIcxgmUwxVRXUNJCVnaOdmweUyy+QDUvV10SVZdDVZUv1NCkULXRh4yli1GXABIxZOsUlHDpZVE6bNAQAUhY2JUjtankAAAAASUVORK5CYII="></image>
+			</symbol>
+		
 			<symbol id="twitter" viewBox="0 0 4335 4335">
 				<path d="M3 4h4335v4335H3z"></path><path d="M1702 3527c-359 0-693-105-974-286 50 6 100 9 152 9 298 0 572-102 789-272-278-5-513-189-594-441 39 7 79 11 120 11 58 0 114-8 167-22-291-58-510-315-510-623v-8c86 48 184 76 288 79-171-114-283-309-283-529 0-116 31-226 86-320 313 385 782 638 1310 664-11-47-16-95-16-145 0-351 285-636 636-636 183 0 348 77 464 201 145-29 281-81 404-154-47 148-148 273-279 352 129-15 251-50 365-100-85 127-193 239-317 329 1 27 2 55 2 82 0 840-639 1808-1808 1808z"></path><path d="M1713 3484c-359 0-693-105-974-286 50 6 100 9 152 9 298 0 572-102 789-272-278-5-513-189-594-441 39 7 79 11 120 11 58 0 114-8 167-22-291-58-510-315-510-623v-8c86 48 184 76 288 79-171-114-283-309-283-529 0-117 31-226 86-320 313 385 782 638 1310 664-11-47-16-95-16-145 0-351 285-636 636-636 183 0 348 77 464 201 145-29 281-81 404-154-47 148-148 273-279 352 129-15 251-50 365-100-85 127-193 239-317 329 1 27 2 55 2 82 0 840-639 1808-1808 1808zM-5309-290h-138v-80c-52 60-97 90-145 90-43 0-72-20-87-56-9-22-15-56-15-107v-582h138v597c3 20 12 28 29 28 26 0 50-23 80-64v-560h138v735zm-626-218c7 73-15 109-58 109s-65-36-58-109v-291c-7-73 15-107 58-107s66 34 58 107v291zm138-277c0-79-16-138-44-175-37-50-95-71-153-71-66 0-116 21-153 71-28 37-44 97-44 175v261c0 78 14 132 42 169 37 50 96 77 155 77 58 0 119-27 156-77 28-37 41-91 41-169v-262zm-546 95v400h-146v-400s-151-491-182-582h153l102 383 102-383h153l-182 582zm2456-218c-22 0-47 11-69 33v441c22 22 47 33 69 33 38 0 55-28 55-101v-313c0-73-17-94-55-94zm543 87c0-67-17-87-61-87s-63 19-63 87v81h124v-79zm-60 420c32 0 51-18 59-53 1-7 1-39 1-91h138v21c0 42-4 73-5 86-4 29-15 56-31 79-36 53-91 79-159 79-69 0-121-25-160-75-28-36-46-91-46-168v-255c0-78 16-138 44-175 38-50 91-76 158-76 66 0 119 26 156 76 28 37 43 94 43 171v149h-262v131c0 67 19 101 64 101zm380-270v-182c-1-172-22-341-22-341s-21-149-86-215c-83-86-175-87-218-92-304-22-760-22-760-22h-1s-456 0-760 22c-42 5-135 5-218 92-65 66-86 215-86 215s-22 175-22 350v164c0 175 22 350 22 350s21 149 86 215c83 86 191 83 240 92 174 17 739 22 739 22 14 0 461-1 760-23 42-5 135-5 218-92 65-66 86-215 86-215s21-169 22-341zm-670 162c0 67-6 115-15 146-18 54-56 82-108 82-47 0-95-28-139-83v73h-131v-975h131v318c43-52 91-82 139-82 52 0 88 30 105 85 9 29 18 76 18 145v291zm-502 218h-138v-80c-52 60-97 90-145 90-43 0-72-20-87-56-9-22-15-56-15-107v-575h138v590c3 20 12 28 29 28 26 0 50-23 80-64v-553h138v728zm-524 0h-146v-837h-153v-138h459v138h-160v837z"></path>
 			</symbol>
@@ -1363,8 +1439,12 @@
 				<path d="M0 32c0 17.7 14.3 32 32 32s32-14.3 32-32S49.7 0 32 0 0 14.3 0 32z"></path><path d="M46 42.2v5.9c0 .5-.4.9-.9.9H18c-.5 0-.9-.4-.9-.9v-5.9c0-4.8 6.5-8.6 14.4-8.6S46 37.4 46 42.2z"></path><ellipse cx="31.5" cy="21.2" rx="6.4" ry="6.2"></ellipse>
 			</symbol>
 		
-			<symbol id="vk" viewBox="0 0 100 100">
-				<path d="M93.404 41.873c-.012-5.826.42-11.764.18-17.62-.117-2.899-.18-17.445-.18-17.445-2.975 0-7.061-.047-9.986.181-7.674.597-76.871-.039-76.871-.039-.003 3.819 0 17.323 0 21.158 0 8.002-.122 15.69-.182 23.633-.102 13.747.182 27.723.182 41.197l1.589.081c3.631-.428 6.285-.019 9.717-.081 6.002-.109 32.354.455 39.31.181 6.313-.248 33.289.092 35.878.017 0 0 .438-36.227.364-38.87-.118-4.183.007-8.256-.001-12.393zM79.827 68.449c-2.254 1.411-11.416 1.831-13.635.219-1.216-.884-2.327-1.99-3.385-3.042-.739-.736-1.578-1.093-2.212-1.892-.52-.654-.874-1.425-1.421-2.069-.921-1.083-2.339-2.004-3.462-.681-1.688 1.989.267 5.899-1.987 7.385-.755.499-1.518.643-2.462.572l-2.091.096c-1.228.024-3.175.035-4.572-.218-1.558-.281-2.846-1.132-4.255-1.758-2.676-1.187-5.226-2.803-7.164-5.043-5.279-6.1-12.371-14.49-15.126-22.16-.565-1.576-2.062-4.694-.644-6.048 1.929-1.401 11.399-1.797 12.877.371.6.88.979 2.171 1.402 3.169.528 1.245.814 2.418 1.641 3.521.732.977 1.271 1.96 1.838 3.032.634 1.202 1.234 2.356 2.006 3.464.524.753 1.91 2.25 2.785 2.362 2.138.273 2.005-4.922 1.847-6.19a24.527 24.527 0 0 1-.151-3.758c.034-1.057.13-2.547-.496-3.411-1.021-1.408-3.295-.354-3.473-2.246.377-.538.296-1.014 2.805-1.84 1.975-.65 3.251-.629 4.554-.525 2.655.213 5.472-.506 8.033.355 2.449.825 2.07 4.304 1.989 6.39-.11 2.848.007 5.625 0 8.515-.003 1.316-.057 2.596 1.548 2.489 1.504-.101 1.657-1.365 2.375-2.41.999-1.456 1.915-2.931 2.931-4.382 1.371-1.96 1.785-4.163 3.073-6.171.462-.719.858-2.289 1.569-2.856.537-.43 1.561-.246 2.211-.246h1.548c1.185.014 2.393.031 3.61.074 1.754.061 3.718-.32 5.457-.075 7.502 1.059-9.431 17.107-8.549 19.97.609 1.978 4.471 4.192 5.865 5.813 1.856 2.155 7.552 6.45 3.121 9.224z"></path>
+			<symbol id="vk" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEVMdaP///9NdqOGocFoi7G6ydvY4evm7PL8/f6+zd7p7vSbsssAAACfRyKAAAAAAWJLR0QMgbNRYwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIDQojD3bDbBMAAABZSURBVBjTY2AYFEBQUAHGZBQUBPEFQAwBiJwAjM8A4xuCxQThGhyhamD8QEEBmHKwBjBC8CFAAGEjCh+uAMZPRFPADmIzIilghLhRsAEmwCm4gIEbIT9wAAD3OwjqOUG4TQAAAABJRU5ErkJggg=="></image>
+			</symbol>
+		
+			<symbol id="yot" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABPlBMVEXcRy7dTTX65ODld2Trl4n1ysL2zcbup5v1zMXuqJzrlof31M/99fTkcl/xtKr76uffWEL20sveUDjgXkj//v788O7iZVH////sm43++fjeUzv539ryurDjalX0xr7uo5fjbFjiZ1PeUjr98vD77On319H77OriZ1LgXEbng3LeUTnkb1vgWkPldWLdSjHcSDDhZE/hYk365OH20Mr76eb++vn649/87uz99PPxtavhYUzdSzP87evpjH3yurH99/b65uLxt6353dj31c/memffWEH1zMbwsKXfVj/pi3vwsabngnHpjHzws6jwr6TngXDfVT7yua/54d3jbVnuppnfWULmfGrtoJTld2Xzwbn87+354NzqkYLvraLtn5LtnpHwsKbtoJP76+j64t7ldGHohHP++PfdSzL319IAAADw9ktUAAAAAWJLR0RpvGvEtAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIDQoiOjlrmXEAAAD9SURBVCjPzcvXVsJAFIXhETtYchz12EaCipVIVUGdgEOxi8YSAWNXeP8nMAuuRifxUv/L/a1NyD+oK9Dd0+vjff0Dgz4cDA0Nj4wGNdBgTMF0fGISp6YpUpxR3WfnGDL05Pnwr6y7GPHihcWlqIbLal6hZHVtnWzEjM0fFk8wphvtdMYScVmTKZRKJSVOZwBgy923dzqeljib291j++7MzQ5nZUagGMgX8vxAIBaFihkYwEvlymHkKOrF5vHJqXl27sn8onpJr/zYDFkKvr65BR6+y3H7viZzHRsP6Dw+NZ5fqq9v7x+fdYkd/JYjcdNuCWFl2llCtOwm+fO+AA1CMpOki6BsAAAAAElFTkSuQmCC"></image>
 			</symbol>
 		
 			<symbol id="yotube" viewBox="0 0 67 67">
@@ -1375,6 +1455,7 @@
 </div>
 <script src="../libs/jQuery/jquery-3.3.1.min.js"></script>
 <script src="../libs/bootstrap/bootstrap.js"></script>
+<script src="../libs/slick/slick.min.js"></script>
 <script src="../js/build.js"></script>
 </body>
 </html>

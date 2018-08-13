@@ -1,0 +1,143 @@
+.article {
+	width: 100%;
+
+	&__thumb {
+		position: relative;
+		width: 100%;
+		padding-bottom: 54.1%;
+
+		&--in-sidebar {
+			padding: 0px 13px;
+			padding-top: 18px;
+			padding-bottom: 58.6%;
+		}
+
+		&--right-col {
+			padding-bottom: 62%;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__content {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		min-height: 338px;
+
+		background-color: $white;
+		border-radius: 4px;
+		box-shadow: 0px 1px 2.97px 0.03px rgba(0, 0, 0, 0.12);
+
+		&--in-sidebar {
+			padding-top: 18px;
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+
+	&__text-info {
+		padding: 14px 19px;
+
+		&--blog {
+			margin-bottom: 20px;
+		}
+
+		&--in-sidebar {
+			padding-right: 8px;
+			padding-left: 8px;
+			padding-bottom: 27px;
+		}
+	}
+
+	&__title {
+		display: block;
+		width: 100%;
+		max-width: 305px;
+		margin-bottom: $gutter;
+
+		font-size: 16px;
+		font-weight: 700;
+		color: $black-text;
+		text-transform: uppercase;
+		line-height: 20px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		@include media($screen-xs) {
+			max-width: none;
+			font-size: 15px;
+			line-height: 15px;
+		}
+	}
+
+	&__descr {
+		font-size: 15px;
+		font-weight: 400;
+		color: $gray;
+		line-height: 18px;
+
+		@include media($screen-xs) {
+			font-size: $basic-size;
+		}
+	}
+
+	&__bottom {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 4;
+
+		width: 100%;
+		padding: 24px 64px;
+
+		background-color: rgba(0, 0, 0, 0.6);
+
+		@include media($screen-xs) {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+	}
+
+	&__bottom-info {
+		width: 100%;
+		padding: 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__btn-more {
+		padding: 6px 24px;
+		margin-right: 25px;
+
+		&:hover {
+			color: $white;
+
+			background-image: linear-gradient( 90deg, rgb(10,165,223) 0%, rgb(14,187,252) 100%);
+		}
+	}
+
+	&__date {
+		display: block;
+		margin-right: 12px;
+
+		font-size: 13px;
+		color: #929191;
+		font-weight: 400;
+	}
+
+}

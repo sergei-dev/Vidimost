@@ -124,4 +124,12 @@
 		transition: fill $anim;
 	}
 
+	&__btn-text {
+		font-size: $basic-size;
+    color: $black-text;
+    line-height: 22px;
+    
+    border-bottom: 1px dashed currentColor;
+	}
+
 }
