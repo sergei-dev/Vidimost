@@ -8,7 +8,8 @@
 	}
 
 	&__btn {
-
+			display: flex;
+			align-items: center;
 			margin-right: 36px;
 
 		&--new {
@@ -25,6 +26,11 @@
 			.action-buttons__icon {
 				fill: $brand-color;
 			}
+
+			.action-buttons__text {
+				color: $brand-color;
+			}
+
 		}
 	}
 
@@ -33,9 +39,19 @@
 		height: 31px;
 		fill: #bfbfbf;
 		transition: fill .3s;
+
+		&--align {
+			margin-right: 7px;
+		}
 	}
 
 	&--card {
 		margin-right: 10px;
 	}
+
+	&__text {
+		color: $gray;
+		border-bottom: 1px solid;
+	}
+
 }

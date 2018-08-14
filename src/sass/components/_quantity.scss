@@ -1,11 +1,21 @@
 .quantity {
 	display: flex;
 
+	&--card {
+		margin-bottom: 12px;
+	}
+
 	&__btn {
 		padding: 4px 8.5px;
 
 		font-size: 28px;
 		font-weight: 400;
+
+		&--gray {
+			color: $black-text;
+
+			background-color: #dbdbdb;
+		}
 	}
 
 	&__inp {
@@ -20,5 +30,9 @@
 		border: 1px solid #acacaf;
 		border-left: 0;
 		border-right: 0;
+
+		&--gray {
+			border-color: #dbdbdb;
+		}
 	}
 }

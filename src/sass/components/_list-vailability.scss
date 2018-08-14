@@ -1,8 +1,12 @@
 .list-vailability {
-	margin: -3px 0;
+	margin-bottom: -3px;
 
 	&--marg {
-		margin-bottom: 16px;
+		margin-bottom: 15px;
+	}
+
+	&--card {
+		margin-bottom: 10px;
 	}
 
 	&__item {
@@ -43,6 +47,14 @@
 		&--empty {
 			&::before {
 				background-color: #fe2b06;	
+			}
+		}
+
+		&--card {
+			padding-left: 19px;
+
+			&::before {
+				left: 0;
 			}
 		}
 	}

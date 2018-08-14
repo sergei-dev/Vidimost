@@ -6,6 +6,10 @@
   border-radius: 8px;
   box-shadow: 0px 1px 2.97px 0.03px rgba(0, 0, 0, 0.12);
 
+  @include media($screen-md) {
+  	flex-direction: column;
+  }
+ 
 	&__thumb, &__info {
 		width: 50%;
 	}
@@ -15,6 +19,14 @@
 		padding-left: 24px;
 
 		border-right: 1px solid #ededed;
+
+		@include media($screen-md) {
+			align-self: center;
+		}
+
+		@include media($screen-sm) {
+			width: 100%;
+		}
 	}
 
 	&__info {
@@ -22,19 +34,87 @@
 		padding-bottom: 25px;
 		padding-left: 45px;
 		padding-right: 20px;
+
+		@include media($screen-md) {
+			width: 100%;
+		}
+
+		@include media(505px) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 
 	&__title {
 		margin-top: 0;
-		margin-bottom: 24px;
+		margin-bottom: 14px;
+		padding-bottom: 24px;
 
 		font-size: 24px;
+		line-height: 32px;
 	}
 	
 	&__info-box {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@include media(505px) {
+			flex-direction: column;
+		}
+	}
+
+	&__descr {
+		margin-bottom: 9px;
+	}
+
+	&__descr-left {
+		@include media(505px) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__descr-text {
+		color: $gray;
+		font-size: $basic-size;
+		line-height: 20px;
+	}
+
+	&__link {
+		color: $brand-color;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__numb {
+		font-weight: 700;
+	}
+
+	&__rating-wrap {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 13px;
+	}
+
+	&__link-review {
+		color: $brand-color;
+		font-size: $basic-size;
+		line-height: 24px;
+	}
+
+	&__buy {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 179px;
+
+		@include media(505px) {
+			width: 100%;
+		}
 	}
 
 }

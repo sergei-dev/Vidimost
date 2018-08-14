@@ -1,0 +1,42 @@
+.delivery-info {
+	width: 100%;
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+
+	&__item {
+		display: flex;
+		align-items: flex-start;
+
+		&:not(:last-child) {
+			margin-bottom: 22px;
+		}
+	}
+
+	&__ico {
+		width: 33px;
+		min-width: 33px;
+		height: 33px;
+		margin-right: 12px;
+
+		color: $brand-color;
+	}
+
+	&__text {
+		font-size: $basic-size;
+		color: $black-text;
+		font-weight: 400;
+		line-height: 16px;
+	}
+
+	&__accent {
+		font-weight: 700;
+	}
+	&__link {
+		display: block;
+
+		color: $brand-color;
+		text-decoration: underline;
+	}
+
+}

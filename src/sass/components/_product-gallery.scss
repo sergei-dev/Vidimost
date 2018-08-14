@@ -2,9 +2,14 @@
 	display: flex;
 	align-items: center;
 
+	@include media($screen-xs) {
+  	flex-direction: column;
+  }
+
 	&__slider {
 		max-width: 65px;
 		padding: 30px 0px;
+
 	}
 
 	.slick-vertical .product-gallery__link {
@@ -23,9 +28,13 @@
 		position: relative;
 
 		padding: 0px 45px;
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 9px;
+		padding-bottom: 9px;
 		width: 100%;
+
+		@include media($screen-sm) {
+			order: -1;
+		}
 	}
 
 	&__pic-wrap {
@@ -48,6 +57,9 @@
 
 	.slick-prev, .slick-next {
 		left: 50%;
+
+		height: 13px;
+
 		transform: translateX(-50%);
 
 		&::before {
@@ -55,8 +67,8 @@
 			position: absolute;
 			right: 5px;
 
-			width: 11px;
-			height: 11px;
+			width: 13px;
+			height: 13px;
 
 			background-color: transparent;
 			border: 2px solid #c8c8c8;
@@ -64,7 +76,16 @@
 			border-left: 0;
 			opacity: 1;
 
+			transition: border-color, $anim;
+
 			transform: translateX(-50%) rotate(-45deg);
+		}
+
+		&:hover, &:active, &:focus {
+
+			&::before {
+				border-color: $brand-color;
+			}
 		}
 	}
 
@@ -82,7 +103,10 @@
 		top: 90%;
 
 		&::before {
-			transform: translateX(-50%) rotate(45deg);
+			top: 3px;
+
+			transform: rotate(45deg);
 		}
 	}
+
 }

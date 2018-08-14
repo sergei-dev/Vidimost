@@ -17,7 +17,6 @@
 
   transition: color, background-color .3s;
 
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
 
   &__icon {
@@ -26,6 +25,10 @@
     margin-left: 33px;
 
     fill: $white;
+
+    &--no-text {
+      margin: 0;
+    }
   }
 
   &:hover {
@@ -103,7 +106,12 @@
   }
 
   &--buy {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+
     font-size: 18px;
+    line-height: 15px;
 
     background-color: $red;
 

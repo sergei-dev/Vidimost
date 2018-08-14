@@ -39,6 +39,15 @@ $(document).ready(function() {
 		event.preventDefault();
 		var src = $(this).attr('href');
 		$('.product-gallery__pic').attr('src', src);
+	});
+
+	$('#tel-buy').mask('+38(99) 99 99 99 99');
+
+	$(this).find('.tabs-control__btn').each(function(i) {
+		$(this).on('click', function(e) {
+			$(this).addClass('active').siblings().removeClass('active')
+			.closest('.product-info__tabs-wrap').find('.tab-content__item').removeClass('active').eq(i).addClass('active');
+		})
 	})
 
 	$('#open-menu').on('click', function() {

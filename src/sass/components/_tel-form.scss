@@ -1,0 +1,32 @@
+.tel-form {
+	width: 100%;
+
+	&__text {
+		display: block;
+		margin-bottom: 3px;
+
+		font-size: $basic-size;
+		color: $gray;
+		font-weight: 400;
+	}
+
+	&__group {
+		display: flex;
+	}
+
+	&__inp {
+		max-width: 152px;
+		padding: 3px 13px;
+
+		color: #919496;
+		font-family: Arial;
+
+		border: 1px solid #acacaf;
+		border-right: 0;
+		border-radius: 2px;
+	}
+
+	&__btn {
+		padding: 5px 6px;
+	}
+}
