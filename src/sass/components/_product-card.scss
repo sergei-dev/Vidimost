@@ -27,6 +27,10 @@
 		@include media($screen-sm) {
 			width: 100%;
 		}
+
+		@include media($screen-xs) {
+			padding: 0;
+		}
 	}
 
 	&__info {
@@ -93,18 +97,6 @@
 		font-weight: 700;
 	}
 
-	&__rating-wrap {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-bottom: 13px;
-	}
-
-	&__link-review {
-		color: $brand-color;
-		font-size: $basic-size;
-		line-height: 24px;
-	}
 
 	&__buy {
 		display: flex;
@@ -117,4 +109,23 @@
 		}
 	}
 
+	&__rating-wrap {
+		margin-bottom: 13px;
+	}
+
+	&__tel-form {
+
+		@include media($screen-xs) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__tel-text {
+		
+		@include media($screen-xs) {
+			margin-bottom: 10px;
+		}
+	}
 }

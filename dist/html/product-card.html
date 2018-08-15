@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<header class="header-page">
+<header id="page-header" class="header-page">
   <nav class="nav">
     <div class="container-new header-page__container">
       <button id="open-menu" class="open-menu">
@@ -465,7 +465,7 @@
 							<!-- /.product-list__vailability -->
 						</ul>
 
-						<div class="product-card__rating-wrap">
+						<div class="rating-wrap product-card__rating-wrap">
 							<div class="rating rating--card">
 								<ul class="rating__list">
 									<li class="rating__item">
@@ -512,13 +512,13 @@
 									</div>
 									<!-- rating -->
 
-									<div class="product-card__wrap-links-reviews">
-										<a class="product-card__link-review" href="#">200 отзывов /</a>
-										<a class="product-card__link-review" href="#">Написать отзыв</a>
+									<div class="rating-wrap__wrap-links-reviews">
+										<a class="rating-wrap__link-review" href="#">200 отзывов /</a>
+										<a class="rating-wrap__link-review" href="#">Написать отзыв</a>
 									</div>
 									<!-- /.product-card__wrap-links-reviews -->
 								</div>
-								<!-- /.product-card__rating-wrap -->
+								<!-- /.rating-wrap -->
 								<div class="action-buttons">
 									<button class="action-buttons__btn">
 										<svg class="action-buttons__icon action-buttons__icon--align">
@@ -557,8 +557,8 @@
 								</div>
 								<!-- quantity -->
 								<button class="button button--buy">Купить</button>
-								<form class="tel-form">
-									<label for="tel-buy" class="tel-form__text">Купить в один клик</label>
+								<form class="tel-form product-card__tel-form">
+									<label for="tel-buy" class="tel-form__text product-card__tel-text">Купить в один клик</label>
 									<p class="tel-form__group">
 										<input type="text" id="tel-buy" class="tel-form__inp" required>
 										<button class="button tel-form__btn">
@@ -1320,11 +1320,39 @@
 
 
 <footer class="page-footer">
+	<div class="dispatch">
+		<div class="container-new dispatch__container">
+			<div class="dispatch__wrap">
+				<h3 class="dispatch__title">Подписаться на рассылку:</h3>
+				<!-- /.dispatch__title -->
+				<form class="dispatch__form">
+					<p class="dispatch__group">
+						<label for="dispatch-email" class="visually-hidden">Ваш email</label>
+						<input type="email" id="dispatch-email" class="dispatch__inp" placeholder="Введите ваш e-mail">
+					</p>
+					<!-- /.dispatch__group -->
+					<p class="dispatch__group-btn">
+						<button class="button dispatch__btn">Отправить</button>
+					</p>
+					<!-- /.dispatch__group-btn -->
+				</form>
+				<!-- /.dispatch__form -->
+				<div class="dispatch__decor">
+					<svg class="dispatch__icon">
+						<use href="#dispatch"></use>
+					</svg>
+					<!-- /.dispatch__icon -->
+				</div>
+			</div>
+			<!-- /.dispatch__wrap -->
+		</div>
+		<!-- /.container-new -->
+	</div>
 	<div class="page-footer__top">
 		<div class="container-new page-footer__container">
 			<div class="page-footer__nav-wrap">
-			<div class="page-footer__nav-list-wrap">
-				<div class="page-footer__nav-wrap-title">
+				<div class="page-footer__nav-list-wrap">
+					<div class="page-footer__nav-wrap-title">
 					<h3 class="page-footer__nav-title">Информация</h3>
 				<!-- /.page-footer__nav-title -->
 				</div>
@@ -1647,6 +1675,17 @@
 		<!-- /.container-new -->
 	</div>
 	<!-- /.page-footer__bottom -->
+
+	
+		<button class="scroll-up">
+			<i class="scroll-up__ico">
+				<svg class="scroll-up__svg">
+					<use href="#arrow-up"></use>
+				</svg>
+			</i>
+		</button>
+	<!-- /.scroll-up -->
+
 </footer>
 <!-- /.page-footer -->
 
@@ -1663,6 +1702,10 @@
 		
 			<symbol id="arrow-down" viewBox="0 0 512 512">
 				<path d="M98.9 184.7l1.8 2.1 136 156.5c4.6 5.3 11.5 8.6 19.2 8.6 7.7 0 14.6-3.4 19.2-8.6L411 187.1l2.3-2.6c1.7-2.5 2.7-5.5 2.7-8.7 0-8.7-7.4-15.8-16.6-15.8H112.6c-9.2 0-16.6 7.1-16.6 15.8 0 3.3 1.1 6.4 2.9 8.9z"></path>
+			</symbol>
+		
+			<symbol id="arrow-up" viewBox="0 0 24 24">
+				<path fill="none" d="M3 15.5l9-9 9 9"></path>
 			</symbol>
 		
 			<symbol id="cart" viewBox="0 0 45 45">

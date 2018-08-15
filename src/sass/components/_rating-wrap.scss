@@ -1,0 +1,11 @@
+.rating-wrap {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&__link-review {
+		color: $brand-color;
+		font-size: $basic-size;
+		line-height: 24px;
+	}
+}

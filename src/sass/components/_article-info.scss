@@ -1,0 +1,13 @@
+.article-info {
+	display: flex;
+	align-items: center;
+
+	&__date {
+		display: block;
+		margin-right: 12px;
+		
+		font-size: 13px;
+		color: #929191;
+		font-weight: 400;
+	}
+}

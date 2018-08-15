@@ -1,0 +1,26 @@
+.reviews {
+	color: $black-text;
+
+	&__empty {
+		margin-bottom: 30px;
+
+		font-size: 15px;
+	}
+
+	&__write-title {
+		display: block;
+		margin-bottom: 7px;
+
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&__write-text {
+		font-size: 15px;
+	}
+
+	&__write-link {
+		color: $brand-color;
+		text-decoration: underline;
+	}
+}

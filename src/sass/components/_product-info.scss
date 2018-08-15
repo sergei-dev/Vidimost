@@ -3,15 +3,31 @@
 	margin-left: -$gutter;
 	margin-right: -$gutter;
 
+	@include media(1112px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
 	&__tabs-wrap, &__sidebar {
 		padding: 0px $gutter;
 	}
 
 	&__tabs-wrap {
 		width: 75%;
+
+		@include media(1112px) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__sidebar {
 		width: 25%;
+
+		@include media(1112px) {
+			width: 100%;
+			max-width: 560px;
+		}
+
 	}
 }
