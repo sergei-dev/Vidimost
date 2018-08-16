@@ -32,5 +32,9 @@
 		@include media($screen-md) {
 			width: 100%;
 		}
+
+		&--full {
+			width: 100%;
+		}
 	}
 }

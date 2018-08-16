@@ -5,6 +5,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	flex-wrap: wrap;
 
 	border-radius: 5px;
 	background-color: $white;
@@ -36,6 +37,10 @@
 		}
 	}
 
+	&__checkboxes {
+		width: 100%;
+	}
+
 	&__wrap-selects {
 		display: flex;
 		align-items: center;
@@ -64,6 +69,7 @@
 			
 			&:not(:last-child) {
 				margin-bottom: 20px;
+				margin-right: 0;
 			}
 		}
 	}
@@ -79,7 +85,7 @@
 		fill: $brand-color;
 	}
 
-	&__select {
+	&__select, &__inp {
 		height: 25px;
 		padding-left: 13px;
 		padding-right: 32px;
@@ -130,6 +136,22 @@
     line-height: 22px;
     
     border-bottom: 1px dashed currentColor;
+	}
+
+	&__search-btn {
+		text-transform: none;
+	}
+
+	&__subtitle {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 15px;
+
+		font-size: 25px;
+
+		&::after {
+			display: none;
+		}
 	}
 
 }

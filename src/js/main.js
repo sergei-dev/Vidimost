@@ -39,8 +39,8 @@ $(document).ready(function() {
 		]
 	});
 
-
-  $(window).scroll(function() {
+	if( window.matchMedia("(min-width: 480px)").matches) {
+		$(window).scroll(function() {
   	if( $(this).scrollTop() > 50) {
   			$('.scroll-up').fadeIn();
   	}
@@ -57,6 +57,8 @@ $(document).ready(function() {
   	}, 500);
   	return false;
   })
+	}
+
 
 	$('.product-gallery__pic').attr('src', $('.product-gallery__link:first-child').attr('href') );
 
@@ -121,7 +123,27 @@ $(document).ready(function() {
 		});
 	}
 
-	 var uiSlider = document.getElementById('filter-range');
+
+
+	$('.quantity__btn--add').click(function() {
+		var $input = $(this).parent().find('.quantity__inp');
+		$input.val(parseInt($input.val()) + 1);
+		$input.change();
+		return false;
+	});
+
+	$('.quantity__btn--reduce').click(function() {
+		var $input = $(this).parent().find('.quantity__inp');
+		var count = parseInt($input.val()) - 1;
+		count = count < 1 ? 0 : count;
+		$input.val(count);
+	 	$input.change();
+	 	return false;
+	 });
+
+	
+
+   var uiSlider = document.getElementById('filter-range');
   var snapValues = [
     document.getElementById('slider-snap-value-lower'),
     document.getElementById('slider-snap-value-upper')
@@ -139,30 +161,6 @@ $(document).ready(function() {
   uiSlider.noUiSlider.on('update', function(values, handle) {
     snapValues[handle].innerHTML = values[handle];
   });
-
-  var quantity_val = $('.quantity__inp').val();
-  var quantity_numb = parseInt(quantity_val);
-
-  $('.quantity-reduce').on('click', function() {
-  		quantity_numb--;
-  		
-  		if ( quantity_numb < 0) {
-  			$('.quantity__inp').val(0);
-  		}
-
-  		else {
-  			$('.quantity__inp').val(quantity_numb);
-  		}
-
-  	})
-
-  $('.quantity-add').on('click', function() {
-  		quantity_numb++;
-  		if ( quantity_numb > 0) {
-  			$('.quantity__inp').val(quantity_numb);
-  		}
-  });
-
 
 
 

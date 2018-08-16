@@ -2,7 +2,7 @@
 
 //= include/header.html
 
-<main class="main-content categories-page">
+<main class="main-content search-page">
 
 	<div class="container-new">
 		<div class="breadcrumb">
@@ -10,110 +10,111 @@
 				<li class="breadcrumb__item breadcrumb__item--first">
 					<a class="breadcrumb__link" href="#"><span class="breadcrumb__text">Главная</span> >></a>
 				</li>
-				<!-- /.breadcrumb__item -->
+
 				<li class="breadcrumb__item">
-			 Видеонаблюдение
+					Поиск
 				</li>
-				<!-- /.breadcrumb__item -->
+
 			</ul>
 			<!-- /.breadcrumb__list -->
 		</div>
 		<!-- /.breadcrumb -->
-	
-	<div class="page-wrap">
-		<aside class="page-wrap__left">
-			<aside class="page-sidebar product-filter">
-				<h3 class="page-heading">Фильтр товаров</h3>
-				<!-- /.product-filter__heading -->
-				<div class="page-sidebar__block product-filter__price">
-					<h4 class="product-filter__title">
-						Цена:
-						<span id="slider-snap-value-lower" class="product-filter__title-text">
-							582 -
-						</span>
-						<span id="slider-snap-value-upper" class="product-filter__title-text">
-							36400грн.
-						</span>
-					</h4>
-					<!-- /.product-filter__title -->
-					<div id="filter-range" class="product-filter__range"></div>
-					<!-- /.product-filter__range -->
-				</div>
-				<!-- /.product-filter__price -->
-				<div class="page-sidebar__block product-filter__manufacturer">
-					<h4 class="product-filter__title">
-						Производитель:
-					</h4>
-					<!-- /.product-filter__title -->
-					<div class="product-filter__manufacturer-wrap">
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check1" hidden checked>
-							<label for="check1" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check2" hidden>
-							<label for="check2" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check3" hidden>
-							<label for="check3" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
-						<p class="page-check">
-							<input class="page-check__checkbox" type="checkbox" id="check4" hidden>
-							<label for="check4" class="page-check__text">
-								Avigard
-							</label>
-						</p>
-						<!-- /.page-check -->
-					</div>
-					<!-- /.product-filter__manufacturer-wrap -->
-				</div>
-				<!-- /.product-filter__manufacturer -->
-			</aside>
-			<!-- /.product-filter -->
-		</aside>
-		<!-- /.page-wrap__left -->
 
-		<div class="page-wrap__right">
+		<div class="page-wrap">
+
+		<div class="page-wrap__right page-wrap__right--full">
 			<section class="page-section page-section--right-content">
-				<h2 class="head-title head-title--inner-content">Видеонаблюдение</h2>
+				<h1 class="head-title head-title--inner-content">Поиск - камера</h1>
 				<!-- /.head-title -->
-				<div class="page-filter">
-					<div class="page-filter__buttons">
-						<button class="button page-filter__btn button--silver">Товары в наличии</button>
-						<button class="button page-filter__btn button--gradi">Все товары</button>
-					</div>
-					<!-- /.page-filter__buttons -->
-					<div class="page-filter__wrap-selects">
+				<div class="page-filter search-page__filter">
+					<div class="page-filter__wrap-selects search-page__selects">
 						<div class="page-filter__select-item">
-							<p class="page-filter__select-title">Сортировка:</p>
-							<!-- /.page-filter__select-title -->
 							<select class="page-filter__select">
-								<option value="1">Цена (низкая > высокая)</option>
+								<option value="1">По товарам</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
 								<option value="4">4</option>
 								<option value="5">5</option>
 							</select>
 							<span class="page-filter__icon-wrap">
-							<svg class="page-filter__icon">
-								<use href="#arrow-down"></use>
-							</svg>
-							<!-- /.page-filter__icon -->
-						</span>
+									<svg class="page-filter__icon">
+										<use href="#arrow-down"></use>
+									</svg>
+									<!-- /.page-filter__icon -->
+								</span>
+							</div>
+							<!-- /.page-filter__select-item -->
+							<div class="page-filter__select-item">
+								<label class="visually-hidden" for="filter-search">Поиск</label>
+								<input type="text" class="page-filter__inp" placeholder="Ключевые слова">
+							</div>
+							<!-- /.page-filter__select-item -->
+							<div class="page-filter__select-item">
+							<select class="page-filter__select">
+								<option value="1">Все категории</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+							<span class="page-filter__icon-wrap">
+									<svg class="page-filter__icon">
+										<use href="#arrow-down"></use>
+									</svg>
+									<!-- /.page-filter__icon -->
+								</span>
+							</div>
+							<!-- /.page-filter__select-item -->
 						</div>
-						<!-- /.page-filter__select-item -->
-						<div class="page-filter__select-item">
-							<p class="page-filter__select-title">Показать:</p>
+						<!-- /.page-filter__wrap-selects -->
+						<div class="page-filter__buttons search-page__buttons">
+							<button class="button page-filter__btn button--silver">Товары в наличии</button>
+							<button class="button page-filter__btn button--gradi">Все товары</button>
+						</div>
+
+						<div class="page-filter__checkboxes">
+							<p class="page-check">
+								<input class="page-check__checkbox" type="checkbox" id="search-check" hidden="">
+								<label for="search-check" class="page-check__text">
+									Поиск в подкатегориях
+								</label>
+							</p>
+							<p class="page-check">
+								<input class="page-check__checkbox" type="checkbox" id="search-descr" hidden="" checked="">
+								<label for="search-descr" class="page-check__text">
+									Искать в описании товаров
+								</label>
+							</p>
+						</div>
+						<!-- /.page-filter__checkboxes -->
+						<button class="button page-filter__search-btn">Поиск</button>
+					</div>
+					<!-- /.page-filter -->
+					<h2 class="head-title page-filter__subtitle">Товары, соответствующие критериям поиска</h2>
+					<!-- /.head-title page-filter__subtitle -->
+					<div class="page-filter">
+
+						<div class="page-filter__wrap-selects">
+							<div class="page-filter__select-item">
+								<p class="page-filter__select-title">Сортировка:</p>
+								<!-- /.page-filter__select-title -->
+								<select class="page-filter__select">
+									<option value="1">Цена (низкая > высокая)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<span class="page-filter__icon-wrap">
+									<svg class="page-filter__icon">
+										<use href="#arrow-down"></use>
+									</svg>
+									<!-- /.page-filter__icon -->
+								</span>
+							</div>
+							<!-- /.page-filter__select-item -->
+							<div class="page-filter__select-item">
+								<p class="page-filter__select-title">Показать:</p>
 							<!-- /.page-filter__select-title -->
 							<select class="page-filter__select">
 								<option value="1">12</option>
@@ -132,15 +133,10 @@
 						<!-- /.page-filter__select-item -->
 					</div>
 					<!-- /.page-filter__wrap-selects -->
-					<button class="page-filter__btn-compare">
-						<svg class="page-filter__icon-compare">
-							<use href="#git-compare"></use>
-						</svg>
-						<span class="page-filter__btn-text">Сравнить</span>
-					</button>
+					
 				</div>
 				<!-- /.page-filter -->
-				<ul class="product-list product-list--column">
+				<ul class="product-list product-list--column search-page__product-list">
 					<li class="product-list__item product-list__item--full">
 						<div class="product-list__content  product-list__content--list">
 
@@ -695,85 +691,36 @@
 					<!-- /.product-list__item -->
 				</ul>
 				<!-- /.product-list -->
-			</section>
-			<div class="categories-page__btn-wrap">
-				<button class="button categories-page__load-btn">
-					<svg class="button__icon categories-page__load-icon">
-						<use href="#load"></use>
-					</svg>
-					<!-- /.button__icon -->
-				Подгрузить ещё
-			</button>
-			</div>
-			<!-- /.categories-page__btn-wrap -->
-			<div class="pagination">
-				<ul class="pagination__list">
-					<li class="pagination__item pagination__item--active">
-						<span class="pagination__text">1</span>
-					</li>
-					<!-- /.pagination__item -->
-					<li class="pagination__item">
-						<a href="#" class="pagination__text">2</a>
-					</li>
-					<!-- /.pagination__item -->
-					<li class="pagination__item">
-						<a href="#" class="pagination__text">3</a>
-					</li>
-					<!-- /.pagination__item -->
-					<li class="pagination__item pagination__item--last">
-						<a href="#" class="pagination__text">Последняя</a>
-					</li>
-					<!-- /.pagination__item -->
-				</ul>
-				<!-- /.pagination__list -->
-			</div>
-			<!-- /.pagination -->
-		</div>
-		<!-- /.container-new -->
-	</div>
-	<!-- /.page-wrap__right -->
-</div>
-<!-- /.page-wrap -->
-<section class="page-section about-sect">
-	<div class="container-new">
-		<div class="about-sect__content">
-			<div class="about-sect__text-wrap">
-				<h2 class="head-title about-sect__title">О компании Vidimost</h2>
-				<!-- /.head-title about-sect__title -->
-				
-					<p>Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!</p>
-				<p>Мы сами завозим оборудование, для вас только официальная гарантия; мы ремонтируем и предлагаем только лучшее!
-				Мы не только продаем, но и помогаем: во всем нужен баланс!</p>
-				<p>
-				Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.</p>
-			
-			</div>
-			<!-- /.about-sect__text-wrap -->
-			<div class="about-sect__text-wrap">
-				<h3 class="about-sect__title about-sect__title-text">Сотрудничаем с лучшими мировыми брендами</h3>
-				<!-- /.head-title about-sect__title -->
-				<div class="about-sect__text about-sect__text--clip">
-					<p>
-						Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
-					</p>
-					<p>
-						Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
-					</p>
-					<p>
-						Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
-					</p>
-					<p>
-						Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
-					</p>
+				<div class="pagination">
+					<ul class="pagination__list">
+						<li class="pagination__item pagination__item--active">
+							<span class="pagination__text">1</span>
+						</li>
+						<!-- /.pagination__item -->
+						<li class="pagination__item">
+							<a href="#" class="pagination__text">2</a>
+						</li>
+						<!-- /.pagination__item -->
+						<li class="pagination__item">
+							<a href="#" class="pagination__text">3</a>
+						</li>
+						<!-- /.pagination__item -->
+						<li class="pagination__item pagination__item--last">
+							<a href="#" class="pagination__text">Последняя</a>
+						</li>
+						<!-- /.pagination__item -->
+					</ul>
+					<!-- /.pagination__list -->
 				</div>
-				<!-- /.about-sect__text -->
-				<button class="about-sect__more">Читать дальше</button>
+				<!-- /.pagination -->
 			</div>
-			<!-- /.about-sect__text-wrap -->
+			<!-- /.container-new -->
 		</div>
-		<!-- /.about-sect__content -->
+		<!-- /.page-wrap__right -->
 	</div>
-	<!-- /.container-new -->
+	<!-- /.page-wrap -->
+</div>
+<!-- /.container-new -->
 </section>
 <!-- /.page-section -->
 

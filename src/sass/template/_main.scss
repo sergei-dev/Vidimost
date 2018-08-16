@@ -1,0 +1,35 @@
+.map-wrapper{
+	padding: 0 !important;
+}
+
+.nav .open>a, 
+.nav .open>a:focus, 
+.nav .open>a:hover {
+    background-color: transparent;
+}
+
+.header-page__text-important {
+	color: #f80000;
+}
+
+p {
+	font-size: 14px;
+}
+
+.header-page__pers-area-info p {
+	margin-bottom: 5px;
+}
+
+.header-page__pers-area-info .header-page__dealer {
+	margin-bottom: 10px;
+}
+
+.header-page__dealer {
+	margin-bottom: 10px;		
+	font-size: 16px;
+    font-weight: 700;
+    color: #202020;
+}
+.product-thumb {
+    border: none;
+}

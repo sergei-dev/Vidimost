@@ -1,0 +1,27 @@
+.search-page {
+
+	&__filter {
+		padding-right: 0;
+		padding-left: 0;
+		margin-bottom: 0;
+
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	&__buttons {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	&__selects {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	&__product-list, &__article-list {
+		margin-bottom: 20px;
+	}
+
+}

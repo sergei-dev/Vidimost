@@ -2396,6 +2396,8 @@ body {
     @media only screen and (max-width: 992px) {
       .page-wrap__right {
         width: 100%; } }
+    .page-wrap__right--full {
+      width: 100%; }
 
 .breadcrumb {
   padding: 18px 0;
@@ -2707,6 +2709,9 @@ body {
      -moz-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -2743,6 +2748,8 @@ body {
     width: 128px; }
     .page-filter__btn:not(:last-child) {
       margin-right: 7px; }
+  .page-filter__checkboxes {
+    width: 100%; }
   .page-filter__wrap-selects {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2786,7 +2793,8 @@ body {
         margin-right: 0; } }
     @media only screen and (max-width: 768px) {
       .page-filter__select-item:not(:last-child) {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        margin-right: 0; } }
   .page-filter__icon {
     position: absolute;
     right: 9px;
@@ -2794,7 +2802,7 @@ body {
     width: 15px;
     height: 18px;
     fill: #0aa5df; }
-  .page-filter__select {
+  .page-filter__select, .page-filter__inp {
     height: 25px;
     padding-left: 13px;
     padding-right: 32px;
@@ -2837,6 +2845,15 @@ body {
     color: #202020;
     line-height: 22px;
     border-bottom: 1px dashed currentColor; }
+  .page-filter__search-btn {
+    text-transform: none; }
+  .page-filter__subtitle {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 25px; }
+    .page-filter__subtitle::after {
+      display: none; }
 
 .pagination {
   display: -webkit-box;
@@ -3614,6 +3631,27 @@ body {
   .scroll-up__svg {
     stroke: currentColor; }
 
+.search-page__filter {
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none; }
+
+.search-page__buttons {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 15px; }
+
+.search-page__selects {
+  width: 100%;
+  margin-bottom: 15px; }
+
+.search-page__product-list, .search-page__article-list {
+  margin-bottom: 20px; }
+
 .header-page {
   font-family: "PT Sans", sans-serif; }
   .header-page__container {
@@ -3854,6 +3892,35 @@ body {
   .header-page__link-area {
     color: #0aa5df;
     text-decoration: underline; }
+
+.map-wrapper {
+  padding: 0 !important; }
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: transparent; }
+
+.header-page__text-important {
+  color: #f80000; }
+
+p {
+  font-size: 14px; }
+
+.header-page__pers-area-info p {
+  margin-bottom: 5px; }
+
+.header-page__pers-area-info .header-page__dealer {
+  margin-bottom: 10px; }
+
+.header-page__dealer {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #202020; }
+
+.product-thumb {
+  border: none; }
 
 .page-footer {
   margin-top: auto; }
