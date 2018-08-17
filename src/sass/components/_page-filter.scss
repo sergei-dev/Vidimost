@@ -85,7 +85,7 @@
 		fill: $brand-color;
 	}
 
-	&__select, &__inp {
+	&__select {
 		height: 25px;
 		padding-left: 13px;
 		padding-right: 32px;
@@ -93,6 +93,7 @@
 		color: #919496;
 		font-size: $basic-size;
 
+		background-color: $white;
 		border: 1px solid #acacaf;
 		border-radius: 2px;
 
@@ -111,6 +112,7 @@
 		padding: 10px 0px;
 
 		&:hover {
+
 			.button__text {
 				border-bottom-color: transparent;
 			}
@@ -142,16 +144,10 @@
 		text-transform: none;
 	}
 
-	&__subtitle {
-		width: 100%;
-		padding: 0;
-		margin-bottom: 15px;
-
-		font-size: 25px;
-
-		&::after {
-			display: none;
-		}
+	&__inp {
+		padding-top: 2.5px;
+		padding-bottom: 2.5px;
+		min-height: 0;
 	}
 
 }

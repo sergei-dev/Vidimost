@@ -69,6 +69,7 @@ $(document).ready(function() {
 	});
 
 	$('#tel-buy').mask('+38(99) 99 99 99 99');
+	$('.form-group__inp--mask').mask('+38(99) 99 99 99 99');
 
 	$(this).find('.tabs-control__btn').each(function(i) {
 		$(this).on('click', function(e) {
@@ -142,6 +143,7 @@ $(document).ready(function() {
 	 });
 
 	
+	if( $('#filter-range').length != 0 ) {
 
    var uiSlider = document.getElementById('filter-range');
   var snapValues = [
@@ -161,6 +163,7 @@ $(document).ready(function() {
   uiSlider.noUiSlider.on('update', function(values, handle) {
     snapValues[handle].innerHTML = values[handle];
   });
+	}
 
 
 

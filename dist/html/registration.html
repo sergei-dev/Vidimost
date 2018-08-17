@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>VIDIMOST</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="../libs/slick/slick.css">
+	<link rel="stylesheet" href="../libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="../css/style.min.css">
+	<meta name="theme-color" content="#112852">
+	<meta name="msapplication-navbutton-color" content="#112852">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#112852">
+</head>
+<body>
+
+<header id="page-header" class="header-page">
+  <nav class="nav">
+    <div class="container-new header-page__container">
+      <button id="open-menu" class="open-menu">
+        <span class="open-menu__line open-menu__one"></span>
+        <span class="open-menu__line open-menu__two"></span>
+        <span class="open-menu__line open-menu__three"></span>
+      </button>
+      <ul class="page-menu">
+      <li class="page-menu__item">
+        <a href="#" class="page-menu__link">Новости</a>
+      </li>
+      <!-- /.page-menu__item -->
+      <li class="page-menu__item page-menu__item--active">
+        <a href="#" class="page-menu__link">
+          Услуги
+          <svg class="page-menu__icon">
+            <use href="#arrow-down"></use>
+          </svg>
+        </a>
+
+        <ul class="submenu page-menu__submenu">
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Установка</span>      
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Заказ сметы</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Настройка оборудования</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link page-menu__submenu-link">
+              <span class="submenu__text page-menu__submenu-text">Обслуживания системы</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+        <!-- /.page-menu__submenu -->
+      </li>
+      <!-- /.page-menu__item -->
+      <li class="page-menu__item">
+        <a href="#" class="page-menu__link">Партнерам</a>
+      </li>
+      <!-- /.page-menu__item -->
+      <li class="page-menu__item">
+        <a href="#" class="page-menu__link">
+          Техподдержка
+          <svg class="page-menu__icon">
+            <use href="#arrow-down"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- /.page-menu__item -->
+      <li class="page-menu__item">
+        <a href="#" class="page-menu__link">Вакансии</a>
+      </li>
+      <!-- /.page-menu__item -->
+      <li class="page-menu__item">
+        <a href="#" class="page-menu__link">Контакты</a>
+      </li>
+      <!-- /.page-menu__item -->
+    </ul>
+    <!-- /.page-menu -->
+    <div class="header-page__user">
+      <ul class="lang-list header-page__lang-list">
+        <li class="lang-list__item lang-list__item--active">
+          <a href="#" class="lang-list__link">Ru</a>
+        </li>
+        <!-- /.lang-list__item -->
+        <li class="lang-list__item">
+          <a href="#" class="lang-list__link">Ua</a>
+        </li>
+        <!-- /.lang-list__item -->
+      </ul>
+      <!-- /.lang-list -->
+      <div class="header-page__sign-in">
+        <a class="header-page__sign-link" href="#">
+          <svg class="header-page__sign-icon">
+            <use href="#user"></use>
+            <!-- /#user -->
+          </svg>
+          <!-- /.header-page__sign-icon -->
+          Личный кабинет
+        </a>
+      </div>
+      <!-- /.header-page__sign-in -->
+    </div>
+    <!-- /.header-page__user -->
+  </div>
+  <!-- /.container nav__container -->
+</nav>
+<!-- /.nav -->
+<div class="header-page__middle">
+  <div class="container-new header-page__middle-cont">
+    <div class="logo header-page__logo">
+      <a href="#" class="logo__link">
+        <img class="logo__img" src="../images/pic/logo.svg" alt="vidimost">
+        <span class="logo__text">Системы видеонаблюдения</span>
+      </a>
+    </div>
+    <!-- /.logo -->
+    <div class="header-page__common">
+     <div class="header-page__top-common">
+      <ul class="header-page__tel-list">
+        <li class="header-page__tel-item">
+          <i class="header-page__tel-ico">
+            <svg class="tel-icon tel-icon--margin">
+            <use href="#phone"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          </i>
+          <a href="tel:0443620331" class="header-page__tel">044-362-03-31</a>
+        </li>
+        <!-- /.header-page__tel-item -->
+        <li class="header-page__tel-item">
+          <i class="header-page__tel-ico">
+             <svg class="tel-icon tel-icon--margin">
+            <use href="#ks"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          </i>
+          <a href="tel:0969990642" class="header-page__tel">096-999-06-42</a>
+        </li>
+        <!-- /.header-page__tel-item -->
+        <li class="header-page__tel-item">
+          <i class="header-page__tel-ico">
+           <svg class="tel-icon">
+            <use href="#life"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+        </i>
+        <a href="tel:0931540979" class="header-page__tel">093-154-09-79</a>
+      </li>
+        <!-- /.header-page__tel-item -->
+        <li class="header-page__tel-item">
+          <i class="header-page__tel-ico">
+            <svg class="tel-icon tel-icon--margin">
+            <use href="#mts"></use>
+          </svg>
+          <!-- /.header-page__tel-icon -->
+          </i>
+          <a href="tel:0508222722" class="header-page__tel">050-822-27-22</a>
+        </li>
+        <!-- /.header-page__tel-item -->
+      </ul>
+      <!-- /.header-page__tel-list -->
+      <div class="callback">
+        <a class="callback__link" href="#">
+          <svg class="callback__icon">
+            <use href="#simpline"></use>
+          </svg>
+          <!-- /.callback__icon -->
+          <span class="callback__border">Заказать звонок</span>
+        </a>
+      </div>
+      <!-- /.callback -->
+    </div>
+    <!-- /.header-page__top-common -->
+    <form class="search-form header-page__form">
+      <div class="button search-form__btn-product">
+        Товары
+        <svg class="button__icon search-form__btn-product-icon">
+          <use href="#arrow-down"></use>
+        </svg>
+        <!-- /.button__icon -->
+          <ul class="submenu search-form__submenu">
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Установка</span>      
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Заказ сметы</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text search-form__submenu-text">Настройка оборудования</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item page-menu__submenu-item">
+            <a href="#" class="submenu__link">
+              <span class="submenu__text">Обслуживания системы</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+        <!-- /.page-menu__submenu -->
+      </div>
+      <p class="search-form__group">
+        <label for="search-inp" class="visually-hidden">Поиск товаров</label>
+        <input type="text" id="search-inp" class="search-form__inp" placeholder="Поиск товаров">
+      </p>
+      <!-- /.search-form__group -->
+      <button type="submit" class="button search-form__btn-search">
+        <span class="visually-hidden">Найти</span>
+        <svg class="search-form__icon-search">
+          <use href="#search-ico"></use>
+        </svg>
+        <!-- /.search-form__icon-search -->
+      </button>
+    </form>
+    <!-- /.search-form -->
+  </div>
+  <!-- /.header-page__common -->
+  <div class="header-page__pers-area-info">
+    <p class="header-page__area-text">
+      Для доступа к кабинету пользователя необходимо
+      <a class="header-page__link-area" href="#">Войти</a> или <a class="header-page__link-area" href="#">Зарегистрироваться</a>
+    </p>
+    <!-- /.header-page__area-text -->
+  </div>
+  <!-- /.header-page__pers-area-info -->
+  <div class="cart">
+    <button class="cart__btn">
+      <svg class="cart__icon">
+        <use href="#cart"></use>
+      </svg>
+      <!-- /.cart__icon -->
+      <span class="cart__counter">1</span>
+      <span class="cart__amount">1219 грн</span>
+    </button>
+  </div>
+  <!-- /.cart -->
+</div>
+<!-- /.container-new -->
+</div>
+<!-- /.header-page__middle -->
+<div class="categories">
+  <div class="container-new">
+    <div class="categories__mob-nav">
+      <h4 class="categories__title">Категории</h4>
+      <!-- /.categories__title -->
+      <button id="open-category" class="open-menu open-menu--categories">
+        <span class="open-menu__line open-menu__one"></span>
+        <span class="open-menu__line open-menu__two"></span>
+        <span class="open-menu__line open-menu__three"></span>
+      </button>
+    </div>
+    <!-- /.categories__mob-nav -->
+    <ul class="categories__list">
+      <li class="categories__item">
+        <a href="#" class="categories__link">Видеонаблюдение</a>
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">Охранная сигнализация</a>
+    
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+    </li>
+    <!-- /.categories__item -->
+     <li class="categories__item">
+      <a href="#" class="categories__link">В идеодомофоны</a>
+    </li>
+    <!-- /.categories__item -->
+     <li class="categories__item">
+      <a href="#" class="categories__link">PoE оборудование</a>
+    </li>
+    <!-- /.categories__item -->
+     <li class="categories__item">
+      <a href="#" class="categories__link">Кабели и крепления </a>
+    </li>
+    <!-- /.categories__item -->
+    <li class="categories__item">
+      <a href="#" class="categories__link">Системы контроля доступа</a>
+    </li>
+    <!-- /.categories__item -->
+  </ul>
+  <!-- /.categories__list -->
+  </div>
+  <!-- /.container-new -->
+</div>
+<!-- /.categories -->
+</header>
+
+<main class="main-content page-registration">
+
+	<div class="container-new">
+		<div class="breadcrumb">
+			<ul class="breadcrumb__list">
+				<li class="breadcrumb__item breadcrumb__item--first">
+					<a class="breadcrumb__link" href="#"><span class="breadcrumb__text">Главная</span> >></a>
+				</li>
+
+				
+				<li class="breadcrumb__item breadcrumb__item--first">
+					<a class="breadcrumb__link" href="#"><span class="breadcrumb__text">Аккаунт</span> >></a>
+				</li>
+
+				<li class="breadcrumb__item">
+					Регистрация
+				</li>
+
+
+			</ul>
+			<!-- /.breadcrumb__list -->
+		</div>
+		<!-- /.breadcrumb -->
+
+		<div class="page-wrap">
+
+		<div class="page-wrap__right page-wrap__right--full">
+			<section class="page-section page-section--right-content">
+				<h1 class="head-title">Регистрация</h1>
+				<!-- /.head-title -->
+				<div class="page-wrap__text-content">
+					<p class="page-wrap__text">Если Вы уже зарегистрированы, перейдите на страницу <a class="page-wrap__link" href="#">входа в систему.</a></p>
+				</div>
+				<!-- /.page-wrap__text-content -->
+				
+				<form class="page-form">
+					<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Контактные данные</legend>
+						<!-- /.page-form__group-title -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-name" class="form-group__label form-group__label--required form-group__label--full">Имя</label>
+							<input type="text" id="reg-name" class="form-group__inp form-group__inp--full" placeholder="Имя">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-surname" class="form-group__label form-group__label--required form-group__label--full">Фамилия</label>
+							<input type="text" id="reg-surname" class="form-group__inp form-group__inp--full" placeholder="Фамилия">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-phone" class="form-group__label form-group__label--required form-group__label--full">Телефон</label>
+							<input type="phone" id="reg-phone" class="form-group__inp form-group__inp--mask form-group__inp--full" placeholder="Телефон">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-email" class="form-group__label form-group__label--full">E-Mail</label>
+							<input type="email" id="reg-email" class="form-group__inp form-group__inp--full" placeholder="E-mail">
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+					<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Ваш адрес</legend>
+						<!-- /.page-form__group-title -->
+
+						<div class="form-group page-registration__check-group">
+							<p class="page-check page-registration__form-group page-registration__check-wrap">
+							<input class="page-check__checkbox" type="checkbox" id="check-address" hidden="" checked="">
+							<label for="check-address" class="page-check__text form-group__label page-form__label-check page-registration__check">
+								<span>Данные владельца аккаунта совпадают с данными получателя для доставки</span>
+							</label>
+						</p>
+						</div>
+
+						<p class="form-group page-registration__form-group form-group--full">
+							<span class="form-group__label form-group__label--full">Метод доставки</span>
+							<select class="form-group__inp form-group__inp--full">
+								<option value="1">Самовывоз</option>
+								<option value="2">Доставка по Киеву</option>
+								<option value="3">Курьерская доставка</option>
+							</select>
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group form-group--full">
+							<span class="form-group__label form-group__label--full">Перевозчик</span>
+							<select class="form-group__inp form-group__inp--full">
+								<option value="1">Автолюкс</option>
+								<option value="2">Доставка по Киеву</option>
+								<option value="3">Курьерская доставка</option>
+							</select>
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-address-shipping" class="form-group__label form-group__label--required form-group__label--full">Адрес (отделение)</label>
+							<input type="text" id="reg-address-shipping" class="form-group__inp form-group__inp--full" placeholder="Адрес (отделение)">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-city" class="form-group__label form-group__label--required form-group__label--full">Город</label>
+							<input type="text" id="reg-city" class="form-group__inp form-group__inp--full" placeholder="Город">
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-name-shipping" class="form-group__label form-group__label--required form-group__label--full">Имя получателя</label>
+							<input type="text" id="reg-name-shipping" class="form-group__inp form-group__inp--full" placeholder="Имя получателя">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-surname-shipping" class="form-group__label form-group__label--required form-group__label--full">Фамилия получателя</label>
+							<input type="text" id="reg-surname-shipping" class="form-group__inp form-group__inp--full" placeholder="Фамилия получателя">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-phone-shipping" class="form-group__label form-group__label--required form-group__label--full">Телефон получателя</label>
+							<input type="phone" id="reg-phone-shipping" class="form-group__inp form-group__inp--mask form-group__inp--full" placeholder="Телефон получателя">
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-company" class="form-group__label form-group__label--full">Компания</label>
+							<input type="phone" id="reg-company" class="form-group__inp form-group__inp--full" placeholder="Компания">
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-comment" class="form-group__label form-group__label--full">Комментарий</label>
+							<textarea id="reg-comment" class="form-group__inp form-group__textarea form-group__inp--full" placeholder="Комментарий"></textarea>
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+
+						<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Ваш пароль</legend>
+						<!-- /.page-form__group-title -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-password" class="form-group__label form-group__label--required form-group__label--full">Пароль</label>
+							<input type="password" id="reg-password" class="form-group__inp form-group__inp--full" placeholder="Пароль">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-pasword-two" class="form-group__label form-group__label--required form-group__label--full">Подтвердите пароль</label>
+							<input type="password" id="reg-pasword-two" class="form-group__inp form-group__inp--full" placeholder="Подтвердите пароль">
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+
+					<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Рассылка новостей</legend>
+						<!-- /.page-form__group-title -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<span class="form-group__label form-group__label--full">Получать новости на E-Mail</span>
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="1" checked>
+								Да
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="1">
+								Да
+							</label>
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+
+					<div class="page-wrap__cont">
+						<button class="button page-wrap__btn">Продолжить</button>
+					</div>
+				</form>
+				<!-- /.page-form -->
+			
+			</div>
+			<!-- /.container-new -->
+		</div>
+		<!-- /.page-wrap__right -->
+	</div>
+	<!-- /.page-wrap -->
+</div>
+<!-- /.container-new -->
+</section>
+<!-- /.page-section -->
+
+</main>
+<!-- /.main-content -->
+
+
+<footer class="page-footer">
+	<div class="dispatch">
+		<div class="container-new dispatch__container">
+			<div class="dispatch__wrap">
+				<h3 class="dispatch__title">Подписаться на рассылку:</h3>
+				<!-- /.dispatch__title -->
+				<form class="dispatch__form">
+					<p class="dispatch__group">
+						<label for="dispatch-email" class="visually-hidden">Ваш email</label>
+						<input type="email" id="dispatch-email" class="dispatch__inp" placeholder="Введите ваш e-mail">
+					</p>
+					<!-- /.dispatch__group -->
+					<p class="dispatch__group-btn">
+						<button class="button dispatch__btn">Отправить</button>
+					</p>
+					<!-- /.dispatch__group-btn -->
+				</form>
+				<!-- /.dispatch__form -->
+				<div class="dispatch__decor">
+					<svg class="dispatch__icon">
+						<use href="#dispatch"></use>
+					</svg>
+					<!-- /.dispatch__icon -->
+				</div>
+			</div>
+			<!-- /.dispatch__wrap -->
+		</div>
+		<!-- /.container-new -->
+	</div>
+	<div class="page-footer__top">
+		<div class="container-new page-footer__container">
+			<div class="page-footer__nav-wrap">
+				<div class="page-footer__nav-list-wrap">
+					<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Информация</h3>
+				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
+				<ul class="page-footer__nav-list">
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">О нас</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Гарантии</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Оплата и доставка</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Возврат и обмен</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Условия и соглашения</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Карта сайта</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Производители</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Контакты</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+				</ul>
+				<!-- /.page-footer__nav-list -->
+			</div>
+			<!-- /.page-footer__nav-list-wrap -->
+			<div class="page-footer__nav-list-wrap">
+				<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Каталог</h3>
+				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
+				<ul class="page-footer__nav-list">
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Охранная сигнализация</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Видеодомофоны</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">PoE оборудование</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Кабели и крепления</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Системы контроля доступа</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+				</ul>
+				<!-- /.page-footer__nav-list -->
+			</div>
+			<!-- /.page-footer__nav-list-wrap -->
+			<div class="page-footer__nav-list-wrap">
+				<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Кабинет пользователя</h3>
+				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
+				<ul class="page-footer__nav-list">
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Мой кабинет</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Мои закладки</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Взаиморасчеты</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">История заказов</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Сервис-заказы</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+					<li class="page-footer__nav-item">
+						<a href="#" class="page-footer__nav-link">Рассылка</a>
+					</li>
+					<!-- /.page-footer__nav-item -->
+				</ul>
+				<!-- /.page-footer__nav-list -->
+			</div>
+			<!-- /.page-footer__nav-list-wrap -->
+			<div class="page-footer__nav-list-wrap">
+				<div class="page-footer__nav-wrap-title">
+					<h3 class="page-footer__nav-title">Наши контакты</h3>
+				<!-- /.page-footer__nav-title -->
+				</div>
+				<!-- /.page-footer__nav-wrap-title -->
+				<div class="page-footer__contacts-wrap">
+					<ul class="contacts-list page-footer__contacts-list">
+					<li class="contacts-list__item">
+						<h4 class="contacts-list__title">Отдел продаж</h4>
+						<!-- /.contacts-list__title -->
+						<a href="tel:(044)3620331" class="contacts-list__info">
+							<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
+								<use href="#tel"></use>
+							</svg>
+							<!-- /.tel-icon -->
+							(044) 362-03-31
+						</a>
+						<!-- /.contacts-list__info -->
+						<a href="mailto:info@vidimost.com" class="contacts-list__info">
+							info@vidimost.com
+						</a>
+						<!-- /.contacts-list__info -->
+					</li>
+					<!-- /.contacts-list__item -->
+					<li class="contacts-list__item">
+						<h4 class="contacts-list__title">
+							Сервис, ремонт, 
+							тех.поддержка:
+						</h4>
+						<!-- /.contacts-list__title -->
+						<a href="tel:(063)2362438" class="contacts-list__info">
+							<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
+								<use href="#life"></use>
+							</svg>
+							<!-- /.tel-icon tel-icon-foot -->
+							(063) 236-24-38
+						</a>
+						<!-- /.contacts-list__info -->
+						<a href="mailto:support@vidimost.com" class="contacts-list__info">
+							support@vidimost.com
+						</a>
+						<!-- /.contacts-list__info -->
+						<p class="contacts-list__info">
+							service.vidimost
+						</p>
+						<!-- /.contacts-list__info -->
+					</li>
+					<!-- /.contacts-list__item -->
+					<li class="contacts-list__item">
+						<h4 class="contacts-list__title">
+							График работы:
+						</h4>
+						<!-- /.contacts-list__title -->
+						<p class="contacts-list__info">
+							Понедельник - Пятница
+						</p>
+						<!-- /.contacts-list__info -->
+						<p class="contacts-list__info">
+							с 9:00 - 18:00
+						</p>
+						<!-- /.contacts-list__info -->
+					</li>
+					<!-- /.contacts-list__item -->
+				</ul>
+				<!-- /.contacts-list -->
+				<ul class="contacts-list">
+					<li class="contacts-list__item">
+						<h4 class="contacts-list__title">
+							Бухгалтерия:
+						</h4>
+						<!-- /.contacts-list__title -->
+						<a href="tel:(044)3382501" class="contacts-list__info">
+								<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
+								<use href="#tel"></use>
+							</svg>
+							<!-- /.tel-icon -->
+							(044) 338-25-01
+						</a>
+						<!-- /.contacts-list__info -->
+							<a href="mailto:buh@vidimost.com" class="contacts-list__info">
+							buh@vidimost.com
+						</a>
+						<!-- /.contacts-list__info -->
+					</li>
+					<!-- /.contacts-list__item -->
+					<li class="contacts-list__item">
+						<h4 class="contacts-list__title">
+							Адрес:
+						</h4>
+						<!-- /.contacts-list__title -->
+						<p class="contacts-list__info">
+							02094, г.Киев,
+						</p>
+						<!-- /.contacts-list__info -->
+						<p class="contacts-list__info">
+							ул.Мурманская, 3
+						</p>
+						<!-- /.contacts-list__info -->
+						<a href="#" target="_blank" title="карта"><img src="../images/pic/map.jpg" alt="address"></a>
+					</li>
+					<!-- /.contacts-list__item -->
+				</ul>
+				<!-- /.contacts-list -->
+				</div>
+				<!-- /.page-footer__contacts-wrap -->
+			</div>
+			<!-- /.page-footer__nav-list-wrap -->
+		</div>
+		<!-- /.page-footer__nav-wrap -->
+		<div class="page-footer__common">
+			<div class="page-footer__common-block">
+				<h4 class="page-footer__common-title">Принимаем к оплате</h4>
+				<!-- /.page-footer__common-title -->
+				<ul class="payment-list">
+					<li class="payment-list__item">
+						<a href="#" target="_blank" class="payment-list__link">
+							<img src="../images/pic/visa-mc.png" alt="visa">
+						</a>
+					</li>
+					<!-- /.payment-list__item -->
+					<li class="payment-list__item">
+						<a href="#" target="_blank" class="payment-list__link">
+							<img src="../images/pic/bitc.png" alt="bitc">
+						</a>
+					</li>
+					<!-- /.payment-list__item -->
+				</ul>
+				<!-- /.payment-list -->
+			</div>
+			<!-- /.page-footer__common-block -->
+			<div class="page-footer__common-block">
+				<h4 class="page-footer__common-title">Мы с соцсетях</h4>
+				<!-- /.page-footer__common-title -->
+				<ul class="social-list">
+					<li class="social-list__item">
+						<a href="#" target="_blank" class="social-list__link">	
+
+<!-- <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g id="g5991">
+	<rect id="rect2987" style="fill:#3B5998;" width="512" height="512"/>
+	<path id="f_1_" style="fill:#FFFFFF;" d="M287,456V273.5h61.2l9.2-71.1H287V157c0-20.6,5.7-34.6,35.2-34.6l37.7,0V58.8   C353.3,57.9,331,56,305,56c-54.3,0-91.4,33.1-91.4,94v52.4h-61.4v71.1h61.4V456L287,456L287,456z"/>
+</g>
+</svg> -->
+							<svg class="social-list__icon social-list__icon--fb">
+								<use href="#fcb"></use>
+							</svg>
+							<!-- /.social-list__icon -->
+						</a>
+					</li>
+					<!-- /.social-list__item -->
+					<li class="social-list__item">
+						<a href="#" target="_blank" class="social-list__link">	
+							<svg class="social-list__icon social-list__icon--google">
+								<use href="#goog"></use>
+							</svg>
+							<!-- /.social-list__icon -->
+						</a>
+					</li>
+					<!-- /.social-list__item -->
+					<li class="social-list__item">
+						<a href="#" target="_blank" class="social-list__link">	
+							<svg class="social-list__icon social-list__icon--twitter">
+								<use href="#twit"></use>
+							</svg>
+							<!-- /.social-list__icon -->
+						</a>
+					</li>
+					<!-- /.social-list__item -->
+					<li class="social-list__item">
+						<a href="#" target="_blank" class="social-list__link">	
+							<svg class="social-list__icon social-list__icon--yout">
+								<use href="#yot"></use>
+							</svg>
+							<!-- /.social-list__icon -->
+						</a>
+					</li>
+					<!-- /.social-list__item -->
+					<li class="social-list__item">
+						<a href="#" target="_blank" class="social-list__link">	
+							<svg class="social-list__icon social-list__icon--vk">
+								<use href="#vk"></use>
+							</svg>
+							<!-- /.social-list__icon -->
+						</a>
+					</li>
+					
+					<!-- /.social-list__item -->
+					<li class="social-list__item">
+						<a href="#" target="_blank" class="social-list__link">	
+							<svg class="social-list__icon social-list__icon--insta">
+								<use href="#insta"></use>
+							</svg>
+							<!-- /.social-list__icon -->
+						</a>
+					</li>
+					<!-- /.social-list__item -->
+				</ul>
+				<!-- /.social-list -->
+			</div>
+			<!-- /.page-footer__common-block -->
+		</div>
+		<!-- /.page-footer__common -->
+		</div>
+		<!-- /.container-new -->
+	</div>
+	<!-- /.page-footer__top -->
+	<div class="page-footer__bottom">
+		<div class="container-new page-footer__bottom-cont">
+			<p class="page-footer__copyright">Интернет-магазин систем видеонаблюдения VidiMost © 2018</p>
+			<!-- /.page-footer__copyright -->
+		</div>
+		<!-- /.container-new -->
+	</div>
+	<!-- /.page-footer__bottom -->
+
+	
+		<button class="scroll-up">
+			<i class="scroll-up__ico">
+				<svg class="scroll-up__svg">
+					<use href="#arrow-up"></use>
+				</svg>
+			</i>
+		</button>
+	<!-- /.scroll-up -->
+
+</footer>
+<!-- /.page-footer -->
+
+<div hidden>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+		
+			<symbol id="Eye" viewBox="0 0 27 15">
+				<image width="27" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAPCAQAAAC/mnxTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAkUNBqHRxVDAAAB1UlEQVQoz3XSXWjOcRjG8c8em1bPQmliPTHLMDlgXpK01C+1lZcMhaWVGiFHTGpotuVlOVlCImXWDmhz4F37FwdOTI2DNdsim5bSlgPUNJODPZuH7D65u/pdV92/q29am79mkRLr5MqWJcOI7wb1eeFR6Ey1paXENqi21mTTribcHxex5J6iyVNrNduiCwOuq3PNB7y3zXWr3ItaonhqbKYuZR5bqswWBS5IqHDSPgvUyrMzVFjkrlK9UWI8lqFDviNKdDpgr4sq0aAZo+GUOjuiE6EnlNpvjjfRtLG/PVfkkMvgm3SZ4t5KYKMHAdEXM6SHUaI9Gr0Oy2MqFbmSDOWKa8FZCXDDiWg1mlAA4ZbzlkV1MfU4mCxmFrqwZkLXasLb5BvCcb9UxdTgfNI2iAV4nVJ8J/IwNCajKjENaW28skK5RjDspywzvTMd/JAfPkafZZsaRoi2atUdFsew3pCbKkCVuDOGzHPVMzfMDx+jY7KdCyNEu7UaVjROSUK72W6r1O+O7aqdnjiyUr0noTjKcUa5r1aGnj9wZWm2CZfc12Chbg8NmK3YUn0OK3IUbXaFwX+ZLFVryaRM9qoOzf9DGQptVmiuHJnJSj7p1+FeeJlq+w2eJY5ZtC6zqAAAAABJRU5ErkJggg=="></image>
+			</symbol>
+		
+			<symbol id="Sale" viewBox="0 0 409.387 2075.112">
+				<circle cx="377.887" cy="2043.612" r="31.5"></circle><text><textPath xlink:href="#text-path"><tspan><tspan>%</tspan>-15</tspan></textPath></text>
+			</symbol>
+		
+			<symbol id="arrow-down" viewBox="0 0 512 512">
+				<path d="M98.9 184.7l1.8 2.1 136 156.5c4.6 5.3 11.5 8.6 19.2 8.6 7.7 0 14.6-3.4 19.2-8.6L411 187.1l2.3-2.6c1.7-2.5 2.7-5.5 2.7-8.7 0-8.7-7.4-15.8-16.6-15.8H112.6c-9.2 0-16.6 7.1-16.6 15.8 0 3.3 1.1 6.4 2.9 8.9z"></path>
+			</symbol>
+		
+			<symbol id="arrow-up" viewBox="0 0 24 24">
+				<path fill="none" d="M3 15.5l9-9 9 9"></path>
+			</symbol>
+		
+			<symbol id="cart" viewBox="0 0 45 45">
+				<path d="M17 36c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm18-6c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6.6-34.6c-.7-.9-1.9-1.4-3.1-1.4H10.8l-.4-2.6c-.3-1.9-2-3.4-4-3.4H0v2h6.4c1 0 1.9.7 2 1.7l4.2 27.1c.4 1.9 2.1 3.3 4 3.3H38v-2H16.6c-1 0-1.8-.7-2-1.7l-.4-2.4h22.2c1.9 0 3.6-1.4 4-3.5l2.1-14c.2-1.1-.1-2.2-.9-3.1zm-1.1 2.9l-2.1 14c-.2 1.1-1 1.8-2 1.8H13.9l-2.8-18h27.4c.6 0 1.2.3 1.6.7.4.3.5.9.4 1.5z"></path>
+			</symbol>
+		
+			<symbol id="check" viewBox="0 0 19 14">
+				<image width="19" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAQAAABnEe8CAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAgQNAolRcqeAAAAs0lEQVQoz33RSwrCMBSF4WNbtbgCp8W1iY8irkXEVwfFBwVdiyNBd6P9HTSNqdXeTJLw5dyQCDUOjyUTFKipfC0UC3nNSVuK2v9HLTYGpYRChPRryGdt0IEOEgEJD6IKCmzSiS5CYgXAjYGTlBh0JCj2xJwcgLuBHjub1C6PCjHkZWCEbJJp92Ei5gnAlcyi0L1tOZkaWFTmJrlMjExrONP5fiB3MSYHLtV2dSZmpPR+/ckb1sQ9g8EoGw0AAAAASUVORK5CYII="></image>
+			</symbol>
+		
+			<symbol id="christmas" viewBox="0 0 64 64">
+				<path d="M47 20.729h-3.356a5.517 5.517 0 0 0 .825-6.899 5.484 5.484 0 0 0-4.657-2.563 5.476 5.476 0 0 0-2.938.854c-1.938 1.224-4.011 5.9-4.873 8.014-.863-2.114-2.937-6.791-4.873-8.013a5.484 5.484 0 0 0-2.939-.854c-1.9 0-3.642.958-4.658 2.564a5.524 5.524 0 0 0 .823 6.897H17a1 1 0 0 0-1 1v8.487a1 1 0 0 0 1 1h.551V49.38a1 1 0 0 0 1 1h26.898a1 1 0 0 0 1-1V31.216H47a1 1 0 0 0 1-1v-8.487a1 1 0 0 0-1-1zm-1 8.487h-9.34v-6.487H46v6.487zm-11.34-6.487v6.487h-5.32v-6.487h5.32zm3.282-8.919a3.495 3.495 0 0 1 1.869-.543c1.211 0 2.32.61 2.967 1.632a3.51 3.51 0 0 1-1.09 4.837c-.344.218-1.571.726-5.521.726-.788 0-1.526-.021-2.118-.046 1.09-2.578 2.763-5.892 3.893-6.606zM21.22 14.899a3.495 3.495 0 0 1 2.968-1.632c.661 0 1.308.188 1.87.545 1.129.712 2.802 4.027 3.893 6.604a51.57 51.57 0 0 1-2.137.047h-.001c-3.937 0-5.16-.505-5.502-.721a3.52 3.52 0 0 1-1.091-4.843zM18 22.729h9.34v6.487H18v-6.487zm1.551 8.487h7.789V48.38h-7.789V31.216zM29.34 48.38V31.216h5.32V48.38h-5.32zm15.109 0H36.66V31.216h7.789V48.38z"></path>
+			</symbol>
+		
+			<symbol id="circle-arrow-left" viewBox="0 0 24 24">
+				<path d="M1 11.5C1 5.149 6.149 0 12.5 0S24 5.149 24 11.5 18.851 23 12.5 23 1 17.851 1 11.5zm12.657-5.657l1.414 1.414-4.243 4.243 4.243 4.243-1.414 1.414L8 11.5l5.657-5.657z" fill="none" fill-rule="evenodd"></path>
+			</symbol>
+		
+			<symbol id="circle-user" viewBox="0 0 64 64">
+				<path d="M0 32A32 32 0 1 0 32 0 32 32 0 0 0 0 32z"></path><path d="M46 42.18v5.91a.91.91 0 0 1-.9.91H18a.91.91 0 0 1-.9-.91v-5.91c0-4.77 6.47-8.64 14.45-8.64S46 37.41 46 42.18z"></path><ellipse cx="31.55" cy="21.18" rx="6.42" ry="6.18"></ellipse>
+			</symbol>
+		
+			<symbol id="dispatch" viewBox="0 0 512 512">
+				<path d="M346.7 359.8c4.7-6.2 7.5-14 7.5-22.4V174.5c0-1.6-.1-3.1-.3-4.6l-105.3 75.7 98.1 114.2zM213.3 258.9l137.9-99.1c-5.7-13.3-19-22.7-34.4-22.7H43.4c-10.4 0-19.7 4.2-26.5 11l112.7 92.8 19.4 15.9c18.4 15.2 44.9 16.1 64.3 2.1z"></path><path d="M240.5 251.5L219 266.9c-10.9 7.9-23.8 11.8-36.6 11.8-14.2 0-28.3-4.8-39.8-14.3L127 251.5 25.4 370.2c5.4 3 11.5 4.7 18.1 4.7h273.3c8.7 0 16.7-3 23.1-8l-99.4-115.4zM17.4 364.4l101.9-119.1L11 156c-3.1 5.5-5 11.8-5 18.6v162.9c0 10.5 4.4 20.1 11.4 26.9zM499 278.8H363.4v-13.9H499c3.8 0 7 3.1 7 7 0 3.8-3.1 6.9-7 6.9zm-17.9 29.1H363.4V294h117.7c3.8 0 7 3.1 7 7-.1 3.8-3.2 6.9-7 6.9zM462.5 337h-99v-14h99c3.8 0 7 3.1 7 7-.1 3.8-3.2 7-7 7z"></path>
+			</symbol>
+		
+			<symbol id="email" viewBox="0 0 512 512">
+				<path d="M346.7 359.8c4.7-6.2 7.5-14 7.5-22.4V174.5c0-1.6-.1-3.1-.3-4.6l-105.3 75.7 98.1 114.2zM213.3 258.9l137.9-99.1c-5.7-13.3-19-22.7-34.4-22.7H43.4c-10.4 0-19.7 4.2-26.5 11l112.7 92.8 19.4 15.9c18.4 15.2 44.9 16.1 64.3 2.1z"></path><path d="M240.5 251.5L219 266.9c-10.9 7.9-23.8 11.8-36.6 11.8-14.2 0-28.3-4.8-39.8-14.3L127 251.5 25.4 370.2c5.4 3 11.5 4.7 18.1 4.7h273.3c8.7 0 16.7-3 23.1-8l-99.4-115.4zM17.4 364.4l101.9-119.1L11 156c-3.1 5.5-5 11.8-5 18.6v162.9c0 10.5 4.4 20.1 11.4 26.9zM499 278.8H363.4v-13.9H499c3.8 0 7 3.1 7 7 0 3.8-3.1 6.9-7 6.9zm-17.9 29.1H363.4V294h117.7c3.8 0 7 3.1 7 7-.1 3.8-3.2 6.9-7 6.9zM462.5 337h-99v-14h99c3.8 0 7 3.1 7 7-.1 3.8-3.2 7-7 7z"></path>
+			</symbol>
+		
+			<symbol id="favorite" viewBox="0 0 48 48">
+				<path d="M0 0h48v48H0z" fill="none"></path><path d="M24 42.7l-2.9-2.63C10.8 30.72 4 24.55 4 17 4 10.83 8.83 6 15 6c3.48 0 6.82 1.62 9 4.17C26.18 7.62 29.52 6 33 6c6.17 0 11 4.83 11 11 0 7.55-6.8 13.72-17.1 23.07L24 42.7z"></path>
+			</symbol>
+		
+			<symbol id="fb" viewBox="0 0 512 512">
+				<path d="M0 0h512v512H0z"></path><path d="M287 456V273.5h61.2l9.2-71.1H287V157c0-20.6 5.7-34.6 35.2-34.6h37.7V58.8C353.3 57.9 331 56 305 56c-54.3 0-91.4 33.1-91.4 94v52.4h-61.4v71.1h61.4V456H287z"></path>
+			</symbol>
+		
+			<symbol id="fcb" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEVRaarAyeH///////+0v9r///////////////+ImsU6VZ9aca+Kmsacqs9HYKXAyeH///9rf7c/WqLY3eyUo8vb4O3v8ffEzOLByuFbcq/5+vzt8PZIYabDy+Jvg7l3ir3V2upDXaTm6vPz9fna3+3AyOB6jL6DlMPY3uxkerQAAADqnx7gAAAACnRSTlP++/7t0uDUuoyF/Sm3sQAAAAFiS0dEKlO+1J4AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCA0KLyUBzerJAAAAfUlEQVQoz2PgwgsY6C3NzcMLBAzYpfn4BcBAEKu0kLAAPmkRAbzSoiApMXEJCUms0lJAWWkZnC4HaZblwistQZa0nLy8PEhaAUjLK2JIKwkgARm80spceKVV8EurYkqrqaurg6Q0gLQmtf099KUZ8UkzMbPglmZlY+fghPMAGWkqCGQ9oE8AAAAASUVORK5CYII="></image>
+			</symbol>
+		
+			<symbol id="git-compare" viewBox="0 0 896 1024">
+				<path d="M832 721.75V320c0-192.5-192-192-192-192h-64V0L384 192l192 192V256h64c56.438 0 64 64 64 64v401.75c-38.125 22.188-64 62.875-64 110.25 0 70.625 57.375 128 128 128s128-57.375 128-128c0-47.25-25.875-88.062-64-110.25zM768 896c-35.312 0-64-28.625-64-64 0-35.312 28.688-64 64-64 35.375 0 64 28.688 64 64 0 35.375-28.625 64-64 64zM64 315.594v401.719c0 192.5 192 192 192 192h64v128l192-192-192-192v128h-64c-56.438 0-64-64-64-64V315.594c38.156-22.219 64-62.906 64-110.281 0-70.656-57.344-128-128-128s-128 57.344-128 128c0 47.281 25.844 88.062 64 110.281zM128 272c-35.312 0-64-28.594-64-64 0-35.312 28.688-64 64-64 35.406 0 64 28.688 64 64 0 35.406-28.594 64-64 64z"></path>
+			</symbol>
+		
+			<symbol id="goog" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA9lBMVEXVhn28QDHATT/ViH/irabks63dn5jKaF3alYz89fT////tzcnDU0bjsKr+/f389/b79PPKaFzUhHv57+7Ug3q+RDbGXE/nvLbNb2S+RTf25uT8+PfHX1LASz3IYlXirKXPdWrVh37HX1PGXFDIY1fksavMbWHSgHbSf3Xuz8vfo5zy29jRfXLTgXfeopvZk4vsycXcmpLGXVHlta/cm5PWiYDz3dv+/PzNcGW9QTPty8f+/v3EWEu/SDrPd2z//v79+fneoJjIYVXFWUzpwr3dnZX25OLCUUTTgHb36ejqw77CUkS9QzTOc2jbmJDWioHFW04AAADZKVEvAAAAAXRSTlP+GuMHfQAAAAFiS0dEUZRpfCoAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCA0KIh9yb002AAAAwElEQVQoz93RxQ7CQBQF0A5S4OJeoHhxd3d3/v9rmDZN04SWHQu4m7s4Gcl7DPkY5u/ZYDSZWYseW20QY3dospOSyw14vFrsA/yBIAmF5ds5NqLmKGK8+hCLuIoTQJJWKi0mQ7JCDnnBoHABKNIqSb8rk4rUjMJVoKZwnQQaTbQavMJtoENL4Lgu0Ht7m/QxGIo9GmMypZ0uzdQ8X2C5Wm9SY2CrNZYd5OwPmkM9nkRcnC86K7ne7uzj+aV9/xy/APCvFHNqTl4uAAAAAElFTkSuQmCC"></image>
+			</symbol>
+		
+			<symbol id="google" viewBox="0 0 4335 4335">
+				<path d="M-4 1h4335v4335H-4z"></path><path d="M3217 1704h290c0 97 1 195 2 292 97 1 195 1 292 2v291c-97 0-195 1-292 1-1 98-1 195-2 292h-291c-1-98-1-195-2-292-97-1-195-1-292-2v-291c97-1 194-1 292-2 1-97 1-195 2-292zM584 2143c-20-527 442-1014 969-1021 269-23 531 82 734 252-83 92-168 183-259 267-179-109-395-192-604-118-338 96-542 495-417 825 103 345 523 535 852 390 170-61 283-218 332-387-195-4-390-1-586-7 0-116-1-232 0-348 326 0 652-1 978 1 20 285-22 589-207 818-253 326-721 422-1102 294-404-133-698-540-689-966z"></path><path d="M3213 1651h290c0 97 1 195 2 292 97 1 195 1 292 2v291c-97 0-195 1-292 1-1 98-1 195-2 292h-291c-1-98-1-195-2-292-97-1-195-1-292-2v-291c97-1 194-1 292-2 1-97 1-195 2-292zM580 2090c-20-527 442-1014 969-1021 269-23 531 82 734 252-83 92-168 183-259 267-179-109-395-192-604-118-338 96-542 495-417 825 103 345 523 535 852 390 170-61 283-218 332-387-195-4-390-1-586-7 0-116-1-232 0-348 326 0 652-1 978 1 20 285-22 589-207 818-253 326-721 422-1102 294-404-133-698-540-689-966z"></path>
+			</symbol>
+		
+			<symbol id="insta" viewBox="0 0 30 31">
+				<image width="30" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAMAAADHso01AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEX////////////////////////////////FNqTVbL3vyOb89Pr////hmdH//v/mqtjQXbXMTq/OVrPejszHPqjKR6vy1OvfkM3FOKX45/Tdisrz1uzPWbTsvuL99/vch8kAAAAFN9VJAAAACHRSTlMA/u/YAQQJDLrwtjEAAAABYktHRCCzaz2AAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4ggNCiMc8n0tzQAAALRJREFUKM/N0msLwiAUBuCtdnH6zku60mr5//9lymCoRBIR9H4Q4QEv55yGvE3zBzxRhj2MTjnPHFn4nPLEuZBqjxScTwlTiOTCkzYCNGEGucmyhOWMiwRLGFBhtdoBTtvr7a6Aku26PWu1hLxgjYc3xj+gI7clO/i493CRDwUvgIl7AyxEtcfPuHJ47WmVj+1lISXnRQ3Ji5q3JCRvSaWhlXGoDdOXk/ob3tL1wzgOfdcUeQKYoCRuoKgVswAAAABJRU5ErkJggg=="></image>
+			</symbol>
+		
+			<symbol id="ks" viewBox="0 0 612 792">
+				<path d="M333.6 88.1h-55.2c-5.8 0-10.4 4.7-10.4 10.5V310c0 5.8 4.7 10.5 10.4 10.5h55.2c5.8 0 10.5-4.7 10.5-10.5V98.6c0-5.8-4.7-10.5-10.5-10.5zm276.6 233.2l-.5-1.6c-6.4-20.6-27.4-31.9-47-25.2l-139 47.5c-19.6 6.7-30.3 28.9-24 49.5l.5 1.6c6.4 20.6 27.4 31.9 47 25.2l139-47.5c19.6-6.7 30.3-28.8 24-49.5zM416.6 516.1c-12.1-17.5-35.4-21.4-52.1-8.7l-1.3 1c-16.7 12.8-20.4 37.3-8.3 54.9l85.9 124.4c12.1 17.5 35.4 21.4 52.1 8.7l1.3-1c16.7-12.8 20.4-37.3 8.3-54.9l-85.9-124.4zM211.8 393.2l.5-1.6c6.4-20.6-4.4-42.8-24-49.5l-139-47.5c-19.6-6.7-40.6 4.6-47 25.2l-.5 1.6c-6.4 20.6 4.4 42.8 24 49.5l138.9 47.5c19.6 6.7 40.7-4.6 47.1-25.2zm36.9 115.2l-1.3-1c-16.6-12.8-40-8.9-52.1 8.7l-85.9 124.4c-12.1 17.5-8.4 42.1 8.3 54.9l1.2 1c16.7 12.8 40 8.9 52.1-8.7l86-124.4c12.1-17.6 8.4-42.1-8.3-54.9z"></path>
+			</symbol>
+		
+			<symbol id="life" viewBox="0 0 56.4 56.4">
+				<path d="M0 28.2C0 12.7 12.6 0 28.2 0s28.2 12.6 28.2 28.1c0 15.6-12.6 28.2-28.2 28.2-3.1 0-6-.5-8.8-1.4 2-11.6 9.3-21.1 19-25.2 1.2 1.3 2.9 2.2 4.7 2.2 3.5 0 6.3-2.8 6.3-6.3s-2.8-6.3-6.3-6.3-6.3 2.8-6.3 6.3C24.5 29.5 14.5 38.1 9.4 49.2c-1.6-1.4-3.1-3.1-4.3-4.8.3-10.8 5.6-20.3 13.6-25.9 1.2 1.3 2.8 2.1 4.7 2.1 3.5 0 6.3-2.8 6.3-6.3S26.9 8 23.4 8s-6.3 2.8-6.3 6.3v.5C9.7 17.5 3.6 22.7 0 29.3v-1.1"></path>
+			</symbol>
+		
+			<symbol id="load" viewBox="0 0 19 22">
+				<image data-name="Слой 1" width="19" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAWCAQAAACIlG/0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCAkOEBZuqJ5oAAABdUlEQVQoz32SP0hVcRiGn3tuNwdb/DNdRS7W4OSg5lB4G2wRhwoKiUgaBLc2o0VoiECkHEXQQQhcDREHNymo4TZEk4iQBGk6qBfsqJ0eB8+Fe4/H3m/6vd/DD77ve5GaeuhbCwkPSRqP/Odnh236H9biK49VXbQvHetwwi/uW9FPZ+1NYgN+N6lN79ViQ26rGlk2UnXHca+bq8Y6XVf1ly98aWTZJe8kR7jqnKpb3hWfWvJx2kKKHqp7PhCx3Rs1QNYep72Pk6oumL34hzjsD3U1oAjAJyLSFJIH2gLywB7fSFeJDaA+IAuEHF6CHXMEBAFHQANtl2ANNAGnAetAPT1kUrGb5IH9gGUA+mlOgeoYJAd8xHY31MjX1iWWkXHUUA3tQ3wen3rKxirommOWVX1nDrHZDzG44ohFu7zlE9/HXslCJSEFV2Lzr7tu+dswfn+1qzpvrb5xN5G3P87Ycd7PWJkqoJtn3KaRK8gBJeZZ4+S8eQbiKKDUn2iuewAAAABJRU5ErkJggg=="></image>
+			</symbol>
+		
+			<symbol id="management" viewBox="0 0 512 512">
+				<path d="M182.922 264.709c-39.745 0-72.08 32.336-72.08 72.08 0 39.745 32.335 72.079 72.08 72.079 39.744 0 72.08-32.334 72.08-72.079 0-14.443-4.259-28.381-12.314-40.306a6.775 6.775 0 0 0-11.227 7.585c6.538 9.677 9.993 20.99 9.993 32.721 0 32.274-26.257 58.531-58.531 58.531-32.275 0-58.531-26.257-58.531-58.531s26.256-58.531 58.531-58.531a6.774 6.774 0 1 0-.001-13.549z"></path><path d="M308.15 401.063l-17.715-17.717c-1.592-1.592-2.026-4.051-1.151-6.156.018-.039.101-.234.116-.273.914-2.206 2.956-3.632 5.203-3.632h25.054a6.775 6.775 0 0 0 6.774-6.774v-67.184a6.775 6.775 0 0 0-6.774-6.774h-25.054c-2.247 0-4.289-1.426-5.273-3.798-.921-2.213-.486-4.672 1.105-6.266l17.715-17.715a6.773 6.773 0 0 0 0-9.58l-47.505-47.505a6.774 6.774 0 1 0-9.581 9.581l42.717 42.715-12.925 12.924c-5.487 5.486-7.071 13.748-3.973 21.195 3.017 7.287 9.972 11.997 17.72 11.997h18.279v53.635h-18.279c-7.748 0-14.703 4.71-17.671 11.88-.015.035-.097.228-.111.264-3.038 7.299-1.454 15.563 4.035 21.047l12.925 12.926-37.926 37.926-12.925-12.926c-5.488-5.488-13.751-7.071-21.194-3.973-7.288 3.018-11.998 9.975-11.998 17.721v18.279h-53.634V444.6c0-7.747-4.709-14.703-12.144-17.781-7.299-3.036-15.56-1.453-21.048 4.033l-12.925 12.926-37.925-37.926 12.925-12.926c5.486-5.488 7.07-13.75 3.973-21.193-3.019-7.287-9.975-11.997-17.72-11.997H52.962v-53.635h18.279c7.746 0 14.702-4.71 17.781-12.144 3.035-7.299 1.452-15.561-4.034-21.049l-12.925-12.924 37.925-37.925 12.925 12.924c5.486 5.488 13.747 7.072 21.194 3.974 7.288-3.019 11.997-9.975 11.997-17.72v-18.279h53.634v18.279c0 7.747 4.71 14.703 11.998 17.72a102.47 102.47 0 0 1 7.255 3.346 6.774 6.774 0 0 0 6.15-12.072 115.902 115.902 0 0 0-8.222-3.792c-2.207-.914-3.633-2.956-3.633-5.203v-25.054a6.774 6.774 0 0 0-6.774-6.774H149.33a6.774 6.774 0 0 0-6.774 6.774v25.054c0 2.247-1.426 4.289-3.799 5.272-2.211.922-4.671.488-6.263-1.105l-17.715-17.715a6.776 6.776 0 0 0-9.581 0l-47.506 47.505a6.775 6.775 0 0 0 0 9.582l17.715 17.713c1.593 1.594 2.026 4.053 1.128 6.213-.009.021-.082.197-.092.218-.914 2.207-2.956 3.633-5.202 3.633H46.188a6.774 6.774 0 0 0-6.774 6.774v67.184a6.774 6.774 0 0 0 6.774 6.774h25.054c2.246 0 4.288 1.426 5.272 3.798.92 2.213.486 4.672-1.106 6.264l-17.715 17.715a6.775 6.775 0 0 0 0 9.582l47.506 47.505a6.776 6.776 0 0 0 9.581 0l17.715-17.716c1.592-1.594 4.051-2.023 6.211-1.127.021.009.197.082.218.092 2.207.914 3.633 2.956 3.633 5.203v25.053a6.774 6.774 0 0 0 6.774 6.774h67.183a6.774 6.774 0 0 0 6.774-6.774V444.6c0-2.248 1.426-4.29 3.557-5.174l.243-.1c2.212-.921 4.672-.485 6.263 1.105l17.715 17.715a6.774 6.774 0 0 0 9.581.001l47.505-47.505a6.774 6.774 0 0 0-.002-9.579zm69.776-88.557c0 24.05 19.566 43.617 43.618 43.617s43.618-19.567 43.618-43.617c0-24.051-19.566-43.619-43.618-43.619s-43.618 19.568-43.618 43.619zm73.687 0c0 16.58-13.489 30.069-30.069 30.069s-30.07-13.489-30.07-30.069c0-16.582 13.49-30.07 30.07-30.07s30.069 13.488 30.069 30.07zm14.2 131.279a6.774 6.774 0 0 0 6.774-6.773v-16.967c0-28.145-22.897-51.042-51.043-51.042s-51.043 22.897-51.043 51.042v43.62h-82.472a6.774 6.774 0 0 0 0 13.547h88.918c.111.006.216.033.328.033h88.537a6.775 6.775 0 0 0 0-13.548H384.05v-43.652c0-20.674 16.82-37.494 37.494-37.494s37.494 16.82 37.494 37.494v16.967a6.774 6.774 0 0 0 6.775 6.773zM93.609 185.172a6.774 6.774 0 0 0 6.774-6.774V64.49h44.934a6.774 6.774 0 1 0 0-13.548H93.609a6.774 6.774 0 0 0-6.774 6.774v120.682a6.774 6.774 0 0 0 6.774 6.774zM375.443 64.49h45.933v163.937a6.774 6.774 0 1 0 13.547 0V57.716a6.774 6.774 0 0 0-6.773-6.774h-52.707a6.774 6.774 0 0 0 0 13.548zM185.378 93.665h151.005a6.774 6.774 0 0 0 6.773-6.774V41.528a6.774 6.774 0 0 0-6.773-6.774H185.378a6.774 6.774 0 0 0-6.774 6.774v45.363a6.774 6.774 0 0 0 6.774 6.774zm6.774-45.363h137.456v31.814H192.152V48.302z"></path><path d="M182.922 292.964a6.774 6.774 0 0 0-6.774 6.774v37.051a6.773 6.773 0 0 0 6.774 6.773h24.714a6.774 6.774 0 0 0 0-13.548h-17.939v-30.275a6.776 6.776 0 0 0-6.775-6.775zm-14.27-145.987h152.94a6.774 6.774 0 0 0 0-13.548h-152.94a6.774 6.774 0 1 0 0 13.548zm152.941 41.124h-31.064a6.775 6.775 0 0 0 0 13.548h31.064a6.774 6.774 0 0 0 0-13.548zm40.739-33.513a6.756 6.756 0 0 0 4.789 1.983 6.752 6.752 0 0 0 4.79-1.984l19.19-19.191a6.774 6.774 0 0 0-9.579-9.579l-14.401 14.401-5.706-5.705a6.772 6.772 0 0 0-9.579.001 6.773 6.773 0 0 0 0 9.58l10.496 10.494zm0 54.673a6.757 6.757 0 0 0 4.789 1.984 6.75 6.75 0 0 0 4.79-1.985l19.19-19.191a6.774 6.774 0 0 0-9.579-9.579l-14.401 14.401-5.706-5.705a6.773 6.773 0 0 0-9.579 0 6.773 6.773 0 0 0 0 9.58l10.496 10.495z"></path>
+			</symbol>
+		
+			<symbol id="mts" viewBox="0 0 612 792">
+				<path d="M427 114.9c-59.9 18.8-76.7 85.7-81.2 133.5C411 265.9 459 325.3 459 396c0 84.5-68.5 153-153 153s-153-68.5-153-153c0-126.6 87.3-247.6 274-281.1C388.7 98.4 347.6 90 306 90 137 90 0 227 0 396s137 306 306 306 306-137 306-306c0-126-76.2-234.2-185-281.1z"></path>
+			</symbol>
+		
+			<symbol id="phone" viewBox="0 0 141.732 141.732">
+				<path d="M108.225 118.226h-66.22V10.889h66.22v107.337zm-38.263 10.899c0-2.951 2.37-5.345 5.294-5.345 2.925 0 5.294 2.394 5.294 5.345 0 2.95-2.369 5.348-5.294 5.348-2.924-.004-5.294-2.398-5.294-5.348m42.706 4.851h.009V5.314h-.002A5.338 5.338 0 0 0 107.336 0l-.057.002V0H42.894a5.341 5.341 0 0 0-5.335 5.314h-.001v128.661h.008c-.002.056-.008.111-.008.169 0 2.878 2.419 5.212 5.404 5.212.044 0 .087-.006.131-.007v.007h64.316c2.904 0 5.267-2.333 5.267-5.212.001-.057-.006-.113-.008-.168"></path>
+			</symbol>
+		
+			<symbol id="proposition" viewBox="0 0 512 512">
+				<path d="M69.597 98.664c.836-.516 15.553-9.764 24.368-26.108 3.525 6.534 8.665 13.505 16.062 18.894-4.522 5.033-10.527 12.788-15.238 22.691a72.548 72.548 0 0 0-1.864-3.395 6.772 6.772 0 0 0-9.267-2.433 6.777 6.777 0 0 0-2.432 9.268c5.63 9.636 7.1 18.425 7.111 18.491a6.774 6.774 0 0 0 6.61 5.735h.085a6.777 6.777 0 0 0 6.666-5.568c4.399-24.332 23.478-40.853 23.66-41.008a6.775 6.775 0 0 0-1.548-11.327c-19.109-8.778-23.579-33.105-23.619-33.333-.569-3.345-3.509-5.736-6.921-5.636a6.775 6.775 0 0 0-6.501 6.116C84.633 73.077 62.691 87.005 62.47 87.143a6.775 6.775 0 0 0 7.127 11.521zm186.178 126.84a6.775 6.775 0 0 0-6.774 6.774v24.784a6.774 6.774 0 0 0 13.548 0v-24.784a6.773 6.773 0 0 0-6.774-6.774z"></path><path d="M472.355 232.937l-69.781-35.961c-.188-.126-.375-.252-.577-.36l-58.648-31.248a6.775 6.775 0 0 0-6.372 11.957l47.75 25.44-128.628 73.438-128.443-73.402 47.817-25.477a6.775 6.775 0 0 0-6.371-11.957l-57.667 30.725a6.753 6.753 0 0 0-4.006 3.142 6.773 6.773 0 0 0 2.524 9.241l132.526 75.665-56.534 30.224-129.102-75.05 31.788-16.382a6.774 6.774 0 1 0-6.208-12.043l-42.778 22.046a6.777 6.777 0 0 0-.301 11.88l143.058 83.162a6.779 6.779 0 0 0 6.597.117l60.002-32.077v152.091l-128.589-73.487v-57.514a6.775 6.775 0 0 0-13.548 0v61.445a6.774 6.774 0 0 0 3.413 5.883l140.29 80.172a6.753 6.753 0 0 0 1.809 1.547 6.76 6.76 0 0 0 3.4.915c.15 0 .3-.019.449-.028.15.01.3.028.449.028 1.176 0 2.35-.304 3.4-.915a6.735 6.735 0 0 0 1.809-1.547l140.29-80.172a6.776 6.776 0 0 0 3.413-5.883v-60.549a6.775 6.775 0 0 0-13.548 0v56.617L263.45 448.107V287.754l135.472-77.419 56.235 28.98-129.102 75.05-32.453-17.352a6.775 6.775 0 1 0-6.389 11.949l35.785 19.132a6.773 6.773 0 0 0 6.599-.117l143.059-83.162a6.775 6.775 0 0 0-.301-11.878z"></path><path d="M142.502 105.69c.036.215.093.424.15.636.055.206.108.41.182.608.077.206.175.403.272.602.095.194.188.387.301.571.108.176.235.342.361.509.144.193.29.382.454.559.051.055.086.118.139.171L250.97 216.647l.002.002c.039.039.086.071.126.109.272.26.56.501.869.711.021.015.039.033.061.047.33.219.681.398 1.042.555.045.02.086.045.132.064.011.004.02.012.03.016.066.027.137.036.203.06.266.098.535.179.812.243.073.017.143.047.217.062.052.01.103.013.153.021.377.066.758.108 1.144.109l.013.001h.004l.014-.001a6.726 6.726 0 0 0 1.143-.11c.051-.009.102-.011.153-.021.075-.015.145-.045.219-.063.274-.064.542-.144.806-.241.068-.025.139-.034.207-.062.012-.004.02-.011.031-.016.046-.019.088-.045.134-.065a6.697 6.697 0 0 0 1.063-.572c.007-.004.012-.011.02-.015.01-.007.018-.017.029-.024.303-.208.586-.444.855-.7.04-.039.088-.071.127-.11l.003-.002L367.19 109.344c.053-.053.088-.116.139-.17.166-.177.311-.367.455-.56.126-.167.252-.333.36-.508.113-.185.206-.379.302-.574.098-.199.195-.395.271-.6.074-.2.127-.405.184-.612.057-.21.113-.418.149-.632.036-.212.05-.427.065-.644a6.94 6.94 0 0 0 .023-.661 6.686 6.686 0 0 0-.055-.612 6.391 6.391 0 0 0-.121-.726c-.02-.083-.019-.166-.041-.249-.029-.109-.084-.204-.119-.311a6.383 6.383 0 0 0-.551-1.254 6.458 6.458 0 0 0-.791-1.11c-.076-.088-.133-.186-.215-.271l-44.997-46.382a6.78 6.78 0 0 0-4.862-2.056H194.165a6.78 6.78 0 0 0-4.862 2.056L144.306 99.85c-.08.082-.133.177-.208.262a6.484 6.484 0 0 0-.793 1.109 6.94 6.94 0 0 0-.292.57 6.715 6.715 0 0 0-.262.686c-.035.109-.091.205-.121.317-.023.084-.022.168-.042.253a6.818 6.818 0 0 0-.12.721 6.804 6.804 0 0 0-.055.616c-.006.221.008.44.024.661.016.22.03.434.065.645zm113.273 88.139l-24.577-60.668h49.155l-24.578 60.668zM197.032 64.965h117.489l35.001 36.078-34.457 9.35-18.658-35.542c-1.738-3.313-5.838-4.585-9.148-2.849a6.773 6.773 0 0 0-2.849 9.146l21.185 40.354a6.778 6.778 0 0 0 7.773 3.389l26.396-7.162-65.071 65.493 21.995-54.292a6.774 6.774 0 0 0-6.279-9.318h-69.263a6.776 6.776 0 0 0-6.279 9.318l21.994 54.292-65.07-65.493 26.395 7.162a6.773 6.773 0 0 0 7.772-3.389l21.187-40.354a6.773 6.773 0 0 0-2.849-9.146 6.775 6.775 0 0 0-9.147 2.849l-18.659 35.542-34.457-9.35 34.999-36.078zm190.266 80.185c.837-.516 15.553-9.765 24.367-26.108 3.525 6.534 8.665 13.505 16.063 18.894-4.522 5.034-10.526 12.787-15.237 22.689a75.11 75.11 0 0 0-1.865-3.395 6.774 6.774 0 1 0-11.699 6.834c5.63 9.636 7.099 18.427 7.11 18.493a6.776 6.776 0 0 0 6.609 5.735h.086a6.776 6.776 0 0 0 6.665-5.568c4.399-24.332 23.479-40.854 23.659-41.008a6.773 6.773 0 0 0-1.547-11.328c-19.109-8.777-23.58-33.105-23.619-33.332-.568-3.348-3.5-5.72-6.921-5.636a6.775 6.775 0 0 0-6.501 6.116c-2.137 22.025-24.078 35.954-24.3 36.092a6.774 6.774 0 0 0 7.13 11.522z"></path>
+			</symbol>
+		
+			<symbol id="rol" viewBox="0 0 512 512">
+				<path d="M266.533 114.519c-55.518 0-100.687 45.168-100.687 100.687 0 16.021 3.858 31.964 11.153 46.104 1.713 3.325 5.803 4.627 9.126 2.915a6.773 6.773 0 0 0 2.914-9.126c-6.399-12.404-9.645-25.826-9.645-39.893 0-48.049 39.089-87.138 87.138-87.138s87.139 39.089 87.139 87.138c0 28.891-14.283 55.85-38.211 72.115a6.776 6.776 0 0 0 3.814 12.377c1.313 0 2.637-.38 3.803-1.172 27.642-18.791 44.143-49.938 44.143-83.32.001-55.519-45.167-100.687-100.687-100.687z"></path><path d="M288.548 279.445c.806 0 1.625-.146 2.423-.452 26.231-10.056 43.854-35.689 43.854-63.788 0-37.657-30.635-68.292-68.292-68.292-37.656 0-68.294 30.635-68.294 68.292 0 17.505 6.616 34.151 18.63 46.875a6.77 6.77 0 0 0 9.575.276 6.77 6.77 0 0 0 .275-9.575c-9.628-10.201-14.932-23.546-14.932-37.576 0-30.185 24.559-54.743 54.745-54.743 30.186 0 54.744 24.558 54.744 54.743 0 22.527-14.129 43.076-35.156 51.138a6.777 6.777 0 0 0-3.901 8.751 6.78 6.78 0 0 0 6.329 4.351zm-149.394 11.959a6.775 6.775 0 0 0 0-13.548H120.2a6.774 6.774 0 0 0-6.773 6.773v94.236a6.775 6.775 0 0 0 6.773 6.774h166.812c16.077 0 31.971-5.372 44.752-15.127l41.123-31.384c11.452-8.738 13.832-25.293 5.306-36.902-8.536-11.625-25.058-14.301-36.831-5.965l-21.052 14.91a6.776 6.776 0 0 0-1.612 9.445 6.778 6.778 0 0 0 9.444 1.612l21.053-14.911c5.78-4.096 13.891-2.776 18.077 2.928 4.187 5.699 3.019 13.824-2.603 18.113l-41.124 31.383c-10.436 7.964-23.408 12.349-36.533 12.349H170.657v-80.687h45.86c7.957 0 15.471 3.062 21.159 8.624 8.239 8.048 19.117 12.48 30.632 12.48h13.123c6.145 0 11.142 4.997 11.142 11.14 0 8.19-6.662 14.854-14.853 14.854h-47.532a6.775 6.775 0 0 0 0 13.547h47.532c15.66 0 28.401-12.741 28.401-28.401 0-13.611-11.076-24.688-24.69-24.688h-13.123c-7.956 0-15.471-3.063-21.162-8.623-8.233-8.051-19.111-12.482-30.629-12.482h-52.635a6.775 6.775 0 0 0-6.774 6.773v87.462h-30.134v-80.687h12.18z"></path><path d="M266.533 264.991a6.775 6.775 0 0 0 6.774-6.774v-5.484c9.539-1.76 16.792-10.123 16.792-20.163 0-11.316-9.205-20.521-20.521-20.521h-6.074c-3.845 0-6.973-3.126-6.973-6.971s3.128-6.971 6.973-6.971h15.839a6.775 6.775 0 0 0 0-13.548h-6.035v-4.326a6.774 6.774 0 0 0-13.547 0v4.685c-9.532 1.767-16.777 10.127-16.777 20.161 0 11.314 9.205 20.519 20.521 20.519h6.074c3.845 0 6.973 3.128 6.973 6.973s-3.128 6.971-6.973 6.971H253.74a6.775 6.775 0 0 0 0 13.548h6.021v5.128a6.773 6.773 0 0 0 6.772 6.773zM438.971 425.09l-55.309-38.197a6.775 6.775 0 0 0-7.7 11.149l47.238 32.623-36.613 25.288V444.5a6.776 6.776 0 0 0-6.774-6.774H166.964v-14.123h212.849a6.775 6.775 0 0 0 0-13.547H160.189a6.774 6.774 0 0 0-6.773 6.773V444.5a6.774 6.774 0 0 0 6.773 6.773h212.849v17.59a6.775 6.775 0 0 0 10.624 5.574l55.309-38.199a6.775 6.775 0 0 0 0-11.148zm-307.325-15.035h-30.093a6.775 6.775 0 0 0-6.774 6.773V444.5a6.775 6.775 0 0 0 6.774 6.773h30.093a6.774 6.774 0 0 0 6.773-6.773v-27.672a6.774 6.774 0 0 0-6.773-6.773zm-6.775 27.671h-16.544v-14.123h16.544v14.123zm-51.863-27.671a6.775 6.775 0 0 0-6.774 6.773V444.5a6.775 6.775 0 0 0 13.548 0v-27.672a6.775 6.775 0 0 0-6.774-6.773zm.021-323.145l55.309 38.199a6.748 6.748 0 0 0 3.844 1.2 6.775 6.775 0 0 0 3.856-12.348L88.8 81.335l36.613-25.288V67.5a6.776 6.776 0 0 0 6.774 6.774h212.849v14.123H132.188a6.776 6.776 0 0 0-6.774 6.774 6.776 6.776 0 0 0 6.774 6.774h219.623a6.775 6.775 0 0 0 6.773-6.774V67.5a6.774 6.774 0 0 0-6.773-6.774H138.962v-17.59a6.778 6.778 0 0 0-3.627-6 6.779 6.779 0 0 0-6.997.426l-55.309 38.2a6.773 6.773 0 0 0 0 11.148zm307.326 15.035h30.092a6.776 6.776 0 0 0 6.774-6.774V67.5a6.775 6.775 0 0 0-6.774-6.774h-30.092a6.776 6.776 0 0 0-6.775 6.774v27.671a6.775 6.775 0 0 0 6.775 6.774zm6.774-27.671h16.544v14.123h-16.544V74.274zm51.863-13.548a6.776 6.776 0 0 0-6.774 6.774v27.671c0 3.74 3.034 6.774 6.774 6.774s6.774-3.034 6.774-6.774V67.5a6.774 6.774 0 0 0-6.774-6.774z"></path>
+			</symbol>
+		
+			<symbol id="search-ico" viewBox="0 0 48 48">
+				<path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0a9 9 0 1 1 .001-18.001A9 9 0 0 1 19 28z"></path><path d="M0 0h48v48H0z" fill="none"></path>
+			</symbol>
+		
+			<symbol id="simpline" viewBox="0 0 21 21">
+				<image width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4ggKCTQn2WTGnwAABL9JREFUOMuFlVuMnVUVgL+19/7/c/4zZ85MB2ba0kKZlhYINIC3koCBFwUSS0QjNUEgoggJJPAAIeGBF29JAz70SYFIIkRADWgIKPVBYyBAsIEq01JoyzBtqc2xcztnzvnPvy/Lhxmu1riS/bSTb629sta3JXtwCoPyYchSIJwzQrxgDFIEBXOivDL7+7/v1UxOajPfy3D+W9rljOYWnCLeUa3buAxQcHwmtJVhj3fRN7uk+ZXr0dTW9W6PBlmD6rWyMLgB4psJd6cIvc8y/gtKBA0Jsykn7tgCRtF3O1M8M/2Arm2gmYHKDJvELhv8e2rkbsQ+SVqu8pSVLqeyiHrMyyfQdkKq6qsykv3IhIh2w3vqsp+kRv27pt/7ku30Xot1eyYtdmJWoILcDHIDaH2lqwnDw7IYf+1eaVNtPINkdLeSdmvFGmnYW0XD0zpI72iw1/rm6rqtlkpbzE3HsZHfICC1nVOvq5UKNT8jKBjdgZWN0k9fSGcXhOvWYg4tbXNPH/2WNvM/p7HiRVMGJPjn8HreQM/ZbOTo+Zlf3Beao2PEOCe1XW//Ti3TZPYeHShIuki8+QWufqkmCHMDjEufd414u0bOxdnVlP4mP56/ZtX9UeZS8ENme3Zy/pe24UZSYb/ptNLDYvVidSA1g3rZS4xVqg/OwqYZXEHqhD2a4q1qDOLDtw3xVe2WV6SicU3Nlgsxr21Lm0Zvk0V/KI3UJk0acX8Fs5rSEfsl2o2I1S/Tk+3ayTD9hDErc6xKbOZPhSK/Kh8fe1a2nkYcmB+6IDup1zyLYVrm/feN8fICQV1crM7XKq21kt6SQe/B2F7zq3h0knRsA9prgKlQp4gNMGR3ywdz++Ufs99IhXtIuoPT5UgPzd3rZilscTrvwepf7HB2t44P3ycnOheEVutCGe0hKYAAtQTTARMiOuIQSajYg7ZMtyQNz6CcbjUIhI5Yt1nyh6YgMio+zvitq1ruZPVoKmnFDfn1Uga0JtgPAtrI0VU12NdFk8NY/znpdpup3vybMf5rqYzP0yjOs75/ptgnZwCwC+HnOt9Z5bet21Hb19bQMlfH9UMv2gM93P4e/q4tpMmCbNcBYlWgojA/ixZjWJaIlUKrhSsXcDFWAKRCb8/b1cB0/GXV+g2b872H35VicKGUOqW5hSour4aBzHVJUWA0QxuOVBbQ7yDRg4ChPQ7tcXRuAm82Xp6/OvsSE/ZgGqp/JfvnwlvAds0tWkXoBSdL8RZVmRABcUBmSFsm4aKt6OgqNASEV1bGRQALpn3yO/mBmcfjUMvSjZuMxjfw8ocwkf9AysETbkkvUStHlgUSZ1Nt6PfxtInHMAZ8RBYXcFz6aZck33rC78nqWeVjKOTyOFQ0bT88nr/fOe6Hm4fKc0fPrr/zryFNcqVid9hB78f2/YOPAWAEdfkpLDXr0Ub2aMLtt4P+s5r4U3R6I007Ev34gj0cUctSUp4HZlTMZrL8E0JWzCnVlxSsvpxqdoKIN/24T23tPidHtrr+MdTVlt2JxJXG/R9Jf5Rx+Wjhvic91pHS/SaXR4jGiA/HEXMImEQ4QyR9iv2/oZ94DsoxdfYOLDU0fp2gXxTDWjH45M1P/aAO5uN/7j/jR3AQ928ZOwAAAABJRU5ErkJggg=="></image>
+			</symbol>
+		
+			<symbol id="star" viewBox="0 0 20 19">
+				<path d="M10.52 0l3.47 6.285 7.06 1.354-4.91 5.238.89 7.121-6.51-3.048-6.5 3.048.89-7.121L0 7.639l7.06-1.354L10.52 0"></path>
+			</symbol>
+		
+			<symbol id="tel" viewBox="0 0 139 139">
+				<path d="M67.317 81.952c-9.284-7.634-15.483-17.054-18.742-22.414l-2.431-4.583c.85-.912 7.332-7.853 10.141-11.619 3.53-4.729-1.588-9-1.588-9s-14.401-14.403-17.683-17.26c-3.282-2.861-7.06-1.272-7.06-1.272-6.898 4.457-14.049 8.332-14.478 26.968-.016 17.448 13.229 35.444 27.552 49.376 14.346 15.734 34.043 31.504 53.086 31.486 18.634-.425 22.508-7.575 26.965-14.473 0 0 1.59-3.775-1.268-7.06-2.86-3.284-17.265-17.688-17.265-17.688s-4.268-5.119-8.998-1.586c-3.525 2.635-9.855 8.496-11.38 9.917.003.005-10.586-5.64-16.851-10.792z"></path>
+			</symbol>
+		
+			<symbol id="tel-form" viewBox="0 0 80 80">
+				<path d="M46.143 46.143c-7.917 7.917-17.085 15.485-20.708 11.861-5.189-5.188-8.388-9.707-19.825-.515-11.438 9.196-2.653 15.323 2.373 20.351 5.8 5.799 27.421.305 48.792-21.063C78.143 35.404 83.641 13.783 77.837 7.981 72.81 2.954 66.683-5.828 57.491 5.611c-9.194 11.434-4.677 14.634.513 19.823 3.622 3.624-3.944 12.791-11.861 20.709z"></path>
+			</symbol>
+		
+			<symbol id="transp-company" viewBox="0 0 31 30">
+				<image data-name="Layer 15 копия" width="31" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAMAAADjLDWuAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABQVBMVEUKpd////8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8Kpd8AAABovWaPAAAAaXRSTlMAAHTiegF3+v18+/x/ff6DCYkKBoWLCEVVSZi1TlRGB0JsDBtyDgQLrntKc1KdoJ6meDDL2NTVTaMQqQMFEqutFLCyopucHiknIzvm6ehemVaWAqh5T5cZQWsrPjeEpS1m+fZvdvh1bt/XSVRZAAAAAWJLR0RqJWKVDgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIDg8kAlNN62wAAAFISURBVCjPfdNpW4JAEAfwxVRMM4mK1CyyQ7vstPDqpuygy+60S7Ka7/8FktEFeRb4v9kXv2dhdnaWEFt8ff4A1xs7B3kI9bu7PwwAkQE3j4bAyGDM0YUY0AyJrA+PgJVRifWxeCKJOJ6amJQd65tCT7P1Tc/gkkCfRZjLWJ6dX8B1EX0JYTknUhdWIIqeQg+ix2FV7riwBrCOvrGZ39rOK+gKQEEwvFgC6qQsyFKlU5jxrVKRIzu7YHk7tHD8194+OQAPh0Ny5OkFIqoenssSIh6bXj6pnlbPMqaronE+WaV+fqFp2uUVPV9S7vSnct3tj9LTnxu4rdH+Snf3TH8fHmXrfsQnxrM19n6f0V+c5++13nhDf2/UPwKsf341u9PV5NMOLgXN8YsKjvOth1Ej327vQ2+1mf9xf1+/LeB9Hu+P6H+23Rz3D5fSZgr3dwmKAAAAAElFTkSuQmCC"></image>
+			</symbol>
+		
+			<symbol id="trend" viewBox="0 0 512 512">
+				<path d="M446.73 268.439h-45.29a6.774 6.774 0 0 0 0 13.548h38.515v180.271h-31.74V305.661a6.774 6.774 0 0 0-13.548 0v163.372a6.773 6.773 0 0 0 6.774 6.773h45.29a6.773 6.773 0 0 0 6.773-6.773V275.214a6.775 6.775 0 0 0-6.774-6.775zm-85.089 84.262h-45.289a6.774 6.774 0 0 0-6.775 6.774v109.558a6.774 6.774 0 0 0 6.775 6.773h45.289a6.773 6.773 0 0 0 6.773-6.773V359.476a6.774 6.774 0 0 0-6.773-6.775zm-6.775 109.558h-31.741V366.25h31.741v96.009zm-78.315-71.689h-45.289a6.774 6.774 0 0 0-6.774 6.775v71.688a6.773 6.773 0 0 0 6.774 6.773h45.289a6.773 6.773 0 0 0 6.774-6.773v-71.688a6.774 6.774 0 0 0-6.774-6.775zm-6.775 71.689h-31.741v-58.14h31.741v58.14zm-78.315-39.715h-45.29a6.774 6.774 0 0 0-6.774 6.774v39.715a6.773 6.773 0 0 0 6.774 6.773h45.29a6.773 6.773 0 0 0 6.774-6.773v-39.715a6.773 6.773 0 0 0-6.774-6.774zm-6.774 39.715h-31.741v-26.166h31.741v26.166zm228.39-284.94a6.773 6.773 0 0 0-.685-7.113l-26.73-35.032a6.773 6.773 0 0 0-10.772 0l-26.729 35.032a6.775 6.775 0 0 0 10.771 8.219l21.344-27.974 13.039 17.09h-13.039a6.774 6.774 0 0 0-6.774 6.774c0 97.535-79.351 176.885-176.885 176.885a6.774 6.774 0 1 0 0 13.548c102.737 0 186.718-81.78 190.3-183.659h20.088a6.772 6.772 0 0 0 6.072-3.77z"></path><path d="M289.732 276.23a6.785 6.785 0 0 0 1.048-.999c27.02-25.228 43.958-61.123 43.958-100.917 0-76.16-61.961-138.121-138.121-138.121-3.452 0-6.862.17-10.251.42h-.024l-.016.003c-38.972 2.887-73.493 21.985-96.806 50.595a6.777 6.777 0 0 0-1.013 1.288c-18.762 23.587-30.013 53.403-30.013 85.814 0 36.062 13.906 68.926 36.62 93.55.29.378.619.72.981 1.029 25.207 26.774 60.933 43.542 100.521 43.542 35.847.002 68.541-13.731 93.116-36.204zm-98.592-1.705c-14.631-11.31-32.874-17.537-51.368-17.537h-36.23c-19.574-22.013-31.497-50.971-31.497-82.674 0-28.364 9.547-54.528 25.571-75.492h37.786c9.966 0 18.075 8.108 18.075 18.075 0 9.967-8.109 18.076-18.075 18.076h-18.369c-15.455 0-28.029 12.574-28.029 28.029 0 15.456 12.574 28.029 28.029 28.029h1.417c9.157 0 16.605 7.45 16.605 16.607s-7.449 16.606-16.605 16.606a6.774 6.774 0 0 0 0 13.548c16.627 0 30.154-13.528 30.154-30.155 0-16.628-13.527-30.155-30.154-30.155h-1.417c-7.985 0-14.48-6.496-14.48-14.481 0-7.985 6.496-14.48 14.48-14.48h18.369c17.437 0 31.624-14.186 31.624-31.625 0-17.438-14.187-31.624-31.624-31.624h-25.785c19.031-18.599 43.973-31.148 71.714-34.561 5.422 24.208 26.823 41.732 52.294 41.732h19.699c3.741 0 6.773-3.033 6.773-6.774s-3.032-6.774-6.773-6.774h-19.699c-18.304 0-33.787-12.107-38.555-29.116.518-.006 1.028-.039 1.547-.039 68.689 0 124.572 55.883 124.572 124.573 0 35.244-14.736 67.092-38.342 89.774h-22.665c-7.25 0-13.148-5.897-13.148-13.147s5.898-13.147 13.148-13.147h2.568c15.05 0 27.294-12.245 27.294-27.294s-12.244-27.293-27.294-27.293h-24.105c-11.336 0-20.558-9.223-20.558-20.559s9.222-20.558 20.558-20.558h49.802c3.741 0 6.773-3.032 6.773-6.774s-3.032-6.774-6.773-6.774h-49.802c-18.807 0-34.106 15.3-34.106 34.106s15.3 34.107 34.106 34.107h24.105c7.579 0 13.745 6.166 13.745 13.745s-6.166 13.745-13.745 13.745h-2.568c-14.721 0-26.696 11.976-26.696 26.696s11.976 26.695 26.696 26.695h5.951c-19.869 13.412-43.794 21.25-69.516 21.25-29.976 0-57.51-10.646-79.028-28.351h22.182c15.511 0 30.811 5.224 43.083 14.708a6.742 6.742 0 0 0 4.138 1.414c2.025 0 4.03-.904 5.364-2.632a6.768 6.768 0 0 0-1.216-9.499z"></path>
+			</symbol>
+		
+			<symbol id="truck" viewBox="0 0 60 52">
+				<path d="M40 51a1 1 0 0 1-1 1h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1m20 0a1 1 0 0 1-1 1H43a1 1 0 0 1 0-2h16a1 1 0 0 1 1 1m-28 0a1 1 0 0 1-1 1H21a1 1 0 0 1 0-2h10a1 1 0 0 1 1 1m-16 0a1 1 0 0 1-1 1H1a1 1 0 0 1 0-2h14a1 1 0 0 1 1 1M2 31a1 1 0 0 1 1-1h2.84l-.423-2.853a1 1 0 0 1 1.979-.294L7.863 30H15a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1m1-9h1.559l-.423-2.853a1 1 0 0 1 1.978-.294L6.582 22H15a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2m12 20c-.551 0-1-.449-1-1 0-.551.449-1 1-1 .551 0 1 .449 1 1 0 .551-.449 1-1 1m0-4c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3m34 4c-.551 0-1-.449-1-1 0-.551.449-1 1-1 .551 0 1 .449 1 1 0 .551-.449 1-1 1m0-4c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3m0 8c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5m9.707-20.707l-2.741-2.741L55 11c0-2.757-2.243-5-5-5h-7a1 1 0 0 0 0 2h7c1.626 0 3 1.374 3.003 3.083L53.913 22h-3.295l1.277-2.553a1.001 1.001 0 0 0-1.79-.894L48.382 22H43a1 1 0 0 0 0 2h11.586l2.707 2.707c.57.57.705 1.881.707 2.293v11h-2.08c-.487-3.387-3.4-6-6.92-6-3.86 0-7 3.14-7 7s3.14 7 7 7c3.52 0 6.433-2.613 6.92-6H59a1 1 0 0 0 1-1V29c0-.247-.036-2.451-1.293-3.707M15 46c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5M39 0H7C4.243 0 2 2.243 2 5c0 .05.004.099.011.148L3.339 14H1a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2H5.361l-1.36-9.069A3.004 3.004 0 0 1 7 2h31v38H21.92c-.487-3.387-3.4-6-6.92-6-3.86 0-7 3.14-7 7s3.14 7 7 7c3.52 0 6.433-2.613 6.92-6H39a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1" fill-rule="evenodd"></path>
+			</symbol>
+		
+			<symbol id="twit" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABYlBMVEVVrO5WrO5Xre5Jpu06n+s5nutEpOxSqu5BouxPqe1Yre5Sq+42netar+6JxfOMx/RotfA9oOxUrO5br+9Tq+54vfFNqO1Lp+1Uq+6QyPTv9/3////9/v+n1PZZru+z2veWzPRcsO+83vgumepYru44nuuEw/Pu9/2PyPRZru5vufG93/hIpu1Wre5Qqe5FpOzl8/zt9v253fhMqO1dsO/+/v+PyfRRqu00nOsik+lOqO7R6Poxmuqdz/W33PiLxvOIxfP4/P98v/ItmOpesO+Fw/Pc7vuGxPM5n+tDo+xtuPBCouzD4vnl8vxHpe3F4vn8/f+w2fcym+s3netuufDS6fpks+88oOuKxvM7n+uf0PVGpOxGpexOqe0nlems1vf7/f/5/P7O5/ro9P1hsu81nOtKpu1xuvG83vmw2PdRqu5Qqu19v/Le7/z2+v71+v7U6vtyuvFCo+xAouw+oewAAADLPMirAAAAAWJLR0R1qGqY+wAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIDQoiL1S2fZoAAAE1SURBVCjPY2AYMoCRiZmFlY2BiYEdSYyBg5MLzGLi5uHl4xdgFWQVEkbIi4iKiTOBGBIsklLS0jKycvIKgkwwWWZFaSVlDhWgMapq0hCgrqEpBpPm0JKW1hZT1tHV0zeAShsaMRrDpHVMTKWlpczMLSytoLLS1sxscMOZbGzBOuzsHRyh0k7OmnCXibm4ukGFZaC0uwfC4Z5e0lLSqMDLGyEtxOODJuuro4eQ1vXj9A9AkQ4M0kUKSs3gkFAZZOkwDpSgDo9A0Wxkw4giLREZhSQrFR2jiyLLGBsnHp8AlU10YZVDiUVhPw5hpyRTiGxySqomsqxQWnqGIcxgmUwxVRXUNJCVnaOdmweUyy+QDUvV10SVZdDVZUv1NCkULXRh4yli1GXABIxZOsUlHDpZVE6bNAQAUhY2JUjtankAAAAASUVORK5CYII="></image>
+			</symbol>
+		
+			<symbol id="twitter" viewBox="0 0 4335 4335">
+				<path d="M3 4h4335v4335H3z"></path><path d="M1702 3527c-359 0-693-105-974-286 50 6 100 9 152 9 298 0 572-102 789-272-278-5-513-189-594-441 39 7 79 11 120 11 58 0 114-8 167-22-291-58-510-315-510-623v-8c86 48 184 76 288 79-171-114-283-309-283-529 0-116 31-226 86-320 313 385 782 638 1310 664-11-47-16-95-16-145 0-351 285-636 636-636 183 0 348 77 464 201 145-29 281-81 404-154-47 148-148 273-279 352 129-15 251-50 365-100-85 127-193 239-317 329 1 27 2 55 2 82 0 840-639 1808-1808 1808z"></path><path d="M1713 3484c-359 0-693-105-974-286 50 6 100 9 152 9 298 0 572-102 789-272-278-5-513-189-594-441 39 7 79 11 120 11 58 0 114-8 167-22-291-58-510-315-510-623v-8c86 48 184 76 288 79-171-114-283-309-283-529 0-117 31-226 86-320 313 385 782 638 1310 664-11-47-16-95-16-145 0-351 285-636 636-636 183 0 348 77 464 201 145-29 281-81 404-154-47 148-148 273-279 352 129-15 251-50 365-100-85 127-193 239-317 329 1 27 2 55 2 82 0 840-639 1808-1808 1808zM-5309-290h-138v-80c-52 60-97 90-145 90-43 0-72-20-87-56-9-22-15-56-15-107v-582h138v597c3 20 12 28 29 28 26 0 50-23 80-64v-560h138v735zm-626-218c7 73-15 109-58 109s-65-36-58-109v-291c-7-73 15-107 58-107s66 34 58 107v291zm138-277c0-79-16-138-44-175-37-50-95-71-153-71-66 0-116 21-153 71-28 37-44 97-44 175v261c0 78 14 132 42 169 37 50 96 77 155 77 58 0 119-27 156-77 28-37 41-91 41-169v-262zm-546 95v400h-146v-400s-151-491-182-582h153l102 383 102-383h153l-182 582zm2456-218c-22 0-47 11-69 33v441c22 22 47 33 69 33 38 0 55-28 55-101v-313c0-73-17-94-55-94zm543 87c0-67-17-87-61-87s-63 19-63 87v81h124v-79zm-60 420c32 0 51-18 59-53 1-7 1-39 1-91h138v21c0 42-4 73-5 86-4 29-15 56-31 79-36 53-91 79-159 79-69 0-121-25-160-75-28-36-46-91-46-168v-255c0-78 16-138 44-175 38-50 91-76 158-76 66 0 119 26 156 76 28 37 43 94 43 171v149h-262v131c0 67 19 101 64 101zm380-270v-182c-1-172-22-341-22-341s-21-149-86-215c-83-86-175-87-218-92-304-22-760-22-760-22h-1s-456 0-760 22c-42 5-135 5-218 92-65 66-86 215-86 215s-22 175-22 350v164c0 175 22 350 22 350s21 149 86 215c83 86 191 83 240 92 174 17 739 22 739 22 14 0 461-1 760-23 42-5 135-5 218-92 65-66 86-215 86-215s21-169 22-341zm-670 162c0 67-6 115-15 146-18 54-56 82-108 82-47 0-95-28-139-83v73h-131v-975h131v318c43-52 91-82 139-82 52 0 88 30 105 85 9 29 18 76 18 145v291zm-502 218h-138v-80c-52 60-97 90-145 90-43 0-72-20-87-56-9-22-15-56-15-107v-575h138v590c3 20 12 28 29 28 26 0 50-23 80-64v-553h138v728zm-524 0h-146v-837h-153v-138h459v138h-160v837z"></path>
+			</symbol>
+		
+			<symbol id="user" viewBox="0 0 24 24">
+				<path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 4c2.2 0 4 2.2 4 5s-1.8 5-4 5-4-2.2-4-5 1.8-5 4-5zm6.6 15.5C16.9 21 14.5 22 12 22s-4.9-1-6.6-2.5c-.4-.4-.5-1-.1-1.4 1.1-1.3 2.6-2.2 4.2-2.7.8.4 1.6.6 2.5.6s1.7-.2 2.5-.6c1.7.5 3.1 1.4 4.2 2.7.4.4.4 1-.1 1.4z"></path>
+			</symbol>
+		
+			<symbol id="user-two" viewBox="0 0 64 64">
+				<path d="M0 32c0 17.7 14.3 32 32 32s32-14.3 32-32S49.7 0 32 0 0 14.3 0 32z"></path><path d="M46 42.2v5.9c0 .5-.4.9-.9.9H18c-.5 0-.9-.4-.9-.9v-5.9c0-4.8 6.5-8.6 14.4-8.6S46 37.4 46 42.2z"></path><ellipse cx="31.5" cy="21.2" rx="6.4" ry="6.2"></ellipse>
+			</symbol>
+		
+			<symbol id="vk" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEVMdaP///9NdqOGocFoi7G6ydvY4evm7PL8/f6+zd7p7vSbsssAAACfRyKAAAAAAWJLR0QMgbNRYwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIDQojD3bDbBMAAABZSURBVBjTY2AYFEBQUAHGZBQUBPEFQAwBiJwAjM8A4xuCxQThGhyhamD8QEEBmHKwBjBC8CFAAGEjCh+uAMZPRFPADmIzIilghLhRsAEmwCm4gIEbIT9wAAD3OwjqOUG4TQAAAABJRU5ErkJggg=="></image>
+			</symbol>
+		
+			<symbol id="yot" viewBox="0 0 30 30">
+				<image width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABPlBMVEXcRy7dTTX65ODld2Trl4n1ysL2zcbup5v1zMXuqJzrlof31M/99fTkcl/xtKr76uffWEL20sveUDjgXkj//v788O7iZVH////sm43++fjeUzv539ryurDjalX0xr7uo5fjbFjiZ1PeUjr98vD77On319H77OriZ1LgXEbng3LeUTnkb1vgWkPldWLdSjHcSDDhZE/hYk365OH20Mr76eb++vn649/87uz99PPxtavhYUzdSzP87evpjH3yurH99/b65uLxt6353dj31c/memffWEH1zMbwsKXfVj/pi3vwsabngnHpjHzws6jwr6TngXDfVT7yua/54d3jbVnuppnfWULmfGrtoJTld2Xzwbn87+354NzqkYLvraLtn5LtnpHwsKbtoJP76+j64t7ldGHohHP++PfdSzL319IAAADw9ktUAAAAAWJLR0RpvGvEtAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IIDQoiOjlrmXEAAAD9SURBVCjPzcvXVsJAFIXhETtYchz12EaCipVIVUGdgEOxi8YSAWNXeP8nMAuuRifxUv/L/a1NyD+oK9Dd0+vjff0Dgz4cDA0Nj4wGNdBgTMF0fGISp6YpUpxR3WfnGDL05Pnwr6y7GPHihcWlqIbLal6hZHVtnWzEjM0fFk8wphvtdMYScVmTKZRKJSVOZwBgy923dzqeljib291j++7MzQ5nZUagGMgX8vxAIBaFihkYwEvlymHkKOrF5vHJqXl27sn8onpJr/zYDFkKvr65BR6+y3H7viZzHRsP6Dw+NZ5fqq9v7x+fdYkd/JYjcdNuCWFl2llCtOwm+fO+AA1CMpOki6BsAAAAAElFTkSuQmCC"></image>
+			</symbol>
+		
+			<symbol id="yotube" viewBox="0 0 67 67">
+				<path d="M42.527 41.34c-.278 0-.478.078-.6.244-.121.155-.18.424-.18.796v.896h1.543v-.896c0-.371-.062-.64-.185-.796-.116-.166-.313-.244-.578-.244zm-6.018-.032c.234 0 .417.078.544.231.123.154.185.383.185.683v4.583c0 .286-.053.487-.153.611-.1.127-.256.19-.47.19a.976.976 0 0 1-.421-.097 1.478 1.478 0 0 1-.415-.313v-5.531c.119-.122.239-.213.36-.271a.832.832 0 0 1 .37-.086zm5.239 3.349v1.673c0 .468.057.791.17.974.118.18.313.269.592.269.289 0 .491-.076.606-.229.114-.153.175-.49.175-1.013v-.404h1.795v.455c0 .911-.217 1.597-.657 2.06-.435.458-1.089.686-1.958.686-.781 0-1.398-.242-1.847-.731-.448-.486-.676-1.157-.676-2.014v-3.986c0-.768.249-1.398.742-1.882s1.128-.727 1.911-.727c.799 0 1.413.225 1.843.674.429.448.642 1.093.642 1.935v2.263h-3.338zm-3.125 3.838c-.271.336-.669.501-1.187.501-.343 0-.646-.062-.912-.191a2.267 2.267 0 0 1-.746-.602v.681h-1.764V36.852h1.764v3.874c.237-.269.485-.477.748-.616.267-.141.534-.211.805-.211.554 0 .975.189 1.265.565.294.379.438.934.438 1.66v4.926c0 .628-.137 1.109-.411 1.445zm-7.665.389v-.976c-.325.361-.658.636-1.009.822-.349.191-.686.283-1.014.283-.405 0-.705-.13-.913-.396-.201-.266-.305-.658-.305-1.189v-7.422h1.744v6.81c0 .211.037.362.107.455.077.096.196.142.358.142.128 0 .292-.062.488-.188.197-.125.375-.282.542-.475v-6.744H32.7v8.878h-1.742zM24.916 38.6v10.284h-1.968V38.6h-2.034v-1.748h6.036V38.6h-2.034zm8.078-5.621c0-.002 12.08.018 13.514 1.45 1.439 1.434 1.455 8.513 1.455 8.554 0 0-.012 7.117-1.455 8.556C45.074 52.969 32.994 53 32.994 53s-12.079-.031-13.516-1.462c-1.438-1.434-1.441-8.502-1.441-8.556 0-.04.004-7.12 1.441-8.554 1.438-1.432 13.516-1.451 13.516-1.449zm9.526-3.724h-1.966v-1.08c-.358.397-.736.703-1.13.909-.392.208-.771.312-1.14.312-.458 0-.797-.146-1.027-.438-.229-.291-.345-.727-.345-1.311v-8.173h1.962v7.497c0 .231.045.399.127.502.08.104.216.156.399.156.143 0 .327-.068.548-.206.22-.137.423-.312.605-.526v-7.423h1.966v9.781zm-10.673-1.667c.139.147.339.219.6.219.266 0 .476-.074.634-.223.157-.152.235-.358.235-.618v-5.327a.638.638 0 0 0-.241-.519c-.16-.131-.37-.196-.628-.196-.241 0-.435.065-.586.196a.665.665 0 0 0-.225.519v5.327c0 .267.072.473.211.622zm-1.439-7.685c.528-.449 1.241-.675 2.132-.675.812 0 1.48.237 2.001.712.517.473.777 1.083.777 1.827v5.052c0 .836-.255 1.49-.762 1.968-.513.476-1.212.714-2.106.714-.858 0-1.547-.246-2.064-.736-.513-.491-.772-1.152-.772-1.983v-5.068c-.001-.76.263-1.363.794-1.811zM24.262 16h-2.229l2.634 8.003v5.252h2.213v-5.5L29.454 16h-2.25l-1.366 5.298h-.139L24.262 16zM3 4h60v60H3V4z" fill-rule="evenodd" clip-rule="evenodd"></path>
+			</symbol>
+		
+	</svg>
+</div>
+<script src="../libs/jQuery/jquery-3.3.1.min.js"></script>
+<script src="../libs/bootstrap/bootstrap.js"></script>
+<script src="../libs/slick/slick.min.js"></script>
+<script src="../js/build.js"></script>
+</body>
+</html>

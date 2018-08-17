@@ -53,6 +53,7 @@ const pathes = {
 const config = {
   jsBuild: [
     `${pathes.src.js}/libs/masked-input/jquery.maskedinput.min.js`,
+    `${pathes.src.js}/libs/noUiSlider/nouislider.min.js`,
     `${pathes.src.js}/main.js`,
   ],
 };

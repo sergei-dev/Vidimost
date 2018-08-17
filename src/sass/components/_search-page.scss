@@ -24,4 +24,16 @@
 		margin-bottom: 20px;
 	}
 
+	&__subtitle {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 15px;
+
+		font-size: 25px;
+
+		&::after {
+			display: none;
+		}
+	}
+
 }

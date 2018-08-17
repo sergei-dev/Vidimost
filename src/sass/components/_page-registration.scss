@@ -1,0 +1,26 @@
+.page-registration {
+
+	&__form-group {
+		margin-bottom: 15px;
+	}
+
+	&__check-group {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__check {
+
+		&::before {
+			margin-right: 27px;
+		}
+	}
+
+	&__check-wrap {
+		width: 85.7%;
+
+		@include media($screen-md) {
+			width: 100%;
+		}
+	}
+}

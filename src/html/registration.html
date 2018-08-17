@@ -1,0 +1,200 @@
+//= include/head.html
+
+//= include/header.html
+
+<main class="main-content page-registration">
+
+	<div class="container-new">
+		<div class="breadcrumb">
+			<ul class="breadcrumb__list">
+				<li class="breadcrumb__item breadcrumb__item--first">
+					<a class="breadcrumb__link" href="#"><span class="breadcrumb__text">Главная</span> >></a>
+				</li>
+
+				
+				<li class="breadcrumb__item breadcrumb__item--first">
+					<a class="breadcrumb__link" href="#"><span class="breadcrumb__text">Аккаунт</span> >></a>
+				</li>
+
+				<li class="breadcrumb__item">
+					Регистрация
+				</li>
+
+
+			</ul>
+			<!-- /.breadcrumb__list -->
+		</div>
+		<!-- /.breadcrumb -->
+
+		<div class="page-wrap">
+
+		<div class="page-wrap__right page-wrap__right--full">
+			<section class="page-section page-section--right-content">
+				<h1 class="head-title">Регистрация</h1>
+				<!-- /.head-title -->
+				<div class="page-wrap__text-content">
+					<p class="page-wrap__text">Если Вы уже зарегистрированы, перейдите на страницу <a class="page-wrap__link" href="#">входа в систему.</a></p>
+				</div>
+				<!-- /.page-wrap__text-content -->
+				
+				<form class="page-form">
+					<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Контактные данные</legend>
+						<!-- /.page-form__group-title -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-name" class="form-group__label form-group__label--required form-group__label--full">Имя</label>
+							<input type="text" id="reg-name" class="form-group__inp form-group__inp--full" placeholder="Имя">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-surname" class="form-group__label form-group__label--required form-group__label--full">Фамилия</label>
+							<input type="text" id="reg-surname" class="form-group__inp form-group__inp--full" placeholder="Фамилия">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-phone" class="form-group__label form-group__label--required form-group__label--full">Телефон</label>
+							<input type="phone" id="reg-phone" class="form-group__inp form-group__inp--mask form-group__inp--full" placeholder="Телефон">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-email" class="form-group__label form-group__label--full">E-Mail</label>
+							<input type="email" id="reg-email" class="form-group__inp form-group__inp--full" placeholder="E-mail">
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+					<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Ваш адрес</legend>
+						<!-- /.page-form__group-title -->
+
+						<div class="form-group page-registration__check-group">
+							<p class="page-check page-registration__form-group page-registration__check-wrap">
+							<input class="page-check__checkbox" type="checkbox" id="check-address" hidden="" checked="">
+							<label for="check-address" class="page-check__text form-group__label page-form__label-check page-registration__check">
+								<span>Данные владельца аккаунта совпадают с данными получателя для доставки</span>
+							</label>
+						</p>
+						</div>
+
+						<p class="form-group page-registration__form-group form-group--full">
+							<span class="form-group__label form-group__label--full">Метод доставки</span>
+							<select class="form-group__inp form-group__inp--full">
+								<option value="1">Самовывоз</option>
+								<option value="2">Доставка по Киеву</option>
+								<option value="3">Курьерская доставка</option>
+							</select>
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group form-group--full">
+							<span class="form-group__label form-group__label--full">Перевозчик</span>
+							<select class="form-group__inp form-group__inp--full">
+								<option value="1">Автолюкс</option>
+								<option value="2">Доставка по Киеву</option>
+								<option value="3">Курьерская доставка</option>
+							</select>
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-address-shipping" class="form-group__label form-group__label--required form-group__label--full">Адрес (отделение)</label>
+							<input type="text" id="reg-address-shipping" class="form-group__inp form-group__inp--full" placeholder="Адрес (отделение)">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-city" class="form-group__label form-group__label--required form-group__label--full">Город</label>
+							<input type="text" id="reg-city" class="form-group__inp form-group__inp--full" placeholder="Город">
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-name-shipping" class="form-group__label form-group__label--required form-group__label--full">Имя получателя</label>
+							<input type="text" id="reg-name-shipping" class="form-group__inp form-group__inp--full" placeholder="Имя получателя">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-surname-shipping" class="form-group__label form-group__label--required form-group__label--full">Фамилия получателя</label>
+							<input type="text" id="reg-surname-shipping" class="form-group__inp form-group__inp--full" placeholder="Фамилия получателя">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-phone-shipping" class="form-group__label form-group__label--required form-group__label--full">Телефон получателя</label>
+							<input type="phone" id="reg-phone-shipping" class="form-group__inp form-group__inp--mask form-group__inp--full" placeholder="Телефон получателя">
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group shipping form-group--full">
+							<label for="reg-company" class="form-group__label form-group__label--full">Компания</label>
+							<input type="phone" id="reg-company" class="form-group__inp form-group__inp--full" placeholder="Компания">
+						</p>
+						<!-- /.form-group -->
+
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-comment" class="form-group__label form-group__label--full">Комментарий</label>
+							<textarea id="reg-comment" class="form-group__inp form-group__textarea form-group__inp--full" placeholder="Комментарий"></textarea>
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+
+						<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Ваш пароль</legend>
+						<!-- /.page-form__group-title -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-password" class="form-group__label form-group__label--required form-group__label--full">Пароль</label>
+							<input type="password" id="reg-password" class="form-group__inp form-group__inp--full" placeholder="Пароль">
+						</p>
+						<!-- /.form-group -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<label for="reg-pasword-two" class="form-group__label form-group__label--required form-group__label--full">Подтвердите пароль</label>
+							<input type="password" id="reg-pasword-two" class="form-group__inp form-group__inp--full" placeholder="Подтвердите пароль">
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+
+					<fieldset class="page-form__inputs-group">
+						<legend class="head-title page-form__group-title">Рассылка новостей</legend>
+						<!-- /.page-form__group-title -->
+						<p class="form-group page-registration__form-group form-group--full">
+							<span class="form-group__label form-group__label--full">Получать новости на E-Mail</span>
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="1" checked>
+								Да
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="1">
+								Да
+							</label>
+						</p>
+						<!-- /.form-group -->
+					</fieldset>
+
+					<div class="page-wrap__cont">
+						<button class="button page-wrap__btn">Продолжить</button>
+					</div>
+				</form>
+				<!-- /.page-form -->
+			
+			</div>
+			<!-- /.container-new -->
+		</div>
+		<!-- /.page-wrap__right -->
+	</div>
+	<!-- /.page-wrap -->
+</div>
+<!-- /.container-new -->
+</section>
+<!-- /.page-section -->
+
+</main>
+<!-- /.main-content -->
+
+
+//= include/footer.html
+
+<div hidden>
+	//= include/sprite.html
+</div>
+//= include/foot.html
+
+
+
+

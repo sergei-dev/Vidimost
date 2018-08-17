@@ -17,8 +17,9 @@
 
 		&::before {
 			content: '';
-
+			
 			width: 22px;
+			min-width: 22px;
 			height: 22px;
 			margin-right: 11px;
 

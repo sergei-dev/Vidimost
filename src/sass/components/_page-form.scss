@@ -1,0 +1,24 @@
+.page-form {
+	display: flex;
+	flex-direction: column;
+
+	&__group {
+		margin-bottom: 15px;
+	}
+
+	&__group-title {
+		margin-bottom: 20px;
+		
+		font-size: 21px;
+
+		border-bottom: 0;
+	}
+
+	&__inputs-group {
+		margin-bottom: 15px;
+	}
+
+	&__label-check {
+		display: flex;
+	}
+}
