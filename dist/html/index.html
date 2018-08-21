@@ -5,6 +5,7 @@
 	<title>VIDIMOST</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" href="../libs/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../libs/slick/slick.css">
 	<link rel="stylesheet" href="../libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="../css/style.min.css">
@@ -14,7 +15,7 @@
 </head>
 <body>
 
-<header id="page-header" class="header-page">
+<header class="header-page">
   <nav class="nav">
     <div class="container-new header-page__container">
       <button id="open-menu" class="open-menu">
@@ -188,47 +189,14 @@
       <!-- /.callback -->
     </div>
     <!-- /.header-page__top-common -->
+     
     <form class="search-form header-page__form">
-      <div class="button search-form__btn-product">
-        Товары
-        <svg class="button__icon search-form__btn-product-icon">
-          <use href="#arrow-down"></use>
-        </svg>
-        <!-- /.button__icon -->
-          <ul class="submenu search-form__submenu">
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Готовый комплект</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Установка</span>      
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Заказ сметы</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Настройка оборудования</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text">Обслуживания системы</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-        </ul>
-        <!-- /.page-menu__submenu -->
-      </div>
+
+      <select class="search-form__select-product">
+        <option value="1">Товары</option>
+        <option value="2">Статьи</option>
+      </select>
+
       <p class="search-form__group">
         <label for="search-inp" class="visually-hidden">Поиск товаров</label>
         <input type="text" id="search-inp" class="search-form__inp" placeholder="Поиск товаров">
@@ -246,7 +214,30 @@
   </div>
   <!-- /.header-page__common -->
   <div class="header-page__pers-area-info">
-    <p class="header-page__area-text">
+    <div class="user-data">
+      <h4 class="user-data__title">Вася Сидоров</h4>
+      <!-- /.user-data__title -->
+     <div class="user-data__wrap-title">
+        <div class="user-data__item"> 
+        <span class="user-data__subtitle">Ваш баланс: </span>
+        <span class="user-data__val">- 1 623,00 $</span>
+      </div>
+      <!-- /.user-data__item -->
+       <div class="user-data__item"> 
+        <span class="user-data__subtitle">1.00$ =</span>
+        <span class="user-data__val">31.30грн. (с НДС)</span>
+      </div>
+      <!-- /.user-data__item -->
+       <div class="user-data__item"> 
+        <span class="user-data__subtitle">1.00$ =</span>
+        <span class="user-data__val">26.55грн</span>
+      </div>
+      <!-- /.user-data__item -->
+     </div>
+     <!-- /.user-data__wrap-title -->
+    </div>
+    <!-- /.user-data -->
+    <p class="header-page__area-text" hidden>
       Для доступа к кабинету пользователя необходимо
       <a class="header-page__link-area" href="#">Войти</a> или <a class="header-page__link-area" href="#">Зарегистрироваться</a>
     </p>
@@ -395,15 +386,9 @@
 					<!-- /.home-page__slider-img -->
 				</div>
 				<!-- /.home-page__slider-item -->
-			<div class="home-page__slider-item">
-					<a href="#" class="button home-page__slider-btn">Открыть категорию</a>
-					<div class="home-page__slider-img" style="background-image: url('../images/bg/HTB1JRTCFxSYBuNjSsphq6zGvVXaW.jpg');"></div>
-					<!-- /.home-page__slider-img -->
-				</div>
-				<!-- /.home-page__slider-item -->
 				<div class="home-page__slider-item">
 					<a href="#" class="button home-page__slider-btn">Открыть категорию</a>
-					<div class="home-page__slider-img" style="background-image: url('../images/bg/HTB15FNuFXGWBuNjy0Fb7624sXXay.jpg');"></div>
+					<div class="home-page__slider-img" style="background-image: url('../images/bg/fon3.jpg');"></div>
 					<!-- /.home-page__slider-img -->
 				</div>
 				<!-- /.home-page__slider-item -->
@@ -934,13 +919,13 @@
 			<li class="article-list__item">
 				<article class="article">
 					<a href="#" class="article__content novelties-sect__content">
+						<img src="../images/pic/02621503_n2-200x200.png" alt="img" class="article__img novelties-sect__img"> 
 					<h3 class="article__title novelties-sect__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
 					<!-- /.article-list__title -->
 					<div class="article__text-info novelties-sect__text-info">
-						<p class="article__descr novelties-sect__descr">
+						<p>
 							Видеокамеры наблюдения с искусственным интеллектом и сенсорные технологии, 
 							которые различают запахи и звуки, 
-							<img src="../images/pic/02621503_n2-200x200.png" alt="img" class="article__img novelties-sect__img"> 
 							были представлены на
 							выставке Future Cities 
 							Show, проходившей 
@@ -955,16 +940,16 @@
 				<!-- /.article -->
 			</li>
 			<!-- /.article-list__item -->
-			<li class="article-list__item">
+				<li class="article-list__item">
 				<article class="article">
 					<a href="#" class="article__content novelties-sect__content">
+						<img src="../images/pic/02621503_n2-200x200.png" alt="img" class="article__img novelties-sect__img"> 
 					<h3 class="article__title novelties-sect__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
 					<!-- /.article-list__title -->
 					<div class="article__text-info novelties-sect__text-info">
-						<p class="article__descr novelties-sect__descr">
+						<p>
 							Видеокамеры наблюдения с искусственным интеллектом и сенсорные технологии, 
 							которые различают запахи и звуки, 
-							<img src="../images/pic/02621503_n2-200x200.png" alt="img" class="article__img novelties-sect__img"> 
 							были представлены на
 							выставке Future Cities 
 							Show, проходившей 
@@ -979,19 +964,19 @@
 				<!-- /.article -->
 			</li>
 			<!-- /.article-list__item -->
-			<li class="article-list__item">
+				<li class="article-list__item">
 				<article class="article">
 					<a href="#" class="article__content novelties-sect__content">
+						<img src="../images/pic/02621503_n2-200x200.png" alt="img" class="article__img novelties-sect__img"> 
 					<h3 class="article__title novelties-sect__title">Dahua представляет серию оборудования HDCVI-IoT</h3>
 					<!-- /.article-list__title -->
 					<div class="article__text-info novelties-sect__text-info">
-						<p class="article__descr novelties-sect__descr">
+						<p>
 							Видеокамеры наблюдения с искусственным интеллектом и сенсорные технологии, 
 							которые различают запахи и звуки, 
-							<img src="../images/pic/02621503_n2-200x200.png" alt="img" class="article__img novelties-sect__img"> 
 							были представлены на
 							выставке Future Cities 
-							Show, проходи
+							Show, проходившей 
 							в Дубаи.
 						</p>
 						<!-- /.article-list__descr -->
@@ -1003,49 +988,41 @@
 				<!-- /.article -->
 			</li>
 			<!-- /.article-list__item -->
-		</ul>
-		<!-- /.article-list -->
-	</div>
-	<!-- /.container-new -->
+	</ul>
+	<!-- /.article-list -->
+</div>
+<!-- /.container-new -->
 </section>
 <!-- /.page-section -->
 <section class="page-section about-sect">
 	<div class="container-new">
 		<div class="about-sect__content">
-			<div class="about-sect__text-wrap">
-				<h2 class="head-title about-sect__title">О компании Vidimost</h2>
-				<!-- /.head-title about-sect__title -->
-				
-					<p>Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!</p>
+			<h1 class="head-title about-sect__title">О компании Vidimost</h1>
+			<!-- /.head-title about-sect__title -->
+			
+			<div class="about-sect__descr about-sect__descr--clip">
+				<p>Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!</p>
 				<p>Мы сами завозим оборудование, для вас только официальная гарантия; мы ремонтируем и предлагаем только лучшее!
 				Мы не только продаем, но и помогаем: во всем нужен баланс!</p>
 				<p>
 				Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.</p>
+				<h3>Сотрудничаем с лучшими мировыми брендами</h3>
+				<p>
+					Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
+				</p>
+				<p>
+					Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
+				</p>
+				<p>
+					Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
+				</p>
+				<p>
+					Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
+				</p>
+			</div>
+			<!-- /.about-sect__descr -->
 			
-			</div>
-			<!-- /.about-sect__text-wrap -->
-			<div class="about-sect__text-wrap">
-				<h3 class="about-sect__title about-sect__title-text">Сотрудничаем с лучшими мировыми брендами</h3>
-				<!-- /.head-title about-sect__title -->
-				<div class="about-sect__text about-sect__text--clip">
-					<p>
-						Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
-					</p>
-					<p>
-						Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
-					</p>
-					<p>
-						Ищете качественные системы видеонаблюдения? Нужна сигнализация в дом? Хотите не только купить нужное оборудование, но и получить консультацию? Доверьтесь профессионалам. Мы поможем не только с покупкой, но и покажем, настроим, установим и протестируем вашу систему!
-					</p>
-					<p>
-						Если вам нужна консультация, свежая информация по новинкам, ремонт оборудования или установка – вы обратились по адресу. Наши специалисты помогут решить все вопросы, связанные с видеонаблюдением или охранной сигнализацией. Звоните и помощь придет незамедлительно! А ещё вы можете задавать самые разные вопросы на нашем, крупнейшем форуме видеонаблюдения на просторах СНГ.
-					</p>
-				</div>
-				<!-- /.about-sect__text -->
-				<button class="about-sect__more">Читать дальше</button>
-			</div>
-			<!-- /.about-sect__text-wrap -->
-
+			<button class="about-sect__more">Читать дальше</button>
 		</div>
 		<!-- /.about-sect__content -->
 	</div>
@@ -1597,6 +1574,8 @@
 </div>
 <script src="../libs/jQuery/jquery-3.3.1.min.js"></script>
 <script src="../libs/bootstrap/bootstrap.js"></script>
+<script src="../libs/datetimepicker/moment.js"></script>
+<script src="../libs/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script src="../libs/slick/slick.min.js"></script>
 <script src="../js/build.js"></script>
 </body>

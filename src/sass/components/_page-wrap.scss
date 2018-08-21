@@ -48,6 +48,10 @@
 		&--space-between {
 			justify-content: space-between;
 		}
+
+		&--right {
+			justify-content: flex-end;
+		}
 	}
 
 	&__btn {
@@ -65,5 +69,9 @@
 
 	&__form-group {
 		margin-bottom: 15px;
+	}
+
+	&__table {
+		background-color: $white;
 	}
 }

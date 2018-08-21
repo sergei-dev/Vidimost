@@ -15,7 +15,9 @@
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.37);
 
 	&__item {
+
 		&:last-child {
+
 			.submenu__text {
 				border-bottom: 0;
 			}
@@ -24,6 +26,7 @@
 
 	&__link {
 		display: block;
+		padding: 0px 10px;
 
 		font-size: $basic-size;
 		text-align: left;
@@ -55,7 +58,7 @@
 
 	&__text {
 		display: block;
-		padding: 12px 10px;
+		padding: 12px 0px;
 
 		border-bottom: 1px solid #f7f7f7;
 

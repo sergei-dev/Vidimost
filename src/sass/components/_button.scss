@@ -121,4 +121,21 @@
       background-color: darken($red, 15%);
     }
   }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--del {
+    background-color: $red;
+
+     &:hover {
+      background-color: darken($red, 15%);
+    }
+  }
+
+  &--small {
+    display: block;
+  }
+
 }

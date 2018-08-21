@@ -20,7 +20,6 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-p,
 dd,
 dl,
 figure,
@@ -40,6 +39,10 @@ table {
   border-spacing: 0;
 }
 
+label {
+  font-weight: normal;
+}
+
 th {
   font-weight: inherit;
 }
@@ -54,6 +57,12 @@ h6 {
   font-weight: inherit;
 }
 
+h2 {
+  margin-top: 0;
+  
+  font-size: 27px;
+}
+
 audio,
 video {
   display: block;
@@ -62,7 +71,6 @@ video {
 img {
   max-width: 100%;
   border: none;
-  display: block;
 }
 
 iframe {
@@ -89,10 +97,7 @@ abbr {
   text-decoration: none;
 }
 
-b,
-strong {
-  font-weight: inherit;
-}
+
 
 i,
 em {
@@ -265,7 +270,7 @@ svg {
 }
 
 ::selection {
-  color: #000;
+  color: #fff;
   background: #fbd404;
 }
 

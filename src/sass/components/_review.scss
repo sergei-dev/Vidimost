@@ -1,0 +1,49 @@
+.review {
+	padding: 12px;
+
+	color: $black-text;
+
+	border: 1px solid #dddddd;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&__head-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 6px;
+	}
+
+	&__name {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: 5px;
+
+		font-weight: 700;
+	}
+	
+	&__descr {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		@include media($screen-sm) {
+			flex-direction: column;
+		}
+	}
+
+	&__text {
+		width: 80%;
+		padding-right: 5px;
+		font-size: 14px;
+		line-height: 17px;
+
+		@include media($screen-sm) {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+}	

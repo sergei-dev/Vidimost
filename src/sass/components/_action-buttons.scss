@@ -18,6 +18,12 @@
 			}
 		}
 
+		&.active {
+			.action-buttons__icon {
+				fill: $brand-color;
+			}
+		}
+
 		&:last-child {
 			margin-right: 0;
 		}

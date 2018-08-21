@@ -1,0 +1,36 @@
+.table-info {
+	width: 100%;
+	max-width: 100%;
+
+	font-size: 14px;
+	color: $black-text;
+
+	border: 1px solid #dddddd;
+
+	&__title {
+		padding: 5px 10px;
+		border: 1px solid #dddddd;
+
+		font-weight: 700;
+	}
+
+
+	&__row {
+		height: 30px;
+		vertical-align: middle;
+	}
+
+	&__data {
+		padding: 5px 10px;
+
+		font-weight: 400;
+		white-space: nowrap;
+
+		border: 1px solid #dddddd;
+
+		&:last-of-type {
+			border-right: 0;
+		}
+	}
+
+}

@@ -1,0 +1,56 @@
+.page-orders {
+
+	input[type=radio], 
+	input[type=checkbox] {
+		display: inline-block;
+	}
+
+	.control-label {
+		line-height: 30px;
+	}
+
+	.btn {
+		background-color: $brand-color;
+		border: 0;
+
+		&:hover {
+			border: 0;
+			background-color: darken($brand-color, 15%);
+		}
+
+	}
+
+	.delete {
+		background-color: $red;
+
+		&:hover {
+			border: 0;
+			background-color: darken($red, 15%);
+		}
+	}
+
+
+}
+
+#shipping_method .radio label, 
+#payment_method .radio label {
+	width: 100%;
+}
+
+#shipping_method .radio label .price, 
+#payment_method .radio label .price {
+	float: right;
+}
+#shipping_method .radio label .text, 
+#payment_method .radio label .text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.required .control-label::before {
+  content: '* ';
+
+  color: #F00;
+  font-weight: bold;
+
+}

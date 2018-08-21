@@ -1,4 +1,4 @@
-<header id="page-header" class="header-page">
+<header class="header-page">
   <nav class="nav">
     <div class="container-new header-page__container">
       <button id="open-menu" class="open-menu">
@@ -172,47 +172,14 @@
       <!-- /.callback -->
     </div>
     <!-- /.header-page__top-common -->
+     
     <form class="search-form header-page__form">
-      <div class="button search-form__btn-product">
-        Товары
-        <svg class="button__icon search-form__btn-product-icon">
-          <use href="#arrow-down"></use>
-        </svg>
-        <!-- /.button__icon -->
-          <ul class="submenu search-form__submenu">
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Готовый комплект</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Установка</span>      
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Заказ сметы</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text search-form__submenu-text">Настройка оборудования</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-          <li class="submenu__item page-menu__submenu-item">
-            <a href="#" class="submenu__link">
-              <span class="submenu__text">Обслуживания системы</span>
-          </a>
-          </li>
-          <!-- /.page-menu__sub-item -->
-        </ul>
-        <!-- /.page-menu__submenu -->
-      </div>
+
+      <select class="search-form__select-product">
+        <option value="1">Товары</option>
+        <option value="2">Статьи</option>
+      </select>
+
       <p class="search-form__group">
         <label for="search-inp" class="visually-hidden">Поиск товаров</label>
         <input type="text" id="search-inp" class="search-form__inp" placeholder="Поиск товаров">
@@ -230,7 +197,30 @@
   </div>
   <!-- /.header-page__common -->
   <div class="header-page__pers-area-info">
-    <p class="header-page__area-text">
+    <div class="user-data">
+      <h4 class="user-data__title">Вася Сидоров</h4>
+      <!-- /.user-data__title -->
+     <div class="user-data__wrap-title">
+        <div class="user-data__item"> 
+        <span class="user-data__subtitle">Ваш баланс: </span>
+        <span class="user-data__val">- 1 623,00 $</span>
+      </div>
+      <!-- /.user-data__item -->
+       <div class="user-data__item"> 
+        <span class="user-data__subtitle">1.00$ =</span>
+        <span class="user-data__val">31.30грн. (с НДС)</span>
+      </div>
+      <!-- /.user-data__item -->
+       <div class="user-data__item"> 
+        <span class="user-data__subtitle">1.00$ =</span>
+        <span class="user-data__val">26.55грн</span>
+      </div>
+      <!-- /.user-data__item -->
+     </div>
+     <!-- /.user-data__wrap-title -->
+    </div>
+    <!-- /.user-data -->
+    <p class="header-page__area-text" hidden>
       Для доступа к кабинету пользователя необходимо
       <a class="header-page__link-area" href="#">Войти</a> или <a class="header-page__link-area" href="#">Зарегистрироваться</a>
     </p>

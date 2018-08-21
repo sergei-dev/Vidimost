@@ -2,35 +2,123 @@
 	width: 100%;
 	display: flex;
 
-	&__btn-product {
+	.selectric {
 		position: relative;
 
-		padding-top: 9px;
-		padding-bottom: 9px;
+		width: 91px;
+		max-width: 91px;
 
 		font-family: $open-sans;
 		font-weight: 400;
 		text-transform: initial;
+		color: $white;
+
+		border: 0;
+		background: $brand-color;
 
 		&:hover {
 			background-color: $brand-color;
+		}
 
-			> .submenu {
-				display: block;
+		.label {
+			margin: 0;
+			margin-right: 20px;
+			height: 39px;
+
+			font-weight: 400;
+			font-size: 14px;
+			color: currentColor;
+			line-height: 33px;
+		}
+
+		.button {
+			right: 6px;
+
+			width: auto;
+
+			background-color: transparent;
+
+			color: currentColor;
+
+			&::after {
+				top: 3px;
+
+				border-width: 5px;
+				border-top-color: currentColor;
 			}
 		}
+
 	}
 
-	&__btn-product-icon {
-		margin-left: 3px;
-		margin-top: 2px;
-		width: 15px;
-		height: 19px;
+
+	.selectric-hover .selectric .button {
+		color: $white;
+	}
+
+	.selectric-items {
+		box-shadow: none;
+		border: 0;
+	}
+
+	.selectric-wrapper {
+		max-width: 190px;
+	}
+
+	.selectric-items .selectric-scroll {
+		overflow: visible;
+	}
+
+	.selectric-items ul {
+		background-color: $white;
+		border-radius: 4px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.37);
+	}
+
+	.selectric-items li {
+		position: relative;
+
+		width: 100%;
+		padding: 12px 10px;
+
+		background-color: $white;
+
+		font-size: 14px;
+		font-weight: 400;
+		color: $black-text;
+
+		&:hover {
+			color: $brand-color;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 10px;
+			right: 10px;
+
+			height: 1px;
+
+
+			background-color: #f7f7f7;
+		}
+
+		&:last-child {
+
+			&::after {
+				display: none;
+			}
+		}
 	}
 
 	&__group {
 		display: flex;
 		flex-basis: 330px;
+		margin: 0;
 	}
 
 	&__inp {
@@ -77,4 +165,5 @@
 			padding-bottom: 8px;
 		}
 	}
+
 }

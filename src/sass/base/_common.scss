@@ -26,6 +26,7 @@ body {
   vertical-align: middle;
 }
 
+
 .container-new {
   margin: 0 auto;
   padding: 0 $gutter;
@@ -34,6 +35,17 @@ body {
 
 .main-content {
   background-color: $main-color;
+}
+
+.table-respons {
+  width: 100%;
+  overflow-x: auto;
+  min-height: 0.01%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  @include media($screen-sm) {
+    overflow-y: hidden;
+  }
 }
 
 

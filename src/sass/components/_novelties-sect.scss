@@ -1,17 +1,14 @@
 .novelties-sect {
 	&__content {
-		padding: 33px 17px;
-		padding-bottom: 0;
+		padding: 20px 17px;
 		align-items: flex-start;
 		min-height: 0;
 	}
 
 	&__text-info {
 		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 0;
-
+		padding: 0;
+		
 		&::after {
 			content: '';
 			display: block;
@@ -29,6 +26,13 @@
 
 		width: auto;
 		height: auto;
-		float: right;
+		margin: auto;
+	}
+
+	p {
+		font-size: 15px;
+		font-weight: 400;
+		color: #565656;
+		line-height: 18px;
 	}
 }

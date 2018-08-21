@@ -9,6 +9,7 @@
 @import 'callback';
 @import 'search-form';
 @import 'cart';
+@import 'user-data';
 @import 'home-page';
 @import 'adwantages';
 @import 'page-section';
@@ -37,10 +38,12 @@
 @import 'product-filter';
 @import 'page-heading';
 @import 'page-check';
-@import 'form-group';
+@import 'form-block';
 @import 'page-form';
 @import 'pagination';
 @import 'blog-list';
+@import 'table-info';
+@import 'review';
 @import 'page-filter';
 @import 'quantity';
 @import 'article-info';
@@ -61,3 +64,4 @@
 @import 'info-article';
 @import 'page-authorization';
 @import 'page-registration';
+@import 'page-orders';
