@@ -1058,21 +1058,7 @@ body {
     max-width: calc(100% - env(safe-area-inset-left)*2); } }
 
 .button {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
   padding: 13px 12px;
   color: #ffffff;
   font-size: 14px;
@@ -1942,6 +1928,7 @@ body {
     font-weight: 700;
     line-height: 14px; }
   .adwantages__descr {
+    margin-bottom: 0;
     max-width: 215px;
     font-weight: 400;
     font-size: 15px;
@@ -2726,10 +2713,10 @@ body {
     .contacts-list__item:not(:last-child) {
       margin-bottom: 15px; }
   .contacts-list__title {
+    margin-top: 0;
     margin-bottom: 5px;
     font-weight: 700;
     font-size: 15px;
-    color: #ffffff;
     line-height: 24px; }
   .contacts-list__info {
     position: relative;
@@ -3001,6 +2988,8 @@ body {
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .page-wrap__btn:not(:last-child) {
+      margin-right: 15px; }
   .page-wrap__subtitle {
     margin-bottom: 10px;
     font-weight: 700;
@@ -3009,6 +2998,17 @@ body {
     margin-bottom: 15px; }
   .page-wrap__table {
     background-color: #ffffff; }
+  .page-wrap__address-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .breadcrumb {
   padding: 18px 0;
@@ -3152,6 +3152,7 @@ body {
   padding-top: 25px;
   margin-bottom: 20px; }
   .product-thumb__img {
+    display: block;
     margin: auto; }
 
 .action-buttons {
@@ -3699,6 +3700,7 @@ body {
        -moz-border-radius: 2px;
             border-radius: 2px; }
   .page-filter__select-title {
+    margin-bottom: 0;
     margin-right: 7px;
     color: #202020;
     font-size: 14px; }
@@ -4612,6 +4614,81 @@ body {
   content: '* ';
   color: #F00;
   font-weight: bold; }
+
+.page-contacts__contacts-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.page-contacts__list {
+  margin-right: 90px;
+  margin-bottom: 30px;
+  background-color: #ffffff; }
+  @media only screen and (max-width: 768px) {
+    .page-contacts__list {
+      width: 100%;
+      margin-right: 0;
+      text-align: center; } }
+
+.page-contacts__item {
+  padding: 15px;
+  color: #202020; }
+
+.page-contacts__info {
+  line-height: 28px;
+  color: #202020; }
+  @media only screen and (max-width: 992px) {
+    .page-contacts__info {
+      padding: 0; } }
+
+.page-contacts__title {
+  font-size: 19px; }
+
+.page-contacts__map-wrap {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.page-contacts__map {
+  width: 100%;
+  min-height: 442px;
+  border: 0; }
+
+.page-contacts__form-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-contacts__form {
+  width: 100%;
+  max-width: 800px; }
+
+.page-contacts__group {
+  margin-bottom: 15px; }
+
+.page-contacts__title-form {
+  text-align: center; }
+
+.page-contacts__btn {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
 
 .header-page {
   font-family: "PT Sans", sans-serif; }
