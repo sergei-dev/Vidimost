@@ -21,4 +21,19 @@
 	&__label-check {
 		display: flex;
 	}
+
+	&__text {
+		color: #737373;
+
+		&--note {
+			color: $red;
+		}
+	}
+
+	&__inp-group {
+		display: flex;
+		align-items: center;
+		padding: 0px 5px;
+		margin: 0;
+	}
 }

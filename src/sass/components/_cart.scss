@@ -51,6 +51,9 @@
 	}
 
 	&__amount {
+		display: block;
+		width: 60px;
+		
 		text-align: center;
 		font-size: $basic-size;
 	}

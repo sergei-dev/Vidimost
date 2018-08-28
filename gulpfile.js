@@ -54,6 +54,7 @@ const config = {
   jsBuild: [
     `${pathes.src.js}/libs/masked-input/jquery.maskedinput.min.js`,
     `${pathes.src.js}/libs/noUiSlider/nouislider.min.js`,
+    `${pathes.src.js}/libs/ofi/ofi.min.js`,
     `${pathes.src.js}/libs/jquery-selectric/jquery.selectric.js`,
     `${pathes.src.js}/main.js`,
   ],

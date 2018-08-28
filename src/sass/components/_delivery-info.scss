@@ -27,6 +27,8 @@
 	}
 
 	&__text {
+		margin: 0;
+		
 		font-size: $basic-size;
 		color: $black-text;
 		font-weight: 400;

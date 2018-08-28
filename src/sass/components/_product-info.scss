@@ -2,6 +2,7 @@
 	display: flex;
 	margin-left: -$gutter;
 	margin-right: -$gutter;
+	padding: 30px 0px;
 
 	@include media(1112px) {
 		flex-direction: column;

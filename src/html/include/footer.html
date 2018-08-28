@@ -172,7 +172,7 @@
 						<!-- /.contacts-list__title -->
 						<a href="tel:(063)2362438" class="contacts-list__info">
 							<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
-								<use href="#life"></use>
+								<use href="#life-two"></use>
 							</svg>
 							<!-- /.tel-icon tel-icon-foot -->
 							(063) 236-24-38
@@ -367,3 +367,34 @@
 
 </footer>
 <!-- /.page-footer -->
+
+<div class="page-modal page-modal--callme">
+	<div class="page-modal__overlay"></div>
+	<!-- /.page-modal__overlay -->
+	<div class="page-modal__content">
+		<button class="page-modal__close">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
+		<h4 class="page-modal__subtitle">
+			Оставьте ваши контактные данные и наш менеджер с вами свяжется
+		</h4>
+		<!-- /.page-modal__subtitle -->
+		<form class="page-modal__form">
+			<p class="page-modal__group">
+				<label for="modal-name" class="page-modal__label">Ваше имя:</label>
+				<input id="modal-name" type="text" class="page-modal__inp page-modal__inp--name" required>
+			</p>
+			<!-- /.page-modal__group -->
+			<p class="page-modal__group">
+				<label for="modal-tel" class="page-modal__label">Ваш телефон:</label>
+				<input id="modal-tel" type="tel" class="page-modal__inp" required>
+			</p>
+			<!-- /.page-modal__group -->
+			<button type="submit" class="button button--full">Перезвонить мне</button>
+		</form>
+		<!-- /.page-modal__form -->
+	</div>
+	<!-- /.page-modal__content -->
+</div>
+
+

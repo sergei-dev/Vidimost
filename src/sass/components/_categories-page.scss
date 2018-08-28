@@ -6,8 +6,11 @@
 	}
 
 	&__load-icon {
-		margin-left: 0;
-		margin-right: 13px;
+		position: absolute;
+		top: 50%;
+		left: 55px;
+
+		transform: translateY(-50%);
 	}
 
 	&__load-btn {

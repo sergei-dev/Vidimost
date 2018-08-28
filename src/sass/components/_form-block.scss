@@ -5,9 +5,21 @@
 	&--full {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 
 		@include media($screen-md) {
 			flex-direction: column;
+		}
+	}
+
+	&--review {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+
+
+		.form-block__label {
+			margin-bottom: 0;
 		}
 	}
 
@@ -30,7 +42,7 @@
 		}
 
 		&--full {
-			width: 83.33333333%;
+			width: 83%;
 
 			@include media($screen-md) {
 				width: 100%;
@@ -47,8 +59,8 @@
 
 		&--full {
 			padding-top: 5px;
-			width: 16.66666667%;
-			margin-right: 25px;
+			width: 17%;
+			padding-right: 25px;
 
 			text-align: right;
 
@@ -66,11 +78,37 @@
 				color: $red;
 			}
 		}
+	
+	&--review {
+		margin: 0;
+		margin-right: 7px;
+	}
+
+	&--good{
+		padding-right: 6px;
+	}
+
+	&--bad {
+		padding-left: 6px;
+	}
 
 	}
 
 	&__textarea {
 		min-height: 54px;
+	}
+
+	&__radio {
+		margin: 0;
+	}
+
+	&__validation {
+		width: 100%;
+		display: block;
+		padding-top: 15px;
+
+		text-align: center;
+		color: $red;
 	}
 
 }

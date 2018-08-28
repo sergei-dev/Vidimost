@@ -1,6 +1,5 @@
 .product-card {
 	display: flex;
-	margin-bottom: 30px;
 
 	background-color: $white;
   border-radius: 8px;
@@ -10,11 +9,10 @@
   	flex-direction: column;
   }
  
-	&__thumb, &__info {
-		width: 50%;
-	}
 
 	&__thumb {
+		width: 100%;
+		max-width: 539px;
 		padding-right: 29px;
 		padding-left: 24px;
 
@@ -22,9 +20,11 @@
 
 		@include media($screen-md) {
 			align-self: center;
+			border: 0;
 		}
 
 		@include media($screen-sm) {
+			max-width: none;
 			width: 100%;
 		}
 
@@ -34,13 +34,16 @@
 	}
 
 	&__info {
-		padding-top: 30px;
-		padding-bottom: 25px;
+		width: 100%;
+		max-width: 639px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		padding-left: 45px;
 		padding-right: 20px;
 
 		@include media($screen-md) {
 			width: 100%;
+			max-width: none;
 		}
 
 		@include media(505px) {
@@ -50,6 +53,7 @@
 	}
 
 	&__title {
+		max-width: 415px;
 		margin-top: 0;
 		margin-bottom: 14px;
 		padding-bottom: 24px;
@@ -80,6 +84,8 @@
 	}
 
 	&__descr-text {
+		margin: 0;
+		
 		color: $gray;
 		font-size: $basic-size;
 		line-height: 20px;

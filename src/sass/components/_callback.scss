@@ -17,8 +17,10 @@
 		font-weight: 700;
 		color: $black-text;
 
-		&:hover {
+		&:hover, &:active, &:focus {
 			color: $brand-color;
+
+			outline: none;
 
 			.callback__border {
 				border-bottom-color: transparent;

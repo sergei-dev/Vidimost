@@ -28,7 +28,7 @@
 			margin-right: 0;
 		}
 
-		&:hover {
+		&:hover, &:active, &:focus {
 			.action-buttons__icon {
 				fill: $brand-color;
 			}

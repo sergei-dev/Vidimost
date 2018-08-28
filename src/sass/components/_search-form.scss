@@ -117,13 +117,15 @@
 
 	&__group {
 		display: flex;
-		flex-basis: 330px;
+		width: 100%;
+		max-width: 330px;
 		margin: 0;
 	}
 
 	&__inp {
 		padding: 8px 34px;
-		flex-basis: 100%;
+		width: 100%;
+		max-width: 100%;
 
 		border: 2px solid $brand-color;
 		border-right: none;

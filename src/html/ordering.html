@@ -65,7 +65,7 @@
 			<div class="row">
 				<div class="form-group col-lg-12 telephone">
 					<label class="control-label" for="login_email">Телефон</label>
-					<input type="tel" name="telephone" value="" id="login_telephone" placeholder="Телефон" class="form-control">
+					<input type="tel" name="telephone" value="" id="login_email" placeholder="Телефон" class="form-control">
 				</div>
 				<div class="form-group  col-lg-12 password">
 					<label class="control-label" for="login_password">Пароль</label> 
@@ -1066,7 +1066,7 @@
 			          </label>
 			        </div>
 			        <div class="col-xs-7"> 
-			          <input type="tel" name="payment_address.telephone" id="payment_address_telephone" value="" class="form-control qc-mask required telephone" autocomplete="off" qc-mask=" +38 (999) 999 9999" placeholder="Номер телефона" data-rule-minlength="3" data-msg-minlength="Номер телефона должен содержать от 3 до 32 символов!" data-rule-maxlength="32" data-msg-maxlength="Номер телефона должен содержать от 3 до 32 символов!" data-msg-telephone="Введите правильный номер телефона">
+			          <input type="tel" name="payment_address.telephone" id="payment_address_telephone" class="form-control qc-mask required telephone" autocomplete="off" placeholder="Номер телефона" data-rule-minlength="3" data-msg-minlength="Номер телефона должен содержать от 3 до 32 символов!" data-rule-maxlength="32" data-msg-maxlength="Номер телефона должен содержать от 3 до 32 символов!" data-msg-telephone="Введите правильный номер телефона">
 			        </div>
 			      </div><div id="payment_address_fax_input" class="text-input form-group  sort-item hidden  " data-sort="5">
 			        <div class="col-xs-5">
@@ -1133,7 +1133,7 @@
 			            	
 				            <div class="radio">
 				            	<label for="payment_address_customer_group_id_1">
-				            		<input type="radio" autocomplete="off" name="payment_address.customer_group_id" value="1" id="payment_address_customer_group_id_1" checked="checked" class="validate not-required">
+				            		<input type="radio" name="payment_address.customer_group_id" value="1" id="payment_address_customer_group_id_1" checked="checked" class="validate not-required">
 				                	Покупатель
 				                </label>
 				            </div>
@@ -1751,7 +1751,7 @@
 			    		<div class="col-xs-12">
 					      <label for="payment_address_newsletter" class="control-label">
 						      <input type="hidden" name="payment_address.newsletter" value="0">
-					          <input type="checkbox" autocomplete="off" name="payment_address.newsletter" id="payment_address_newsletter" class="validate not-required" value="1">
+					          <input type="checkbox" name="payment_address.newsletter" id="payment_address_newsletter" class="validate not-required" value="1">
 
 					          <span title="">Я хочу подписаться на рассылку новостей Интернет-магазин систем видеонаблюдения VidiMost.</span> 
 					        </label>
@@ -1766,7 +1766,7 @@
 			    		<div class="col-xs-12">
 					      <label for="payment_address_shipping_address" class="control-label">
 						      <input type="hidden" name="payment_address.shipping_address" value="0">
-					          <input type="checkbox" autocomplete="off" name="payment_address.shipping_address" id="payment_address_shipping_address" class="validate not-required" value="1" checked="checked">
+					          <input type="checkbox" name="payment_address.shipping_address" id="payment_address_shipping_address" class="validate not-required" value="1" checked="checked">
 
 					          <span title="">Мой адрес доставки совпадает с платёжным.</span> 
 					        </label>
@@ -1781,9 +1781,9 @@
 			    		<div class="col-xs-12">
 					      <label for="payment_address_agree" class="control-label">
 						      <input type="hidden" name="payment_address.agree" value="0">
-					          <input type="checkbox" autocomplete="off" name="payment_address.agree" id="payment_address_agree" class="validate required" required="" value="1">
+					          <input type="checkbox" name="payment_address.agree" id="payment_address_agree" class="validate required" required="" value="1">
 
-					          <span title="">Я прочитал(-а) <a href="%s" class="agree"><b>%s</b></a> и согласен(-на) с условиями</span> 
+					          <span title="">Я прочитал(-а) <a href="#" class="agree"><b>%s</b></a> и согласен(-на) с условиями</span> 
 					        </label>
 					    </div>
 			    	
@@ -1965,7 +1965,7 @@
 								
 
 								
-									<img class="payment-image" src="../images/pic/cod.png">
+									<img class="payment-image" src="../images/pic/cod.png" alt="payment">
 								
       
 								Оплата при доставке
@@ -2019,7 +2019,7 @@
 					<tr>
 						<td class="qc-image ">
 							<a href="https://vidimost.com/hikvision-ds-2cs58c0t-itr-21-mm" data-container="body" data-toggle="popover" data-placement="top" data-content="<img src=&quot;https://vidimost.com/image/cache/catalog/products/64607164_0-120x120.jpg&quot; ></a>" data-trigger="hover">
-								<img src="https://vidimost.com/image/cache/catalog/products/64607164_0-120x120.jpg" class="img-responsive">
+								<img src="https://vidimost.com/image/cache/catalog/products/64607164_0-120x120.jpg" class="img-responsive" alt="qc-mg">
 							</a>
 						</td>
 
@@ -2115,7 +2115,7 @@
 
 				</div>
 
-				<div class="preloader row"><img class="icon" src="image/catalog/d_quickcheckout/svg-loaders/puff.svg"></div>
+				<div class="preloader row"><img class="icon" src="image/catalog/d_quickcheckout/svg-loaders/puff.svg" alt="load"></div>
 
 			</div>
 		</div>
@@ -2181,7 +2181,7 @@
 								<div class="col-xs-12">
 									<label for="confirm_agree" class="control-label">
 										<input type="hidden" name="confirm.agree" value="0">
-										<input type="checkbox" autocomplete="off" name="confirm.agree" id="confirm_agree" class="validate not-required" value="1">
+										<input type="checkbox" name="confirm.agree" id="confirm_agree" class="validate not-required" value="1">
 
 										<span title="">Я прочитал(-а) <a href="https://vidimost.com/index.php?route=information/information/agree&amp;information_id=5" class="agree"><b>Условия соглашения</b></a> и согласен(-на) с условиями</span> 
 									</label>
@@ -2205,16 +2205,14 @@
 		</div>
 	</div>
 </div>
-</div>
-<!-- /.container-new -->
+</section>
+
 </div>
 		<!-- /.page-wrap__right -->
 	</div>
 	<!-- /.page-wrap -->
 </div>
 <!-- /.container-new -->
-</section>
-<!-- /.page-section -->
 
 </main>
 <!-- /.main-content -->

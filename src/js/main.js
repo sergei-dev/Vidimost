@@ -39,6 +39,25 @@ $(document).ready(function() {
 		]
 	});
 
+	$('.call-me').on('click', function() {
+		$('.page-modal--callme').fadeIn();
+		$('.page-modal__inp--name').focus();
+	});
+
+	$('.add-cart').on('click', function() {
+		$('.page-modal--cart').fadeIn();
+	});
+	
+
+	$('.page-modal__close').on('click', function() {
+		$('.page-modal').fadeOut();
+	});
+
+	$('.page-modal__overlay').on('click', function() {
+		$('.page-modal').fadeOut();
+	});
+
+
 	$('.search-form__select-product').selectric({
 		inheritOriginalWidth:  false,
 		disableOnMobile: false,
@@ -147,7 +166,7 @@ $(document).ready(function() {
 	$('.quantity__btn--reduce').click(function() {
 		var $input = $(this).parent().find('.quantity__inp');
 		var count = parseInt($input.val()) - 1;
-		count = count < 1 ? 0 : count;
+		count = count < 1 ? 1 : count;
 		$input.val(count);
 	 	$input.change();
 	 	return false;
@@ -175,6 +194,9 @@ $(document).ready(function() {
     snapValues[handle].innerHTML = values[handle];
   });
 	}
+
+	var $someImages = $('.ofi-img');
+objectFitImages($someImages);
 
 
 

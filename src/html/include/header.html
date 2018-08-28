@@ -119,49 +119,57 @@
      <div class="header-page__top-common">
       <ul class="header-page__tel-list">
         <li class="header-page__tel-item">
-          <i class="header-page__tel-ico">
+          <a href="tel:0443620331" class="header-page__tel">
+             <i class="header-page__tel-ico">
             <svg class="tel-icon tel-icon--margin">
             <use href="#tel"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
           </i>
-          <a href="tel:0443620331" class="header-page__tel">044-362-03-31</a>
+            044-362-03-31
+          </a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <i class="header-page__tel-ico">
+          <a href="tel:0969990642" class="header-page__tel">
+            <i class="header-page__tel-ico">
              <svg class="tel-icon tel-icon--margin">
-            <use href="#ks"></use>
+            <use href="#kyivstar"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
           </i>
-          <a href="tel:0969990642" class="header-page__tel">096-999-06-42</a>
+          096-999-06-42
+        </a>
         </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
+        <a href="tel:0931540979" class="header-page__tel">
           <i class="header-page__tel-ico">
            <svg class="tel-icon">
             <use href="#life"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
         </i>
-        <a href="tel:0931540979" class="header-page__tel">093-154-09-79</a>
+        093-154-09-79
+      </a>
       </li>
         <!-- /.header-page__tel-item -->
         <li class="header-page__tel-item">
-          <i class="header-page__tel-ico">
+          <a href="tel:0508222722" class="header-page__tel">
+            <i class="header-page__tel-ico">
             <svg class="tel-icon tel-icon--margin">
-            <use href="#mts"></use>
+            <use href="#vod"></use>
           </svg>
           <!-- /.header-page__tel-icon -->
           </i>
-          <a href="tel:0508222722" class="header-page__tel">050-822-27-22</a>
+          050-822-27-22
+        </a>
         </li>
         <!-- /.header-page__tel-item -->
       </ul>
       <!-- /.header-page__tel-list -->
       <div class="callback">
-        <a class="callback__link" href="#">
+        <a class="call-me callback__link" href="#">
           <svg class="callback__icon">
             <use href="#simpline"></use>
           </svg>
@@ -228,7 +236,7 @@
   </div>
   <!-- /.header-page__pers-area-info -->
   <div class="cart">
-    <button class="cart__btn">
+    <button class="add-cart cart__btn">
       <svg class="cart__icon">
         <use href="#cart"></use>
       </svg>
@@ -236,10 +244,31 @@
       <span class="cart__counter">1</span>
       <span class="cart__amount">1219 грн</span>
     </button>
+
+    <div class="page-modal page-modal--cart">
+      <div class="page-modal__overlay"></div>
+      <!-- /.page-modal__overlay -->
+      <div class="page-modal__content">
+        <button class="page-modal__close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <h4 class="page-modal__subtitle">
+          Добавлен в корзину
+        </h4>
+        <!-- /.page-modal__subtitle -->
+        <span class="page-modal__text">Название товара</span>
+       <div class="page-modal__btns">
+         <a href="#" class="button page-modal__btn">Продолжить прокупки</a>
+         <a href="#" class="button">Оформить заказ</a>
+       </div>
+       <!-- /.page-modal__btns -->
+        </div>
+        <!-- /.page-modal__content -->
+      </div>
+    </div>
+    <!-- /.cart -->
   </div>
-  <!-- /.cart -->
-</div>
-<!-- /.container-new -->
+  <!-- /.container-new -->
 </div>
 <!-- /.header-page__middle -->
 <div class="categories">
