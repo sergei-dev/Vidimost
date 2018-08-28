@@ -166,7 +166,8 @@
 		position: relative;
 		width: 28%;
 		margin-right: 35px;
-		padding: 19px 20px;
+		padding: 19px 42px;
+		padding-right: 35px;
 		padding-bottom: 0;
 
 		@include media($screen-sm) {

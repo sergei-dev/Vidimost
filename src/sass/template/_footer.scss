@@ -49,6 +49,7 @@
 	}
 
 	&__nav-list-wrap {
+
 		&:not(:last-child) {
 			margin-right: 20px;
 		}
@@ -155,20 +156,18 @@
 	}
 
 	&__bottom {
-		display: flex;
-		align-items: center;
-		min-height: 44px;
-
 		background-color: $black-text;
 	}
 
 	&__bottom-cont {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 
 	&__copyright {
+		display: block;
 		margin: 0;
 		
 		font-weight: 400;

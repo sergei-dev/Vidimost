@@ -28,13 +28,15 @@
 	&__item {
 		display: flex;
 		align-items: center;
-		flex-basis: 390px;
+		width: 100%;
+		max-width: 390px;
 		padding: 0 $gutter;
 
 		color: $black-text;
 
 		@include media($screen-md) {
-			flex-basis: 50%;
+			width: 50%;
+			max-width: none;
 			flex-direction: column;
 			margin-bottom: 40px;
 
@@ -42,7 +44,7 @@
 		}
 
 		@include media($screen-sm) {
-			flex-basis: 100%;
+			width: 100%;
 		}
 	}
 
