@@ -947,7 +947,7 @@ svg {
   outline: none; }
 
 .clearfix:after {
-  content: '.';
+  content: '';
   display: block;
   clear: both; }
 
@@ -2027,7 +2027,12 @@ body {
       width: 100%; }
 
 .article {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
   .article__thumb {
     position: relative;
     display: block;
@@ -2120,6 +2125,7 @@ body {
         padding-top: 12px;
         padding-bottom: 12px; } }
   .article__bottom-info {
+    margin-top: auto;
     width: 100%;
     padding: 15px;
     display: -webkit-box;
@@ -3606,6 +3612,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
+  padding: 20px 0px;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0; }
