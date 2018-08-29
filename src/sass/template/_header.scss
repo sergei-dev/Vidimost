@@ -167,6 +167,8 @@
   }
 
   &__area-text {
+    margin-bottom: 5px;
+    
     text-align: center;
     font-size: 15px;
     font-weight: 400;
@@ -177,6 +179,18 @@
   &__link-area {
     color: $brand-color;
     text-decoration: underline;
+  }
+
+  &__text-important {
+    color: $red;
+  }
+
+  &__dealer {
+    margin-bottom: 10px;  
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #202020;
   }
 
 }

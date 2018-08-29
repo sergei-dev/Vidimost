@@ -139,3 +139,31 @@
   }
 
 }
+
+
+.btn-primary {
+  background-color: #0aa5df;
+  border: 0;
+
+  &:hover {
+    background-color: #3fc4f6
+  }
+
+  &:active, &:focus {
+    background-color: #076f96;
+  }
+}
+
+.btn-primary.active, 
+.btn-primary:active, 
+.open>.dropdown-toggle.btn-primary {
+  background-color: #0aa5df;
+  border: 0;
+}
+
+.btn-danger {
+  background-color: #f80000;
+}
+
+
+

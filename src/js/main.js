@@ -47,6 +47,8 @@ $(document).ready(function() {
 	$('.add-cart').on('click', function() {
 		$('.page-modal--cart').fadeIn();
 	});
+
+	
 	
 
 	$('.page-modal__close').on('click', function() {

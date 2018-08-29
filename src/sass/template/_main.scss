@@ -2,34 +2,31 @@
 	padding: 0 !important;
 }
 
-.nav .open>a, 
-.nav .open>a:focus, 
-.nav .open>a:hover {
-    background-color: transparent;
+.error {
+	color: red;
 }
 
-.header-page__text-important {
-	color: #f80000;
+.error::placeholder {
+	color: red;
+}
+
+.success::placeholder {
+	color: green;
 }
 
 p {
 	font-size: 14px;
 }
 
-.header-page__pers-area-info p {
-	margin-bottom: 5px;
+.blog-sub-list{
+  padding-left: 7px;
+  margin-bottom: 9px;
 }
 
-.header-page__pers-area-info .header-page__dealer {
-	margin-bottom: 10px;
+.sort-item .control-label {
+  text-align: left;
 }
 
-.header-page__dealer {
-	margin-bottom: 10px;		
-	font-size: 16px;
-    font-weight: 700;
-    color: #202020;
-}
-.product-thumb {
-    border: none;
+#confirm_form .control-label {
+  margin-bottom: 7px;
 }
