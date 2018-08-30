@@ -74,12 +74,13 @@
   }
 
   &__common {
-    flex-basis: 476px;
+    width: 100%;
+    max-width: 476px;
     margin-right: 45px;
 
     @include media(1145px) {
       margin-right: 0;
-      flex-basis: auto;
+      max-width: none;
     }
   }
 

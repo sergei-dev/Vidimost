@@ -82,13 +82,13 @@
 	}
 
 	&__title-wrap {
-		height: 33px;
+		height: 38px;
 		overflow: hidden;
 		padding: 0 14px;
 
 		&--list {
 			padding: 0;
-			margin-bottom: 20px;
+			margin-bottom: 16px;
 		}
 	}
 
@@ -173,6 +173,8 @@
 		@include media($screen-sm) {
 			margin-right: 0;
 			width: 100%;
+			display: flex;
+			justify-content: center;
 		}
 	}
 

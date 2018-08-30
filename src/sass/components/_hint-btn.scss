@@ -1,0 +1,22 @@
+.hint-btn {
+	display: inline-block;
+
+	&__text {
+		margin-bottom: 0;
+
+		color: $brand-color;
+	}
+
+	&__symbol {
+		cursor: pointer;
+	}
+
+
+	&__inp {
+
+		&:checked ~ .hint-block  {
+			display: block;
+		}
+	}
+
+}
