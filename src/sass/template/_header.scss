@@ -51,8 +51,8 @@
   }
 
   &__sign-icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin-right: 7px;
 
     fill: $brand-color;
@@ -95,8 +95,7 @@
     }
 
     @include media($screen-xs) {
-      flex-direction: column;
-      align-items: center;
+      display: none;
     }
   }
 
@@ -112,14 +111,15 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    flex-basis: 305px;
+    width: 100%;
+    max-width: 305px;
     margin-top: -7px;
     margin-bottom: -7px;
     margin-right: 14px;
 
     @include media($screen-xs) {
       margin: 0;
-      flex-basis: auto;
+      max-width: none;
       margin-bottom: 15px;
 
       text-align: center;
@@ -127,7 +127,7 @@
   }
 
   &__tel-item {
-    flex-basis: 50%;
+    width: 50%;
     padding: 7px 0;
     display: flex;
     align-items: center;
@@ -157,11 +157,12 @@
   }
 
   &__pers-area-info {
-    flex-basis: 214px;
+    width: 100%;
+    max-width: 214px;
     margin-right: 47px;
 
     @include media(1145px) {
-      flex-basis: auto;
+      max-width: none;
       margin-right: 0;
       margin-bottom: 10px;
     }
@@ -175,6 +176,10 @@
     font-weight: 400;
     color: $black-text;
     line-height: 20px;
+
+    @include media($screen-xs) {
+      display: none;
+    }
   }
 
   &__link-area {
@@ -192,6 +197,22 @@
     font-size: 16px;
     font-weight: 700;
     color: #202020;
+  }
+
+  &__action-buttons { 
+    margin-right: 15px;
+  }
+
+  &__action-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__sign-text {
+
+    @include media($screen-xs) {
+      display: none;
+    }
   }
 
 }

@@ -26,6 +26,12 @@ body {
   vertical-align: middle;
 }
 
+@include media($screen-xs) {
+  .container {
+    width: 100%;
+  }
+
+}
 
 .container-new {
   margin: 0 auto;

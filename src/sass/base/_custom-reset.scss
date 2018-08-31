@@ -160,6 +160,8 @@ textarea {
   font-weight: inherit;
 }
 
+
+
 button,
 select {
   text-transform: none;
@@ -277,6 +279,13 @@ svg {
   outline: none;
 }
 
+input[type="text"], 
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea  {
+  -webkit-appearance: none;
+}
 //class
 .clearfix:after {
   content: '';

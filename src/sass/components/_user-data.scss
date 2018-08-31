@@ -3,6 +3,10 @@
 	flex-direction: column;
 	align-items: center;
 
+	@include media($screen-md) {
+		display: none;
+	}
+
 	&__title {
 		margin-top: 0;
 		margin-bottom: 5px;

@@ -12,6 +12,8 @@
 }
 
 .ocfilter {
+  position: relative;
+
   background-color: #fff;
   border-radius: 3px;
   border: 0;
@@ -148,4 +150,17 @@
   background-color: #0aa5df;
   background-image: url(../images/pic/check.png);
   border-color: #0aa5df;
+}
+
+@include media($screen-sm) {
+  .popover.right.ocfilter-option-popover {
+    top: 75px!important;
+    left: 45px!important;
+  }
+
+  .popover.top.in {
+    top: -36px!important;
+    left: 35px!important;
+  }
+
 }

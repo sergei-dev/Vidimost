@@ -156,17 +156,23 @@
 					<fieldset class="page-form__inputs-group">
 						<legend class="head-title page-form__group-title">Рассылка новостей</legend>
 						<!-- /.page-form__group-title -->
-						<p class="form-block page-registration__form-block form-block--full">
+						<div class="form-block page-registration__form-block form-block--full">
 							<span class="form-block__label form-block__label--full">Получать новости на E-Mail</span>
-							<label class="radio-inline">
-								<input type="radio" name="newsletter" value="1" checked>
-								Да
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="newsletter" value="1">
-								Да
-							</label>
-						</p>
+							<p class="radio-button page-wrap__radio-button">
+								<input type="radio" id="radio-yes" class="radio-button__inp visually-hidden" name="newsletter" checked="">
+								<label for="radio-yes" class="radio-button__text">
+									Да
+								</label>
+							</p>
+							<!-- /.radio-button -->
+							<p class="radio-button page-wrap__radio-button">
+								<input type="radio" id="radio-no" class="radio-button__inp visually-hidden" name="newsletter">
+								<label for="radio-no" class="radio-button__text">
+									Нет
+								</label>
+							</p>
+							<!-- /.radio-button -->
+						</div>
 						<!-- /.form-block -->
 					</fieldset>
 

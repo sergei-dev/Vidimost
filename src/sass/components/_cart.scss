@@ -7,6 +7,10 @@
 	font-family: $pt-sans;
 	color: $black-text;
 
+	@include media($screen-md) {
+		display: none;
+	}
+
 	&__icon {
 		width: 43px;
 		height: 43px;
