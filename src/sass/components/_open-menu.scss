@@ -8,8 +8,18 @@
 
 	cursor: pointer;
 
-	@include media($screen-md) {
-		display: block;
+	&--nav {
+
+		@include media($screen-sm) {
+			display: block;
+		}
+	}
+
+	&--categories {
+		
+		@include media($screen-md) {
+			display: block;
+		}
 	}
 
 	&--active {

@@ -14,8 +14,15 @@
 	@include media(1170px) {
 		flex-wrap: wrap;
 
-		@include media($screen-md) {
-			flex-direction: column;
+	}
+
+	@include media($screen-md) {
+		flex-direction: column;
+	}
+
+	&--hide-sm {
+		@include media($screen-sm) {
+			display: none;
 		}
 	}
 
@@ -44,11 +51,11 @@
 	&__wrap-selects {
 		display: flex;
 		align-items: center;
-
-		@include media($screen-sm) {
+	
+		@include media($screen-xs) {
 			flex-direction: column;
-			align-items: center;
 		}
+		 
 	}
 
 	&__select-item {
@@ -65,7 +72,7 @@
 			}
 		}
 
-		@include media($screen-sm) {
+		@include media($screen-xs) {
 			
 			&:not(:last-child) {
 				margin-bottom: 20px;
@@ -96,6 +103,12 @@
 			
 			top: 29px;
 			
+		}
+
+		&--no-text {
+			@include media($screen-xs) {
+				top: 6px;
+			}
 		}
 	}
 

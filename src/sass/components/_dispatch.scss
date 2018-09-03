@@ -6,12 +6,12 @@
 	background-color: $brand-color;
 
 	@include media($screen-sm) {
-			padding: 14px 0px;
+			display: none;
 		}
 
-	&__container {
-		display: flex;
-		justify-content: center;
+		&__container {
+			display: flex;
+			justify-content: center;
 	}
 
 	&__wrap {

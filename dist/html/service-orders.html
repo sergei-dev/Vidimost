@@ -18,7 +18,7 @@
 <header class="header-page">
   <nav class="nav">
     <div class="container-new header-page__container">
-      <button id="open-menu" class="open-menu">
+      <button id="open-menu" class="open-menu open-menu--nav">
         <span class="open-menu__line open-menu__one"></span>
         <span class="open-menu__line open-menu__two"></span>
         <span class="open-menu__line open-menu__three"></span>
@@ -88,6 +88,10 @@
         <a href="#" class="page-menu__link">Вакансии</a>
       </li>
       <!-- /.page-menu__item -->
+       <li class="page-menu__item">
+        <a href="#" class="page-menu__link">Информация</a>
+      </li>
+      <!-- /.page-menu__item -->
       <li class="page-menu__item">
         <a href="#" class="page-menu__link">Контакты</a>
       </li>
@@ -108,13 +112,22 @@
       <!-- /.lang-list -->
       <div class="action-buttons header-page__action-buttons">
 
-        <button class="action-buttons__btn active">
+        <a href="#" class="action-buttons__btn header-page__action-btn">
+          <span class="visually-hidden">Ссылка на корзину</span>
+          <svg class="action-buttons__icon header-page__action-icon">
+            <use xlink:href="#header-cart"></use>
+          </svg>
+          <!-- /.product-list__icon -->
+        </a>
+
+        <button class="action-buttons__btn header-page__action-btn">
           <span class="visually-hidden">Сравнить</span>
           <svg class="action-buttons__icon header-page__action-icon">
             <use xlink:href="#git-compare"></use>
           </svg>
           <!-- /.product-list__icon -->
         </button>
+
       </div>
 
       <div class="header-page__sign-in">
@@ -294,7 +307,11 @@
     <!-- /.categories__mob-nav -->
     <ul class="categories__list">
       <li class="categories__item">
-        <a href="#" class="categories__link">Видеонаблюдение</a>
+        <a href="#" class="categories__link">Видеонаблюдение
+        <svg class="categories__icon">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </a>
         <ul class="submenu submenu--categories">
           <li class="submenu__item">
             <a href="#" class="submenu__link submenu__link--categories">
@@ -330,8 +347,52 @@
       </li>
       <!-- /.categories__item -->
       <li class="categories__item">
-        <a href="#" class="categories__link">Охранная сигнализация</a>
+        <a href="#" class="categories__link">Охранная сигнализация
+        <svg class="categories__icon">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </a>
     
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+              <span class="submenu__text">Подкатегория 4</span>
+            </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+              <span class="submenu__text">Готовый комплект</span>
+            </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">В идеодомофоны
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
         <ul class="submenu submenu--categories">
           <li class="submenu__item">
             <a href="#" class="submenu__link submenu__link--categories">
@@ -364,26 +425,66 @@
           </li>
           <!-- /.page-menu__sub-item -->
         </ul>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">В идеодомофоны</a>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">PoE оборудование</a>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">Кабели и крепления </a>
-    </li>
-    <!-- /.categories__item -->
-    <li class="categories__item">
-      <a href="#" class="categories__link">Системы контроля доступа</a>
-    </li>
-    <!-- /.categories__item -->
-  </ul>
-  <!-- /.categories__list -->
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">PoE оборудование
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">Кабели и крепления
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">Системы контроля доступа
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- /.categories__item -->
+    </ul>
+    <!-- /.categories__list -->
   </div>
   <!-- /.container-new -->
 </div>
@@ -1043,8 +1144,24 @@
 			<!-- /.page-footer__nav-list-wrap -->
 		</div>
 		<!-- /.page-footer__nav-wrap -->
+		<div class="page-footer__phones-list">
+			<a href="tel:(044)3620331" class="page-footer__phone page-footer__phone--open">
+				<svg class="tel-icon tel-icon--foot page-footer__tel-icon">
+					<use xlink:href="#tel"></use>
+				</svg>
+				<!-- /.tel-icon -->
+				(044) 362-03-31
+				<svg class="tel-icon page-footer__tel-icon-right">
+					<use xlink:href="#arrow-down"></use>
+				</svg>
+			</a>
+			<div class="page-footer__wrap-phones">
+				
+			</div>
+		</div>
+		<!-- /.page-footer__phones-list -->
 		<div class="page-footer__common">
-			<div class="page-footer__common-block">
+			<div class="page-footer__common-block page-footer__payment">
 				<h4 class="page-footer__common-title">Принимаем к оплате</h4>
 				<!-- /.page-footer__common-title -->
 				<ul class="payment-list">
@@ -1266,6 +1383,10 @@
 		
 			<symbol id="google" viewBox="0 0 4335 4335">
 				<path d="M-4 1h4335v4335H-4z"></path><path d="M3217 1704h290c0 97 1 195 2 292 97 1 195 1 292 2v291c-97 0-195 1-292 1-1 98-1 195-2 292h-291c-1-98-1-195-2-292-97-1-195-1-292-2v-291c97-1 194-1 292-2 1-97 1-195 2-292zM584 2143c-20-527 442-1014 969-1021 269-23 531 82 734 252-83 92-168 183-259 267-179-109-395-192-604-118-338 96-542 495-417 825 103 345 523 535 852 390 170-61 283-218 332-387-195-4-390-1-586-7 0-116-1-232 0-348 326 0 652-1 978 1 20 285-22 589-207 818-253 326-721 422-1102 294-404-133-698-540-689-966z"></path><path d="M3213 1651h290c0 97 1 195 2 292 97 1 195 1 292 2v291c-97 0-195 1-292 1-1 98-1 195-2 292h-291c-1-98-1-195-2-292-97-1-195-1-292-2v-291c97-1 194-1 292-2 1-97 1-195 2-292zM580 2090c-20-527 442-1014 969-1021 269-23 531 82 734 252-83 92-168 183-259 267-179-109-395-192-604-118-338 96-542 495-417 825 103 345 523 535 852 390 170-61 283-218 332-387-195-4-390-1-586-7 0-116-1-232 0-348 326 0 652-1 978 1 20 285-22 589-207 818-253 326-721 422-1102 294-404-133-698-540-689-966z"></path>
+			</symbol>
+		
+			<symbol id="header-cart" viewBox="0 0 1792 1792">
+				<path d="M704 1536q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zm896 0q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zm128-1088v512q0 24-16.5 42.5T1671 1024L627 1146q13 60 13 70 0 16-24 64h920q26 0 45 19t19 45-19 45-45 19H512q-26 0-45-19t-19-45q0-11 8-31.5t16-36 21.5-40T509 1207L332 384H128q-26 0-45-19t-19-45 19-45 45-19h256q16 0 28.5 6.5T432 278t13 24.5 8 26 5.5 29.5 4.5 26h1201q26 0 45 19t19 45z"></path>
 			</symbol>
 		
 			<symbol id="insta" viewBox="0 0 30 31">

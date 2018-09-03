@@ -43,8 +43,13 @@
 		}
 
 		@include media($screen-sm) {
-			flex-direction: column;
-			align-items: center;
+			display: none;
+		}
+	}
+
+	&__payment {
+		@include media($screen-md) {
+			display: none;
 		}
 	}
 
@@ -187,5 +192,34 @@
 
 			margin-right: 5px;
 		}
+	}
+
+	&__phones-list {
+		width: 100%;
+		display: none;
+		justify-content: center;
+
+		text-align: center;
+
+		@include media($screen-sm) {
+			display: flex;
+		}
+	}
+
+	&__phone {
+		position: relative;
+
+		display: flex;
+		margin-bottom: 20px;
+
+		color: $white;
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	&__tel-icon-right {
+		margin-left: 6px;
+
+		fill: $white;
 	}
 }

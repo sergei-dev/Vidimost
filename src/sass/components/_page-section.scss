@@ -6,4 +6,26 @@
 		padding-bottom: 45px;
 	}
 
+	&__scroll-tablet {
+
+		@include media-min(414px) {
+			overflow-x: auto;
+		}
+	} 
+
+	&__article-list-scroll {
+		width: 1145px;
+		flex-wrap: nowrap;
+
+		@include media($screen-sm) {
+			flex-direction: row;
+		}
+
+		@include media(414px) {
+			width: 100%;
+			margin: 0;
+			flex-direction: column;
+		}
+	}
+
 }

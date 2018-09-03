@@ -7,7 +7,7 @@
 	font-family: $pt-sans;
 	color: $black-text;
 
-	@include media($screen-md) {
+	@include media(1145px) {
 		display: none;
 	}
 

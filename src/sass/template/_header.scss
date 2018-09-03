@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include media($screen-md) {
+    @include media($screen-sm) {
       padding: 10px;
     }
   }
@@ -16,9 +16,9 @@
     justify-content: space-between;
     align-items: center;
 
-    @include media(1145px) {
+    @include media($screen-sm) {
       flex-direction: column;
-      justify-content: flex-start;
+      align-items: center;
     }
   }
 
@@ -28,7 +28,10 @@
   }
 
   &__lang-list {
+    display: none;
     margin-right: 48px;
+
+    
   }
 
   &__sign-in {
@@ -56,6 +59,10 @@
     margin-right: 7px;
 
     fill: $brand-color;
+
+    @include media($screen-sm)  {
+      margin-right: 0;
+    }
   }
 
   &__middle {
@@ -66,10 +73,10 @@
 
   &__logo {
     margin-right: 70px;
-
-    @include media(1145px) {
+     
+    @include media($screen-sm) {
       margin-right: 0;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
   }
 
@@ -80,8 +87,9 @@
 
     @include media(1145px) {
       margin-right: 0;
-      max-width: none;
     }
+
+   
   }
 
   &__top-common {
@@ -90,21 +98,15 @@
     justify-content: space-between;
     margin-bottom: 10px;
 
-    @include media(1145px) {
-      justify-content: center;
-    }
 
-    @include media($screen-xs) {
+    @include media($screen-sm) {
       display: none;
     }
   }
 
   &__form {
 
-    @include media(1145px) {
-     justify-content: center;
-     margin-bottom: 20px; 
-   }
+  
  }
 
   &__tel-list {
@@ -117,13 +119,7 @@
     margin-bottom: -7px;
     margin-right: 14px;
 
-    @include media($screen-xs) {
-      margin: 0;
-      max-width: none;
-      margin-bottom: 15px;
-
-      text-align: center;
-    }
+    
   }
 
   &__tel-item {
@@ -132,7 +128,7 @@
     display: flex;
     align-items: center;
 
-    @include media($screen-xs) {
+    @include media($screen-sm) {
       justify-content: center;
     }
   }
@@ -161,10 +157,10 @@
     max-width: 214px;
     margin-right: 47px;
 
+    
+
     @include media(1145px) {
-      max-width: none;
-      margin-right: 0;
-      margin-bottom: 10px;
+      display: none;
     }
   }
 
@@ -177,7 +173,7 @@
     color: $black-text;
     line-height: 20px;
 
-    @include media($screen-xs) {
+    @include media($screen-sm) {
       display: none;
     }
   }
@@ -201,18 +197,29 @@
 
   &__action-buttons { 
     margin-right: 15px;
+    display: none;
+
+    @include media(1145px) {
+      display: flex;
+    }
   }
 
   &__action-icon {
     width: 24px;
     height: 24px;
+
+    fill: $brand-color;
   }
 
   &__sign-text {
 
-    @include media($screen-xs) {
+    @include media(1145px) {
       display: none;
     }
+  }
+
+  &__action-btn {
+    margin-right: 15px;
   }
 
 }

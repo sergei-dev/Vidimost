@@ -5,6 +5,10 @@
 
 	background-color: $white;
 
+	@include media(890px) {
+		display: none;
+	}
+
 
 	&__list {
 		width: 100%;
@@ -13,16 +17,7 @@
 		display: flex;
 		justify-content: center;
 
-		@include media($screen-md) {
-			flex-wrap: wrap;
-			margin-bottom: -40px;
-		}
-
-		@include media($screen-sm) {
-			flex-direction: column;
-			align-items: center;
-			margin: 0;
-		}
+		
 	}
 
 	&__item {
@@ -34,18 +29,6 @@
 
 		color: $black-text;
 
-		@include media($screen-md) {
-			width: 50%;
-			max-width: none;
-			flex-direction: column;
-			margin-bottom: 40px;
-
-			text-align: center;
-		}
-
-		@include media($screen-sm) {
-			width: 100%;
-		}
 	}
 
 	&__icon {
@@ -58,10 +41,7 @@
 	&__icon-wrap {
 		margin-right: 30px;
 
-		@include media($screen-md) {
-			margin-right: 0;
-			margin-bottom: 15px;
-		}
+		
 	}
 
 	&__title {

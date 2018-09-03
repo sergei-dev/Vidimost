@@ -26,13 +26,10 @@
 		display: flex;
 		padding: 0 $gutter;
 
-		@include media($screen-md) {
-			width: 50%;
-			padding: $gutter;
-		}
 
-		@include media($screen-sm) {
+		@include media(414px) {
 			width: 100%;
+			padding: $gutter;
 		}
 
 		&--blog-col {
@@ -49,6 +46,19 @@
 
 		&--full {
 			width: 100%;
+		}
+	}
+
+	&__scroll {
+
+		@include media(1145px) {
+			width: 379px;
+		}
+
+		@include media(414px) {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 

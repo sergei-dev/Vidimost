@@ -44,8 +44,11 @@
 	}
 
 	&__link {
-		display: block;
+		position: relative;
+
+		display: inline-block;
 		padding: 17.5px 0;
+		padding-right: 17px;
 
 		font-size: 18px;
 		color: $white;
@@ -60,6 +63,8 @@
 		}
 
 		@include media($screen-md) {
+			padding-right: 22px;
+
 			font-weight: 400;
 		}
 	}
@@ -86,4 +91,21 @@
 		font-weight: 700;
 		font-size: 17px;
 	}
+
+	&__icon {
+		position: absolute;
+		top: 35%;
+		right: 0;
+
+		display: none;
+		width: 15px;
+		height: 19px;
+
+		color: $white;
+
+		@include media($screen-md) {
+			display: block;
+		}
+	}
+
 }

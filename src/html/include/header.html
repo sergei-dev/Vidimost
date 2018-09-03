@@ -1,7 +1,7 @@
 <header class="header-page">
   <nav class="nav">
     <div class="container-new header-page__container">
-      <button id="open-menu" class="open-menu">
+      <button id="open-menu" class="open-menu open-menu--nav">
         <span class="open-menu__line open-menu__one"></span>
         <span class="open-menu__line open-menu__two"></span>
         <span class="open-menu__line open-menu__three"></span>
@@ -71,6 +71,10 @@
         <a href="#" class="page-menu__link">Вакансии</a>
       </li>
       <!-- /.page-menu__item -->
+       <li class="page-menu__item">
+        <a href="#" class="page-menu__link">Информация</a>
+      </li>
+      <!-- /.page-menu__item -->
       <li class="page-menu__item">
         <a href="#" class="page-menu__link">Контакты</a>
       </li>
@@ -91,13 +95,22 @@
       <!-- /.lang-list -->
       <div class="action-buttons header-page__action-buttons">
 
-        <button class="action-buttons__btn active">
+        <a href="#" class="action-buttons__btn header-page__action-btn">
+          <span class="visually-hidden">Ссылка на корзину</span>
+          <svg class="action-buttons__icon header-page__action-icon">
+            <use xlink:href="#header-cart"></use>
+          </svg>
+          <!-- /.product-list__icon -->
+        </a>
+
+        <button class="action-buttons__btn header-page__action-btn">
           <span class="visually-hidden">Сравнить</span>
           <svg class="action-buttons__icon header-page__action-icon">
             <use xlink:href="#git-compare"></use>
           </svg>
           <!-- /.product-list__icon -->
         </button>
+
       </div>
 
       <div class="header-page__sign-in">
@@ -277,7 +290,11 @@
     <!-- /.categories__mob-nav -->
     <ul class="categories__list">
       <li class="categories__item">
-        <a href="#" class="categories__link">Видеонаблюдение</a>
+        <a href="#" class="categories__link">Видеонаблюдение
+        <svg class="categories__icon">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </a>
         <ul class="submenu submenu--categories">
           <li class="submenu__item">
             <a href="#" class="submenu__link submenu__link--categories">
@@ -313,8 +330,52 @@
       </li>
       <!-- /.categories__item -->
       <li class="categories__item">
-        <a href="#" class="categories__link">Охранная сигнализация</a>
+        <a href="#" class="categories__link">Охранная сигнализация
+        <svg class="categories__icon">
+              <use xlink:href="#arrow-down"></use>
+            </svg>
+          </a>
     
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+              <span class="submenu__text">Подкатегория 4</span>
+            </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+              <span class="submenu__text">Готовый комплект</span>
+            </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">В идеодомофоны
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
         <ul class="submenu submenu--categories">
           <li class="submenu__item">
             <a href="#" class="submenu__link submenu__link--categories">
@@ -347,26 +408,66 @@
           </li>
           <!-- /.page-menu__sub-item -->
         </ul>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">В идеодомофоны</a>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">PoE оборудование</a>
-    </li>
-    <!-- /.categories__item -->
-     <li class="categories__item">
-      <a href="#" class="categories__link">Кабели и крепления </a>
-    </li>
-    <!-- /.categories__item -->
-    <li class="categories__item">
-      <a href="#" class="categories__link">Системы контроля доступа</a>
-    </li>
-    <!-- /.categories__item -->
-  </ul>
-  <!-- /.categories__list -->
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">PoE оборудование
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
+        <ul class="submenu submenu--categories">
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 1</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 2</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 3</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Подкатегория 4</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+          <li class="submenu__item">
+            <a href="#" class="submenu__link submenu__link--categories">
+            <span class="submenu__text">Готовый комплект</span>
+          </a>
+          </li>
+          <!-- /.page-menu__sub-item -->
+        </ul>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">Кабели и крепления
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- /.categories__item -->
+      <li class="categories__item">
+        <a href="#" class="categories__link">Системы контроля доступа
+          <svg class="categories__icon">
+            <use xlink:href="#arrow-down"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- /.categories__item -->
+    </ul>
+    <!-- /.categories__list -->
   </div>
   <!-- /.container-new -->
 </div>
