@@ -1,0 +1,22 @@
+.tel-list {
+
+	&__item {
+		width: 100%;
+		padding: 7px 0;
+	}
+
+	&__phone {
+		display: flex;
+    align-items: center;
+    justify-content: center;
+    
+		font-size: $basic-size;
+    color: $black-text;
+
+    &:hover, &:active, &:focus {
+      color: $brand-color;
+      
+      outline: none;
+    }
+	}
+}

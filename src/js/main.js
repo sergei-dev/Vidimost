@@ -158,11 +158,30 @@ $(document).ready(function() {
 			$(this).children('.submenu').slideToggle();
 		});
 
-		$('.categories__item').on('click', function() {
-			$('.submenu--categories').slideDown();
-			$(this).children('submenu--categories').slideToggle();
+		$('.categories__link').on('click', function(e) {
+			e.preventDefault();
+			$('.submenu--categories').slideUp();
+			$(this).parent().children('.submenu--categories').slideDown();
+
+			if( $('.categories__list').length === 0 ) {
+				$('.submenu--categories').hide();
+			}
 		});
 	}
+
+
+if( window.matchMedia("(max-width: 768px)").matches) { 
+	$('.tel-list').removeClass('header-page__tel-list')
+	.children('.tel-list__item').removeClass('header-page__tel-item')
+	.children('.tel-list__phone').removeClass('header-page__tel');
+	$('.page-footer__wrap-phones').append($('.tel-list').addClass('page-footer__tel-list'));
+	$('.page-footer__phone--open').on('click', function(e) {
+		e.preventDefault();
+		console.log('хня');
+		$('.page-footer__wrap-phones').slideToggle();
+	});
+}
+
 
 
 

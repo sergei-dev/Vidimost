@@ -47,11 +47,6 @@
 		}
 	}
 
-	&__payment {
-		@include media($screen-md) {
-			display: none;
-		}
-	}
 
 	&__nav-list-wrap {
 
@@ -197,9 +192,12 @@
 	&__phones-list {
 		width: 100%;
 		display: none;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 15px;
 
 		text-align: center;
+		color: $white;
 
 		@include media($screen-sm) {
 			display: flex;
@@ -210,16 +208,43 @@
 		position: relative;
 
 		display: flex;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 
-		color: $white;
+		color: currentColor;
 		font-weight: 700;
 		font-size: 20px;
+
+		&:hover , &:active, &:focus {
+			color: currentColor;
+			text-decoration: underline;
+		}
 	}
 
 	&__tel-icon-right {
 		margin-left: 6px;
 
 		fill: $white;
+	}
+
+	&__wrap-phones {
+		width: 100%;
+		padding: 15px;
+		display: none;
+
+		background-color: $white;
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		border-radius: 4px;
+	}
+
+	&__tel-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__payment {
+		@include media($screen-md) {
+			display: none;
+		}
 	}
 }

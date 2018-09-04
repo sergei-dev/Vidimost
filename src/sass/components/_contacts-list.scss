@@ -6,6 +6,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 15px;
+
+			@include media($screen-sm) {
+				margin-bottom: 0;
+			}
 		}
 	}
 

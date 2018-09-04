@@ -124,7 +124,6 @@
 
   &__tel-item {
     width: 50%;
-    padding: 7px 0;
     display: flex;
     align-items: center;
 
@@ -133,19 +132,6 @@
     }
   }
 
-  &__tel {
-    display: flex;
-    align-items: center;
-    
-    font-size: $basic-size;
-    color: $black-text;
-
-    &:hover, &:active, &:focus {
-      color: $brand-color;
-      
-      outline: none;
-    }
-  }
 
   &__tel-ico {
     display: block;

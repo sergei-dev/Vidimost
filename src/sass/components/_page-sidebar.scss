@@ -154,7 +154,7 @@
 
 @include media($screen-sm) {
   .popover.right.ocfilter-option-popover {
-    top: 75px!important;
+    top: 80px!important;
     left: 45px!important;
   }
 
@@ -163,4 +163,31 @@
     left: 35px!important;
   }
 
+  .popover.right>.arrow {
+    top: -11%!important;
+    left: 50%;
+    transform: rotate(90deg);
+  }
+
+  .categories-page {
+    .navbar-default {
+      background-color: $brand-color;
+      border: none;
+    }
+
+    .navbar-brand {
+      color: $white;
+    }
+
+    .navbar-toggle {
+      color: $white;
+
+      background-color: transparent;
+      border: 0;
+
+      &:hover, &:active, &:focus {
+        background-color: darken($brand-color, 15%);
+      }
+    }
+  }
 }
