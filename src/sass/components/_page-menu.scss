@@ -32,9 +32,11 @@
 			color: $brand-color;
 		}
 
-		&:hover {
-			> .submenu {
-				display: block;
+		@include media-min($screen-sm) {
+			&:hover {
+				> .submenu {
+					display: block;
+				}
 			}
 		}
 	}
@@ -89,10 +91,11 @@
 
 	&__submenu {
 
-		@include media($screen-md) {
+		@include media($screen-sm) {
 			position: static;
 
 			width: 100%;
+			padding-left: 15px;
 
 			background-color: transparent;
 			box-shadow: none;
@@ -102,18 +105,22 @@
 
 	&__submenu-item {
 
-		@include media($screen-md) {
+		@include media($screen-sm) {
 			border-bottom: 0;
 		}
 	}
 
 	&__submenu-link {
 		
-		@include media($screen-md) {
+		@include media($screen-sm) {
 			color: $white;
 			text-transform: uppercase;
 			font-size: 12px;
 		}
+	}
+
+	&__submenu-text {
+		border-bottom: 0;
 	}
 
 	

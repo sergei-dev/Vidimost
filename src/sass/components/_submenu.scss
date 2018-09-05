@@ -20,6 +20,10 @@
 		@include media($screen-md) {
 			position: static;
 		}
+
+		.submenu-text {
+			color: $black-text;
+		}
 	}
 
 	&__item {

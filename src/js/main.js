@@ -105,18 +105,39 @@ $(document).ready(function() {
 		})
 	})
 
-	$('#open-menu').on('click', function() {
+	var topMenu_show = false;
+
+	$('.open-menu--nav').on('click', function() {
 		$(this).toggleClass('open-menu--active');
+
+		if(topMenu_show == false) {
+				topMenu_show = true;
+			}
+
+			else {
+				topMenu_show = false;
+				$('.page-menu__submenu').slideUp();
+			}
+
 		$('.page-menu').toggleClass('page-menu--open');
 	});
 
+	var menu_visible = false;
+
 	$('#open-category').on('click', function() {
 		$(this).toggleClass('open-menu--active');
+
+		if(menu_visible == false) {
+			menu_visible = true;
+		}
+
+		else {
+			menu_visible = false;
+			$('.submenu--categories').slideUp();
+		}
 		$('.categories__list').slideToggle();
 
-		if( $('.categories__list').length === 0 ) {
-			$('.submenu--categories').hide();
-		}
+		
 	});
 
 	var halfText = $('.about-sect__descr').innerHeight() / 2,
@@ -150,22 +171,23 @@ $(document).ready(function() {
 		pickTime: false
 	});
 
+
+	if( window.matchMedia("(max-width: 768px)").matches) {
+		$('.page-menu__link').on('click', function(e) {
+			e.preventDefault();
+
+			$(this).next('.page-menu__submenu').slideToggle();
+		}); 
+	}
+
 	if( window.matchMedia("(max-width: 991px)").matches) {
-		$('.page-menu__item').on('click', function() {
-			$(this).children('.submenu').slideToggle();
-		});
-		$('.search-form__btn-product').on('click', function() {
-			$(this).children('.submenu').slideToggle();
-		});
 
 		$('.categories__link').on('click', function(e) {
 			e.preventDefault();
-			$('.submenu--categories').slideUp();
-			$(this).parent().children('.submenu--categories').slideDown();
+			$('.submenu--categories').not($(this).next()).slideUp();
+			$(this).parent().children('.submenu--categories').slideToggle();
 
-			if( $('.categories__list').length === 0 ) {
-				$('.submenu--categories').hide();
-			}
+		
 		});
 	}
 
@@ -175,9 +197,10 @@ if( window.matchMedia("(max-width: 768px)").matches) {
 	.children('.tel-list__item').removeClass('header-page__tel-item')
 	.children('.tel-list__phone').removeClass('header-page__tel');
 	$('.page-footer__wrap-phones').append($('.tel-list').addClass('page-footer__tel-list'));
+
 	$('.page-footer__phone--open').on('click', function(e) {
 		e.preventDefault();
-		console.log('хня');
+		
 		$('.page-footer__wrap-phones').slideToggle();
 	});
 }
