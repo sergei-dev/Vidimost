@@ -37,7 +37,8 @@
 	}
 
 	&__btn {
-		width: 128px;
+		min-width: 128px;
+    padding: 7.5px 7px;
 
 		&:not(:last-child) {
 			margin-right: 7px;

@@ -9,6 +9,19 @@
 		align-items: center;
 	}
 
+	iframe {
+		margin-top: 10px;
+		width: 100%;
+		max-width: 560px;
+		min-height: 315px;
+
+		border: 0;
+	}
+
+	.row {
+		margin: 0;
+	}
+
 	&__left {
 		width: 25%;
 		padding: 0px $gutter;

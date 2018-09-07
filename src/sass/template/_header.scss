@@ -183,10 +183,14 @@
 
   &__action-buttons { 
     margin-right: 15px;
+    display: flex;
+  }
+
+  &__cart {
     display: none;
 
     @include media(1145px) {
-      display: flex;
+      display: block;
     }
   }
 
