@@ -186,6 +186,14 @@
     display: flex;
   }
 
+  &__cart {
+    display: none;
+
+    @include media(1145px) {
+      display: block;
+    }
+  }
+
   &__action-icon {
     width: 24px;
     height: 24px;
@@ -202,14 +210,6 @@
 
   &__action-btn {
     margin-right: 15px;
-  }
-
-  &__cart {
-    display: none;
-
-    @include media(1145px) {
-      display: block;
-    }
   }
 
 }

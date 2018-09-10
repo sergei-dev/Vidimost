@@ -8,14 +8,18 @@
 
 	&__scroll-tablet {
 
-		@include media-min(414px) {
+		@media screen and(min-width: 414px) and(max-width: 1145px) {
 			overflow-x: auto;
 		}
 	} 
 
 	&__article-list-scroll {
-		width: 1145px;
 		flex-wrap: nowrap;
+		
+		@include media(1145px) {
+			width: 1145px;
+			align-items: stretch;
+		}
 
 		@include media($screen-sm) {
 			flex-direction: row;
@@ -25,6 +29,36 @@
 			width: 100%;
 			margin: 0;
 			flex-direction: column;
+		}
+	}
+
+	&__article-list-blog {
+		flex-wrap: nowrap;
+
+		@include media(1175px) {
+			width: 880px;
+			align-items: stretch;
+		}
+
+		@include media($screen-md) {
+			width: 1145px;
+		}
+
+		@include media($screen-sm) {
+			flex-direction: row;
+		}
+
+		@include media(414px) {
+			width: 100%;
+			flex-direction: column;
+			margin: 0;
+		}
+
+		.article-list__item {
+
+			@include media(414px) {
+				padding: 0;
+			}
 		}
 	}
 

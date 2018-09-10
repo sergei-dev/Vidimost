@@ -7,7 +7,7 @@
 
 	font-family: $pt-sans;
 
-		@include media($screen-sm) {
+		@include media(590px) {
 			flex-direction: column;
 			align-items: center;
 		}
@@ -39,7 +39,7 @@
 				width: 50%;
 			} 
 
-			@include media($screen-sm) {
+			@include media(590px) {
 				width: 100%;
 			} 
 		}
@@ -60,6 +60,14 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
+
+		&--blog-item {
+
+			@include media(1175px) {
+				width: 299.69px;
+			}			
+		}
+
 	}
 
 }
