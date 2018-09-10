@@ -18,11 +18,21 @@
 
   	transition: opacity $anim;
 
+
   	&.active {
   		display: block;
 
   		opacity: 1;
   	}
+
+  	&--feature {
+
+  		@include media(510px) {
+  			padding: 5px;
+  		}
+  		
+  	}
+
   }
 
   &__title {

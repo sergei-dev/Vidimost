@@ -35,6 +35,22 @@
 			}
 		}
 
+		&:last-child {
+			
+			.categories__link {
+				padding-right: 0;
+
+				@include media($screen-md) {
+					padding-right: 22px;
+				}
+
+				&::after {
+					display: none;
+				}
+			}
+
+		}
+
 		@include media-min($screen-md) {
 			&:hover {
 				> .submenu {
@@ -81,17 +97,6 @@
 		}
 
 
-		&:last-child {
-			padding-right: 0;
-
-			@include media($screen-md) {
-				padding-right: 22px;
-			}
-
-			&::after {
-				display: none;
-			}
-		}
 
 		@include media(1130px) {
 			padding-right: 15px;

@@ -20,11 +20,6 @@
 		flex-direction: column;
 	}
 
-	&--hide-sm {
-		@include media($screen-sm) {
-			display: none;
-		}
-	}
 
 	&__buttons {
 		display: flex;
@@ -34,6 +29,11 @@
 			margin-right: 0;
 			margin-bottom: 20px;
 		}
+
+		@include media($screen-sm) {
+			margin-bottom: 0;
+		}
+
 	}
 
 	&__btn {
@@ -184,6 +184,12 @@
 		padding-top: 2.5px;
 		padding-bottom: 2.5px;
 		min-height: 0;
+	}
+
+	&--hide-sm {
+		@include media($screen-sm) {
+			display: none;
+		}
 	}
 
 }

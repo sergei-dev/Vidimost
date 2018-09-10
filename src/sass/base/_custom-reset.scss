@@ -218,21 +218,25 @@ input[type='number'] {
 }
 
 ::-webkit-input-placeholder {
+  vertical-align: middle;
   color: inherit;
   transition: opacity .3s;
 }
 
 ::-moz-placeholder {
+  vertical-align: middle;
   color: inherit;
   transition: opacity .3s;
 }
 
 :-moz-placeholder {
+  vertical-align: middle;
   color: inherit;
   transition: opacity .3s;
 }
 
 :-ms-input-placeholder {
+  vertical-align: middle;
   color: inherit;
   transition: opacity .3s;
 }

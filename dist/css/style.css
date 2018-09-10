@@ -890,6 +890,7 @@ input[type='number'] {
   font: inherit; }
 
 ::-webkit-input-placeholder {
+  vertical-align: middle;
   color: inherit;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
@@ -897,6 +898,7 @@ input[type='number'] {
   transition: opacity .3s; }
 
 ::-moz-placeholder {
+  vertical-align: middle;
   color: inherit;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
@@ -904,6 +906,7 @@ input[type='number'] {
   transition: opacity .3s; }
 
 :-moz-placeholder {
+  vertical-align: middle;
   color: inherit;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
@@ -911,6 +914,7 @@ input[type='number'] {
   transition: opacity .3s; }
 
 :-ms-input-placeholder {
+  vertical-align: middle;
   color: inherit;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
@@ -1205,7 +1209,7 @@ body {
   display: block;
   padding-bottom: 16px;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 20px;
   color: #202020;
   font-size: 30px;
   font-family: "PT Sans", sans-serif;
@@ -1639,6 +1643,7 @@ body {
     padding: 8px 34px;
     width: 100%;
     max-width: 100%;
+    font-size: 14px;
     border: 2px solid #0aa5df;
     border-right: none;
     border-left: none; }
@@ -2574,9 +2579,6 @@ body {
     .about-sect__more:hover {
       border-bottom-color: transparent; }
 
-.news-sect {
-  padding-top: 67px; }
-
 .tel-list__item {
   width: 100%;
   padding: 7px 0; }
@@ -2602,6 +2604,9 @@ body {
   .tel-list__phone:hover, .tel-list__phone:active, .tel-list__phone:focus {
     color: #0aa5df;
     outline: none; }
+  @media only screen and (max-width: 768px) {
+    .tel-list__phone {
+      font-size: 20px; } }
 
 .dispatch {
   padding: 7px 0px;
@@ -2875,6 +2880,13 @@ body {
     color: #ffffff; }
     .categories__item:first-child .categories__link {
       padding-left: 0; }
+    .categories__item:last-child .categories__link {
+      padding-right: 0; }
+      @media only screen and (max-width: 992px) {
+        .categories__item:last-child .categories__link {
+          padding-right: 22px; } }
+      .categories__item:last-child .categories__link::after {
+        display: none; }
     @media only screen and (min-width: 992px) {
       .categories__item:hover > .submenu {
         display: block; } }
@@ -2904,13 +2916,6 @@ body {
       @media only screen and (max-width: 992px) {
         .categories__link::after {
           display: none; } }
-    .categories__link:last-child {
-      padding-right: 0; }
-      @media only screen and (max-width: 992px) {
-        .categories__link:last-child {
-          padding-right: 22px; } }
-      .categories__link:last-child::after {
-        display: none; }
     @media only screen and (max-width: 1130px) {
       .categories__link {
         padding-right: 15px; } }
@@ -2969,8 +2974,7 @@ body {
   -webkit-justify-content: center;
      -moz-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 35px; }
+          justify-content: center; }
 
 .categories-page__load-icon {
   position: absolute;
@@ -3027,12 +3031,8 @@ body {
          -moz-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
-  .page-wrap iframe {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 560px;
-    min-height: 315px;
-    border: 0; }
+  .page-wrap .img-thumbnail {
+    margin-bottom: 10px; }
   .page-wrap .row {
     margin: 0; }
   .page-wrap__left {
@@ -3041,8 +3041,7 @@ body {
     @media only screen and (max-width: 992px) {
       .page-wrap__left {
         width: 100%;
-        max-width: 450px;
-        margin-bottom: 20px; } }
+        max-width: 450px; } }
     @media only screen and (max-width: 480px) {
       .page-wrap__left {
         max-width: none; } }
@@ -3111,6 +3110,15 @@ body {
             justify-content: space-between; }
   .page-wrap__radio-button {
     margin-right: 20px; }
+  .page-wrap__down-text {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 15px; }
+  .page-wrap__content-brand iframe {
+    width: 100%;
+    max-width: 560px;
+    min-height: 315px;
+    border: 0; }
 
 .breadcrumb {
   padding: 18px 0;
@@ -3301,6 +3309,7 @@ body {
          -o-transform: rotate(90deg);
             transform: rotate(90deg); }
   .categories-page .navbar-default {
+    margin-bottom: 0;
     background-color: #0aa5df;
     border: none; }
   .categories-page .navbar-brand {
@@ -3937,9 +3946,6 @@ body {
          -moz-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-  @media only screen and (max-width: 768px) {
-    .page-filter--hide-sm {
-      display: none; } }
   .page-filter__buttons {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3951,6 +3957,9 @@ body {
       .page-filter__buttons {
         margin-right: 0;
         margin-bottom: 20px; } }
+    @media only screen and (max-width: 768px) {
+      .page-filter__buttons {
+        margin-bottom: 0; } }
   .page-filter__btn {
     min-width: 128px;
     padding: 7.5px 7px; }
@@ -4080,6 +4089,9 @@ body {
     padding-top: 2.5px;
     padding-bottom: 2.5px;
     min-height: 0; }
+  @media only screen and (max-width: 768px) {
+    .page-filter--hide-sm {
+      display: none; } }
 
 .quantity {
   display: -webkit-box;
@@ -4383,10 +4395,9 @@ body {
     padding: 5px 6px; }
 
 .page-section {
-  padding: 37px 0; }
+  padding: 18px 0; }
   .page-section--right-content {
-    padding-top: 8px;
-    padding-bottom: 45px; }
+    padding-top: 8px; }
   @media screen and (min-width: 414px) and (max-width: 1145px) {
     .page-section__scroll-tablet {
       overflow-x: auto; } }
@@ -4460,6 +4471,9 @@ body {
     @media only screen and (max-width: 414px) {
       .page-section__article-list-blog .article-list__item {
         padding: 0; } }
+
+.news-sect {
+  padding-top: 67px; }
 
 .product-card {
   display: -webkit-box;
@@ -4692,6 +4706,9 @@ body {
     .tab-content__item.active {
       display: block;
       opacity: 1; }
+    @media only screen and (max-width: 510px) {
+      .tab-content__item--feature {
+        padding: 5px; } }
   .tab-content__title {
     margin-top: 0;
     margin-bottom: 27px;

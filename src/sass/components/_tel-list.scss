@@ -18,5 +18,9 @@
       
       outline: none;
     }
+
+    @include media($screen-sm) {
+    	font-size: 20px;
+    }
 	}
 }

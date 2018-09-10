@@ -95,8 +95,8 @@ $(document).ready(function() {
 		$('.product-gallery__pic').attr('src', src);
 	});
 
-	$('#tel-buy').mask('+38(99) 99 99 99 99');
-	$('.form-group__inp--mask').mask('+38(99) 99 99 99 99');
+	  $('#tel-buy').mask('+38(99) 99 99 99 99');
+	 $('.form-group__inp--mask').mask('+38(99) 99 99 99 99');
 
 	$(this).find('.tabs-control__btn').each(function(i) {
 		$(this).on('click', function(e) {
