@@ -62,6 +62,11 @@
 
 	.selectric-wrapper {
 		max-width: 190px;
+
+		@include media($screen-xs) {
+			max-width: none;
+			width: 91px;
+		}
 	}
 
 	.selectric-items .selectric-scroll {
@@ -120,12 +125,19 @@
 		width: 100%;
 		max-width: 330px;
 		margin: 0;
+
+		@include media($screen-xs) {
+			max-width: none;
+			width: 62%;
+			flex-grow: 1;
+		}
 	}
 
 	&__inp {
 		padding: 8px 34px;
 		width: 100%;
 		max-width: 100%;
+		display: block;
 
 		font-size: $basic-size;
 
@@ -142,6 +154,7 @@
 		@include media($screen-xs) {
 			padding-right: 5px;
 			padding-left: 5px;
+			max-width: none;
 		}
 	}
 
@@ -149,6 +162,7 @@
 		padding: 8px 16.5px;
 
 		@include media($screen-xs) {
+			width: 45px;
 			padding-right: 10px;
 			padding-left: 10px;
 		}

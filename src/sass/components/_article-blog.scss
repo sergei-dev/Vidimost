@@ -7,6 +7,10 @@
 	border-radius: 4px;
 	background-color: $white;
 
+	&--margin {
+		margin-bottom: 30px;
+	}
+
 	&__title {
 		margin-bottom: 28px;
 	}

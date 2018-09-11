@@ -110,4 +110,35 @@
 
 		border: 0;
 	}
+
+	&__account {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 30px;
+
+		@include media($screen-md) {
+			justify-content: flex-start;
+		}
+	}
+
+	&__acc-title {
+		display: block;
+		margin-bottom: 8px;
+		
+		font-weight: 700;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	&__acc-section {
+		width: 240px;
+		padding: 13px 18px;
+
+		background-color: $white;
+	}
+
+	&__acc-item {
+		display: block;
+		padding: 7px 0;
+	}
 }

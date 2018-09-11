@@ -29,7 +29,7 @@
 
 		@include media(414px) {
 			width: 100%;
-			padding: $gutter;
+			padding: $gutter 0;
 		}
 
 		&--blog-col {

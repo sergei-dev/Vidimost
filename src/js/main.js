@@ -95,8 +95,8 @@ $(document).ready(function() {
 		$('.product-gallery__pic').attr('src', src);
 	});
 
-	  $('#tel-buy').mask('+38(99) 99 99 99 99');
-	 $('.form-group__inp--mask').mask('+38(99) 99 99 99 99');
+	 //  $('#tel-buy').mask('+38(99) 99 99 99 99');
+	 // $('.form-group__inp--mask').mask('+38(99) 99 99 99 99');
 
 	$(this).find('.tabs-control__btn').each(function(i) {
 		$(this).on('click', function(e) {
@@ -140,26 +140,46 @@ $(document).ready(function() {
 		
 	});
 
-	var halfText = $('.about-sect__descr').height() / 2,
-			textHeight = $('.about-sect__descr').height();
+	// var halfText = $('.about-sect__descr').height() / 2,
+	// 		textHeight = $('.about-sect__descr').height();
 
-			$('.about-sect__descr').height(halfText);
+	// 		$('.about-sect__descr').height(halfText);
 
 
-	$('.about-sect__more').on('click', function() {
-		$('.about-sect__descr').toggleClass('about-sect__descr--clip');
-		if( $('.about-sect__descr').height() == halfText ) {
-			$('.about-sect__descr').height(textHeight);
-			$(this).text(textSkip);
-		}
+	// $('.about-sect__more').on('click', function() {
+	// 	$('.about-sect__descr').toggleClass('about-sect__descr--clip');
+	// 	if( $('.about-sect__descr').height() == halfText ) {
+	// 		$('.about-sect__descr').height(textHeight);
+	// 		$(this).text(textSkip);
+	// 	}
 
-		else {
-			$('.about-sect__descr').height(halfText);
-			$(this).text(textReadMore);
-		}
+	// 	else {
+	// 		$('.about-sect__descr').height(halfText);
+	// 		$(this).text(textReadMore);
+	// 	}
 
 		
-	});
+	// });
+
+	var height = $('.about-sect__descr').height();
+	var descr = $('.about-sect__descr').height() - 140;
+	$('.about-sect__descr').css('height', descr + 'px');
+
+$('.about-sect__more').click(function() {
+  var $this = $(this);
+  $this.toggleClass('active');
+  $('.about-sect__descr').toggleClass('about-sect__descr--clip');
+
+
+  if($this.hasClass('active') == true) {
+  	$this.text(textSkip);
+    $this.closest('.about-sect__content').find('.about-sect__descr').css('height', height + 'px');
+  } 
+  else {
+  	$this.text(textReadMore);
+    $this.closest('.about-sect__content').find('.about-sect__descr').css('height', descr + 'px');
+  }
+});
 
 	
 	$('.date').datetimepicker({
