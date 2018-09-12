@@ -999,7 +999,7 @@ textarea {
 
 html {
   font-size: 13px;
-  scroll-behavior: smooth; }
+  /* scroll-behavior: smooth; */ }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     html {
       display: -webkit-box;
@@ -1313,7 +1313,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 5;
+  z-index: 6;
   display: none;
   width: 200px;
   font-family: "Open Sans", sans-serif;
@@ -4327,6 +4327,8 @@ body {
   padding: 18px 0; }
   .page-section--right-content {
     padding-top: 8px; }
+  .page-section--offset-bottom {
+    padding-bottom: 35px; }
   @media screen and (min-width: 414px) and (max-width: 1145px) {
     .page-section__scroll-tablet {
       overflow-x: auto; } }
@@ -4941,13 +4943,32 @@ body {
   background-color: rgba(0, 0, 0, 0.7); }
   .scroll-up:hover {
     background-color: black; }
+  @media only screen and (max-width: 768px) {
+    .scroll-up {
+      width: 60px;
+      height: 60px; } }
   .scroll-up__ico {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 5px;
-    width: 35px;
     height: 35px;
-    margin: auto;
     color: #ffffff; }
+    @media only screen and (max-width: 768px) {
+      .scroll-up__ico {
+        padding-top: 0; } }
   .scroll-up__svg {
     stroke: currentColor; }
 

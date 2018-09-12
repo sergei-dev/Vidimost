@@ -16,14 +16,23 @@
 		background-color: rgba(0, 0, 0, 10);
 	}
 
+	@include media($screen-sm) {
+		width: 60px;
+		height: 60px;
+	}
+
 	&__ico {
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		padding-top: 5px;
-		width: 35px;
 		height: 35px;
-		margin: auto;
 
 		color: $white;
+
+		@include media($screen-sm) {
+			padding-top: 0;
+		}
 	}
 
 	&__svg {

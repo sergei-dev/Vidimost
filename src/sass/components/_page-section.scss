@@ -5,6 +5,10 @@
 		padding-top: 8px;
 	}
 
+	&--offset-bottom {
+		padding-bottom: 35px;
+	}
+
 	&__scroll-tablet {
 
 		@media screen and(min-width: 414px) and(max-width: 1145px) {
