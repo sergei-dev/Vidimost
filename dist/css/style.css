@@ -1059,12 +1059,6 @@ body {
     .table-respons {
       overflow-y: hidden; } }
 
-@supports (max-width: env(safe-area-inset-left)) {
-  .container-new {
-    max-width: -webkit-calc(100% - env(safe-area-inset-left)*2);
-    max-width: -moz-calc(100% - env(safe-area-inset-left)*2);
-    max-width: calc(100% - env(safe-area-inset-left)*2); } }
-
 .button {
   position: relative;
   display: block;
@@ -2921,7 +2915,7 @@ body {
   .categories__link {
     position: relative;
     display: inline-block;
-    padding: 17.5px 15px;
+    padding: 17.5px 14px;
     font-size: 18px;
     color: #ffffff;
     font-weight: 700;

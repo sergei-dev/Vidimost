@@ -92,7 +92,7 @@ $(document).ready(function() {
 	
 
 
-	$('.product-gallery__pic').attr('src', $('.product-gallery__link:first-child').attr('href') );
+	// $('.product-gallery__pic').attr('src', $('.product-gallery__link:first-child').attr('href') );
 
 	$('body').on('click', '.product-gallery__link', function(event) {
 		event.preventDefault();
