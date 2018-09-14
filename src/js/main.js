@@ -225,6 +225,16 @@ if( window.matchMedia("(max-width: 768px)").matches) {
 		
 		$('.page-footer__wrap-phones').slideToggle();
 	});
+
+	$('.product-list__item--full').each(function(i,elem) {
+		$(elem).find('.product-list__content--list').prepend($(elem).find('.product-list__title-wrap--list'));
+
+		$(elem).find('.product-list__middle').append($(elem).find('.product-list__left-wrap'));
+		$(elem).find('.product-list__bottom-wrap-mob').append($(elem).find('.action-buttons__btn'));
+		$(elem).find('.product-list__bottom-wrap-mob').append($(elem).find('.quantity'));
+		$(elem).find('.product-list__bottom-wrap-mob').append($(elem).find('.product-list__btn-list'));
+	});
+
 }
 
 
