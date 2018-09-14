@@ -8,10 +8,9 @@
 
 
   &__list {
-  	display: flex;
+  	display: inline-flex;
   	align-items: center;
-  	justify-content: flex-start;
-  	flex-wrap: wrap;
+  	justify-content: space-between;
 
   	@include media($screen-md) {
   		width: 100%;
@@ -27,31 +26,11 @@
 	&__item {
 		position: relative;
 
+		width: 100%;
+
 		color: $white;
 
-		&:first-child {
-			.categories__link {
-				
-				&::before {
-					content: '';
-					position: absolute;
-					top: 50%;
-					left: 0;
 
-					width: 2px;
-					height: 90%;
-					display: block;
-
-					background-color: $white;
-
-					transform: translateY(-50%);
-
-					@include media($screen-md) {
-						display: none;
-					}
-				}
-			}
-		}
 
 		&:last-child {
 			
@@ -89,6 +68,10 @@
 
 		transition: background-image $anim;
 
+		@include media(1185px) {
+				font-size: 14px;
+			}
+
 
 		&:hover {
 			color: currentColor;
@@ -97,9 +80,10 @@
 			@include media($screen-md) {
 				background-image: none;
 			}
+
 		}
 
-		&::after {
+		&::after, &::before {
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -117,7 +101,12 @@
 				display: none;
 			}
 
+
 		}
+
+		&::before {
+				left: 0;
+			}
 
 
 
