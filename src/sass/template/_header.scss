@@ -189,7 +189,7 @@
   &__cart {
     display: none;
 
-    @include media(1145px) {
+    @include media(960px) {
       display: block;
     }
   }
